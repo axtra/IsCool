@@ -1,0 +1,93 @@
+emdiGrado:
+  emdiGrado_1:
+    gra_nombre: '1ero de Básica A'
+    gra_nombre_corto: '1ero '
+    pro: emdiProfesor_1
+  emdiGrado_2:
+    gra_nombre: '1ero de Básica B'
+    gra_nombre_corto: '1ero '
+    pro: emdiProfesor_22
+  emdiGrado_3:
+    gra_nombre: '2do de Básica A'
+    gra_nombre_corto: '2do A'
+    pro: emdiProfesor_9
+  emdiGrado_4:
+    gra_nombre: '2do de Básica B'
+    gra_nombre_corto: '2do B'
+    pro: emdiProfesor_28
+  emdiGrado_5:
+    gra_nombre: '3ero de Básica A'
+    gra_nombre_corto: '3ero '
+    pro: emdiProfesor_25
+  emdiGrado_6:
+    gra_nombre: '3ero de Básica B'
+    gra_nombre_corto: '3ero '
+    pro: emdiProfesor_24
+  emdiGrado_7:
+    gra_nombre: '4to de Básica A'
+    gra_nombre_corto: '4to A'
+    pro: emdiProfesor_5
+  emdiGrado_8:
+    gra_nombre: '4to de Básica B'
+    gra_nombre_corto: '4to B'
+    pro: emdiProfesor_7
+  emdiGrado_9:
+    gra_nombre: '5to de Básica'
+    gra_nombre_corto: 5to
+    pro: emdiProfesor_3
+  emdiGrado_10:
+    gra_nombre: '6to de Básica'
+    gra_nombre_corto: 6to
+    pro: emdiProfesor_14
+  emdiGrado_11:
+    gra_nombre: '7mo de Básica'
+    gra_nombre_corto: 7mo
+    pro: emdiProfesor_27
+  emdiGrado_12:
+    gra_nombre: '8vo de Básica'
+    gra_nombre_corto: 8vo
+    pro: emdiProfesor_21
+  emdiGrado_13:
+    gra_nombre: '9no de Básica'
+    gra_nombre_corto: 9no
+    pro: emdiProfesor_23
+  emdiGrado_14:
+    gra_nombre: '10mo de Básica'
+    gra_nombre_corto: 10mo
+    pro: emdiProfesor_6
+  emdiGrado_15:
+    gra_nombre: '1ero de Bachillerato'
+    gra_nombre_corto: 11vo
+    pro: emdiProfesor_4
+  emdiGrado_16:
+    gra_nombre: '2do de Bachillerato'
+    gra_nombre_corto: 12vo
+    pro: emdiProfesor_26
+  emdiGrado_17:
+    gra_nombre: Maternal
+    gra_nombre_corto: Mat
+    pro: emdiProfesor_34
+  emdiGrado_18:
+    gra_nombre: 'Sección Inicial'
+    gra_nombre_corto: Ini
+    pro: emdiProfesor_40
+  emdiGrado_19:
+    gra_nombre: 'Transicional A'
+    gra_nombre_corto: 'Tran '
+    pro: emdiProfesor_43
+  emdiGrado_20:
+    gra_nombre: 'Transicional B'
+    gra_nombre_corto: 'Tran '
+    pro: emdiProfesor_39
+  emdiGrado_21:
+    gra_nombre: 'Transicional C'
+    gra_nombre_corto: 'Tran '
+    pro: emdiProfesor_41
+  emdiGrado_22:
+    gra_nombre: 'Pre Escolar A'
+    gra_nombre_corto: 'Pre A'
+    pro: emdiProfesor_35
+  emdiGrado_23:
+    gra_nombre: 'Pre Escolar B'
+    gra_nombre_corto: 'Pre B'
+    pro: emdiProfesor_31

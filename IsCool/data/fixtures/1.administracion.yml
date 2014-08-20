@@ -1,0 +1,41 @@
+emdiAdministracion:
+  emdiAdministracion_1:
+    adm_habilitar_nota1: false
+    adm_habilitar_nota2: false
+    adm_habilitar_nota3: false
+    adm_habilitar_nota4: false
+    adm_habilitar_nota5: false
+    adm_habilitar_nota6: false
+    adm_habilitar_nota7: false
+    adm_habilitar_nota8: false
+    adm_habilitar_nota9: false
+    adm_habilitar_nota10: false
+    adm_habilitar_nota11: false
+    adm_habilitar_nota12: false
+    created_at: null
+    updated_at: null
+
+sfGuardGroup:
+  Group_admin:
+    name:           admin
+    description:    Administrator group
+    Permissions:    [Permission_admin]
+  Group_estudiante:
+    name:           estudiante
+    description:    Grupo de Estudiantes
+    Permissions:    [Permission_estudiante]
+  Group_profesor:
+    name:           profesor
+    description:    Grupo de Profesores
+    Permissions:    [Permission_profesor]
+
+sfGuardPermission:
+  Permission_admin:
+    name:           admin
+    description:    Administrator permission
+  Permission_estudiante:
+    name:           estudiante
+    description:    Permisos de Estudiante
+  Permission_profesor:
+    name:           profesor
+    description:    Permisos de Profesor

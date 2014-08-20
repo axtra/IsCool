@@ -1,0 +1,9 @@
+sfGuardUser:
+  User_admin_298:
+    first_name:     Hugo
+    last_name:      Iñiguez
+    email_address:  hugo@arperus.com
+    username:       admin
+    password:       admin
+    is_super_admin: true
+    Groups:         [Group_admin]

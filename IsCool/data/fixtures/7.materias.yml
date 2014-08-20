@@ -1,0 +1,81 @@
+emdiMateria:
+  emdiMateria_1:
+    mat_nombre: ALGEBRA
+  emdiMateria_2:
+    mat_nombre: 'ARTES PLÁSTICAS'
+  emdiMateria_3:
+    mat_nombre: BIOLOGY
+  emdiMateria_4:
+    mat_nombre: CHEMISTRY
+  emdiMateria_5:
+    mat_nombre: 'CIENCIAS SOCIALES'
+  emdiMateria_6:
+    mat_nombre: CIVICA
+  emdiMateria_7:
+    mat_nombre: COMPUTACIÓN
+  emdiMateria_8:
+    mat_nombre: 'CULTURA FÍSICA'
+  emdiMateria_9:
+    mat_nombre: 'DIBUJO TECNICO'
+  emdiMateria_10:
+    mat_nombre: DISCIPLINA
+  emdiMateria_11:
+    mat_nombre: ECONOMICS
+  emdiMateria_12:
+    mat_nombre: 'ENVIRONMENTAL EDUCATION'
+  emdiMateria_13:
+    mat_nombre: 'Etica y Convivencia'
+  emdiMateria_14:
+    mat_nombre: FISICA
+  emdiMateria_15:
+    mat_nombre: GEOGRAPHY
+  emdiMateria_16:
+    mat_nombre: 'HEALTH & FITNESS'
+  emdiMateria_17:
+    mat_nombre: 'HISTORIA DEL ARTE Y PLASTICA'
+  emdiMateria_18:
+    mat_nombre: HISTORY
+  emdiMateria_19:
+    mat_nombre: 'LANGUAGE ARTS'
+  emdiMateria_20:
+    mat_nombre: 'LENGUAJE  '
+  emdiMateria_21:
+    mat_nombre: LITERATURA
+  emdiMateria_22:
+    mat_nombre: LITERATURE
+  emdiMateria_23:
+    mat_nombre: MANDARÍN
+  emdiMateria_24:
+    mat_nombre: 'MATEMATICA Y ESTADISTICA'
+  emdiMateria_25:
+    mat_nombre: MATEMÁTICAS
+  emdiMateria_26:
+    mat_nombre: MÚSICA
+  emdiMateria_27:
+    mat_nombre: PHONICS
+  emdiMateria_28:
+    mat_nombre: 'POLITICAL SCIENCE'
+  emdiMateria_29:
+    mat_nombre: PORTUGUÉS
+  emdiMateria_30:
+    mat_nombre: PROYECTO
+  emdiMateria_31:
+    mat_nombre: PSICOMOTRICIDAD
+  emdiMateria_32:
+    mat_nombre: PSYCHOLOGY
+  emdiMateria_33:
+    mat_nombre: 'REALITY WORLD'
+  emdiMateria_34:
+    mat_nombre: 'RELACIONES HUMANAS'
+  emdiMateria_35:
+    mat_nombre: 'Relaciones Interpersonales'
+  emdiMateria_36:
+    mat_nombre: SCIENCE
+  emdiMateria_37:
+    mat_nombre: 'SOCIAL STUDIES'
+  emdiMateria_38:
+    mat_nombre: TOT
+  emdiMateria_39:
+    mat_nombre: TRIGONOMETRIA
+  emdiMateria_40:
+    mat_nombre: 'TRIGONOMETRIA Y GEOMETRIA'

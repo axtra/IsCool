@@ -1,0 +1,125 @@
+= sfCommandLine plug-in =
+
+The `sfCommandLine` allow to :
+
+ * Run batch from symfony binary
+ * Change the SP_APP, SP_ENVIRONMENT and SP_DEBUG directly from command line
+ * Passing complex short and/or long arguments
+ * Execute web page from command line
+
+== Installation ==
+
+  * Install the plug-in
+  
+    {{{
+  $ symfony plugin-install http://plugins.symfony-project.com/sfCommandLinePlugin
+    }}}
+
+  * Clear the cache
+
+    {{{
+  $ symfony cc
+    }}}
+
+  * You're done.
+
+== Usage ==
+
+    {{{
+  $ symfony run my_batch --env dev --app backend --debug -t -h --long-arg with-value
+    }}}
+    
+== Example ==
+
+
+=== Run batch from symfony binary ===
+
+ * Create a test script batch/test.php :
+    {{{
+  <?php 
+    echo "env = ".SF_ENVIRONMENT."\n";
+    var_dump($argv);
+    }}}
+  
+ * Change the environment from command line :
+  	{{{
+  $ ./symfony run test --env test 
+  env = test
+  array(1) {
+    ["env"]=>
+      string(4) "test"
+  }
+  $ ./symfony run test --env dev 
+  env = dev
+  array(1) {
+    ["env"]=>
+      string(4) "dev"
+  }
+    }}}
+
+ * Pass long arguments :
+  	{{{
+  $ ./symfony run test --long_var --long_var_with_value foobar 
+  env = prod
+  array(2) {
+    ["long_var"]=>
+      bool(true)
+    ["long_var_with_value"]=>
+      string(6) "foobar"
+  }
+    }}}
+    
+ * Pass short arguments :
+  	{{{
+  $ ./symfony run test -a foo -b -cd bar 
+  env = prod
+  array(4) {
+    ["a"]=>
+      string(3) "foo"
+    ["b"]=>
+      bool(true)
+    ["c"]=>
+      bool(true)
+    ["d"]=>
+      string(3) "bar"
+  }
+    }}}
+
+=== Execute web page from command line ===
+
+ * Create a test script app/frontend/modules/default/testAction.class.php :
+    {{{
+  <?php 
+  class testAction extends sfAction {
+    public function execute() {
+      return $this->renderText($this->getRequestParameter('foo'));
+    }
+  }
+    }}}
+
+ * Execute a web page :
+    {{{
+  $ ./symfony run --module default --action test --foo bar
+  bar
+    }}}
+== Bugs or features requests ==
+
+Please, submit any bugs or features requests on the [http://www.symfony-project.org/forum/index.php/t/9938/ forum]
+
+== Changelog ==
+
+=== 2007-11-23 | 0.1.0 ===
+
+ * romain: plug-in added to symfony
+
+=== 2007-11-26 | 0.1.1 ===
+
+ * romain: !BugFix : missing SF_ROOT_DIR constant
+
+=== 2007-11-30 | 0.1.2 ===
+
+ * romain: !BackPort change by kupokomapa
+ * romain: Feature : Allow to run module / action from command line
+ * romain: Add some Comments 
+
+

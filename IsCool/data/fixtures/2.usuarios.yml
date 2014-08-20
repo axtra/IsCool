@@ -1,0 +1,2377 @@
+sfGuardUser:
+  User_admin_1:
+    first_name: Soraya Alejandra
+    last_name: Garrido Villacreses
+    email_address: soraya46@hotmail.com
+    username: sgarrido
+    password: '1726964867'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_2:
+    first_name: Eduarda Anahí
+    last_name: Gonzáles Huilcapi 
+    email_address: 1@emdischool.net
+    username: egonzalez
+    password: '1727427492'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_3:
+    first_name: Esteban Sebastián
+    last_name: Mafla Escudero
+    email_address: paolaescudero75@gmail.com
+    username: emafla
+    password: '1723953178'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_4:
+    first_name: Gonzalo Eduardo
+    last_name: Maldonado Loaiza
+    email_address: 2@emdischool.net
+    username: gmaldonado
+    password: '1724561962'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_5:
+    first_name: Esteban Ricardo
+    last_name: Michala Nolivos
+    email_address: iemsport@hotmail.com
+    username: eminchala
+    password: '1723736599'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_6:
+    first_name: Jehosua Gerardo
+    last_name: Morán Oviedo
+    email_address: sinemail@emdischool.edu.ec
+    username: jmoran
+    password: '1724357759'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_7:
+    first_name: Fernando Sebastián
+    last_name: Ormaza Estrella
+    email_address: mony_estrella@hotmail.com
+    username: formaza
+    password: '1727420877'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_8:
+    first_name: Camila Luciana
+    last_name: Páez Salgado
+    email_address: 3@emdischool.net
+    username: cpaez
+    password: '1724479223'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_9:
+    first_name: Esteban Ignacio
+    last_name: Pazmiño Rodríguez
+    email_address: soryrl@hotmail.com
+    username: epazmino
+    password: '1726515909'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_10:
+    first_name: David Sebastián
+    last_name: Peñaherrera Mayorga
+    email_address: 4@emdischool.net
+    username: spenaherrera
+    password: '1706466511'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_11:
+    first_name: Camila Alejandra
+    last_name: Pozo Toaza
+    email_address: toaza_alexandra@hotmail.com
+    username: cpozo
+    password: '1724462393'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_12:
+    first_name: Camila Alejandra
+    last_name: Sánchez Chimborazo
+    email_address: sinemail1@emdischool.edu.ec
+    username: cchimborazo
+    password: '1750286906'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_13:
+    first_name: Camila Alejandra
+    last_name: Torres Mafla
+    email_address: pmafla@bancointernacional.com.ec
+    username: ctorres
+    password: '1727298950'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_14:
+    first_name: Marko Antonio
+    last_name: Torres Santillán
+    email_address: pahosi@hotmail.com
+    username: matorres
+    password: '1723959621'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_15:
+    first_name: Martín Alejandro
+    last_name: Alvarez Vinueza
+    email_address: calvarez@fvecuador.com
+    username: malvarez
+    password: '1750341685'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_16:
+    first_name: Raphaela
+    last_name: Dueñas Abad
+    email_address: aduenas@pica.com.ec
+    username: rduenas
+    password: '1727153932'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_17:
+    first_name: Juan Sebastián
+    last_name: López Suasnavas
+    email_address: drjclopez@gmail.com
+    username: jlopez
+    password: '1725958852'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_18:
+    first_name: Emilio
+    last_name: Monge Andrade
+    email_address: sinemail2@emdischool.edu.ec
+    username: emonge
+    password: '1725708018'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_19:
+    first_name: Jhair Gerardo
+    last_name: Morán Oviedo
+    email_address: evaoviedocoronado@hotmail.com
+    username: jamoran
+    password: '1724357742'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_20:
+    first_name: Emilio Martín
+    last_name: Navas Tamayo
+    email_address: ntamayo@asiauto.com.ec
+    username: enavas
+    password: '1723619217'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_21:
+    first_name: José Carlos
+    last_name: Páez Salgado
+    email_address: 5@emdischool.net
+    username: jpaez
+    password: '1724479041'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_22:
+    first_name: Juan Andrés
+    last_name: Ramos Endara
+    email_address: anitaluvenegas@hotmail.com
+    username: jramos
+    password: '1750232124'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_23:
+    first_name: Luciano Agustín
+    last_name: Romero Bravo
+    email_address: sinemail3@emdischool.edu.ec
+    username: lromero
+    password: '1750292524'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_24:
+    first_name: Juan Francisco
+    last_name: Sánchez Sánchez
+    email_address: pso@fradaban.com
+    username: jfsanchez
+    password: '1726027210'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_25:
+    first_name: María Francisca
+    last_name: Soria Rivadeneira
+    email_address: 6@emdischool.net
+    username: mfsoria
+    password: '1727421008'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_26:
+    first_name: Ameli
+    last_name: Simon Carrera
+    email_address: ldue_simonjp@yahoo.com
+    username: asimon
+    password: '1705359139'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_27:
+    first_name: Antonella
+    last_name: Vaca Hernández
+    email_address: thernandez@tvcable.com.ec
+    username: avaca
+    password: '1724568801'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_28:
+    first_name: Valentina
+    last_name: Vinueza Vizcaino  
+    email_address: 7@emdischool.net
+    username: avinueza
+    password: '1723769426'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_29:
+    first_name: Alejandro
+    last_name: Alvarez Salazar  
+    email_address: maite_salazar@hotmail.com
+    username: ralvarez
+    password: '1723763841'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_30:
+    first_name: Doménica Melissa
+    last_name: Benavides Loya
+    email_address: xavierbenavides2009@hotmail.com
+    username: dbenavides
+    password: '1727480749'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_31:
+    first_name: Daira Valeria
+    last_name: Díaz Rosero
+    email_address: valerosero@hotmail.com
+    username: ddiaz
+    password: '1723157622'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_32:
+    first_name: Martín Eloy
+    last_name: Hernández Patiño
+    email_address: virgiliohe@hotmail.com
+    username: mhernandez
+    password: '1750353243'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_33:
+    first_name: Brandon Alexander
+    last_name: Rodríguez Mejía
+    email_address: fanny_maria29@hotmail.com
+    username: bmejia
+    password: '5555555556'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_34:
+    first_name: Carolina
+    last_name: Narváez Dominguez
+    email_address: gonzaloblazer@live.com
+    username: cnarvaez
+    password: '1727420604'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_35:
+    first_name: Christian Javier
+    last_name: Quiróz Chila
+    email_address: s.maribel@hotmail.es
+    username: cquiroz
+    password: '1724687205'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_36:
+    first_name: Isaac
+    last_name: Reinoso Cevallos  
+    email_address: danidaniela@movistas.ec.blackberry.com
+    username: ireinoso
+    password: '1724569791'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_37:
+    first_name: Daniel
+    last_name: Robalino Granja
+    email_address: daniel_robalino@yahoo.com
+    username: drobalino
+    password: '1750313759'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_38:
+    first_name: Ariel Sebastián
+    last_name: Ruilova Torres
+    email_address: macristina.torres@avon.com
+    username: aruilova
+    password: '1726247701'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_39:
+    first_name: Matías Alfredo
+    last_name: Salazar Regalado
+    email_address: flaquita_desalazar@hotmail.com
+    username: msalazar
+    password: '1723246466'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_40:
+    first_name: Paula María
+    last_name: Serrano Medina
+    email_address: 8@emdischool.net
+    username: pserrano
+    password: '1724684293'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_41:
+    first_name: Alejandro
+    last_name: Alvarez Salazar 
+    email_address: jpalvarez@indupapel.com.ec
+    username: aalvarez
+    password: '1723763858'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_42:
+    first_name: Isaac
+    last_name: Castro Ramos
+    email_address: jennysram@hotmail.com
+    username: icastro
+    password: '1727424085'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_43:
+    first_name: Alan Patricio
+    last_name: Diaz Guanoluisa
+    email_address: ginaguanoluisa@andinanet.net
+    username: adiaz
+    password: '1725003339'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_44:
+    first_name: Juan Sebastian
+    last_name: Galiano Caicedo
+    email_address: igaliano@yahoo.com
+    username: jgaliano
+    password: '1723956239'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_45:
+    first_name: Hugo Mateo
+    last_name: Iñiguez Ramia 
+    email_address: suca1111@hotmail.com
+    username: hiniguez
+    password: '1727487769'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_46:
+    first_name: Paula Valentina
+    last_name: Lopez Peñafiel
+    email_address: mpenafiel@bankguay.com
+    username: plopez
+    password: '1723568828'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_47:
+    first_name: Pablo Andrés
+    last_name: Martinez Salazar
+    email_address: maritzasm@hotmail.com
+    username: pmartinez
+    password: '1723956064'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_48:
+    first_name: Noemi Elizabeth
+    last_name: Peñafiel Castillo
+    email_address: dpenafiel@grupolider.com.ec
+    username: npenafiel
+    password: '1723907125'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_49:
+    first_name: Jean Andres
+    last_name: Reyes Madrid
+    email_address: maritza.madrid69@hotmail.com
+    username: dpinto
+    password: '1726944901'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_50:
+    first_name: Diego Xavier
+    last_name: Pinto Segovia
+    email_address: elisegoviam@hotmail.com
+    username: jreyes
+    password: '1723903496'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_51:
+    first_name: Luis Matias
+    last_name: Soria Arellano
+    email_address: arellano.cv@gmail.com
+    username: masoria
+    password: '1727660324'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_52:
+    first_name: Angel David
+    last_name: Travez Aparicio
+    email_address: boris.travez@grupounifer.ec
+    username: atravez
+    password: '1722851381'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_53:
+    first_name: Isabela
+    last_name: Yepez Maldonado
+    email_address: isamaldo76@hotmail.com
+    username: iyepez
+    password: '1722414206'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_54:
+    first_name: Ana Luna
+    last_name: Azanza Campos
+    email_address: 9@emdischool.net
+    username: aazanza
+    password: '1725102600'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_55:
+    first_name: Luis Rolando
+    last_name: Bustos Cortes
+    email_address: 10@emdischool.net
+    username: lbustos
+    password: '1727484584'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_56:
+    first_name: Julian Esteban
+    last_name: Cruz Oleas
+    email_address: dorisoleas_day@hotmail.com
+    username: jcruz
+    password: '1722402375'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_57:
+    first_name: Anahi Julyssa
+    last_name: Erazo Yachimba
+    email_address: 11@emdischool.net
+    username: aerazo
+    password: '1750261610'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_58:
+    first_name: Gianella Stefania
+    last_name: Flores Santillan
+    email_address: 12@emdischool.net
+    username: gflores
+    password: '1724069974'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_59:
+    first_name: Domenica Nicole
+    last_name: Ocaña Gordon
+    email_address: alexis_ozzo@hotmail.com
+    username: docana
+    password: '1724829146'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_60:
+    first_name: Daniela Belen
+    last_name: Ordoñez Villalobos
+    email_address: 13@emdischool.net
+    username: dordonez
+    password: '1723150486'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_61:
+    first_name: Joshua
+    last_name: Reinoso Cevallos
+    email_address: danidaniela@movistar.blackberry.com
+    username: jreinoso
+    password: '1724569809'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_62:
+    first_name: Giulianna 
+    last_name: Romero Rosenberg
+    email_address: 14@emdischool.net
+    username: gromero
+    password: '1723950679'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_63:
+    first_name: Guillermo Ivan
+    last_name: Sierra Yepez
+    email_address: m_sierra60@hotmail.com
+    username: gsierra
+    password: '1722906235'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_64:
+    first_name: Emilio Javier
+    last_name: Sisa Carrillo
+    email_address: xsisa@pazhorowitz.com
+    username: esisa
+    password: '1724198583'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_65:
+    first_name: Mateo Alejandro
+    last_name: Andrade Romero
+    email_address: candradedousdebes@gmail.com
+    username: mandrade
+    password: '1727299933'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_66:
+    first_name: Cynara Valentina
+    last_name: Davila Villacres
+    email_address: macris.villacresp@hotmail.com
+    username: cdavila
+    password: '1727426999'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_67:
+    first_name: Matias
+    last_name: De Miguel Vizcaino
+    email_address: karina_gigia@yahoo.com
+    username: mdemiguel
+    password: '1722361928'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_68:
+    first_name: Valentina
+    last_name: Delgado Roman
+    email_address: varama23@hotmail.com
+    username: vdelgado
+    password: '1750294314'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_69:
+    first_name: Giuliano Stefano
+    last_name: Dominguez Enderica
+    email_address: enderica_estefi@hotmail.com
+    username: gdominguez
+    password: '1722261029'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_70:
+    first_name: Yuliana Guadalupe
+    last_name: Guerra Baquero
+    email_address: 15@emdischool.net
+    username: yguerra
+    password: '1726859943'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_71:
+    first_name: Samantha
+    last_name: Herrera Acosta
+    email_address: 16@emdischool.net
+    username: sacosta
+    password: '1722411665'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_72:
+    first_name: Martin Andres
+    last_name: Iñiguez Gonzalez
+    email_address: paola_gonzago@yahoo.com
+    username: miniguez
+    password: '1722145750'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_73:
+    first_name: Paula Valentina
+    last_name: Mena Barba
+    email_address: 17@emdischool.net
+    username: pmena
+    password: '1722774534'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_74:
+    first_name: Odette Sarai
+    last_name: Velasco Vallejo
+    email_address: sivivelasco@hotmail.com
+    username: ovelasco
+    password: '1722100987'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_75:
+    first_name: Ariela Nahir
+    last_name: Acosta Peñafiel
+    email_address: henryacosta@bolsadequito.com
+    username: aacosta
+    password: '1721545190'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_76:
+    first_name: Maria Laura
+    last_name: Azzolini Correa
+    email_address: 18@emdischool.net
+    username: mazzolini
+    password: '1723409262'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_77:
+    first_name: Galo Nicolas
+    last_name: Cajiao Padovani
+    email_address: gcajiao@interactive.net.ec
+    username: gcajiao
+    password: '1721108791'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_78:
+    first_name: Rafaela Emilia
+    last_name: Del Salto Esquiroz
+    email_address: 19@emdischool.net
+    username: rdelsalto
+    password: '1726679689'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_79:
+    first_name: Josue Andres
+    last_name: Gonzalez Huilcapi
+    email_address: sandyxhr@hotmail.com
+    username: jgonzalez
+    password: '1727427468'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_80:
+    first_name: Jose Alejandro
+    last_name: Pastor Gonzalez
+    email_address: 20@emdischool.net
+    username: jpastor
+    password: '1726076696'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_81:
+    first_name: Diego Martin
+    last_name: Ron Zubia
+    email_address: 21@emdischool.net
+    username: mzubia
+    password: '1721285821'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_82:
+    first_name: Ana Cristina
+    last_name: Velez Pinto
+    email_address: pmpinto@textilsanpedro.com
+    username: avelez
+    password: '1721730735'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_83:
+    first_name: Valentina
+    last_name: Vinueza Vizcaino
+    email_address: veronicavizcaino@yahoo.com
+    username: vvinueza
+    password: '1721133047'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_84:
+    first_name: Nicole Alejandra
+    last_name: Estevez Rosero
+    email_address: 22@emdischool.net
+    username: nestevez
+    password: '1724216443'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_85:
+    first_name: Adriana Leticia
+    last_name: Lopez Pachacama
+    email_address: consuelo.pachacama@boehringer-ingelheim.com
+    username: llopez
+    password: '1725503435'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_86:
+    first_name: David Sebastian
+    last_name: Mena Barba
+    email_address: anita.barba@hotmail.com
+    username: dmena
+    password: '1721594917'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_87:
+    first_name: Daniela Estefania
+    last_name: Narvaez Timbila
+    email_address: 23@emdischool.net
+    username: dnarvaez
+    password: '1727429225'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_88:
+    first_name: Stephano Antonio
+    last_name: Pinto Romero
+    email_address: karitoromerok@hotmail.com
+    username: spinto
+    password: '1726187907'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_89:
+    first_name: Juan Diego
+    last_name: Sanchez Chimborazo
+    email_address: sinemail4@emdischool.edu.ec
+    username: isanchez
+    password: '1727299669'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_90:
+    first_name: Isela Isabel
+    last_name: Sanchez Castillo
+    email_address: jacquicastillo@hotmail.com
+    username: jsanchez
+    password: '1750286732'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_91:
+    first_name: Josue Eduardo
+    last_name: Vayas Mejia
+    email_address: lovegaby_25@hotmail.com
+    username: jvayas
+    password: '1500827363'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_92:
+    first_name: Maria Gracia
+    last_name: Velez Pinto
+    email_address: pmpinto@textilessanpedro.com
+    username: mvelez
+    password: '1721730743'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_93:
+    first_name: Isabela Analia
+    last_name: Villalon Rubio
+    email_address: nellyrubioh@hotmail.com
+    username: ivillalon
+    password: '1723214217'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_94:
+    first_name: Matthew Jose
+    last_name: Ashford Figueroa
+    email_address: kev@kevinashford.wanadoo.co.uk
+    username: mashford
+    password: '1726075748'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_95:
+    first_name: Giuliana Belen
+    last_name: Bustos Cortes
+    email_address: gatita_cortes@hotmail.com
+    username: gbustos
+    password: '1727484626'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_96:
+    first_name: Raphaela Anhai
+    last_name: Calderon Mahauad
+    email_address: gmahauad@hotmail.com
+    username: rcalderon
+    password: '1721796752'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_97:
+    first_name: Emilio Jose
+    last_name: Cevallos Salazar
+    email_address: nancysalazarmora.@hotmail.com
+    username: ecevallos
+    password: '1721492211'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_98:
+    first_name: Valentina Rebeca
+    last_name: Del Salto Esquiroz
+    email_address: visualizar.ec@gmail.com
+    username: vdelsalto
+    password: '1726679671'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_99:
+    first_name: Giany Micaela
+    last_name: Dominguez Nuñez
+    email_address: lorenanunezu@hotmail.com
+    username: mdominguez
+    password: '9999999991'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_100:
+    first_name: David Andres
+    last_name: Leguisamo Checa
+    email_address: 24@emdischool.net
+    username: dleguisamo
+    password: '1727489039'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_101:
+    first_name: Josue Alejandro
+    last_name: Loza Cisneros
+    email_address: 25@emdischool.net
+    username: jloza
+    password: '1726605692'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_102:
+    first_name: Ana Emilia
+    last_name: Ludeña Rueda
+    email_address: ludeña-fausto@ieee.org
+    username: aludena
+    password: '1724911126'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_103:
+    first_name: Luis Enrique
+    last_name: Mejia Rodriguez
+    email_address: fanny_maria29@hotmail
+    username: lmejia
+    password: '9999999992'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_104:
+    first_name: Ingrid Dominick
+    last_name: Segovia Segovia
+    email_address: ingrithsb@hotmail.com
+    username: isegovia
+    password: '1750294041'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_105:
+    first_name: Daniel Alejandro
+    last_name: Serrano Medina
+    email_address: 26@emdischool.net
+    username: dserrano
+    password: '1722077516'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_106:
+    first_name: Miguel Eduardo
+    last_name: Toaza Garcia
+    email_address: 27@emdischool.net
+    username: mtoaza
+    password: '1723262851'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_107:
+    first_name: Galia Domenica
+    last_name: Torres Andrade 
+    email_address: 28@emdischool.net
+    username: dtorres
+    password: '5555555555'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_108:
+    first_name: Rommy Mayleen
+    last_name: Torres Chiquin
+    email_address: ximes.co@gmail.com
+    username: mtorres
+    password: '1710505742'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_109:
+    first_name: Micaela Stefania
+    last_name: Abad Salas
+    email_address: silvana_salas@hotmail. Es
+    username: mabad
+    password: '1750370411'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_110:
+    first_name: Nicolás Alejandro
+    last_name: Azzolini Correa
+    email_address: 29@emdischool.net
+    username: nazzolini
+    password: '1723409254'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_111:
+    first_name: Marcelo Eduardo
+    last_name: Chacon Sosa
+    email_address: yanara _sosa@hotmail.com
+    username: mchacon
+    password: '1723409817'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_112:
+    first_name: Annier Melissa
+    last_name: Cineros Garces 
+    email_address: 30@emdischool.net
+    username: acisneros
+    password: '1804851051'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_113:
+    first_name: Ricardo Nicolas
+    last_name: Davial Zubia
+    email_address: ferniqui@hotmail.com
+    username: rdavila
+    password: '1719161075'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_114:
+    first_name: Camila Michela
+    last_name: Figueroa Dominguez
+    email_address: 31@emdischool.net
+    username: cfigueroa
+    password: '1721223715'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_115:
+    first_name: Valeria Rafaela
+    last_name: Flores Cevallos
+    email_address: 32@emdischool.net
+    username: vflores
+    password: '1723563266'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_116:
+    first_name: Paula Carolina
+    last_name: Herrera Acosta
+    email_address: paola_acosta@hotmail.com
+    username: pcherrera
+    password: '1720893245'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_117:
+    first_name: Keila Solange
+    last_name: Nuñez Padilla
+    email_address: 33@emdischool.net
+    username: knunez
+    password: '1721714598'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_118:
+    first_name: Diego Alessandro
+    last_name: Ocaña Gordon
+    email_address: monica_gordon@img.com.ec
+    username: aocana
+    password: '1719922328'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_119:
+    first_name: Pamela Thaiz
+    last_name: Paez Salagado
+    email_address: dra.sofiasalgado@hotmail.com
+    username: ppaez
+    password: '1720811767'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_120:
+    first_name: Emily Shantal
+    last_name: Perez Grandes
+    email_address: duanyly@gmail.com
+    username: eperez
+    password: '1713758546'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_121:
+    first_name: Valentina
+    last_name: Rueda Carrera 
+    email_address: 34@emdischool.net
+    username: vrueda
+    password: '1724682123'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_122:
+    first_name: Mathias Sebastian
+    last_name: Yanez Abad
+    email_address: 35@emdischool.net
+    username: myanez
+    password: '1722415914'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_123:
+    first_name: Camilo Sebastian
+    last_name: Albuja Yepez
+    email_address: 36@emdischool.net
+    username: calbuja
+    password: '1723956320'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_124:
+    first_name: Francesco Antonio
+    last_name: Boschetti Bergmann
+    email_address: 37@emdischool.net
+    username: fboschetti
+    password: '1718640681'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_125:
+    first_name: Felipe Nicolas
+    last_name: Cisneros Ontaneda
+    email_address: catering.gourmet2010@live.com
+    username: fcisneros
+    password: '1726605700'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_126:
+    first_name: Alejandro Sebastian
+    last_name: Grijalva Mora
+    email_address: christiang@hilsea.com.ec
+    username: agrijalva
+    password: '1718640210'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_127:
+    first_name: Micaela
+    last_name: Leguisamo Checa
+    email_address: kcheca@emdischool.com
+    username: mleguisamo
+    password: '1727587030'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_128:
+    first_name: María José
+    last_name: Ludeña Rueda
+    email_address: emfaluff@ecuanet.net.ec
+    username: mludena
+    password: '1724911092'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_129:
+    first_name: David Andres
+    last_name: Quintana Huilcapi 
+    email_address: marco.quintana68@yahoo.com
+    username: dquintana
+    password: '1723957153'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_130:
+    first_name: Mathew
+    last_name: Rodriguez Caicedo
+    email_address: sinemail5@emdischool.edu.ec
+    username: mrodriguez
+    password: '1720994951'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_131:
+    first_name: Martin Andres
+    last_name: Serrano Medina
+    email_address: mpmt74@hotmail.com
+    username: mserrano
+    password: '1718897539'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_132:
+    first_name: Isabela Alejandra
+    last_name: Torres Andrade
+    email_address: galiamandrade@yahoo.com
+    username: itorres
+    password: '1718720335'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_133:
+    first_name: Maria Gabriela
+    last_name: Vasconez Rojas
+    email_address: sinemail6@emdischool.edu.ec
+    username: mvasconez
+    password: '1750352286'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_134:
+    first_name: Julieta
+    last_name: Brahm Carrera
+    email_address: sinemail7@emdischool.edu.ec
+    username: jbrahm
+    password: '1717666562'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_135:
+    first_name: Andrea Elizabeth
+    last_name: Espinoza Donoso
+    email_address: freddyespinoza63@yahoo.com
+    username: aespinoza
+    password: '5555555551'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_136:
+    first_name: Nicole Carolina
+    last_name: Hidalgo Jaramillo
+    email_address: sinemail8@emdischool.edu.ec
+    username: nhidalgo
+    password: '1721856019'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_137:
+    first_name: David Alberto
+    last_name: Jarrin Arroyo
+    email_address: 38@emdischool.net
+    username: djarrin
+    password: '1718191917'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_138:
+    first_name: Francisco Jose
+    last_name: Navarrete Batallas
+    email_address: puntoferretero-ec@yahoo.com
+    username: fnavarrete
+    password: '1727421107'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_139:
+    first_name: Luana
+    last_name: Rodriguez Rubio
+    email_address: sylvia1rubio@gmail.com
+    username: lrodriguez
+    password: '5555555552'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_140:
+    first_name: Valery Nikole
+    last_name: Sanchez Narvaez 
+    email_address: fasan1969@gmail.com
+    username: vsanchez
+    password: '1723522023'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_141:
+    first_name: Daniel Alejandro
+    last_name: Vallejo Flores
+    email_address: sflores@meecuador.com
+    username: dvallejo
+    password: '1724374432'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_142:
+    first_name: Andres Alejandro
+    last_name: Yanez Abad
+    email_address: paulina.abad@gmail.com
+    username: ayanez
+    password: '1722415922'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_143:
+    first_name: Jorge Luis
+    last_name: Arias Sandoval
+    email_address: lupita.de.arias@hotmail.com
+    username: jarias
+    password: '1708726557'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_144:
+    first_name: Franco Antonio
+    last_name: Boschetti Calderon
+    email_address: 39@emdischool.net
+    username: faboschetti
+    password: '1717969735'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_145:
+    first_name: Pablo David
+    last_name: Ordoñez Sandoval
+    email_address: 40@emdischool.net
+    username: pordonez
+    password: '1719257519'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_146:
+    first_name: Samanta Maite
+    last_name: Martinez Salazar 
+    email_address: martizasm@hotmail.com
+    username: smartinez
+    password: '1722072392'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_147:
+    first_name: Valentina
+    last_name: Romero Rosenberg
+    email_address: jcra3963@hotmail.com
+    username: vromero
+    password: '1722665294'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_148:
+    first_name: Camila Nicole
+    last_name: Ron Zubia
+    email_address: fabricioronp@yahoo.es
+    username: cron
+    password: '1719183673'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_149:
+    first_name: Diego Alejandro
+    last_name: Toaza Garcia
+    email_address: washotm@merchantbansa.com
+    username: atoaza
+    password: '1723261507'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_150:
+    first_name: Maria Paula
+    last_name: Valdivieso Rueda
+    email_address: pvaldiviesol@gmail.com
+    username: mvaldivieso
+    password: '1717826448'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_151:
+    first_name: Andrea
+    last_name: Vera Espinosa
+    email_address: 41@emdischool.net
+    username: avera
+    password: '1717468571'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_152:
+    first_name: Joselyn Dayanara
+    last_name: Diaz Pozo 
+    email_address: edwindiazasesor@hotmail.com
+    username: jdiaz
+    password: '1721732491'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_153:
+    first_name: David Fernando
+    last_name: Guerra Baquero
+    email_address: ferguepal@yahoo.com
+    username: dguerra
+    password: '1717491318'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_154:
+    first_name: Maria Victoria
+    last_name: Jarrin Arroyo
+    email_address: ferarroyo73@hotmail.com
+    username: mjarrin
+    password: '1718191909'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_155:
+    first_name: Axl Danny
+    last_name: Ochoa Arellano
+    email_address: evelynare@yahoo.com
+    username: aochoa
+    password: '1723813646'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_156:
+    first_name: Rafaela
+    last_name: Rueda Carrera
+    email_address: eruedster@gmail.com
+    username: rrueda
+    password: '1718640749'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_157:
+    first_name: Pablo David
+    last_name: Teran Maldonado
+    email_address: sinemail9@emdischool.edu.ec
+    username: pteran
+    password: '1726047515'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_158:
+    first_name: Daniel Alejandro
+    last_name: Albuja Yepez
+    email_address: myepez@usfq.edu.ec
+    username: dalbuja
+    password: '1723956304'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_159:
+    first_name: Eliseo Stalin
+    last_name: Azuero Arias
+    email_address: celedea@hotmail.com
+    username: sazuero
+    password: '2100196753'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_160:
+    first_name: Pier Alberto
+    last_name: Boschetti Bergmann
+    email_address: elcloset34@hotmail.com
+    username: pboschetti
+    password: '1716496375'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_161:
+    first_name: Renato
+    last_name: Boschetti Calderon
+    email_address: lourdesboschetti@hotmail.com
+    username: rboschetti
+    password: '1718090093'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_162:
+    first_name: Alejandra Gabriela
+    last_name: Chalen Cuesta
+    email_address: nathycuesta@hotmail.com
+    username: gchalen
+    password: '1720679701'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_163:
+    first_name: Luis Alfredo
+    last_name: Cisneros Garces
+    email_address: agarces@desarrollosocial.gob.ec
+    username: lcisneros
+    password: '1716135502'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_164:
+    first_name: Eliana
+    last_name: Delugo Davila 
+    email_address: vdavila@despegar.com
+    username: edelugo
+    password: '1718301953'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_165:
+    first_name: Andrea Karina
+    last_name: Figueroa Dominguez
+    email_address: karinadominguezf@hotmail.com
+    username: afigueroa
+    password: '1719466821'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_166:
+    first_name: Anabel Cristina
+    last_name: Flores Cevallos
+    email_address: magui4garlatour@hotmail.com
+    username: aflores
+    password: '1716169246'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_167:
+    first_name: Maria Jose
+    last_name: Flores Recalde 
+    email_address: recaldecarmen@hotmail.com
+    username: mflores
+    password: '1718026980'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_168:
+    first_name: Guillermo Sebastian
+    last_name: Loza Cisneros
+    email_address: 42@emdischool.net
+    username: sloza
+    password: '1726605718'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_169:
+    first_name: Ana Maria
+    last_name: Velasco del Hierro
+    email_address: jvelasco@puce.edu.ec
+    username: avelasco
+    password: '1720726361'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_170:
+    first_name: Vanessa Lizeth
+    last_name: Meneses Segura
+    email_address: 43@emdischool.net
+    username: vmeneses
+    password: '1719131359'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_171:
+    first_name: Isabella Maria
+    last_name: Ordoñez Sandoval
+    email_address: mariamaria04@hotmail.com
+    username: iordonez
+    password: '1714820972'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_172:
+    first_name: Gabriela
+    last_name: Palomeque Fontana
+    email_address: ana_lucia_fontana@hotmail.com
+    username: gpalomeque
+    password: '1717822371'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_173:
+    first_name: Juan Esteban
+    last_name: Vera Espinosa
+    email_address: averap@andinanet.net
+    username: jvera
+    password: '1715069751'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_174:
+    first_name: Noelia Romina 
+    last_name: Campaña Monge
+    email_address: pmonge.er@cargoadvance.com
+    username: rcamapana
+    password: '1750349076'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_175:
+    first_name: Fiorella
+    last_name: Espinosa Fernandez
+    email_address: chik_fresita69@hotmail.com
+    username: fespinosa
+    password: '1111111101'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_176:
+    first_name: Carlos Andre 
+    last_name: López Suasnavas
+    email_address: soniadrdelopez@hotmail.com
+    username: clopez
+    password: '1750076208'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_177:
+    first_name: Joaquín
+    last_name: Paredes Larrea
+    email_address: alexandra-larrea@hotmail.com
+    username: jparedes
+    password: '1727662593'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_178:
+    first_name: Matheo Joaquín 
+    last_name: Pastor Gonzalez
+    email_address: silvana.gonzalez@etra.com.ec
+    username: mpastor
+    password: '1750673897'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_179:
+    first_name: Sandy Camila
+    last_name: Segovia Ortiz
+    email_address: sandycamila210@hotmail.com
+    username: csegovia
+    password: '1727572941'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_180:
+    first_name: Tomás Alejandro
+    last_name: Moreno Merino
+    email_address: 44@emdischool.net
+    username: tmoreno
+    password: '1750333658'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_181:
+    first_name: Alegria
+    last_name: Vallejo Laguna
+    email_address: sinemail10@emdischool.edu.ec
+    username: avallejo
+    password: '1727426841'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_182:
+    first_name: Andre Valentino
+    last_name: Baca Dalgo
+    email_address: cdsempertegui@hotmail.com
+    username: abaca
+    password: '1727428409'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_183:
+    first_name: Agustín
+    last_name: Dueñas Abad
+    email_address: aduenas@pika.com.ec
+    username: aduenas
+    password: '1111111103'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_184:
+    first_name: Paulette del Cisne
+    last_name: Herrera Ramirez
+    email_address: finanzaslatin_24@hotmail.com
+    username: pherrera
+    password: '1111111104'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_185:
+    first_name: Emilio Joaquin
+    last_name: Maldonado Loaiza
+    email_address: vanessa@hipnospa.com
+    username: jmaldonado
+    password: '1111111105'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_186:
+    first_name:  Hugo Naum
+    last_name: Nuñez Padilla
+    email_address: padillaindira@yahoo.com
+    username: hnunez
+    password: '1726981325'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_187:
+    first_name: Juan Rafael
+    last_name: Peñaherrera Mayorga
+    email_address: viselmayorga@hotmail.com
+    username: jpenaherrera
+    password: '1111111107'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_188:
+    first_name: Isabella Sofía
+    last_name: Sisa Carillo 
+    email_address: julycarrillo@yahoo.es
+    username: isisa
+    password: '1750363341'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_189:
+    first_name: María Victoria
+    last_name: Soria Rivadeneira
+    email_address: mache29@hotmail.com
+    username: msoria
+    password: '1727420992'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_190:
+    first_name: Nathan Tiago 
+    last_name: Tito Gordón
+    email_address: damega2000@hotmail.com
+    username: ntito
+    password: '1726963935'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_191:
+    first_name: Zoe Camile
+    last_name: Toledo Grandes
+    email_address: 45@emdischool.net
+    username: ztoledo
+    password: '1111111108'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_192:
+    first_name: Francisca Valentina
+    last_name: Torres Enriquez
+    email_address: w_h_a@hotmail.com
+    username: ftorres
+    password: '1111111109'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_193:
+    first_name: Jorge Ignacio
+    last_name: Vergara Freire
+    email_address: sinemail11@emdischool.edu.ec
+    username: jvergara
+    password: '1750798629'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_194:
+    first_name: Rafael
+    last_name: Molina Gonzalez
+    email_address: gabygonzalez_83@hotmail.com
+    username: rmolina
+    password: '1111111010'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_195:
+    first_name: Luciana
+    last_name: Ospina Díaz
+    email_address: sinemail12@emdischool.edu.ec
+    username: lospina
+    password: '2222222201'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_196:
+    first_name: Daniela Valentina 
+    last_name: Arichavala Perez
+    email_address: meganper@hotmail.com
+    username: darichavala
+    password: '1726914623'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_197:
+    first_name: Erika Raquel
+    last_name: Erazo Miño
+    email_address: valeriaminop@hotmail.com
+    username: eerazo
+    password: '2222222202'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_198:
+    first_name: Mateo
+    last_name: Estevez Rosero
+    email_address: mcrosero@ilalo.com.ec
+    username: mestevez
+    password: '1727292680'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_199:
+    first_name: Thomas Ignacio
+    last_name: Guamán Canchig
+    email_address: gloryc0777_1@hotmail.com
+    username: tguaman
+    password: '2222222203'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_200:
+    first_name: Sebastián
+    last_name: Leguisamo Checa
+    email_address: 46@emdischool.net
+    username: sleguisamo
+    password: '2222222204'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_201:
+    first_name: José María
+    last_name: León Chavez
+    email_address: crischavezc@hotmail.com
+    username: jleon
+    password: '2222222205'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_202:
+    first_name: Pool Ignacio 
+    last_name: Martinez Recalde
+    email_address: pilarrecalde@yahoo.com
+    username: pimartinez
+    password: '1725672834'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_203:
+    first_name: Juan Camilo
+    last_name: Ordoñez Villalobos
+    email_address: pamvillalobos@yahoo.com
+    username: jordonez
+    password: '2222222206'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_204:
+    first_name: María Paz
+    last_name: Salgado Changoluisa
+    email_address: 47@emdischool.net
+    username: mpsalgado
+    password: '1726563263'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_205:
+    first_name: Ariana 
+    last_name: Sepúlveda Vernaza
+    email_address: servicioalcliente@izquierdo-sepulveda.com.ec
+    username: asepulveda
+    password: '1725795759'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_206:
+    first_name: Andrea Isabella
+    last_name: Travez Aparicio
+    email_address: y.aparicio@grupounifer.ec
+    username: itravez
+    password: '2222222207'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_207:
+    first_name: Lia Antonella
+    last_name: Velastegui Carrera
+    email_address: digna_carrera17@hotmail.com
+    username: lvelastegui
+    password: '1750584417'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_208:
+    first_name: Jerónimo
+    last_name: Ospina Díaz
+    email_address: sinemail13@emdischool.edu.ec
+    username: jospina
+    password: '2222222208'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_209:
+    first_name: Danny Andrés 
+    last_name: España Tello
+    email_address: jhoana@hotmail.com
+    username: despana
+    password: '1750733170'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_210:
+    first_name: José Vicente
+    last_name: Flores Santillan
+    email_address: silvisanlucas@hotmail.com
+    username: jflores
+    password: '2222222209'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_211:
+    first_name: Juan Sebastían
+    last_name: Guerra Mejía
+    email_address: cristina.mejia@eys.com.ec
+    username: jguerra
+    password: '1727486399'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_212:
+    first_name: Emilia
+    last_name: Larrea Flores
+    email_address: 48@emdischool.net
+    username: elarrea
+    password: '1727290080'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_213:
+    first_name: Doménica Isabella
+    last_name: Monge Ramos
+    email_address: vanessa.ramos@genelekta.com
+    username: dmonge
+    password: '1726025644'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_214:
+    first_name: José Martín
+    last_name: Moscoso Morales
+    email_address: ga-soul@hotmail.com
+    username: jmoscoso
+    password: '1726410523'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_215:
+    first_name: Gabriel Alejandro
+    last_name: Naranjo Madrid
+    email_address: yan2085@hotmail.com
+    username: gnaranjo
+    password: '1750352948'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_216:
+    first_name: Martín Andrés
+    last_name: Parreño Andrade
+    email_address: diana_vaa2@hotmail.com
+    username: mparreno
+    password: '1750835488'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_217:
+    first_name: Denisse Amelia
+    last_name: Rocha Veloz
+    email_address: sinemail14@emdischool.edu.ec
+    username: drocha
+    password: '1726182924'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_218:
+    first_name: Ignacio
+    last_name: Vinueza Vizcaino
+    email_address: sinemail15@emdischool.edu.ec
+    username: ivinueza
+    password: '2222222010'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_219:
+    first_name: Martina Rafaela
+    last_name: Aizaga Silva 
+    email_address: sinemail16@emdischool.edu.ec
+    username: maizaga
+    password: '1750371575'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_220:
+    first_name: Julián
+    last_name: Carrera Nuñez 
+    email_address: proyectos@ccelrecreo.com
+    username: jcarrera
+    password: '3333333301'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_221:
+    first_name: Isabella
+    last_name: Figueroa Cabrera 
+    email_address: sinemail17@emdischool.edu.ec
+    username: ifigueroa
+    password: '3333333302'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_222:
+    first_name: Josè Estefano Alejandro
+    last_name: Guerra Valencia
+    email_address: wladyguerra@hotmail.com
+    username: jeguerra
+    password: '1727509042'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_223:
+    first_name: Douglas Steve
+    last_name: Guerrón Peñaherrera
+    email_address: sinemail18@emdischool.edu.ec
+    username: dguerron
+    password: '1726941626'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_224:
+    first_name: Vicente Muriel
+    last_name: Manzano Ushiña
+    email_address: sinemail19@emdischool.edu.ec
+    username: vmanzano
+    password: '1727554139'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_225:
+    first_name: Doménica Sarahi
+    last_name: Nuñez Herrera 
+    email_address: silvyherrera@hotmail.com
+    username: dnunez
+    password: '1726917667'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_226:
+    first_name: Angie Cristina
+    last_name: Ortiz Moya 
+    email_address: sinemail20@emdischool.edu.ec
+    username: cortiz
+    password: '3333333303'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_227:
+    first_name: Franssesca Alejandra
+    last_name: Rodriguez García
+    email_address: jf_2111@hotmail.es
+    username: frodriguez
+    password: '1727424028'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_228:
+    first_name: Mikaela Valentina
+    last_name: Sempertegui Arboleda
+    email_address: autosaaf@hotmail.com
+    username: msempertegui
+    password: '3333333304'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_229:
+    first_name:  Maria Paz
+    last_name: Vallejo Laguna
+    email_address: sinemail21@emdischool.edu.ec
+    username: mvallejo
+    password: '1727426833'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_230:
+    first_name: Isabella
+    last_name: Andrade Romero
+    email_address: isaromero_2000@hotmail.com
+    username: iandrade
+    password: '1727299925'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_231:
+    first_name: Jorge Andrés
+    last_name: Bravo Contreras
+    email_address: aunatalia@yahoo.com
+    username: jbravo
+    password: '3333333305'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_232:
+    first_name: Matias David
+    last_name: Azzolini Correa
+    email_address: analuciacorrea@msn.com
+    username: dazzolini
+    password: '1724916828'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_233:
+    first_name: Denisse Nicole
+    last_name: Erazo Yachimba
+    email_address: avad.asociados@gmail.com
+    username: derazo
+    password: '1750261636'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_234:
+    first_name: Pablo Josue
+    last_name: Gomez Guijarro
+    email_address: pguijarro@casabaca.com
+    username: pgomez
+    password: '1725083644'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_235:
+    first_name: Luis Antonio
+    last_name: Jara García
+    email_address: paola.garcia@dhl.com
+    username: ljara
+    password: '3333333306'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_236:
+    first_name: Julían
+    last_name: De Miguel Vizcaíno
+    email_address: sinemail22@emdischool.edu.ec
+    username: jdemiguel
+    password: '3333333307'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_237:
+    first_name: Santiago Alexander
+    last_name: Proaño Silva
+    email_address: 49@emdischool.net
+    username: sproano
+    password: '3333333308'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_238:
+    first_name: Diana Camila
+    last_name: Tapia Medina
+    email_address: sinemail23@emdischool.edu.ec
+    username: dtapia
+    password: '3333333309'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_239:
+    first_name: Zamanta Anelis
+    last_name: Toledo Grandes
+    email_address: dvanyly@gmail.com
+    username: zatoledo
+    password: '3333333010'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_240:
+    first_name: Alejandra Valentina
+    last_name: Calero Cevallos
+    email_address: majhadice@hotmail.com
+    username: acalero
+    password: '1724912306'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_241:
+    first_name: Steve Alejandro
+    last_name: Dominguez Nuñez
+    email_address: lorenanunezv@hotmail.com
+    username: sdominguez
+    password: '4444444401'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_242:
+    first_name: Carlos Javier
+    last_name: Albuja García
+    email_address: lourdes.garcia@petrobell.com.ec
+    username: cjalbuja
+    password: '5555555550'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_243:
+    first_name: Cristopher Alejandro 
+    last_name: Ashford Figueroa
+    email_address: kev@kevinasford.wamadoo.co.uk
+    username: cashford
+    password: '1726075755'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_244:
+    first_name: Clara Maitreya 
+    last_name: Azanza Campos
+    email_address: lagunahei@yahoo.com
+    username: cazanza
+    password: '4444444403'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_245:
+    first_name: Paulette Antonella
+    last_name: Diaz Espinosa
+    email_address: 50@emdischool.net
+    username: pdiaz
+    password: '4444444404'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_246:
+    first_name: Franco Daniele 
+    last_name: Dominguez Enderica
+    email_address: luisteve50@hotmail.com
+    username: fdominguez
+    password: '4444444405'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_247:
+    first_name: Julián Andrés
+    last_name: Freire Vallejo
+    email_address: sinemail24@emdischool.edu.ec
+    username: jfreire
+    password: '1750468397'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_248:
+    first_name: Nicolás
+    last_name: Larrea Flores
+    email_address: cucolila@hotmail.com
+    username: nlarrea
+    password: '1727290098'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_249:
+    first_name: Juan Diego
+    last_name: Martinez Espinosa
+    email_address: gilfortoul4@hotmail.com
+    username: jmartinez
+    password: '4444444406'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_250:
+    first_name: Alexa Isabella 
+    last_name: Proaño Silva
+    email_address: rrhh@rectivalle.com
+    username: aproano
+    password: '4444444407'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_251:
+    first_name: Juan Carlos
+    last_name: Sanchez Miño
+    email_address: indiranereida@hotmail.com
+    username: casanchez
+    password: '1726277583'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_252:
+    first_name: Valentina
+    last_name: Solano Dalgo
+    email_address: carolinadalgo@yahoo.com
+    username: vsolano
+    password: '1727480715'
+    is_super_admin: false
+    Groups: [Group_estudiante]
+  User_admin_253:
+    first_name: Juan Carlos
+    last_name: Armas Yanza
+    email_address: juan_caray@hotmail.com
+    username: jarmas
+    password: '0502225980'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_254:
+    first_name: Kevin Andrew
+    last_name: Ashford
+    email_address: kev@kevinasfhford.wanadoo.co.uk
+    username: kashford
+    password: '1726144346'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_255:
+    first_name: Christian Rolando
+    last_name: Bautista Chamorro
+    email_address: christian23794@hotmail.com
+    username: cbautista
+    password: '1712738309'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_256:
+    first_name: Jorge Fernando
+    last_name: Bautista Chamorro
+    email_address: bautistafj@hotmail.com
+    username: fbautista
+    password: '1709554354'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_257:
+    first_name: Ursula Paulina
+    last_name: Benitez Paez
+    email_address: ubenitez@gmail.com
+    username: ubenitez
+    password: '1706966742'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_258:
+    first_name: Amilcar
+    last_name: Bulnes Tur
+    email_address: amilcarchino@yahoo.es
+    username: abulnes
+    password: '1722325931'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_259:
+    first_name: Stalin Mauricio
+    last_name: Cadena Fiallos
+    email_address: stalcade1@hotmail.com
+    username: mcadena
+    password: '1716697949'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_260:
+    first_name: Pamela Betsabe
+    last_name: Castellanos Saigua
+    email_address: betsacast1911@hotmail.com
+    username: pcastellanos
+    password: '1720737053'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_261:
+    first_name: Diana Patricia
+    last_name: Cevallos Aguayo
+    email_address: dianis82@hotmail.es
+    username: dcevallos
+    password: '1717438665'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_262:
+    first_name: Yu-chia
+    last_name: Chang
+    email_address: julia_taiwan@hotmail.com
+    username: jchang
+    password: '214759280'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_263:
+    first_name: Karla Paola
+    last_name: Checa Villafuerte
+    email_address: kcheca@emdischool.edu.ec
+    username: kcheca
+    password: '1714682208'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_264:
+    first_name: Erick Igor
+    last_name: Coral Padilla 
+    email_address: ecp_infoparts@yahoo.com
+    username: ecoral
+    password: '1707633655'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_265:
+    first_name: Henry
+    last_name: Ede Eze 
+    email_address: edepeters@yahoo.com
+    username: hede
+    password: 'AD1032817'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_266:
+    first_name: Juan Pablo
+    last_name: Enriquez Rodriguez
+    email_address: jpenriquezr@gmail.com
+    username: jpenriquez
+    password: '1712083847'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_267:
+    first_name: Maria Jose
+    last_name: Espinosa Ripalda
+    email_address: majoespinosar@gmail.com
+    username: mjespinosa
+    password: '1714157292'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_268:
+    first_name: Maria Ignacia
+    last_name: Esquiroz Eskenazi
+    email_address: ignacita772@yahoo.com
+    username: miesquiroz
+    password: '1711139269'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_269:
+    first_name: Maria Bertila
+    last_name: Gomez de la Torre Flores
+    email_address: sinemail25@emdischool.edu.ec
+    username: bgomez
+    password: '1704165263'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_270:
+    first_name: Guillermo Enrique
+    last_name: Guevara Avendaño
+    email_address: hylif.design@gmail.com
+    username: gguevara
+    password: '1720462405'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_271:
+    first_name: Diego Fernando
+    last_name: Hurtado Lomas
+    email_address: cury17982@hotmail.com
+    username: dhurtado
+    password: '0400952016'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_272:
+    first_name: Hugo Fernando
+    last_name: Iñiguez Miranda
+    email_address: rectorado@emdischool.edu.ec
+    username: hugo
+    password: '1712176385'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_273:
+    first_name: Maria Cristina
+    last_name: Maldonado Arce
+    email_address: maldonado.cristina.m@gmail.com
+    username: cmaldonado
+    password: '0103877288'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_274:
+    first_name: Maria Gabriela
+    last_name: Merino Gijalva 
+    email_address: g-merino1@hotmail.com
+    username: gmerino
+    password: '1716046006'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_275:
+    first_name: Juan Jose
+    last_name: Nuñez Calle
+    email_address: jhonpepejp@hotmail.com
+    username: jnunez
+    password: '1715370530'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_276:
+    first_name: Jorge Vinicio
+    last_name: Ortiz Garces
+    email_address: jorgeortizgarces@hotmail.com
+    username: jortiz
+    password: '1715814487'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_277:
+    first_name: Nancy del Carmen
+    last_name: Romero Insuasti
+    email_address: ronanr2000@yahoo.com.ar
+    username: nromero
+    password: '1711642171'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_278:
+    first_name: Gabriela Caridad
+    last_name: Rueda Albu
+    email_address: ruedagaby18@hotmail.com
+    username: grueda
+    password: '1716492440'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_279:
+    first_name: Enrique Vladimir
+    last_name: Segovia Hernandez
+    email_address: henryv_sh@hotmail.com
+    username: hsegovia
+    password: '1718251679'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_280:
+    first_name: Lorena del Rocio
+    last_name: Segura Sanchez
+    email_address: lorenasegura21@hotmail.com
+    username: lsegura
+    password: '1711865103'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_281:
+    first_name: Maria Jesus
+    last_name: Timbila Huamaquinga
+    email_address: mariaje61270@hotmail.com
+    username: mjtimbila
+    password: '1711407559'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_282:
+    first_name: Washington Edgar
+    last_name: Toro Silva 
+    email_address: washingtonets@yahoo.com
+    username: wtoro
+    password: '1711388478'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_283:
+    first_name: Alexandra
+    last_name: Silva Martinez
+    email_address: alexandrasilvam@hotmail.com
+    username: asilva
+    password: '1718434853'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_284:
+    first_name: Carolina
+    last_name: Borja Diaz
+    email_address: beccalou@hotmail.com
+    username: cborja
+    password: '1103924120'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_285:
+    first_name: Cristina 
+    last_name: Cazar Villalba
+    email_address: vivicazar@hotmail.com
+    username: ccazar
+    password: '1715740153'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_286:
+    first_name: Rocío
+    last_name: Collaguazo Caiza
+    email_address: chioc2000@hotmail.com
+    username: rcollaguazo
+    password: '1712265774'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_287:
+    first_name: Mariana
+    last_name: Carrera Martinez
+    email_address: marianacarrera86@hotmail.com
+    username: mcarrera
+    password: '1711134252'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_288:
+    first_name: Lilith 
+    last_name: Changoluisa Jurado
+    email_address: lilithchangoluisa@hotmail.com
+    username: lchangoluisa
+    password: '1709536823'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_289:
+    first_name: Lena
+    last_name: Campos Cuello
+    email_address: lagunahei@yahoo.es
+    username: lcampos
+    password: '1721693594'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_290:
+    first_name: Edisón
+    last_name: Egas Navarrete
+    email_address: egano200@yahoo.com
+    username: eegas
+    password: '1715618359'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_291:
+    first_name: Cristina 
+    last_name: Pinto Rodriguez
+    email_address: crispint.28@hotmail.com
+    username: cpinto
+    password: '1721397634'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_292:
+    first_name: Elena
+    last_name: Montero Segovia
+    email_address: elenamontero@hotmail.com
+    username: emontero
+    password: '1713748422'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_293:
+    first_name: Fernanda
+    last_name: Naranjo Russo
+    email_address: fernarusso@yahoo.com
+    username: fnaranjo
+    password: '1714542295'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_294:
+    first_name: Viviana
+    last_name: Nacimba Gualichico
+    email_address: vvn1983migth@hotmail.com
+    username: vnacimba
+    password: '1718439431'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_295:
+    first_name: Carla
+    last_name: Aldaz Satizabal
+    email_address: carlangas3@yahoo.com
+    username: caldaz
+    password: '1712817483'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_296:
+    first_name: Soledad
+    last_name: Cisneros Ontaneda
+    email_address: marysolecisneros@hotmail.com
+    username: scisneros
+    password: '1704080496'
+    is_super_admin: false
+    Groups: [Group_profesor]
+  User_admin_297:
+    first_name: Karina
+    last_name: Rueda Albu
+    email_address: kr@emdischool.com.ec
+    username: krueda
+    password: '1234567890'
+    is_super_admin: false
+    Groups: [Group_profesor]

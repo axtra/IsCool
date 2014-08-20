@@ -1,0 +1,49 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           emdiAdministracion
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             true
+    singular:              ~
+    plural:                ~
+    route_prefix:          emdi_administracion
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      fields:
+        adm_habilitar_nota1: {label: "Aporte 1", help: "Primer Parcial - I Quimestre"}
+        adm_habilitar_nota2: {label: "Aporte 2", help: "Segundo Parcial - I Quimestre"}
+        adm_habilitar_nota3: {label: "Aporte 3", help: "Tercer Parcial - I Quimestre"}
+        adm_habilitar_nota4: {label: "Examen 1er Quimestre", help: "Examen del I Quimestre"}
+        adm_habilitar_nota5: {label: "Aporte 1", help: "Primer Parcial - II Quimestre"}
+        adm_habilitar_nota6: {label: "Aporte 2", help: "Segundo Parcial - II Quimestre"}
+        adm_habilitar_nota7: {label: "Aporte 3", help: "Tercer Parcial - II Quimestre"}
+        adm_habilitar_nota8: {label: "Examen 2do Quimestre", help: "Examen del II Quimestre"}
+        adm_habilitar_nota9: {label: "Recuperacion", help: "Recuperacion"}
+        adm_habilitar_nota10: {label: "Supletorio", help: "Supletorio"}
+        adm_habilitar_nota11: {label: "Promedio Final", help: "Promedio Final"}
+        adm_habilitar_nota12: {label: "Deshabilitado", help: "Deshabilitado"}
+
+      list: ~
+      form: ~
+      edit:
+        title:    Habilitacion de Notas Parciales
+        display:
+          - adm_habilitar_nota1
+          - adm_habilitar_nota2
+          - adm_habilitar_nota3
+          - adm_habilitar_nota4
+          - adm_habilitar_nota5
+          - adm_habilitar_nota6
+          - adm_habilitar_nota7
+          - adm_habilitar_nota8
+          - adm_habilitar_nota9
+          - adm_habilitar_nota10
+          - adm_habilitar_nota11
+          - adm_habilitar_nota12
+      new: ~
+      filter:
+        class: false

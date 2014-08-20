@@ -1,0 +1,456 @@
+---
+detect_relations: true
+options:
+  collation: utf8_spanish_ci
+  charset: utf8
+  type: InnoDB
+
+emdiEstudiante:
+  actAs: [Timestampable]
+  tableName: emdi_estudiante
+  columns:
+    est_id:
+      type: integer(4)
+      primary: true
+      unique: true
+      notnull: true
+      autoincrement: true
+    est_nombres:
+      type: string(255)
+    est_apellidos:
+      type: string(255)
+    est_cedula:
+      type: string(10)
+    est_fecha_nacimiento:
+      type: date
+    est_email_estudiante:
+      type: string(100)
+    est_house:
+      type: string(15)
+    est_nombre_representante:
+      type: string(120)
+    est_telf_repr_casa:
+      type: string(10)
+    est_telf_repr_trabajo:
+      type: string(45)
+    est_telf_repr_celular:
+      type: string(10)
+    est_email_representante:
+      type: string(60)
+    est_login_representante:
+      type: string(60)
+      notnull: true
+    est_pass_representante:
+      type: string(10)
+      notnull: true
+    gra_id:
+      type: integer(4)
+      notnull: true
+    sf_guard_user_id:
+      type: integer(8)
+  relations:
+    gra:
+      class: emdiGrado
+      local: gra_id
+      foreign: gra_id
+      foreignAlias: emdi_estudiantes
+    sfGuardUser:
+      class: sfGuardUser
+      local: sf_guard_user_id
+      foreign: id
+      foreignAlias: emdi_estudiantes
+  options:
+    charset: utf8
+    collate: utf8_spanish_ci
+    type: InnoDB
+
+emdiProfesor:
+  tableName: emdi_profesor
+  columns:
+    pro_id:
+      type: integer(4)
+      unique: true
+      primary: true
+      notnull: true
+      autoincrement: true
+    pro_nombres:
+      type: string(60)
+      notnull: true
+    pro_apellidos:
+      type: string(60)
+      notnull: true
+    pro_cedula:
+      type: string(10)
+    pro_email:
+      type: string(100)
+    pro_telf_casa:
+      type: string(45)
+    pro_telf_celular:
+      type: string(45)
+    pro_login:
+      type: string(60)
+    pro_pass:
+      type: string(10)
+      notnull: true
+    pro_fecha_nacimiento:
+      type: date
+    pro_house:
+      type: string(15)
+    sf_guard_user_id:
+      type: integer(8)
+  relations:
+    sfGuardUser:
+      class: sfGuardUser
+      local: sf_guard_user_id
+      foreign: id
+      foreignAlias: emdi_profesors
+  options:
+    charset: utf8
+    collate: utf8_spanish_ci
+    type: InnoDB
+
+emdiMateria:
+  tableName: emdi_materia
+  columns:
+    mat_id:
+      type: integer(4)
+      primary: true
+      unique: true
+      notnull: true
+      autoincrement: true
+    mat_nombre:
+      type: string(60)
+      notnull: true
+  options:
+    charset: utf8
+    collate: utf8_spanish_ci
+    type: InnoDB
+
+emdiGrado:
+  tableName: emdi_grado
+  columns:
+    gra_id:
+      type: integer(4)
+      primary: true
+      unique: true
+      notnull: true
+      autoincrement: true
+    gra_nombre:
+      type: string(40)
+      notnull: true
+    gra_nombre_corto:
+      type: string(10)
+    pro_id:
+      type: integer(4)
+      notnull: true
+  relations:
+    pro:
+      class: emdiProfesor
+      local: pro_id
+      foreign: pro_id
+      foreignAlias: emdi_gradoes
+  options:
+    charset: utf8
+    collate: utf8_spanish_ci
+    type: InnoDB
+
+emdiNota:
+  actAs: [Timestampable]
+  tableName: emdi_nota
+  columns:
+    not_id:
+      type: integer(4)
+      primary: true
+      unique: true
+      notnull: true
+      autoincrement: true
+    not_codigo_parcial:
+      type: string(4)
+      notnull: true
+    not_nota:
+      type: integer(4)
+      notnull: true
+    mat_id:
+      type: integer(4)
+      notnull: true
+    pro_id:
+      type: integer(4)
+      notnull: true
+    est_id:
+      type: integer(4)
+      notnull: true
+  relations:
+    mat:
+      class: emdiMateria
+      local: mat_id
+      foreign: mat_id
+      foreignAlias: emdi_notas
+    est:
+      class: emdiEstudiante
+      local: est_id
+      foreign: est_id
+      foreignAlias: emdi_notas
+  options:
+    charset: utf8
+    collate: utf8_spanish_ci
+    type: InnoDB
+
+emdiAdministracion:
+  actAs: [Timestampable]
+  tableName: emdi_administracion
+  columns:
+    adm_id:
+      type: integer(4)
+      primary: true
+      unique: true
+      notnull: true
+      autoincrement: true
+    adm_habilitar_nota1:
+      type: boolean
+    adm_habilitar_nota2:
+      type: boolean
+    adm_habilitar_nota3:
+      type: boolean
+    adm_habilitar_nota4:
+      type: boolean
+    adm_habilitar_nota5:
+      type: boolean
+    adm_habilitar_nota6:
+      type: boolean
+    adm_habilitar_nota7:
+      type: boolean
+    adm_habilitar_nota8:
+      type: boolean
+    adm_habilitar_nota9:
+      type: boolean
+    adm_habilitar_nota10:
+      type: boolean
+    adm_habilitar_nota11:
+      type: boolean
+    adm_habilitar_nota12:
+      type: boolean
+  options:
+    charset: utf8
+    collate: utf8_spanish_ci
+    type: InnoDB
+
+emdiMateriaXGrado:
+  tableName: emdi_materia_x_grado
+  columns:
+    mxg_id:
+      type: integer(4)
+      primary: true
+      notnull: true
+      autoincrement: true
+    gra_id:
+      type: integer(4)
+      notnull: true
+    mat_id:
+      type: integer(4)
+      notnull: true
+    pro_id:
+      type: integer(4)
+      notnull: true
+  relations:
+    gra:
+      class: emdiGrado
+      local: gra_id
+      foreign: gra_id
+      foreignAlias: emdi_materia_x_gradoes
+    mat:
+      class: emdiMateria
+      local: mat_id
+      foreign: mat_id
+      foreignAlias: emdi_materia_x_gradoes
+    pro:
+      class: emdiProfesor
+      local: pro_id
+      foreign: pro_id
+      foreignAlias: emdi_materia_x_gradoes
+  options:
+    charset: utf8
+    collate: utf8_spanish_ci
+    type: InnoDB
+
+sfGuardGroup:
+  actAs: [Timestampable]
+  columns:
+    name:
+      type: string(255)
+      unique: true
+    description: string(1000)
+  relations:
+    Users:
+      class: sfGuardUser
+      refClass: sfGuardUserGroup
+      local: group_id
+      foreign: user_id
+      foreignAlias: Groups
+    Permissions:
+      class: sfGuardPermission
+      local: group_id
+      foreign: permission_id
+      refClass: sfGuardGroupPermission
+      foreignAlias: Groups
+
+sfGuardPermission:
+  actAs: [Timestampable]
+  columns:
+    name:
+      type: string(255)
+      unique: true
+    description: string(1000)
+
+sfGuardGroupPermission:
+  options:
+    symfony:
+      form:   false
+      filter: false
+  actAs: [Timestampable]
+  columns:
+    group_id:
+      type: integer
+      primary: true
+    permission_id:
+      type: integer
+      primary: true
+  relations:
+    Group:
+      class: sfGuardGroup
+      local: group_id
+      onDelete: CASCADE
+    Permission:
+      class: sfGuardPermission
+      local: permission_id
+      onDelete: CASCADE
+
+sfGuardUser:
+  actAs: [Timestampable]
+  columns:
+    first_name: string(255)
+    last_name: string(255)
+    email_address:
+      type: string(255)
+      notnull: true
+      unique: true
+    username:
+      type: string(128)
+      notnull: true
+      unique: true
+    algorithm:
+      type: string(128)
+      default: sha1
+      notnull: true
+    salt: string(128)
+    password: string(128)
+    is_active:
+      type: boolean
+      default: 1
+    is_super_admin:
+      type: boolean
+      default: false
+    last_login:
+      type: timestamp
+  indexes:
+    is_active_idx:
+      fields: [is_active]
+  relations:
+    Groups:
+      class: sfGuardGroup
+      local: user_id
+      foreign: group_id
+      refClass: sfGuardUserGroup
+      foreignAlias: Users
+    Permissions:
+      class: sfGuardPermission
+      local: user_id
+      foreign: permission_id
+      refClass: sfGuardUserPermission
+      foreignAlias: Users
+
+sfGuardUserPermission:
+  options:
+    symfony:
+      form:   false
+      filter: false
+  actAs: [Timestampable]
+  columns:
+    user_id:
+      type: integer
+      primary: true
+    permission_id:
+      type: integer
+      primary: true
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      onDelete: CASCADE
+    Permission:
+      class: sfGuardPermission
+      local: permission_id
+      onDelete: CASCADE
+
+sfGuardUserGroup:
+  options:
+    symfony:
+      form:   false
+      filter: false
+  actAs: [Timestampable]
+  columns:
+    user_id:
+      type: integer
+      primary: true
+    group_id:
+      type: integer
+      primary: true
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      onDelete: CASCADE
+    Group:
+      class: sfGuardGroup
+      local: group_id
+      onDelete: CASCADE
+
+sfGuardRememberKey:
+  options:
+    symfony:
+      form:   false
+      filter: false
+  actAs: [Timestampable]
+  columns:
+    user_id: integer
+    remember_key: string(32)
+    ip_address: string(50)
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      foreignAlias: RememberKeys
+      foreignType: one
+      onDelete: CASCADE
+
+sfGuardForgotPassword:
+  options:
+    symfony:
+      form:   false
+      filter: false
+  actAs: [Timestampable]
+  columns:
+    user_id:
+      type: integer
+      notnull: true
+    unique_key: string(255)
+    expires_at:
+      type: timestamp
+      notnull: true
+  relations:
+    User:
+      class: sfGuardUser
+      local: user_id
+      type: one
+      foreignType: one
+      foreignAlias: ForgotPassword
+      onDelete: CASCADE

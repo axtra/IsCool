@@ -1,0 +1,80 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           emdiEstudiante
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             true
+    singular:              ~
+    plural:                ~
+    route_prefix:          emdi_estudiante
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _new:  { label: Ingresar Nuevo Estudiante}
+      fields:
+        est_nombres: {label: "Apellidos"}
+        est_apellidos: {label: "Nombres"}
+        est_cedula: {label: "Cédula"}
+        est_fecha_nacimiento: {label: "Fecha Nacimiento"}
+        est_house: {label: "House"}
+        est_nombre_representante: {label: "Representante"}
+        est_email_representante: {label: "Email"}
+        est_telf_repr_casa: {label: "T. Casa"}
+        est_telf_repr_trabajo: {label: "T. Trabajo"}
+        est_telf_repr_celular: {label: "T. Celular"}
+        nombres_apellidos: {label: "Nombres"}
+        gra_id: {label: "Grado"}
+        sf_guard_user_id: {label: "Usuario"}
+        telefonos: {label: "T. Casa/Trabajo/Celular"}
+
+      list:
+        title:    Administración de Estudiante
+        display:
+          - _nombres_apellidos
+          - est_house
+          - est_nombre_representante
+          - est_email_representante
+
+        batch_actions: {}
+        max_per_page:   20
+        actions:
+          _new:  { label: Ingresar Nuevo Estudiante}
+
+      form: ~
+      edit:
+        title:    Editando Estudiante - %%est_nombres%% %%est_apellidos%%
+        display:
+          - est_nombres
+          - est_apellidos
+          - est_cedula
+          - est_fecha_nacimiento
+          - est_house
+          - est_nombre_representante
+          - est_email_representante
+          - est_telf_repr_casa
+          - est_telf_repr_trabajo
+          - est_telf_repr_celular
+          - gra_id
+          - sf_guard_user_id
+
+      new:
+        title:    Ingresando nuevo Estudiante
+        display:
+          - est_nombres
+          - est_apellidos
+          - est_cedula
+          - est_fecha_nacimiento
+          - est_house
+          - est_nombre_representante
+          - est_email_representante
+          - est_telf_repr_casa
+          - est_telf_repr_trabajo
+          - est_telf_repr_celular
+          - gra_id
+          - sf_guard_user_id
+          
+      filter:
+        class: false

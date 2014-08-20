@@ -1,0 +1,541 @@
+emdiProfesor:
+  emdiProfesor_1:
+    pro_nombres: Juan Carlos
+    pro_apellidos: Armas Yanza
+    pro_email: juan_caray@hotmail.com
+    pro_telf_casa: 2787002
+    pro_telf_celular: '084658014'
+    pro_login: jarmas
+    pro_cedula: '0502225980'
+    pro_fecha_nacimiento: '1977-02-18'
+    pro_house: Broomfleet
+    sf_guard_user_id: 253
+    pro_pass: '0502225980'
+  emdiProfesor_2:
+    pro_nombres: Kevin Andrew
+    pro_apellidos: Ashford
+    pro_email: kev@kevinasfhford.wanadoo.co.uk
+    pro_telf_casa: 2346604
+    pro_telf_celular: '087444282'
+    pro_login: kashford
+    pro_cedula: '1726144346'
+    pro_fecha_nacimiento: '1963-02-25'
+    pro_house: Fitchburg
+    sf_guard_user_id: 254
+    pro_pass: '1726144346'
+  emdiProfesor_3:
+    pro_nombres: Christian Rolando
+    pro_apellidos: Bautista Chamorro
+    pro_email: christian23794@hotmail.com
+    pro_telf_casa: 2315315
+    pro_telf_celular: '099057957'
+    pro_login: cbautista
+    pro_cedula: '1712738309'
+    pro_fecha_nacimiento: '1975-11-10'
+    pro_house: Fitchburg
+    sf_guard_user_id: 255
+    pro_pass: '1712738309'
+  emdiProfesor_4:
+    pro_nombres: Jorge Fernando
+    pro_apellidos: Bautista Chamorro
+    pro_email: bautistafj@hotmail.com
+    pro_telf_casa: 2315315
+    pro_telf_celular: '095652583'
+    pro_login: fbautista
+    pro_cedula: '1709554354'
+    pro_fecha_nacimiento: '1969-09-28'
+    pro_house: Aberdeen
+    sf_guard_user_id: 256
+    pro_pass: '1709554354'
+  emdiProfesor_5:
+    pro_nombres: Ursula Paulina
+    pro_apellidos: Benitez Paez
+    pro_email: ubenitez@gmail.com
+    pro_telf_casa: 2555833
+    pro_telf_celular: '094201635'
+    pro_login: ubenitez
+    pro_cedula: '1706966742'
+    pro_fecha_nacimiento: '1972-03-08'
+    pro_house: Broomfleet
+    sf_guard_user_id: 257
+    pro_pass: '1706966742'
+  emdiProfesor_6:
+    pro_nombres: Amilcar
+    pro_apellidos: Bulnes Tur
+    pro_email: amilcarchino@yahoo.es
+    pro_telf_casa: 2346471
+    pro_telf_celular: '095652515'
+    pro_login: abulnes
+    pro_cedula: '1722325931'
+    pro_fecha_nacimiento: '1977-02-22'
+    pro_house: Broomfleet
+    sf_guard_user_id: 258
+    pro_pass: '1722325931'
+  emdiProfesor_7:
+    pro_nombres: Stalin Mauricio
+    pro_apellidos: Cadena Fiallos
+    pro_email: stalcade1@hotmail.com
+    pro_telf_casa: 2345051
+    pro_telf_celular: '095094687'
+    pro_login: mcadena
+    pro_cedula: '1716697949'
+    pro_fecha_nacimiento: '1981-11-13'
+    pro_house: Broomfleet
+    sf_guard_user_id: 259
+    pro_pass: '1716697949'
+  emdiProfesor_8:
+    pro_nombres: Pamela Betsabe
+    pro_apellidos: Castellanos Saigua
+    pro_email: betsacast1911@hotmail.com
+    pro_telf_casa: 2865695
+    pro_telf_celular: '098968324'
+    pro_login: pcastellanos
+    pro_cedula: '1720737053'
+    pro_fecha_nacimiento: '1986-11-19'
+    pro_house: Fitchburg
+    sf_guard_user_id: 260
+    pro_pass: '1720737053'
+  emdiProfesor_9:
+    pro_nombres: Diana Patricia
+    pro_apellidos: Cevallos Aguayo
+    pro_email: dianis82@hotmail.es
+    pro_telf_casa: 2865827
+    pro_telf_celular: '085389210'
+    pro_login: dcevallos
+    pro_cedula: '1717438665'
+    pro_fecha_nacimiento: '1982-11-19'
+    pro_house: Broomfleet
+    sf_guard_user_id: 261
+    pro_pass: '1717438665'
+  emdiProfesor_10:
+    pro_nombres: Yu-chia
+    pro_apellidos: Chang
+    pro_email: julia_taiwan@hotmail.com
+    pro_telf_casa: 
+    pro_telf_celular: '098146442'
+    pro_login: jchang
+    pro_cedula: '214759280'
+    pro_fecha_nacimiento: '1983-05-06'
+    pro_house: Aberdeen
+    sf_guard_user_id: 262
+    pro_pass: '214759280'
+  emdiProfesor_11:
+    pro_nombres: Karla Paola
+    pro_apellidos: Checa Villafuerte
+    pro_email: kcheca@emdischool.edu.ec
+    pro_telf_casa: 2070075
+    pro_telf_celular: '086135109'
+    pro_login: kcheca
+    pro_cedula: '1714682208'
+    pro_fecha_nacimiento: '1977-02-08'
+    pro_house: Broomfleet
+    sf_guard_user_id: 263
+    pro_pass: '1714682208'
+  emdiProfesor_12:
+    pro_nombres: Erick Igor
+    pro_apellidos: Coral Padilla 
+    pro_email: ecp_infoparts@yahoo.com
+    pro_telf_casa: 
+    pro_telf_celular: '087733730'
+    pro_login: ecoral
+    pro_cedula: '1707633655'
+    pro_fecha_nacimiento: '1969-10-21'
+    pro_house: Aberdeen
+    sf_guard_user_id: 264
+    pro_pass: '1707633655'
+  emdiProfesor_13:
+    pro_nombres: Henry
+    pro_apellidos: Ede Eze 
+    pro_email: edepeters@yahoo.com
+    pro_telf_casa: '098303779'
+    pro_telf_celular: '080251204'
+    pro_login: hede
+    pro_cedula: 'AD1032817'
+    pro_fecha_nacimiento: '1982-07-15'
+    pro_house: Aberdeen
+    sf_guard_user_id: 265
+    pro_pass: 'AD1032817'
+  emdiProfesor_14:
+    pro_nombres: Juan Pablo
+    pro_apellidos: Enriquez Rodriguez
+    pro_email: jpenriquezr@gmail.com
+    pro_telf_casa: 2257374
+    pro_telf_celular: '095778031'
+    pro_login: jpenriquez
+    pro_cedula: '1712083847'
+    pro_fecha_nacimiento: '1982-12-18'
+    pro_house: Broomfleet
+    sf_guard_user_id: 266
+    pro_pass: '1712083847'
+  emdiProfesor_15:
+    pro_nombres: Maria Jose
+    pro_apellidos: Espinosa Ripalda
+    pro_email: majoespinosar@gmail.com
+    pro_telf_casa: 2330784
+    pro_telf_celular: '084605145'
+    pro_login: mjespinosa
+    pro_cedula: '1714157292'
+    pro_fecha_nacimiento: '1983-12-30'
+    pro_house: Aberdeen
+    sf_guard_user_id: 267
+    pro_pass: '1714157292'
+  emdiProfesor_16:
+    pro_nombres: Maria Ignacia
+    pro_apellidos: Esquiroz Eskenazi
+    pro_email: ignacita772@yahoo.com
+    pro_telf_casa: 2081739
+    pro_telf_celular: '091969841'
+    pro_login: miesquiroz
+    pro_cedula: '1711139269'
+    pro_fecha_nacimiento: '1977-09-20'
+    pro_house: Aberdeen
+    sf_guard_user_id: 268
+    pro_pass: '1711139269'
+  emdiProfesor_17:
+    pro_nombres: Maria Bertila
+    pro_apellidos: Gomez de la Torre Flores
+    pro_email: 
+    pro_telf_casa: 2862924
+    pro_telf_celular: '095088141'
+    pro_login: bgomez
+    pro_cedula: '1704165263'
+    pro_fecha_nacimiento: '1955-03-11'
+    pro_house: Aberdeen
+    sf_guard_user_id: 269
+    pro_pass: '1704165263'
+  emdiProfesor_18:
+    pro_nombres: Guillermo Enrique
+    pro_apellidos: Guevara Avendaño
+    pro_email: hylif.design@gmail.com
+    pro_telf_casa: 
+    pro_telf_celular: '099034223'
+    pro_login: gguevara
+    pro_cedula: '1720462405'
+    pro_fecha_nacimiento: '1987-05-17'
+    pro_house: Aberdeen
+    sf_guard_user_id: 270
+    pro_pass: '1720462405'
+  emdiProfesor_19:
+    pro_nombres: Diego Fernando
+    pro_apellidos: Hurtado Lomas
+    pro_email: cury17982@hotmail.com
+    pro_telf_casa: 2671410
+    pro_telf_celular: '095741040'
+    pro_login: dhurtado
+    pro_cedula: '0400952016'
+    pro_fecha_nacimiento: '1971-09-08'
+    pro_house: Aberdeen
+    sf_guard_user_id: 271
+    pro_pass: '0400952016'
+  emdiProfesor_20:
+    pro_nombres: Hugo Fernando
+    pro_apellidos: Iñiguez Miranda
+    pro_email: rectorado@emdischool.edu.ec
+    pro_telf_casa: 2072895
+    pro_telf_celular: '099450287'
+    pro_login: hugo
+    pro_cedula: '1712176385'
+    pro_fecha_nacimiento: '1977-03-28'
+    pro_house: Fitchburg
+    sf_guard_user_id: 272
+    pro_pass: '1712176385'
+  emdiProfesor_21:
+    pro_nombres: Maria Cristina
+    pro_apellidos: Maldonado Arce
+    pro_email: maldonado.cristina.m@gmail.com
+    pro_telf_casa: 2862609
+    pro_telf_celular: '084755869'
+    pro_login: cmaldonado
+    pro_cedula: '0103877288'
+    pro_fecha_nacimiento: '1988-07-14'
+    pro_house: Fitchburg
+    sf_guard_user_id: 273
+    pro_pass: '0103877288'
+  emdiProfesor_22:
+    pro_nombres: Maria Gabriela
+    pro_apellidos: Merino Gijalva 
+    pro_email: g-merino1@hotmail.com
+    pro_telf_casa: 2058224
+    pro_telf_celular: '095072693'
+    pro_login: gmerino
+    pro_cedula: '1716046006'
+    pro_fecha_nacimiento: '1983-01-30'
+    pro_house: Aberdeen
+    sf_guard_user_id: 274
+    pro_pass: '1716046006'
+  emdiProfesor_23:
+    pro_nombres: Juan Jose
+    pro_apellidos: Nuñez Calle
+    pro_email: jhonpepejp@hotmail.com
+    pro_telf_casa: 3211108
+    pro_telf_celular: '093121716'
+    pro_login: jnunez
+    pro_cedula: '1715370530'
+    pro_fecha_nacimiento: '1978-07-30'
+    pro_house: Aberdeen
+    sf_guard_user_id: 275
+    pro_pass: '1715370530'
+  emdiProfesor_24:
+    pro_nombres: Jorge Vinicio
+    pro_apellidos: Ortiz Garces
+    pro_email: jorgeortizgarces@hotmail.com
+    pro_telf_casa: 2957434
+    pro_telf_celular: '095824392'
+    pro_login: jortiz
+    pro_cedula: '1715814487'
+    pro_fecha_nacimiento: '1981-08-01'
+    pro_house: Fitchburg
+    sf_guard_user_id: 276
+    pro_pass: '1715814487'
+  emdiProfesor_25:
+    pro_nombres: Nancy del Carmen
+    pro_apellidos: Romero Insuasti
+    pro_email: ronanr2000@yahoo.com.ar
+    pro_telf_casa: 2624381
+    pro_telf_celular: '098566728'
+    pro_login: nromero
+    pro_cedula: '1711642171'
+    pro_fecha_nacimiento: '1968-01-11'
+    pro_house: Fitchburg
+    sf_guard_user_id: 277
+    pro_pass: '1711642171'
+  emdiProfesor_26:
+    pro_nombres: Gabriela Caridad
+    pro_apellidos: Rueda Albu
+    pro_email: ruedagaby18@hotmail.com
+    pro_telf_casa: 2850052
+    pro_telf_celular: '095314522'
+    pro_login: grueda
+    pro_cedula: '1716492440'
+    pro_fecha_nacimiento: '1988-02-18'
+    pro_house: Fitchburg
+    sf_guard_user_id: 278
+    pro_pass: '1716492440'
+  emdiProfesor_27:
+    pro_nombres: Enrique Vladimir
+    pro_apellidos: Segovia Hernandez
+    pro_email: henryv_sh@hotmail.com
+    pro_telf_casa: 2070095
+    pro_telf_celular: '098582547'
+    pro_login: hsegovia
+    pro_cedula: '1718251679'
+    pro_fecha_nacimiento: '1982-04-08'
+    pro_house: Aberdeen
+    sf_guard_user_id: 279
+    pro_pass: '1718251679'
+  emdiProfesor_28:
+    pro_nombres: Lorena del Rocio
+    pro_apellidos: Segura Sanchez
+    pro_email: lorenasegura21@hotmail.com
+    pro_telf_casa: 2608878
+    pro_telf_celular: 
+    pro_login: lsegura
+    pro_cedula: '1711865103'
+    pro_fecha_nacimiento: '1973-08-21'
+    pro_house: Broomfleet
+    sf_guard_user_id: 280
+    pro_pass: '1711865103'
+  emdiProfesor_29:
+    pro_nombres: Maria Jesus
+    pro_apellidos: Timbila Huamaquinga
+    pro_email: mariaje61270@hotmail.com
+    pro_telf_casa: 
+    pro_telf_celular: '084218614'
+    pro_login: mjtimbila
+    pro_cedula: '1711407559'
+    pro_fecha_nacimiento: '1970-12-06'
+    pro_house: Broomfleet
+    sf_guard_user_id: 281
+    pro_pass: '1711407559'
+  emdiProfesor_30:
+    pro_nombres: Washington Edgar
+    pro_apellidos: Toro Silva 
+    pro_email: washingtonets@yahoo.com
+    pro_telf_casa: 2843038
+    pro_telf_celular: '095354767'
+    pro_login: wtoro
+    pro_cedula: '1711388478'
+    pro_fecha_nacimiento: '1973-03-11'
+    pro_house: Fitchburg
+    sf_guard_user_id: 282
+    pro_pass: '1711388478'
+  emdiProfesor_31:
+    pro_nombres: Alexandra
+    pro_apellidos: Silva Martinez
+    pro_email: alexandrasilvam@hotmail.com
+    pro_telf_casa: 2332889
+    pro_telf_celular: '091756928'
+    pro_login: asilva
+    pro_cedula: '1718434853'
+    pro_fecha_nacimiento: '1983-09-14'
+    pro_house: Aberdeen
+    sf_guard_user_id: 283
+    pro_pass: '1718434853'
+  emdiProfesor_32:
+    pro_nombres: Carolina
+    pro_apellidos: Borja Diaz
+    pro_email: beccalou@hotmail.com
+    pro_telf_casa: 
+    pro_telf_celular: '083174231'
+    pro_login: cborja
+    pro_cedula: '1103924120'
+    pro_fecha_nacimiento: '1981-10-21'
+    pro_house: Aberdeen
+    sf_guard_user_id: 284
+    pro_pass: '1103924120'
+  emdiProfesor_33:
+    pro_nombres: Cristina 
+    pro_apellidos: Cazar Villalba
+    pro_email: vivicazar@hotmail.com
+    pro_telf_casa: 2657493
+    pro_telf_celular: '092918390'
+    pro_login: ccazar
+    pro_cedula: '1715740153'
+    pro_fecha_nacimiento: '1979-09-10'
+    pro_house: Fitchburg
+    sf_guard_user_id: 285
+    pro_pass: '1715740153'
+  emdiProfesor_34:
+    pro_nombres: Rocío
+    pro_apellidos: Collaguazo Caiza
+    pro_email: chioc2000@hotmail.com
+    pro_telf_casa: 2869295
+    pro_telf_celular: 
+    pro_login: rcollaguazo
+    pro_cedula: '1712265774'
+    pro_fecha_nacimiento: '2011-04-09'
+    pro_house: Fitchburg
+    sf_guard_user_id: 286
+    pro_pass: '1712265774'
+  emdiProfesor_35:
+    pro_nombres: Mariana
+    pro_apellidos: Carrera Martinez
+    pro_email: marianacarrera86@hotmail.com
+    pro_telf_casa: 2865616
+    pro_telf_celular: '095979683'
+    pro_login: mcarrera
+    pro_cedula: '1711134252'
+    pro_fecha_nacimiento: '1976-11-08'
+    pro_house: Fitchburg
+    sf_guard_user_id: 287
+    pro_pass: '1711134252'
+  emdiProfesor_36:
+    pro_nombres: Lilith 
+    pro_apellidos: Changoluisa Jurado
+    pro_email: lilithchangoluisa@hotmail.com
+    pro_telf_casa: 3111784
+    pro_telf_celular: '096019621'
+    pro_login: lchangoluisa
+    pro_cedula: '1709536823'
+    pro_fecha_nacimiento: '1975-01-22'
+    pro_house: Broomfleet
+    sf_guard_user_id: 288
+    pro_pass: '1709536823'
+  emdiProfesor_37:
+    pro_nombres: Lena
+    pro_apellidos: Campos Cuello
+    pro_email: lagunahei@yahoo.es
+    pro_telf_casa: 2340801
+    pro_telf_celular: 
+    pro_login: lcampos
+    pro_cedula: '1721693594'
+    pro_fecha_nacimiento: '1976-05-08'
+    pro_house: Aberdeen
+    sf_guard_user_id: 289
+    pro_pass: '1721693594'
+  emdiProfesor_38:
+    pro_nombres: Edisón
+    pro_apellidos: Egas Navarrete
+    pro_email: egano200@yahoo.com
+    pro_telf_casa: 2524424
+    pro_telf_celular: '084669816'
+    pro_login: eegas
+    pro_cedula: '1715618359'
+    pro_fecha_nacimiento: '1979-08-16'
+    pro_house: Fitchburg
+    sf_guard_user_id: 290
+    pro_pass: '1715618359'
+  emdiProfesor_39:
+    pro_nombres: Cristina 
+    pro_apellidos: Pinto Rodriguez
+    pro_email: crispint.28@hotmail.com
+    pro_telf_casa: 2787577
+    pro_telf_celular: '080127894'
+    pro_login: cpinto
+    pro_cedula: '1721397634'
+    pro_fecha_nacimiento: '1987-05-28'
+    pro_house: Broomfleet
+    sf_guard_user_id: 291
+    pro_pass: '1721397634'
+  emdiProfesor_40:
+    pro_nombres: Elena
+    pro_apellidos: Montero Segovia
+    pro_email: elenamontero@hotmail.com
+    pro_telf_casa: 2614494
+    pro_telf_celular: '083211007'
+    pro_login: emontero
+    pro_cedula: '1713748422'
+    pro_fecha_nacimiento: '1981-05-04'
+    pro_house: Aberdeen
+    sf_guard_user_id: 292
+    pro_pass: '1713748422'
+  emdiProfesor_41:
+    pro_nombres: Fernanda
+    pro_apellidos: Naranjo Russo
+    pro_email: fernarusso@yahoo.com
+    pro_telf_casa: 3112674
+    pro_telf_celular: '098579493'
+    pro_login: fnaranjo
+    pro_cedula: '1714542295'
+    pro_fecha_nacimiento: '1980-05-15'
+    pro_house: Fitchburg
+    sf_guard_user_id: 293
+    pro_pass: '1714542295'
+  emdiProfesor_42:
+    pro_nombres: Viviana
+    pro_apellidos: Nacimba Gualichico
+    pro_email: vvn1983migth@hotmail.com
+    pro_telf_casa: 2348410
+    pro_telf_celular: '091555971'
+    pro_login: vnacimba
+    pro_cedula: '1718439431'
+    pro_fecha_nacimiento: '1983-04-20'
+    pro_house: Aberdeen
+    sf_guard_user_id: 294
+    pro_pass: '1718439431'
+  emdiProfesor_43:
+    pro_nombres: Carla
+    pro_apellidos: Aldaz Satizabal
+    pro_email: carlangas3@yahoo.com
+    pro_telf_casa: 2860713
+    pro_telf_celular: '093657660'
+    pro_login: caldaz
+    pro_cedula: '1712817483'
+    pro_fecha_nacimiento: '1975-04-03'
+    pro_house: Broomfleet
+    sf_guard_user_id: 295
+    pro_pass: '1712817483'
+  emdiProfesor_44:
+    pro_nombres: Soledad
+    pro_apellidos: Cisneros Ontaneda
+    pro_email: marysolecisneros@hotmail.com
+    pro_telf_casa: 2866615
+    pro_telf_celular: '087298346'
+    pro_login: scisneros
+    pro_cedula: '1704080496'
+    pro_fecha_nacimiento: '1970-02-18'
+    pro_house: Broomfleet
+    sf_guard_user_id: 296
+    pro_pass: '1704080496'
+  emdiProfesor_45:
+    pro_nombres: Karina
+    pro_apellidos: Rueda Albu
+    pro_email: kr@emdischool.com.ec
+    pro_telf_casa: 2868902
+    pro_telf_celular: '087324207'
+    pro_login: krueda
+    pro_cedula: 
+    pro_fecha_nacimiento: '1974-05-14'
+    pro_house: Fitchburg
+    sf_guard_user_id: 297
+    pro_pass: '1234567890'

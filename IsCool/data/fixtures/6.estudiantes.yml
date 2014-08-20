@@ -1,0 +1,4033 @@
+emdiEstudiante:
+  emdiEstudiante_1:
+    est_nombres: Garrido Villacreses
+    est_apellidos: Soraya Alejandra
+    est_cedula: 1726964867
+    est_fecha_nacimiento: '2006-09-28'
+    est_email_estudiante: soraya46@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Soraya Villacreses
+    est_telf_repr_casa: 2867839
+    est_telf_repr_trabajo: 2861043
+    est_telf_repr_celular: '088249086'
+    est_email_representante: soraya46@hotmail.com
+    est_login_representante: sgarrido
+    est_pass_representante: 1726964867
+    sf_guard_user_id: 1
+    gra: emdiGrado_1
+  emdiEstudiante_2:
+    est_nombres: Gonzáles Huilcapi 
+    est_apellidos: Eduarda Anahí
+    est_cedula: 1727427492
+    est_fecha_nacimiento: '2006-03-09'
+    est_email_estudiante: sandyxhr@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Sandy Huilcapi
+    est_telf_repr_casa: 6036322
+    est_telf_repr_trabajo: 2861022
+    est_telf_repr_celular: '091938201'
+    est_email_representante: sandyxhr@hotmail.com
+    est_login_representante: egonzalez
+    est_pass_representante: 1727427492
+    sf_guard_user_id: 2
+    gra: emdiGrado_1
+  emdiEstudiante_3:
+    est_nombres: Mafla Escudero
+    est_apellidos: Esteban Sebastián
+    est_cedula: 1723953178
+    est_fecha_nacimiento: '2006-12-08'
+    est_email_estudiante: paolaescudero75@gmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Sebastián Mafla
+    est_telf_repr_casa: 2149057
+    est_telf_repr_trabajo: 2460533
+    est_telf_repr_celular: '092717066'
+    est_email_representante: paolaescudero75@gmail.com
+    est_login_representante: emafla
+    est_pass_representante: 1723953178
+    sf_guard_user_id: 3
+    gra: emdiGrado_1
+  emdiEstudiante_4:
+    est_nombres: Maldonado Loaiza
+    est_apellidos: Gonzalo Eduardo
+    est_cedula: 1724561962
+    est_fecha_nacimiento: '2007-02-28'
+    est_email_estudiante: vanessa@hipnospa.com
+    est_house: Broomfleet
+    est_nombre_representante: Vanessa Loaiza
+    est_telf_repr_casa: 2850096
+    est_telf_repr_trabajo: 2242642
+    est_telf_repr_celular: '093563468'
+    est_email_representante: vanessa@hipnospa.com
+    est_login_representante: gmaldonado
+    est_pass_representante: 1724561962
+    sf_guard_user_id: 4
+    gra: emdiGrado_1
+  emdiEstudiante_5:
+    est_nombres: Michala Nolivos
+    est_apellidos: Esteban Ricardo
+    est_cedula: 1723736599
+    est_fecha_nacimiento: '2006-07-16'
+    est_email_estudiante: iemsport@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Johnny Minchala
+    est_telf_repr_casa: 3831236
+    est_telf_repr_trabajo: 2445043
+    est_telf_repr_celular: '086408448'
+    est_email_representante: iemsport@hotmail.com
+    est_login_representante: eminchala
+    est_pass_representante: 1723736599
+    sf_guard_user_id: 5
+    gra: emdiGrado_1
+  emdiEstudiante_6:
+    est_nombres: Morán Oviedo
+    est_apellidos: Jehosua Gerardo
+    est_cedula: 1724357759
+    est_fecha_nacimiento: '2006-02-08'
+    est_email_estudiante: 
+    est_house: Aberdeen
+    est_nombre_representante: Gerardo Moran
+    est_telf_repr_casa: 2075419
+    est_telf_repr_trabajo: 2509350
+    est_telf_repr_celular: '098035101'
+    est_email_representante: 
+    est_login_representante: jmoran
+    est_pass_representante: 1724357759
+    sf_guard_user_id: 6
+    gra: emdiGrado_1
+  emdiEstudiante_7:
+    est_nombres: Ormaza Estrella
+    est_apellidos: Fernando Sebastián
+    est_cedula: 1727420877
+    est_fecha_nacimiento: '2006-12-28'
+    est_email_estudiante: mony_estrella@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Monica Estrella
+    est_telf_repr_casa: 2070473
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '095249692'
+    est_email_representante: mony_estrella@hotmail.com
+    est_login_representante: formaza
+    est_pass_representante: 1727420877
+    sf_guard_user_id: 7
+    gra: emdiGrado_1
+  emdiEstudiante_8:
+    est_nombres: Páez Salgado
+    est_apellidos: Camila Luciana
+    est_cedula: 1724479223
+    est_fecha_nacimiento: '2006-11-19'
+    est_email_estudiante: dra.sofiasalgado@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Sofia Salgado
+    est_telf_repr_casa: 2861229
+    est_telf_repr_trabajo: 2520706
+    est_telf_repr_celular: '084682701'
+    est_email_representante: dra.sofiasalgado@hotmail.com
+    est_login_representante: cpaez
+    est_pass_representante: 1724479223
+    sf_guard_user_id: 8
+    gra: emdiGrado_1
+  emdiEstudiante_9:
+    est_nombres: Pazmiño Rodríguez
+    est_apellidos: Esteban Ignacio
+    est_cedula: 1726515909
+    est_fecha_nacimiento: '2006-03-02'
+    est_email_estudiante: soryrl@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Soraya Rodriguez
+    est_telf_repr_casa: 2643162
+    est_telf_repr_trabajo: 2643162
+    est_telf_repr_celular: '099531755'
+    est_email_representante: soryrl@hotmail.com
+    est_login_representante: epazmino
+    est_pass_representante: 1726515909
+    sf_guard_user_id: 9
+    gra: emdiGrado_1
+  emdiEstudiante_10:
+    est_nombres: Peñaherrera Mayorga
+    est_apellidos: David Sebastián
+    est_cedula: 1706466511
+    est_fecha_nacimiento: '2006-11-10'
+    est_email_estudiante: viselmayorga@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Visel Mayorga
+    est_telf_repr_casa: 3831450
+    est_telf_repr_trabajo: 3988152
+    est_telf_repr_celular: '098537683'
+    est_email_representante: viselmayorga@hotmail.com
+    est_login_representante: spenaherrera
+    est_pass_representante: 1706466511
+    sf_guard_user_id: 10
+    gra: emdiGrado_1
+  emdiEstudiante_11:
+    est_nombres: Pozo Toaza
+    est_apellidos: Camila Alejandra
+    est_cedula: 1724462393
+    est_fecha_nacimiento: '2006-06-01'
+    est_email_estudiante: toaza_alexandra@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Alexandra Toaza
+    est_telf_repr_casa: 2310980
+    est_telf_repr_trabajo: 2285161
+    est_telf_repr_celular: '099841831'
+    est_email_representante: toaza_alexandra@hotmail.com
+    est_login_representante: cpozo
+    est_pass_representante: 1724462393
+    sf_guard_user_id: 11
+    gra: emdiGrado_1
+  emdiEstudiante_12:
+    est_nombres: Sánchez Chimborazo
+    est_apellidos: Camila Alejandra
+    est_cedula: 1750286906
+    est_fecha_nacimiento: '2007-04-03'
+    est_email_estudiante: 
+    est_house: Aberdeen
+    est_nombre_representante: Nelly Chimborazo
+    est_telf_repr_casa: 2349884
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '091240820'
+    est_email_representante: 
+    est_login_representante: cchimborazo
+    est_pass_representante: 1750286906
+    sf_guard_user_id: 12
+    gra: emdiGrado_1
+  emdiEstudiante_13:
+    est_nombres: Torres Mafla
+    est_apellidos: Camila Alejandra
+    est_cedula: 1727298950
+    est_fecha_nacimiento: '2006-04-06'
+    est_email_estudiante: pmafla@bancointernacional.com.ec
+    est_house: Broomfleet
+    est_nombre_representante: Pamela Mafla
+    est_telf_repr_casa: 2862399
+    est_telf_repr_trabajo: 2565547
+    est_telf_repr_celular: '098312548'
+    est_email_representante: pmafla@bancointernacional.com.ec
+    est_login_representante: ctorres
+    est_pass_representante: 1727298950
+    sf_guard_user_id: 13
+    gra: emdiGrado_1
+  emdiEstudiante_14:
+    est_nombres: Torres Santillán
+    est_apellidos: Marko Antonio
+    est_cedula: 1723959621
+    est_fecha_nacimiento: '2006-04-03'
+    est_email_estudiante: pahosi@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Paola Santillan
+    est_telf_repr_casa: 2071440
+    est_telf_repr_trabajo: 3987600
+    est_telf_repr_celular: '087328005'
+    est_email_representante: pahosi@hotmail.com
+    est_login_representante: matorres
+    est_pass_representante: 1723959621
+    sf_guard_user_id: 14
+    gra: emdiGrado_1
+  emdiEstudiante_15:
+    est_nombres: Alvarez Vinueza
+    est_apellidos: Martín Alejandro
+    est_cedula: 1750341685
+    est_fecha_nacimiento: '2006-09-11'
+    est_email_estudiante: calvarez@fvecuador.com
+    est_house: Aberdeen
+    est_nombre_representante: Cesar Alarez
+    est_telf_repr_casa: 
+    est_telf_repr_trabajo: 2991000
+    est_telf_repr_celular: '086044714'
+    est_email_representante: calvarez@fvecuador.com
+    est_login_representante: malvarez
+    est_pass_representante: 1750341685
+    sf_guard_user_id: 15
+    gra: emdiGrado_2
+  emdiEstudiante_16:
+    est_nombres: Dueñas Abad
+    est_apellidos: Raphaela
+    est_cedula: 1727153932
+    est_fecha_nacimiento: '2006-08-04'
+    est_email_estudiante: aduenas@pica.com.ec
+    est_house: Fitchburg
+    est_nombre_representante: Alvaro Dueñas
+    est_telf_repr_casa: 2346396
+    est_telf_repr_trabajo: 2418095
+    est_telf_repr_celular: '087061669'
+    est_email_representante: aduenas@pica.com.ec
+    est_login_representante: rduenas
+    est_pass_representante: 1727153932
+    sf_guard_user_id: 16
+    gra: emdiGrado_2
+  emdiEstudiante_17:
+    est_nombres: López Suasnavas
+    est_apellidos: Juan Sebastián
+    est_cedula: 1725958852
+    est_fecha_nacimiento: '2006-02-07'
+    est_email_estudiante: drjclopez@gmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Juan Carlos Lopez
+    est_telf_repr_casa: 2835438
+    est_telf_repr_trabajo: 2546186
+    est_telf_repr_celular: '095889488'
+    est_email_representante: drjclopez@gmail.com
+    est_login_representante: jlopez
+    est_pass_representante: 1725958852
+    sf_guard_user_id: 17
+    gra: emdiGrado_2
+  emdiEstudiante_18:
+    est_nombres: Monge Andrade
+    est_apellidos: Emilio
+    est_cedula: 1725708018
+    est_fecha_nacimiento: '2007-02-01'
+    est_email_estudiante: 
+    est_house: Fitchburg
+    est_nombre_representante: Cyntia Andrade
+    est_telf_repr_casa: 2385297
+    est_telf_repr_trabajo: 24567005
+    est_telf_repr_celular: '097666113'
+    est_email_representante: 
+    est_login_representante: emonge
+    est_pass_representante: 1725708018
+    sf_guard_user_id: 18
+    gra: emdiGrado_2
+  emdiEstudiante_19:
+    est_nombres: Morán Oviedo
+    est_apellidos: Jhair Gerardo
+    est_cedula: 1724357742
+    est_fecha_nacimiento: '2006-02-08'
+    est_email_estudiante: evaoviedocoronado@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Eva Oviedo
+    est_telf_repr_casa: 2075419
+    est_telf_repr_trabajo: 2509350
+    est_telf_repr_celular: '097276715'
+    est_email_representante: evaoviedocoronado@hotmail.com
+    est_login_representante: jamoran
+    est_pass_representante: 1724357742
+    sf_guard_user_id: 19
+    gra: emdiGrado_2
+  emdiEstudiante_20:
+    est_nombres: Navas Tamayo
+    est_apellidos: Emilio Martín
+    est_cedula: 1723619217
+    est_fecha_nacimiento: '2006-05-24'
+    est_email_estudiante: ntamayo@asiauto.com.ec
+    est_house: Broomfleet
+    est_nombre_representante: Nydia Tamayo
+    est_telf_repr_casa: 
+    est_telf_repr_trabajo: 2557070
+    est_telf_repr_celular: '083507746'
+    est_email_representante: ntamayo@asiauto.com.ec
+    est_login_representante: enavas
+    est_pass_representante: 1723619217
+    sf_guard_user_id: 20
+    gra: emdiGrado_2
+  emdiEstudiante_21:
+    est_nombres: Páez Salgado
+    est_apellidos: José Carlos
+    est_cedula: 1724479041
+    est_fecha_nacimiento: '2006-11-19'
+    est_email_estudiante: dra.sofiasalgado@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Sofia Salgado
+    est_telf_repr_casa: 2861229
+    est_telf_repr_trabajo: 2520706
+    est_telf_repr_celular: '084682701'
+    est_email_representante: dra.sofiasalgado@hotmail.com
+    est_login_representante: jpaez
+    est_pass_representante: 1724479041
+    sf_guard_user_id: 21
+    gra: emdiGrado_2
+  emdiEstudiante_22:
+    est_nombres: Ramos Endara
+    est_apellidos: Juan Andrés
+    est_cedula: 1750232124
+    est_fecha_nacimiento: '2006-07-30'
+    est_email_estudiante: anitaluvenegas@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Ana Lucia Endara
+    est_telf_repr_casa: 2070788
+    est_telf_repr_trabajo: 2459900
+    est_telf_repr_celular: '098350301'
+    est_email_representante: anitaluvenegas@hotmail.com
+    est_login_representante: jramos
+    est_pass_representante: 1750232124
+    sf_guard_user_id: 22
+    gra: emdiGrado_2
+  emdiEstudiante_23:
+    est_nombres: Romero Bravo
+    est_apellidos: Luciano Agustín
+    est_cedula: 1750292524
+    est_fecha_nacimiento: '2006-08-28'
+    est_email_estudiante: 
+    est_house: 
+    est_nombre_representante: Fernando Romero
+    est_telf_repr_casa: 
+    est_telf_repr_trabajo: 2276800
+    est_telf_repr_celular: '099202732'
+    est_email_representante: 
+    est_login_representante: lromero
+    est_pass_representante: 1750292524
+    sf_guard_user_id: 23
+    gra: emdiGrado_2
+  emdiEstudiante_24:
+    est_nombres: Sánchez Sánchez
+    est_apellidos: Juan Francisco
+    est_cedula: 1726027210
+    est_fecha_nacimiento: '2007-02-15'
+    est_email_estudiante: pso@fradaban.com
+    est_house: Aberdeen
+    est_nombre_representante: Paulina Sanchez
+    est_telf_repr_casa: 2609092
+    est_telf_repr_trabajo: 4004091
+    est_telf_repr_celular: '095351700'
+    est_email_representante: pso@fradaban.com
+    est_login_representante: jfsanchez
+    est_pass_representante: 1726027210
+    sf_guard_user_id: 24
+    gra: emdiGrado_2
+  emdiEstudiante_25:
+    est_nombres: Soria Rivadeneira
+    est_apellidos: María Francisca
+    est_cedula: 1727421008
+    est_fecha_nacimiento: '2006-10-02'
+    est_email_estudiante: mache29@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Marcela Rivadeneira
+    est_telf_repr_casa: 2868391
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '087989680'
+    est_email_representante: mache29@hotmail.com
+    est_login_representante: mfsoria
+    est_pass_representante: 1727421008
+    sf_guard_user_id: 25
+    gra: emdiGrado_2
+  emdiEstudiante_26:
+    est_nombres: Simon Carrera
+    est_apellidos: Ameli
+    est_cedula: 1705359139
+    est_fecha_nacimiento: '2006-07-24'
+    est_email_estudiante: ldue_simonjp@yahoo.com
+    est_house: Aberdeen
+    est_nombre_representante: Jean Paul Simon
+    est_telf_repr_casa: 2437328
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '091401022'
+    est_email_representante: ldue_simonjp@yahoo.com
+    est_login_representante: asimon
+    est_pass_representante: 1705359139
+    sf_guard_user_id: 26
+    gra: emdiGrado_2
+  emdiEstudiante_27:
+    est_nombres: Vaca Hernández
+    est_apellidos: Antonella
+    est_cedula: 1724568801
+    est_fecha_nacimiento: '2006-05-25'
+    est_email_estudiante: thernandez@tvcable.com.ec
+    est_house: Fitchburg
+    est_nombre_representante: Tania Hernandez
+    est_telf_repr_casa: 2868013
+    est_telf_repr_trabajo: 6002400
+    est_telf_repr_celular: '096188341'
+    est_email_representante: thernandez@tvcable.com.ec
+    est_login_representante: avaca
+    est_pass_representante: 1724568801
+    sf_guard_user_id: 27
+    gra: emdiGrado_2
+  emdiEstudiante_28:
+    est_nombres: Vinueza Vizcaino  
+    est_apellidos: Valentina
+    est_cedula: 1723769426
+    est_fecha_nacimiento: '2006-11-02'
+    est_email_estudiante: veronicavizcaino@yahoo.com
+    est_house: Broomfleet
+    est_nombre_representante: Maria Veronica Vizcaino
+    est_telf_repr_casa: 6037211
+    est_telf_repr_trabajo: 2232340
+    est_telf_repr_celular: '081333886'
+    est_email_representante: veronicavizcaino@yahoo.com
+    est_login_representante: avinueza
+    est_pass_representante: 1723769426
+    sf_guard_user_id: 28
+    gra: emdiGrado_2
+  emdiEstudiante_29:
+    est_nombres: Alvarez Salazar  
+    est_apellidos: Alejandro
+    est_cedula: 1723763841
+    est_fecha_nacimiento: '2005-11-04'
+    est_email_estudiante: maite_salazar@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Juan Pablo Alvarez
+    est_telf_repr_casa: 2865231
+    est_telf_repr_trabajo: 3998960
+    est_telf_repr_celular: '099193901'
+    est_email_representante: maite_salazar@hotmail.com
+    est_login_representante: ralvarez
+    est_pass_representante: 1723763841
+    sf_guard_user_id: 29
+    gra: emdiGrado_3
+  emdiEstudiante_30:
+    est_nombres: Benavides Loya
+    est_apellidos: Doménica Melissa
+    est_cedula: 1727480749
+    est_fecha_nacimiento: '2005-07-26'
+    est_email_estudiante: xavierbenavides2009@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Xavier Benavides
+    est_telf_repr_casa: 2875586
+    est_telf_repr_trabajo: 2875452
+    est_telf_repr_celular: '094100916'
+    est_email_representante: xavierbenavides2009@hotmail.com
+    est_login_representante: dbenavides
+    est_pass_representante: 1727480749
+    sf_guard_user_id: 30
+    gra: emdiGrado_3
+  emdiEstudiante_31:
+    est_nombres: Díaz Rosero
+    est_apellidos: Daira Valeria
+    est_cedula: 1723157622
+    est_fecha_nacimiento: '2006-03-12'
+    est_email_estudiante: valerosero@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Valeria Rosero
+    est_telf_repr_casa: 2385127
+    est_telf_repr_trabajo: 2336182
+    est_telf_repr_celular: '093262777'
+    est_email_representante: valerosero@hotmail.com
+    est_login_representante: ddiaz
+    est_pass_representante: 1723157622
+    sf_guard_user_id: 31
+    gra: emdiGrado_3
+  emdiEstudiante_32:
+    est_nombres: Hernández Patiño
+    est_apellidos: Martín Eloy
+    est_cedula: 1750353243
+    est_fecha_nacimiento: '2005-09-17'
+    est_email_estudiante: virgiliohe@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Virgilio Hernandez
+    est_telf_repr_casa: 3161352
+    est_telf_repr_trabajo: 92720145
+    est_telf_repr_celular: '098714684'
+    est_email_representante: virgiliohe@hotmail.com
+    est_login_representante: mhernandez
+    est_pass_representante: 1750353243
+    sf_guard_user_id: 32
+    gra: emdiGrado_3
+  emdiEstudiante_33:
+    est_nombres: Rodríguez Mejía
+    est_apellidos: Brandon Alexander
+    est_cedula: 601932742
+    est_fecha_nacimiento: '2005-03-29'
+    est_email_estudiante: fanny_maria29@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Fanny Rodriguez
+    est_telf_repr_casa: 3808600
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '092737553'
+    est_email_representante: fanny_maria29@hotmail.com
+    est_login_representante: bmejia
+    est_pass_representante: 5555555556
+    sf_guard_user_id: 33
+    gra: emdiGrado_3
+  emdiEstudiante_34:
+    est_nombres: Narváez Dominguez
+    est_apellidos: Carolina
+    est_cedula: 1727420604
+    est_fecha_nacimiento: '2005-05-31'
+    est_email_estudiante: gonzaloblazer@live.com
+    est_house: Broomfleet
+    est_nombre_representante: Catalina Dominguez
+    est_telf_repr_casa: 2334070
+    est_telf_repr_trabajo: 2334070
+    est_telf_repr_celular: '089463043'
+    est_email_representante: gonzaloblazer@live.com
+    est_login_representante: cnarvaez
+    est_pass_representante: 1727420604
+    sf_guard_user_id: 34
+    gra: emdiGrado_3
+  emdiEstudiante_35:
+    est_nombres: Quiróz Chila
+    est_apellidos: Christian Javier
+    est_cedula: 1724687205
+    est_fecha_nacimiento: '2006-04-29'
+    est_email_estudiante: s.maribel@hotmail.es
+    est_house: Aberdeen
+    est_nombre_representante: Sonia Chila
+    est_telf_repr_casa: 2861298
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '095674896'
+    est_email_representante: s.maribel@hotmail.es
+    est_login_representante: cquiroz
+    est_pass_representante: 1724687205
+    sf_guard_user_id: 35
+    gra: emdiGrado_3
+  emdiEstudiante_36:
+    est_nombres: Reinoso Cevallos  
+    est_apellidos: Isaac
+    est_cedula: 1724569791
+    est_fecha_nacimiento: '2005-06-01'
+    est_email_estudiante: danidaniela@movistas.ec.blackberry.com
+    est_house: Broomfleet
+    est_nombre_representante: Daniela Cevallos
+    est_telf_repr_casa: 2080798
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '098137255'
+    est_email_representante: danidaniela@movistas.ec.blackberry.com
+    est_login_representante: ireinoso
+    est_pass_representante: 1724569791
+    sf_guard_user_id: 36
+    gra: emdiGrado_3
+  emdiEstudiante_37:
+    est_nombres: Robalino Granja
+    est_apellidos: Daniel
+    est_cedula: 1750313759
+    est_fecha_nacimiento: '2005-07-26'
+    est_email_estudiante: daniel_robalino@yahoo.com
+    est_house: Aberdeen
+    est_nombre_representante: Daniel Robalino
+    est_telf_repr_casa: 2340551
+    est_telf_repr_trabajo: 96039892
+    est_telf_repr_celular: '084778492'
+    est_email_representante: daniel_robalino@yahoo.com
+    est_login_representante: drobalino
+    est_pass_representante: 1750313759
+    sf_guard_user_id: 37
+    gra: emdiGrado_3
+  emdiEstudiante_38:
+    est_nombres: Ruilova Torres
+    est_apellidos: Ariel Sebastián
+    est_cedula: 1726247701
+    est_fecha_nacimiento: '2005-05-16'
+    est_email_estudiante: macristina.torres@avon.com
+    est_house: Fitchburg
+    est_nombre_representante: Maria Cristina Torres
+    est_telf_repr_casa: 2342189
+    est_telf_repr_trabajo: 2979800
+    est_telf_repr_celular: '094248627'
+    est_email_representante: macristina.torres@avon.com
+    est_login_representante: aruilova
+    est_pass_representante: 1726247701
+    sf_guard_user_id: 38
+    gra: emdiGrado_3
+  emdiEstudiante_39:
+    est_nombres: Salazar Regalado
+    est_apellidos: Matías Alfredo
+    est_cedula: 1723246466
+    est_fecha_nacimiento: '2005-09-14'
+    est_email_estudiante: flaquita_desalazar@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Grace Regalado
+    est_telf_repr_casa: 2646243
+    est_telf_repr_trabajo: 2990800
+    est_telf_repr_celular: '087857363'
+    est_email_representante: flaquita_desalazar@hotmail.com
+    est_login_representante: msalazar
+    est_pass_representante: 1723246466
+    sf_guard_user_id: 39
+    gra: emdiGrado_3
+  emdiEstudiante_40:
+    est_nombres: Serrano Medina
+    est_apellidos: Paula María
+    est_cedula: 1724684293
+    est_fecha_nacimiento: '2005-03-31'
+    est_email_estudiante: mpmt74@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Paulina Medina
+    est_telf_repr_casa: 2865996
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '099567343'
+    est_email_representante: mpmt74@hotmail.com
+    est_login_representante: pserrano
+    est_pass_representante: 1724684293
+    sf_guard_user_id: 40
+    gra: emdiGrado_3
+  emdiEstudiante_41:
+    est_nombres: Alvarez Salazar 
+    est_apellidos: Alejandro
+    est_cedula: 1723763858
+    est_fecha_nacimiento: '2005-11-04'
+    est_email_estudiante: jpalvarez@indupapel.com.ec
+    est_house: Broomfleet
+    est_nombre_representante: Juan Pablo Alvarez
+    est_telf_repr_casa: 2865231
+    est_telf_repr_trabajo: 2322275
+    est_telf_repr_celular: '093448311'
+    est_email_representante: jpalvarez@indupapel.com.ec
+    est_login_representante: aalvarez
+    est_pass_representante: 1723763858
+    sf_guard_user_id: 41
+    gra: emdiGrado_4
+  emdiEstudiante_42:
+    est_nombres: Castro Ramos
+    est_apellidos: Isaac
+    est_cedula: 1727424085
+    est_fecha_nacimiento: '2005-07-14'
+    est_email_estudiante: jennysram@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Jenny Ramos
+    est_telf_repr_casa: 2338327
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '094800386'
+    est_email_representante: jennysram@hotmail.com
+    est_login_representante: icastro
+    est_pass_representante: 1727424085
+    sf_guard_user_id: 42
+    gra: emdiGrado_4
+  emdiEstudiante_43:
+    est_nombres: Diaz Guanoluisa
+    est_apellidos: Alan Patricio
+    est_cedula: 1725003339
+    est_fecha_nacimiento: '2005-12-26'
+    est_email_estudiante: ginaguanoluisa@andinanet.net
+    est_house: Fitchburg
+    est_nombre_representante: Gina Guanoluisa
+    est_telf_repr_casa: 2842690
+    est_telf_repr_trabajo: 2823553
+    est_telf_repr_celular: '092715231'
+    est_email_representante: ginaguanoluisa@andinanet.net
+    est_login_representante: adiaz
+    est_pass_representante: 1725003339
+    sf_guard_user_id: 43
+    gra: emdiGrado_4
+  emdiEstudiante_44:
+    est_nombres: Galiano Caicedo
+    est_apellidos: Juan Sebastian
+    est_cedula: 1723956239
+    est_fecha_nacimiento: '2005-10-25'
+    est_email_estudiante: igaliano@yahoo.com
+    est_house: Broomfleet
+    est_nombre_representante: Ivan Galiano
+    est_telf_repr_casa: 2865041
+    est_telf_repr_trabajo: 2864091
+    est_telf_repr_celular: '095884800'
+    est_email_representante: igaliano@yahoo.com
+    est_login_representante: jgaliano
+    est_pass_representante: 1723956239
+    sf_guard_user_id: 44
+    gra: emdiGrado_4
+  emdiEstudiante_45:
+    est_nombres: Iñiguez Ramia 
+    est_apellidos: Hugo Mateo
+    est_cedula: 1727487769
+    est_fecha_nacimiento: '2006-04-29'
+    est_email_estudiante: suca1111@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Hugo Iñiguez
+    est_telf_repr_casa: 2072895
+    est_telf_repr_trabajo: 2788652
+    est_telf_repr_celular: '095650458'
+    est_email_representante: suca1111@hotmail.com
+    est_login_representante: hiniguez
+    est_pass_representante: 1727487769
+    sf_guard_user_id: 45
+    gra: emdiGrado_4
+  emdiEstudiante_46:
+    est_nombres: Lopez Peñafiel
+    est_apellidos: Paula Valentina
+    est_cedula: 1723568828
+    est_fecha_nacimiento: '2006-01-09'
+    est_email_estudiante: mpenafiel@bankguay.com
+    est_house: Aberdeen
+    est_nombre_representante: Melany Peñafiel
+    est_telf_repr_casa: 2070901
+    est_telf_repr_trabajo: 3730100
+    est_telf_repr_celular: '098028845'
+    est_email_representante: mpenafiel@bankguay.com
+    est_login_representante: plopez
+    est_pass_representante: 1723568828
+    sf_guard_user_id: 46
+    gra: emdiGrado_4
+  emdiEstudiante_47:
+    est_nombres: Martinez Salazar
+    est_apellidos: Pablo Andrés
+    est_cedula: 1723956064
+    est_fecha_nacimiento: '2005-05-05'
+    est_email_estudiante: maritzasm@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Martiza Salazar
+    est_telf_repr_casa: 2866852
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '098120927'
+    est_email_representante: maritzasm@hotmail.com
+    est_login_representante: pmartinez
+    est_pass_representante: 1723956064
+    sf_guard_user_id: 47
+    gra: emdiGrado_4
+  emdiEstudiante_48:
+    est_nombres: Peñafiel Castillo
+    est_apellidos: Noemi Elizabeth
+    est_cedula: 1723907125
+    est_fecha_nacimiento: '2006-02-25'
+    est_email_estudiante: dpenafiel@grupolider.com.ec
+    est_house: Fitchburg
+    est_nombre_representante: David Peñafiel
+    est_telf_repr_casa: 2609843
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '097101437'
+    est_email_representante: dpenafiel@grupolider.com.ec
+    est_login_representante: npenafiel
+    est_pass_representante: 1723907125
+    sf_guard_user_id: 48
+    gra: emdiGrado_4
+  emdiEstudiante_49:
+    est_nombres: Reyes Madrid
+    est_apellidos: Jean Andres
+    est_cedula: 1726944901
+    est_fecha_nacimiento: '2005-11-03'
+    est_email_estudiante: maritza.madrid69@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Zaida Madrid
+    est_telf_repr_casa: 2860166
+    est_telf_repr_trabajo: 2271661
+    est_telf_repr_celular: '095400041'
+    est_email_representante: maritza.madrid69@hotmail.com
+    est_login_representante: dpinto
+    est_pass_representante: 1726944901
+    sf_guard_user_id: 49
+    gra: emdiGrado_4
+  emdiEstudiante_50:
+    est_nombres: Pinto Segovia
+    est_apellidos: Diego Xavier
+    est_cedula: 1723903496
+    est_fecha_nacimiento: '2005-07-03'
+    est_email_estudiante: elisegoviam@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Elizabeth Segovia
+    est_telf_repr_casa: 2864162
+    est_telf_repr_trabajo: 3332319
+    est_telf_repr_celular: '099238730'
+    est_email_representante: elisegoviam@hotmail.com
+    est_login_representante: jreyes
+    est_pass_representante: 1723903496
+    sf_guard_user_id: 50
+    gra: emdiGrado_4
+  emdiEstudiante_51:
+    est_nombres: Soria Arellano
+    est_apellidos: Luis Matias
+    est_cedula: 1727660324
+    est_fecha_nacimiento: '2006-03-07'
+    est_email_estudiante: arellano.cv@gmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Carla Arellano
+    est_telf_repr_casa: 2787106
+    est_telf_repr_trabajo: 2328828
+    est_telf_repr_celular: '096603158'
+    est_email_representante: arellano.cv@gmail.com
+    est_login_representante: masoria
+    est_pass_representante: 1727660324
+    sf_guard_user_id: 51
+    gra: emdiGrado_4
+  emdiEstudiante_52:
+    est_nombres: Travez Aparicio
+    est_apellidos: Angel David
+    est_cedula: 1722851381
+    est_fecha_nacimiento: '2005-10-18'
+    est_email_estudiante: boris.travez@grupounifer.ec
+    est_house: Fitchburg
+    est_nombre_representante: Boris Travez
+    est_telf_repr_casa: 2074673
+    est_telf_repr_trabajo: 3006586
+    est_telf_repr_celular: '098021015'
+    est_email_representante: boris.travez@grupounifer.ec
+    est_login_representante: atravez
+    est_pass_representante: 1722851381
+    sf_guard_user_id: 52
+    gra: emdiGrado_4
+  emdiEstudiante_53:
+    est_nombres: Yepez Maldonado
+    est_apellidos: Isabela
+    est_cedula: 1722414206
+    est_fecha_nacimiento: '2005-02-01'
+    est_email_estudiante: isamaldo76@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Isabel Maldonado
+    est_telf_repr_casa: 
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '099840838'
+    est_email_representante: isamaldo76@hotmail.com
+    est_login_representante: iyepez
+    est_pass_representante: 1722414206
+    sf_guard_user_id: 53
+    gra: emdiGrado_4
+  emdiEstudiante_54:
+    est_nombres: Azanza Campos
+    est_apellidos: Ana Luna
+    est_cedula: 1725102600
+    est_fecha_nacimiento: '2004-09-10'
+    est_email_estudiante: lagunahei@yahoo.es
+    est_house: Aberdeen
+    est_nombre_representante: Lena Campos
+    est_telf_repr_casa: 2340801
+    est_telf_repr_trabajo: 2788652
+    est_telf_repr_celular: 
+    est_email_representante: lagunahei@yahoo.es
+    est_login_representante: aazanza
+    est_pass_representante: 1725102600
+    sf_guard_user_id: 54
+    gra: emdiGrado_5
+  emdiEstudiante_55:
+    est_nombres: Bustos Cortes
+    est_apellidos: Luis Rolando
+    est_cedula: 1727484584
+    est_fecha_nacimiento: '2004-05-05'
+    est_email_estudiante: gatita_cortes@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Julia Cortes
+    est_telf_repr_casa: 2862472
+    est_telf_repr_trabajo: 2544344
+    est_telf_repr_celular: '086905477'
+    est_email_representante: gatita_cortes@hotmail.com
+    est_login_representante: lbustos
+    est_pass_representante: 1727484584
+    sf_guard_user_id: 55
+    gra: emdiGrado_5
+  emdiEstudiante_56:
+    est_nombres: Cruz Oleas
+    est_apellidos: Julian Esteban
+    est_cedula: 1722402375
+    est_fecha_nacimiento: '2004-08-24'
+    est_email_estudiante: dorisoleas_day@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Doris Oleas
+    est_telf_repr_casa: 2348706
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '099923821'
+    est_email_representante: dorisoleas_day@hotmail.com
+    est_login_representante: jcruz
+    est_pass_representante: 1722402375
+    sf_guard_user_id: 56
+    gra: emdiGrado_5
+  emdiEstudiante_57:
+    est_nombres: Erazo Yachimba
+    est_apellidos: Anahi Julyssa
+    est_cedula: 1750261610
+    est_fecha_nacimiento: '2004-08-06'
+    est_email_estudiante: avad.asociados@gmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Veronica Yachimba
+    est_telf_repr_casa: 2864904
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '082866025'
+    est_email_representante: avad.asociados@gmail.com
+    est_login_representante: aerazo
+    est_pass_representante: 1750261610
+    sf_guard_user_id: 57
+    gra: emdiGrado_5
+  emdiEstudiante_58:
+    est_nombres: Flores Santillan
+    est_apellidos: Gianella Stefania
+    est_cedula: 1724069974
+    est_fecha_nacimiento: '2004-03-30'
+    est_email_estudiante: silvisanlucas@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Silvana Santillan
+    est_telf_repr_casa: 2867650
+    est_telf_repr_trabajo: 6005721
+    est_telf_repr_celular: '097694226'
+    est_email_representante: silvisanlucas@hotmail.com
+    est_login_representante: gflores
+    est_pass_representante: 1724069974
+    sf_guard_user_id: 58
+    gra: emdiGrado_5
+  emdiEstudiante_59:
+    est_nombres: Ocaña Gordon
+    est_apellidos: Domenica Nicole
+    est_cedula: 1724829146
+    est_fecha_nacimiento: '2004-12-20'
+    est_email_estudiante: alexis_ozzo@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Alexis Ocaña
+    est_telf_repr_casa: 2787195
+    est_telf_repr_trabajo: 2615477
+    est_telf_repr_celular: '091378357'
+    est_email_representante: alexis_ozzo@hotmail.com
+    est_login_representante: docana
+    est_pass_representante: 1724829146
+    sf_guard_user_id: 59
+    gra: emdiGrado_5
+  emdiEstudiante_60:
+    est_nombres: Ordoñez Villalobos
+    est_apellidos: Daniela Belen
+    est_cedula: 1723150486
+    est_fecha_nacimiento: '2004-12-09'
+    est_email_estudiante: pamvillalobos@yahoo.com
+    est_house: Fitchburg
+    est_nombre_representante: Pamela Villalobos
+    est_telf_repr_casa: 2330130
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '098961256'
+    est_email_representante: pamvillalobos@yahoo.com
+    est_login_representante: dordonez
+    est_pass_representante: 1723150486
+    sf_guard_user_id: 60
+    gra: emdiGrado_5
+  emdiEstudiante_61:
+    est_nombres: Reinoso Cevallos
+    est_apellidos: Joshua
+    est_cedula: 1724569809
+    est_fecha_nacimiento: '2004-02-07'
+    est_email_estudiante: danidaniela@movistar.blackberry.com
+    est_house: Broomfleet
+    est_nombre_representante: Daniela Cevallos
+    est_telf_repr_casa: 2080798
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '098137255'
+    est_email_representante: danidaniela@movistar.blackberry.com
+    est_login_representante: jreinoso
+    est_pass_representante: 1724569809
+    sf_guard_user_id: 61
+    gra: emdiGrado_5
+  emdiEstudiante_62:
+    est_nombres: Romero Rosenberg
+    est_apellidos: Giulianna 
+    est_cedula: 1723950679
+    est_fecha_nacimiento: '2004-11-20'
+    est_email_estudiante: jcra3963@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Juan Carlos Romero
+    est_telf_repr_casa: 2338596
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '084871772'
+    est_email_representante: jcra3963@hotmail.com
+    est_login_representante: gromero
+    est_pass_representante: 1723950679
+    sf_guard_user_id: 62
+    gra: emdiGrado_5
+  emdiEstudiante_63:
+    est_nombres: Sierra Yepez
+    est_apellidos: Guillermo Ivan
+    est_cedula: 1722906235
+    est_fecha_nacimiento: '2004-07-03'
+    est_email_estudiante: m_sierra60@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Marcelo Sierra
+    est_telf_repr_casa: 2449130
+    est_telf_repr_trabajo: 2225004
+    est_telf_repr_celular: '084683091'
+    est_email_representante: m_sierra60@hotmail.com
+    est_login_representante: gsierra
+    est_pass_representante: 1722906235
+    sf_guard_user_id: 63
+    gra: emdiGrado_5
+  emdiEstudiante_64:
+    est_nombres: Sisa Carrillo
+    est_apellidos: Emilio Javier
+    est_cedula: 1724198583
+    est_fecha_nacimiento: '2005-01-31'
+    est_email_estudiante: xsisa@pazhorowitz.com
+    est_house: Broomfleet
+    est_nombre_representante: Julieta Carrillo
+    est_telf_repr_casa: 2078153
+    est_telf_repr_trabajo: 2545070
+    est_telf_repr_celular: '091412979'
+    est_email_representante: xsisa@pazhorowitz.com
+    est_login_representante: esisa
+    est_pass_representante: 1724198583
+    sf_guard_user_id: 64
+    gra: emdiGrado_5
+  emdiEstudiante_65:
+    est_nombres: Andrade Romero
+    est_apellidos: Mateo Alejandro
+    est_cedula: 1727299933
+    est_fecha_nacimiento: '2004-03-12'
+    est_email_estudiante: candradedousdebes@gmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Juan Carlos Romero
+    est_telf_repr_casa: 2870589
+    est_telf_repr_trabajo: 2502432
+    est_telf_repr_celular: '082607300'
+    est_email_representante: candradedousdebes@gmail.com
+    est_login_representante: mandrade
+    est_pass_representante: 1727299933
+    sf_guard_user_id: 65
+    gra: emdiGrado_6
+  emdiEstudiante_66:
+    est_nombres: Davila Villacres
+    est_apellidos: Cynara Valentina
+    est_cedula: 1727426999
+    est_fecha_nacimiento: '2004-03-18'
+    est_email_estudiante: macris.villacresp@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Maria Cristina Villacres
+    est_telf_repr_casa: 3805615
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '095020810'
+    est_email_representante: macris.villacresp@hotmail.com
+    est_login_representante: cdavila
+    est_pass_representante: 1727426999
+    sf_guard_user_id: 66
+    gra: emdiGrado_6
+  emdiEstudiante_67:
+    est_nombres: De Miguel Vizcaino
+    est_apellidos: Matias
+    est_cedula: 1722361928
+    est_fecha_nacimiento: '2004-07-21'
+    est_email_estudiante: karina_gigia@yahoo.com
+    est_house: Broomfleet
+    est_nombre_representante: Karina Vizcaino
+    est_telf_repr_casa: 2863503
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '097004101'
+    est_email_representante: karina_gigia@yahoo.com
+    est_login_representante: mdemiguel
+    est_pass_representante: 1722361928
+    sf_guard_user_id: 67
+    gra: emdiGrado_6
+  emdiEstudiante_68:
+    est_nombres: Delgado Roman
+    est_apellidos: Valentina
+    est_cedula: 1750294314
+    est_fecha_nacimiento: '2004-06-23'
+    est_email_estudiante: varama23@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Veronica Roman
+    est_telf_repr_casa: 2861391
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '091422082'
+    est_email_representante: varama23@hotmail.com
+    est_login_representante: vdelgado
+    est_pass_representante: 1750294314
+    sf_guard_user_id: 68
+    gra: emdiGrado_6
+  emdiEstudiante_69:
+    est_nombres: Dominguez Enderica
+    est_apellidos: Giuliano Stefano
+    est_cedula: 1722261029
+    est_fecha_nacimiento: '2004-08-05'
+    est_email_estudiante: enderica_estefi@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Estefany Enderica
+    est_telf_repr_casa: 2862097
+    est_telf_repr_trabajo: 2662603
+    est_telf_repr_celular: '087080584'
+    est_email_representante: enderica_estefi@hotmail.com
+    est_login_representante: gdominguez
+    est_pass_representante: 1722261029
+    sf_guard_user_id: 69
+    gra: emdiGrado_6
+  emdiEstudiante_70:
+    est_nombres: Guerra Baquero
+    est_apellidos: Yuliana Guadalupe
+    est_cedula: 1726859943
+    est_fecha_nacimiento: '2004-09-24'
+    est_email_estudiante: ferguepal@yahoo.com
+    est_house: Aberdeen
+    est_nombre_representante: Fernando Guerra
+    est_telf_repr_casa: 3810492
+    est_telf_repr_trabajo: 2078457
+    est_telf_repr_celular: '099044380'
+    est_email_representante: ferguepal@yahoo.com
+    est_login_representante: yguerra
+    est_pass_representante: 1726859943
+    sf_guard_user_id: 70
+    gra: emdiGrado_6
+  emdiEstudiante_71:
+    est_nombres: Herrera Acosta
+    est_apellidos: Samantha
+    est_cedula: 1722411665
+    est_fecha_nacimiento: '2004-09-10'
+    est_email_estudiante: paola_acosta@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Paola Acosta 
+    est_telf_repr_casa: 2867823
+    est_telf_repr_trabajo: 2850114
+    est_telf_repr_celular: '095285000'
+    est_email_representante: paola_acosta@hotmail.com
+    est_login_representante: sacosta
+    est_pass_representante: 1722411665
+    sf_guard_user_id: 71
+    gra: emdiGrado_6
+  emdiEstudiante_72:
+    est_nombres: Iñiguez Gonzalez
+    est_apellidos: Martin Andres
+    est_cedula: 1722145750
+    est_fecha_nacimiento: '2003-12-21'
+    est_email_estudiante: paola_gonzago@yahoo.com
+    est_house: Aberdeen
+    est_nombre_representante: Sandra Gonzalez
+    est_telf_repr_casa: 2600164
+    est_telf_repr_trabajo: 98948986
+    est_telf_repr_celular: '098123917'
+    est_email_representante: paola_gonzago@yahoo.com
+    est_login_representante: miniguez
+    est_pass_representante: 1722145750
+    sf_guard_user_id: 72
+    gra: emdiGrado_6
+  emdiEstudiante_73:
+    est_nombres: Mena Barba
+    est_apellidos: Paula Valentina
+    est_cedula: 1722774534
+    est_fecha_nacimiento: '2004-10-12'
+    est_email_estudiante: anita.barba@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Ana Barba
+    est_telf_repr_casa: 2075807
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '095022079'
+    est_email_representante: anita.barba@hotmail.com
+    est_login_representante: pmena
+    est_pass_representante: 1722774534
+    sf_guard_user_id: 73
+    gra: emdiGrado_6
+  emdiEstudiante_74:
+    est_nombres: Velasco Vallejo
+    est_apellidos: Odette Sarai
+    est_cedula: 1722100987
+    est_fecha_nacimiento: '2004-09-16'
+    est_email_estudiante: sivivelasco@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Silvia Velasco
+    est_telf_repr_casa: 2865720
+    est_telf_repr_trabajo: 2568008
+    est_telf_repr_celular: '095864034'
+    est_email_representante: sivivelasco@hotmail.com
+    est_login_representante: ovelasco
+    est_pass_representante: 1722100987
+    sf_guard_user_id: 74
+    gra: emdiGrado_6
+  emdiEstudiante_75:
+    est_nombres: Acosta Peñafiel
+    est_apellidos: Ariela Nahir
+    est_cedula: 1721545190
+    est_fecha_nacimiento: '2003-09-23'
+    est_email_estudiante: henryacosta@bolsadequito.com
+    est_house: Aberdeen
+    est_nombre_representante: Henrry Acosta
+    est_telf_repr_casa: 2072315
+    est_telf_repr_trabajo: 3988552
+    est_telf_repr_celular: '086694504'
+    est_email_representante: henryacosta@bolsadequito.com
+    est_login_representante: aacosta
+    est_pass_representante: 1721545190
+    sf_guard_user_id: 75
+    gra: emdiGrado_7
+  emdiEstudiante_76:
+    est_nombres: Azzolini Correa
+    est_apellidos: Maria Laura
+    est_cedula: 1723409262
+    est_fecha_nacimiento: '2004-03-16'
+    est_email_estudiante: analuciacorrea@msn.com
+    est_house: Fitchburg
+    est_nombre_representante: Ana Correa
+    est_telf_repr_casa: 2074785
+    est_telf_repr_trabajo: 2074785
+    est_telf_repr_celular: '091215131'
+    est_email_representante: analuciacorrea@msn.com
+    est_login_representante: mazzolini
+    est_pass_representante: 1723409262
+    sf_guard_user_id: 76
+    gra: emdiGrado_7
+  emdiEstudiante_77:
+    est_nombres: Cajiao Padovani
+    est_apellidos: Galo Nicolas
+    est_cedula: 1721108791
+    est_fecha_nacimiento: '2003-03-07'
+    est_email_estudiante: gcajiao@interactive.net.ec
+    est_house: Aberdeen
+    est_nombre_representante: Galo Cajiao
+    est_telf_repr_casa: 2870980
+    est_telf_repr_trabajo: 6023814
+    est_telf_repr_celular: '099908696'
+    est_email_representante: gcajiao@interactive.net.ec
+    est_login_representante: gcajiao
+    est_pass_representante: 1721108791
+    sf_guard_user_id: 77
+    gra: emdiGrado_7
+  emdiEstudiante_78:
+    est_nombres: Del Salto Esquiroz
+    est_apellidos: Rafaela Emilia
+    est_cedula: 1726679689
+    est_fecha_nacimiento: '2003-09-16'
+    est_email_estudiante: ignacita772@yahoo.com
+    est_house: Aberdeen
+    est_nombre_representante: María Ignacia Esquiroz
+    est_telf_repr_casa: 2081739
+    est_telf_repr_trabajo: 2788652
+    est_telf_repr_celular: '091969841'
+    est_email_representante: ignacita772@yahoo.com
+    est_login_representante: rdelsalto
+    est_pass_representante: 1726679689
+    sf_guard_user_id: 78
+    gra: emdiGrado_7
+  emdiEstudiante_79:
+    est_nombres: Gonzalez Huilcapi
+    est_apellidos: Josue Andres
+    est_cedula: 1727427468
+    est_fecha_nacimiento: '2003-11-05'
+    est_email_estudiante: sandyxhr@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Sandy Huilcapi
+    est_telf_repr_casa: 6036322
+    est_telf_repr_trabajo: 2861022
+    est_telf_repr_celular: '091938201'
+    est_email_representante: sandyxhr@hotmail.com
+    est_login_representante: jgonzalez
+    est_pass_representante: 1727427468
+    sf_guard_user_id: 79
+    gra: emdiGrado_7
+  emdiEstudiante_80:
+    est_nombres: Pastor Gonzalez
+    est_apellidos: Jose Alejandro
+    est_cedula: 1726076696
+    est_fecha_nacimiento: '2003-10-29'
+    est_email_estudiante: silvana.gonzalez@etra.com.ec
+    est_house: Aberdeen
+    est_nombre_representante: Silvana Gonzalez
+    est_telf_repr_casa: 2865741
+    est_telf_repr_trabajo: 2529104
+    est_telf_repr_celular: '099558388'
+    est_email_representante: silvana.gonzalez@etra.com.ec
+    est_login_representante: jpastor
+    est_pass_representante: 1726076696
+    sf_guard_user_id: 80
+    gra: emdiGrado_7
+  emdiEstudiante_81:
+    est_nombres: Ron Zubia
+    est_apellidos: Diego Martin
+    est_cedula: 1721285821
+    est_fecha_nacimiento: '2003-06-20'
+    est_email_estudiante: fabricioronp@yahoo.es
+    est_house: Broomfleet
+    est_nombre_representante: Veronica Zubia
+    est_telf_repr_casa: 2345833
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '096688333'
+    est_email_representante: fabricioronp@yahoo.es
+    est_login_representante: mzubia
+    est_pass_representante: 1721285821
+    sf_guard_user_id: 81
+    gra: emdiGrado_7
+  emdiEstudiante_82:
+    est_nombres: Velez Pinto
+    est_apellidos: Ana Cristina
+    est_cedula: 1721730735
+    est_fecha_nacimiento: '2003-10-08'
+    est_email_estudiante: pmpinto@textilsanpedro.com
+    est_house: Fitchburg
+    est_nombre_representante: Paulina Pinto
+    est_telf_repr_casa: 2866604
+    est_telf_repr_trabajo: 2335548
+    est_telf_repr_celular: '092668423'
+    est_email_representante: pmpinto@textilsanpedro.com
+    est_login_representante: avelez
+    est_pass_representante: 1721730735
+    sf_guard_user_id: 82
+    gra: emdiGrado_7
+  emdiEstudiante_83:
+    est_nombres: Vinueza Vizcaino
+    est_apellidos: Valentina
+    est_cedula: 1721133047
+    est_fecha_nacimiento: '2003-05-19'
+    est_email_estudiante: veronicavizcaino@yahoo.com
+    est_house: Broomfleet
+    est_nombre_representante: Veronica Vizcaino
+    est_telf_repr_casa: 6037211
+    est_telf_repr_trabajo: 2232340
+    est_telf_repr_celular: '081333886'
+    est_email_representante: veronicavizcaino@yahoo.com
+    est_login_representante: vvinueza
+    est_pass_representante: 1721133047
+    sf_guard_user_id: 83
+    gra: emdiGrado_7
+  emdiEstudiante_84:
+    est_nombres: Estevez Rosero
+    est_apellidos: Nicole Alejandra
+    est_cedula: 1724216443
+    est_fecha_nacimiento: '2003-11-14'
+    est_email_estudiante: mcrosero@ilalo.com.ec
+    est_house: Broomfleet
+    est_nombre_representante: Cristina Rosero
+    est_telf_repr_casa: 2386128
+    est_telf_repr_trabajo: 2331535
+    est_telf_repr_celular: '093262697'
+    est_email_representante: mcrosero@ilalo.com.ec
+    est_login_representante: nestevez
+    est_pass_representante: 1724216443
+    sf_guard_user_id: 84
+    gra: emdiGrado_8
+  emdiEstudiante_85:
+    est_nombres: Lopez Pachacama
+    est_apellidos: Adriana Leticia
+    est_cedula: 1725503435
+    est_fecha_nacimiento: '2003-03-14'
+    est_email_estudiante: consuelo.pachacama@boehringer-ingelheim.com
+    est_house: Broomfleet
+    est_nombre_representante: Consuelo Pachacama
+    est_telf_repr_casa: 2877314
+    est_telf_repr_trabajo: 3979947
+    est_telf_repr_celular: '099199145'
+    est_email_representante: consuelo.pachacama@boehringer-ingelheim.com
+    est_login_representante: llopez
+    est_pass_representante: 1725503435
+    sf_guard_user_id: 85
+    gra: emdiGrado_8
+  emdiEstudiante_86:
+    est_nombres: Mena Barba
+    est_apellidos: David Sebastian
+    est_cedula: 1721594917
+    est_fecha_nacimiento: '2003-04-24'
+    est_email_estudiante: anita.barba@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Ana Barba
+    est_telf_repr_casa: 2075807
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '095022079'
+    est_email_representante: anita.barba@hotmail.com
+    est_login_representante: dmena
+    est_pass_representante: 1721594917
+    sf_guard_user_id: 86
+    gra: emdiGrado_8
+  emdiEstudiante_87:
+    est_nombres: Narvaez Timbila
+    est_apellidos: Daniela Estefania
+    est_cedula: 1727429225
+    est_fecha_nacimiento: '2003-12-20'
+    est_email_estudiante: mariaje61270@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Maria Jesus Timbila
+    est_telf_repr_casa: '086905269'
+    est_telf_repr_trabajo: 2788652
+    est_telf_repr_celular: '084218614'
+    est_email_representante: mariaje61270@hotmail.com
+    est_login_representante: dnarvaez
+    est_pass_representante: 1727429225
+    sf_guard_user_id: 87
+    gra: emdiGrado_8
+  emdiEstudiante_88:
+    est_nombres: Pinto Romero
+    est_apellidos: Stephano Antonio
+    est_cedula: 1726187907
+    est_fecha_nacimiento: '2003-06-10'
+    est_email_estudiante: karitoromerok@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Karola Romero
+    est_telf_repr_casa: 
+    est_telf_repr_trabajo: 2331780
+    est_telf_repr_celular: '088760560'
+    est_email_representante: karitoromerok@hotmail.com
+    est_login_representante: spinto
+    est_pass_representante: 1726187907
+    sf_guard_user_id: 88
+    gra: emdiGrado_8
+  emdiEstudiante_89:
+    est_nombres: Sanchez Chimborazo
+    est_apellidos: Juan Diego
+    est_cedula: 1727299669
+    est_fecha_nacimiento: '2003-02-04'
+    est_email_estudiante: 
+    est_house: Aberdeen
+    est_nombre_representante: Nelly Chimborazo
+    est_telf_repr_casa: 2239884
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '091240820'
+    est_email_representante: 
+    est_login_representante: isanchez
+    est_pass_representante: 1727299669
+    sf_guard_user_id: 89
+    gra: emdiGrado_8
+  emdiEstudiante_90:
+    est_nombres: Sanchez Castillo
+    est_apellidos: Isela Isabel
+    est_cedula: 1750286732
+    est_fecha_nacimiento: '2003-12-15'
+    est_email_estudiante: jacquicastillo@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Jessica Castillo
+    est_telf_repr_casa: 2867681
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '083071383'
+    est_email_representante: jacquicastillo@hotmail.com
+    est_login_representante: jsanchez
+    est_pass_representante: 1750286732
+    sf_guard_user_id: 90
+    gra: emdiGrado_8
+  emdiEstudiante_91:
+    est_nombres: Vayas Mejia
+    est_apellidos: Josue Eduardo
+    est_cedula: 1500827363
+    est_fecha_nacimiento: '2003-12-25'
+    est_email_estudiante: lovegaby_25@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Ana Gabriela Mejia
+    est_telf_repr_casa: 2075436
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '091119624'
+    est_email_representante: lovegaby_25@hotmail.com
+    est_login_representante: jvayas
+    est_pass_representante: 1500827363
+    sf_guard_user_id: 91
+    gra: emdiGrado_8
+  emdiEstudiante_92:
+    est_nombres: Velez Pinto
+    est_apellidos: Maria Gracia
+    est_cedula: 1721730743
+    est_fecha_nacimiento: '2003-10-08'
+    est_email_estudiante: pmpinto@textilessanpedro.com
+    est_house: Fitchburg
+    est_nombre_representante: Paulina Pinto
+    est_telf_repr_casa: 2866604
+    est_telf_repr_trabajo: 2335548
+    est_telf_repr_celular: '092668423'
+    est_email_representante: pmpinto@textilessanpedro.com
+    est_login_representante: mvelez
+    est_pass_representante: 1721730743
+    sf_guard_user_id: 92
+    gra: emdiGrado_8
+  emdiEstudiante_93:
+    est_nombres: Villalon Rubio
+    est_apellidos: Isabela Analia
+    est_cedula: 1723214217
+    est_fecha_nacimiento: '2003-12-16'
+    est_email_estudiante: nellyrubioh@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Nelly Rubio
+    est_telf_repr_casa: 2601607
+    est_telf_repr_trabajo: 91402084
+    est_telf_repr_celular: '084059410'
+    est_email_representante: nellyrubioh@hotmail.com
+    est_login_representante: ivillalon
+    est_pass_representante: 1723214217
+    sf_guard_user_id: 93
+    gra: emdiGrado_8
+  emdiEstudiante_94:
+    est_nombres: Ashford Figueroa
+    est_apellidos: Matthew Jose
+    est_cedula: 1726075748
+    est_fecha_nacimiento: '2002-03-01'
+    est_email_estudiante: kev@kevinashford.wanadoo.co.uk
+    est_house: Fitchburg
+    est_nombre_representante: Kevin Ashford
+    est_telf_repr_casa: 2346604
+    est_telf_repr_trabajo: 2788652
+    est_telf_repr_celular: '087444282'
+    est_email_representante: kev@kevinashford.wanadoo.co.uk
+    est_login_representante: mashford
+    est_pass_representante: 1726075748
+    sf_guard_user_id: 94
+    gra: emdiGrado_9
+  emdiEstudiante_95:
+    est_nombres: Bustos Cortes
+    est_apellidos: Giuliana Belen
+    est_cedula: 1727484626
+    est_fecha_nacimiento: '2002-06-26'
+    est_email_estudiante: gatita_cortes@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Julia Cortes
+    est_telf_repr_casa: 2862472
+    est_telf_repr_trabajo: 2544344
+    est_telf_repr_celular: '086905477'
+    est_email_representante: gatita_cortes@hotmail.com
+    est_login_representante: gbustos
+    est_pass_representante: 1727484626
+    sf_guard_user_id: 95
+    gra: emdiGrado_9
+  emdiEstudiante_96:
+    est_nombres: Calderon Mahauad
+    est_apellidos: Raphaela Anhai
+    est_cedula: 1721796752
+    est_fecha_nacimiento: '2002-06-01'
+    est_email_estudiante: gmahauad@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Giomara Mahauad
+    est_telf_repr_casa: 2600357
+    est_telf_repr_trabajo: 3963300
+    est_telf_repr_celular: '085531678'
+    est_email_representante: gmahauad@hotmail.com
+    est_login_representante: rcalderon
+    est_pass_representante: 1721796752
+    sf_guard_user_id: 96
+    gra: emdiGrado_9
+  emdiEstudiante_97:
+    est_nombres: Cevallos Salazar
+    est_apellidos: Emilio Jose
+    est_cedula: 1721492211
+    est_fecha_nacimiento: '2001-12-15'
+    est_email_estudiante: nancysalazarmora.@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Nancy Cevallos
+    est_telf_repr_casa: 2336562
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '099047797'
+    est_email_representante: nancysalazarmora.@hotmail.com
+    est_login_representante: ecevallos
+    est_pass_representante: 1721492211
+    sf_guard_user_id: 97
+    gra: emdiGrado_9
+  emdiEstudiante_98:
+    est_nombres: Del Salto Esquiroz
+    est_apellidos: Valentina Rebeca
+    est_cedula: 1726679671
+    est_fecha_nacimiento: '2002-09-23'
+    est_email_estudiante: visualizar.ec@gmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Santiago Del Salto
+    est_telf_repr_casa: 2081739
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '099232288'
+    est_email_representante: visualizar.ec@gmail.com
+    est_login_representante: vdelsalto
+    est_pass_representante: 1726679671
+    sf_guard_user_id: 98
+    gra: emdiGrado_9
+  emdiEstudiante_99:
+    est_nombres: Dominguez Nuñez
+    est_apellidos: Giany Micaela
+    est_cedula: 
+    est_fecha_nacimiento: '2002-12-02'
+    est_email_estudiante: lorenanunezu@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Lorena Nuñez
+    est_telf_repr_casa: 2616709
+    est_telf_repr_trabajo: 2281506
+    est_telf_repr_celular: '084566838'
+    est_email_representante: lorenanunezu@hotmail.com
+    est_login_representante: mdominguez
+    est_pass_representante: 9999999991
+    sf_guard_user_id: 99
+    gra: emdiGrado_9
+  emdiEstudiante_100:
+    est_nombres: Leguisamo Checa
+    est_apellidos: David Andres
+    est_cedula: 1727489039
+    est_fecha_nacimiento: '2002-04-24'
+    est_email_estudiante: kcheca@emdischool.com
+    est_house: Broomfleet
+    est_nombre_representante: Karla Checa
+    est_telf_repr_casa: 2070075
+    est_telf_repr_trabajo: 2788652
+    est_telf_repr_celular: '086135109'
+    est_email_representante: kcheca@emdischool.com
+    est_login_representante: dleguisamo
+    est_pass_representante: 1727489039
+    sf_guard_user_id: 100
+    gra: emdiGrado_9
+  emdiEstudiante_101:
+    est_nombres: Loza Cisneros
+    est_apellidos: Josue Alejandro
+    est_cedula: 1726605692
+    est_fecha_nacimiento: '2003-02-22'
+    est_email_estudiante: marysolecisneros@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Soledad Cisneros
+    est_telf_repr_casa: 2866615
+    est_telf_repr_trabajo: 2868902
+    est_telf_repr_celular: '087298346'
+    est_email_representante: marysolecisneros@hotmail.com
+    est_login_representante: jloza
+    est_pass_representante: 1726605692
+    sf_guard_user_id: 101
+    gra: emdiGrado_9
+  emdiEstudiante_102:
+    est_nombres: Ludeña Rueda
+    est_apellidos: Ana Emilia
+    est_cedula: 1724911126
+    est_fecha_nacimiento: '2002-08-20'
+    est_email_estudiante: ludeña-fausto@ieee.org
+    est_house: Broomfleet
+    est_nombre_representante: Fausto Ludeña
+    est_telf_repr_casa: 2867563
+    est_telf_repr_trabajo: 2862721
+    est_telf_repr_celular: '099702045'
+    est_email_representante: ludeña-fausto@ieee.org
+    est_login_representante: aludena
+    est_pass_representante: 1724911126
+    sf_guard_user_id: 102
+    gra: emdiGrado_9
+  emdiEstudiante_103:
+    est_nombres: Mejia Rodriguez
+    est_apellidos: Luis Enrique
+    est_cedula: 
+    est_fecha_nacimiento: '2002-06-08'
+    est_email_estudiante: fanny_maria29@hotmail
+    est_house: Fitchburg
+    est_nombre_representante: Fanny Rodriguez
+    est_telf_repr_casa: 3808600
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '092737553'
+    est_email_representante: fanny_maria29@hotmail
+    est_login_representante: lmejia
+    est_pass_representante: 9999999992
+    sf_guard_user_id: 103
+    gra: emdiGrado_9
+  emdiEstudiante_104:
+    est_nombres: Segovia Segovia
+    est_apellidos: Ingrid Dominick
+    est_cedula: 1750294041
+    est_fecha_nacimiento: '2002-10-06'
+    est_email_estudiante: ingrithsb@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Ingrid Segovia
+    est_telf_repr_casa: 2346809
+    est_telf_repr_trabajo: 2527215
+    est_telf_repr_celular: '098925862'
+    est_email_representante: ingrithsb@hotmail.com
+    est_login_representante: isegovia
+    est_pass_representante: 1750294041
+    sf_guard_user_id: 104
+    gra: emdiGrado_9
+  emdiEstudiante_105:
+    est_nombres: Serrano Medina
+    est_apellidos: Daniel Alejandro
+    est_cedula: 1722077516
+    est_fecha_nacimiento: '2003-01-08'
+    est_email_estudiante: mpmt74@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Paulina Medina
+    est_telf_repr_casa: 2865996
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '099567343'
+    est_email_representante: mpmt74@hotmail.com
+    est_login_representante: dserrano
+    est_pass_representante: 1722077516
+    sf_guard_user_id: 105
+    gra: emdiGrado_9
+  emdiEstudiante_106:
+    est_nombres: Toaza Garcia
+    est_apellidos: Miguel Eduardo
+    est_cedula: 1723262851
+    est_fecha_nacimiento: '2002-09-18'
+    est_email_estudiante: washotm@merchantbansa.com
+    est_house: Broomfleet
+    est_nombre_representante: Washington Toaza
+    est_telf_repr_casa: 2344179
+    est_telf_repr_trabajo: 2553992
+    est_telf_repr_celular: '095623243'
+    est_email_representante: washotm@merchantbansa.com
+    est_login_representante: mtoaza
+    est_pass_representante: 1723262851
+    sf_guard_user_id: 106
+    gra: emdiGrado_9
+  emdiEstudiante_107:
+    est_nombres: Torres Andrade 
+    est_apellidos: Galia Domenica
+    est_cedula: 802937532
+    est_fecha_nacimiento: '2002-02-12'
+    est_email_estudiante: galiamandrade@yahoo.com
+    est_house: Fitchburg
+    est_nombre_representante: Galia Andrade
+    est_telf_repr_casa: 2385173
+    est_telf_repr_trabajo: 2385901
+    est_telf_repr_celular: '094292648'
+    est_email_representante: galiamandrade@yahoo.com
+    est_login_representante: dtorres
+    est_pass_representante: 5555555555
+    sf_guard_user_id: 107
+    gra: emdiGrado_9
+  emdiEstudiante_108:
+    est_nombres: Torres Chiquin
+    est_apellidos: Rommy Mayleen
+    est_cedula: 1710505742
+    est_fecha_nacimiento: '2002-11-25'
+    est_email_estudiante: ximes.co@gmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Ximena Chiquin
+    est_telf_repr_casa: 2339031
+    est_telf_repr_trabajo: 2850878
+    est_telf_repr_celular: '091449291'
+    est_email_representante: ximes.co@gmail.com
+    est_login_representante: mtorres
+    est_pass_representante: 1710505742
+    sf_guard_user_id: 108
+    gra: emdiGrado_9
+  emdiEstudiante_109:
+    est_nombres: Abad Salas
+    est_apellidos: Micaela Stefania
+    est_cedula: 1750370411
+    est_fecha_nacimiento: '2001-12-25'
+    est_email_estudiante: silvana_salas@hotmail. Es
+    est_house: Broomfleet
+    est_nombre_representante: Silavana Salas
+    est_telf_repr_casa: 2868502
+    est_telf_repr_trabajo: 2868479
+    est_telf_repr_celular: '099475947'
+    est_email_representante: silvana_salas@hotmail. Es
+    est_login_representante: mabad
+    est_pass_representante: 1750370411
+    sf_guard_user_id: 109
+    gra: emdiGrado_10
+  emdiEstudiante_110:
+    est_nombres: Azzolini Correa
+    est_apellidos: Nicolás Alejandro
+    est_cedula: 1723409254
+    est_fecha_nacimiento: '2001-12-05'
+    est_email_estudiante: analuciacorrea@msn.com
+    est_house: Fitchburg
+    est_nombre_representante: Ana Correa
+    est_telf_repr_casa: 2074785
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '091215131'
+    est_email_representante: analuciacorrea@msn.com
+    est_login_representante: nazzolini
+    est_pass_representante: 1723409254
+    sf_guard_user_id: 110
+    gra: emdiGrado_10
+  emdiEstudiante_111:
+    est_nombres: Chacon Sosa
+    est_apellidos: Marcelo Eduardo
+    est_cedula: 1723409817
+    est_fecha_nacimiento: '2001-08-15'
+    est_email_estudiante: yanara _sosa@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Yanara Sosa
+    est_telf_repr_casa: 2346257
+    est_telf_repr_trabajo: 2343390
+    est_telf_repr_celular: '084699422'
+    est_email_representante: yanara _sosa@hotmail.com
+    est_login_representante: mchacon
+    est_pass_representante: 1723409817
+    sf_guard_user_id: 111
+    gra: emdiGrado_10
+  emdiEstudiante_112:
+    est_nombres: Cineros Garces 
+    est_apellidos: Annier Melissa
+    est_cedula: 1804851051
+    est_fecha_nacimiento: '2002-04-08'
+    est_email_estudiante: agarces@desarrollosocial.gob.ec
+    est_house: Fitchburg
+    est_nombre_representante: Anita Garces
+    est_telf_repr_casa: 2866347
+    est_telf_repr_trabajo: 3995605
+    est_telf_repr_celular: '096025483'
+    est_email_representante: agarces@desarrollosocial.gob.ec
+    est_login_representante: acisneros
+    est_pass_representante: 1804851051
+    sf_guard_user_id: 112
+    gra: emdiGrado_10
+  emdiEstudiante_113:
+    est_nombres: Davial Zubia
+    est_apellidos: Ricardo Nicolas
+    est_cedula: 1719161075
+    est_fecha_nacimiento: '2001-02-19'
+    est_email_estudiante: ferniqui@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Maria Fernanada Zubia
+    est_telf_repr_casa: 2074396
+    est_telf_repr_trabajo: 2466236
+    est_telf_repr_celular: '083592947'
+    est_email_representante: ferniqui@hotmail.com
+    est_login_representante: rdavila
+    est_pass_representante: 1719161075
+    sf_guard_user_id: 113
+    gra: emdiGrado_10
+  emdiEstudiante_114:
+    est_nombres: Figueroa Dominguez
+    est_apellidos: Camila Michela
+    est_cedula: 1721223715
+    est_fecha_nacimiento: '2001-12-17'
+    est_email_estudiante: karinadominguezf@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Karina Dominguez
+    est_telf_repr_casa: 2337774
+    est_telf_repr_trabajo: 2335878
+    est_telf_repr_celular: '087080583'
+    est_email_representante: karinadominguezf@hotmail.com
+    est_login_representante: cfigueroa
+    est_pass_representante: 1721223715
+    sf_guard_user_id: 114
+    gra: emdiGrado_10
+  emdiEstudiante_115:
+    est_nombres: Flores Cevallos
+    est_apellidos: Valeria Rafaela
+    est_cedula: 1723563266
+    est_fecha_nacimiento: '2002-05-17'
+    est_email_estudiante: magui4garlatour@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Magui Flores
+    est_telf_repr_casa: 6010649
+    est_telf_repr_trabajo: 2501454
+    est_telf_repr_celular: '095614287'
+    est_email_representante: magui4garlatour@hotmail.com
+    est_login_representante: vflores
+    est_pass_representante: 1723563266
+    sf_guard_user_id: 115
+    gra: emdiGrado_10
+  emdiEstudiante_116:
+    est_nombres: Herrera Acosta
+    est_apellidos: Paula Carolina
+    est_cedula: 1720893245
+    est_fecha_nacimiento: '2002-01-02'
+    est_email_estudiante: paola_acosta@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Paola Acosta
+    est_telf_repr_casa: 2867823
+    est_telf_repr_trabajo: 2850114
+    est_telf_repr_celular: '095285000'
+    est_email_representante: paola_acosta@hotmail.com
+    est_login_representante: pcherrera
+    est_pass_representante: 1720893245
+    sf_guard_user_id: 116
+    gra: emdiGrado_10
+  emdiEstudiante_117:
+    est_nombres: Nuñez Padilla
+    est_apellidos: Keila Solange
+    est_cedula: 1721714598
+    est_fecha_nacimiento: '2002-03-12'
+    est_email_estudiante: padillaindira@yahoo.com
+    est_house: Fitchburg
+    est_nombre_representante: Indira Padilla
+    est_telf_repr_casa: 2863224
+    est_telf_repr_trabajo: 2951384
+    est_telf_repr_celular: '098354162'
+    est_email_representante: padillaindira@yahoo.com
+    est_login_representante: knunez
+    est_pass_representante: 1721714598
+    sf_guard_user_id: 117
+    gra: emdiGrado_10
+  emdiEstudiante_118:
+    est_nombres: Ocaña Gordon
+    est_apellidos: Diego Alessandro
+    est_cedula: 1719922328
+    est_fecha_nacimiento: '2011-05-29'
+    est_email_estudiante: monica_gordon@img.com.ec
+    est_house: Aberdeen
+    est_nombre_representante: Monica Gordon
+    est_telf_repr_casa: 2787195
+    est_telf_repr_trabajo: 2845435
+    est_telf_repr_celular: '098048892'
+    est_email_representante: monica_gordon@img.com.ec
+    est_login_representante: aocana
+    est_pass_representante: 1719922328
+    sf_guard_user_id: 118
+    gra: emdiGrado_10
+  emdiEstudiante_119:
+    est_nombres: Paez Salagado
+    est_apellidos: Pamela Thaiz
+    est_cedula: 1720811767
+    est_fecha_nacimiento: '2002-02-01'
+    est_email_estudiante: dra.sofiasalgado@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Sofia Salgado
+    est_telf_repr_casa: 2861229
+    est_telf_repr_trabajo: 2025706
+    est_telf_repr_celular: '093470407'
+    est_email_representante: dra.sofiasalgado@hotmail.com
+    est_login_representante: ppaez
+    est_pass_representante: 1720811767
+    sf_guard_user_id: 119
+    gra: emdiGrado_10
+  emdiEstudiante_120:
+    est_nombres: Perez Grandes
+    est_apellidos: Emily Shantal
+    est_cedula: 1713758546
+    est_fecha_nacimiento: '2001-12-29'
+    est_email_estudiante: duanyly@gmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Elisa Grandes
+    est_telf_repr_casa: 2865903
+    est_telf_repr_trabajo: 2339844
+    est_telf_repr_celular: '093332378'
+    est_email_representante: duanyly@gmail.com
+    est_login_representante: eperez
+    est_pass_representante: 1713758546
+    sf_guard_user_id: 120
+    gra: emdiGrado_10
+  emdiEstudiante_121:
+    est_nombres: Rueda Carrera 
+    est_apellidos: Valentina
+    est_cedula: 1724682123
+    est_fecha_nacimiento: '2002-02-14'
+    est_email_estudiante: eruedster@gmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Mariana Carrera
+    est_telf_repr_casa: 2865616
+    est_telf_repr_trabajo: 2868902
+    est_telf_repr_celular: '095979683'
+    est_email_representante: eruedster@gmail.com
+    est_login_representante: vrueda
+    est_pass_representante: 1724682123
+    sf_guard_user_id: 121
+    gra: emdiGrado_10
+  emdiEstudiante_122:
+    est_nombres: Yanez Abad
+    est_apellidos: Mathias Sebastian
+    est_cedula: 1722415914
+    est_fecha_nacimiento: '2001-04-18'
+    est_email_estudiante: paulina.abad@gmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Paulina Abad
+    est_telf_repr_casa: 2869135
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '099623361'
+    est_email_representante: paulina.abad@gmail.com
+    est_login_representante: myanez
+    est_pass_representante: 1722415914
+    sf_guard_user_id: 122
+    gra: emdiGrado_10
+  emdiEstudiante_123:
+    est_nombres: Albuja Yepez
+    est_apellidos: Camilo Sebastian
+    est_cedula: 1723956320
+    est_fecha_nacimiento: '2000-10-17'
+    est_email_estudiante: myepez@usfq.edu.ec
+    est_house: Aberdeen
+    est_nombre_representante: Martha Yepez
+    est_telf_repr_casa: 2347679
+    est_telf_repr_trabajo: 2971700
+    est_telf_repr_celular: '087503305'
+    est_email_representante: myepez@usfq.edu.ec
+    est_login_representante: calbuja
+    est_pass_representante: 1723956320
+    sf_guard_user_id: 123
+    gra: emdiGrado_11
+  emdiEstudiante_124:
+    est_nombres: Boschetti Bergmann
+    est_apellidos: Francesco Antonio
+    est_cedula: 1718640681
+    est_fecha_nacimiento: '2000-06-30'
+    est_email_estudiante: elcloset34@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Loraine Bergmann
+    est_telf_repr_casa: 2862787
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '084782902'
+    est_email_representante: elcloset34@hotmail.com
+    est_login_representante: fboschetti
+    est_pass_representante: 1718640681
+    sf_guard_user_id: 124
+    gra: emdiGrado_11
+  emdiEstudiante_125:
+    est_nombres: Cisneros Ontaneda
+    est_apellidos: Felipe Nicolas
+    est_cedula: 1726605700
+    est_fecha_nacimiento: '2001-02-15'
+    est_email_estudiante: catering.gourmet2010@live.com
+    est_house: Broomfleet
+    est_nombre_representante: Rosa Cisneros
+    est_telf_repr_casa: 2866616
+    est_telf_repr_trabajo: 3302210
+    est_telf_repr_celular: '098128766'
+    est_email_representante: catering.gourmet2010@live.com
+    est_login_representante: fcisneros
+    est_pass_representante: 1726605700
+    sf_guard_user_id: 125
+    gra: emdiGrado_11
+  emdiEstudiante_126:
+    est_nombres: Grijalva Mora
+    est_apellidos: Alejandro Sebastian
+    est_cedula: 1718640210
+    est_fecha_nacimiento: '2000-05-05'
+    est_email_estudiante: christiang@hilsea.com.ec
+    est_house: Broomfleet
+    est_nombre_representante: Tatiana Mora
+    est_telf_repr_casa: 2343943
+    est_telf_repr_trabajo: 2800416
+    est_telf_repr_celular: '093982408'
+    est_email_representante: christiang@hilsea.com.ec
+    est_login_representante: agrijalva
+    est_pass_representante: 1718640210
+    sf_guard_user_id: 126
+    gra: emdiGrado_11
+  emdiEstudiante_127:
+    est_nombres: Leguisamo Checa
+    est_apellidos: Micaela
+    est_cedula: 1727587030
+    est_fecha_nacimiento: '2001-01-23'
+    est_email_estudiante: kcheca@emdischool.com
+    est_house: Broomfleet
+    est_nombre_representante: Karla Checa
+    est_telf_repr_casa: 2070075
+    est_telf_repr_trabajo: 2788652
+    est_telf_repr_celular: '092715300'
+    est_email_representante: kcheca@emdischool.com
+    est_login_representante: mleguisamo
+    est_pass_representante: 1727587030
+    sf_guard_user_id: 127
+    gra: emdiGrado_11
+  emdiEstudiante_128:
+    est_nombres: Ludeña Rueda
+    est_apellidos: María José
+    est_cedula: 1724911092
+    est_fecha_nacimiento: '2000-09-12'
+    est_email_estudiante: emfaluff@ecuanet.net.ec
+    est_house: Broomfleet
+    est_nombre_representante: Monica Rueda
+    est_telf_repr_casa: 2867563
+    est_telf_repr_trabajo: 2865832
+    est_telf_repr_celular: '099933551'
+    est_email_representante: emfaluff@ecuanet.net.ec
+    est_login_representante: mludena
+    est_pass_representante: 1724911092
+    sf_guard_user_id: 128
+    gra: emdiGrado_11
+  emdiEstudiante_129:
+    est_nombres: Quintana Huilcapi 
+    est_apellidos: David Andres
+    est_cedula: 1723957153
+    est_fecha_nacimiento: '2000-05-08'
+    est_email_estudiante: marco.quintana68@yahoo.com
+    est_house: Broomfleet
+    est_nombre_representante: Marco Quintana
+    est_telf_repr_casa: 6023827
+    est_telf_repr_trabajo: 2861022
+    est_telf_repr_celular: '091938199'
+    est_email_representante: marco.quintana68@yahoo.com
+    est_login_representante: dquintana
+    est_pass_representante: 1723957153
+    sf_guard_user_id: 129
+    gra: emdiGrado_11
+  emdiEstudiante_130:
+    est_nombres: Rodriguez Caicedo
+    est_apellidos: Mathew
+    est_cedula: 1720994951
+    est_fecha_nacimiento: '2000-03-13'
+    est_email_estudiante: 
+    est_house: Aberdeen
+    est_nombre_representante: Franklin Rodriguez
+    est_telf_repr_casa: 2787543
+    est_telf_repr_trabajo: 6034448
+    est_telf_repr_celular: '099824620'
+    est_email_representante: 
+    est_login_representante: mrodriguez
+    est_pass_representante: 1720994951
+    sf_guard_user_id: 130
+    gra: emdiGrado_11
+  emdiEstudiante_131:
+    est_nombres: Serrano Medina
+    est_apellidos: Martin Andres
+    est_cedula: 1718897539
+    est_fecha_nacimiento: '2000-08-25'
+    est_email_estudiante: mpmt74@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Paulina Medina
+    est_telf_repr_casa: 2865996
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '099567343'
+    est_email_representante: mpmt74@hotmail.com
+    est_login_representante: mserrano
+    est_pass_representante: 1718897539
+    sf_guard_user_id: 131
+    gra: emdiGrado_11
+  emdiEstudiante_132:
+    est_nombres: Torres Andrade
+    est_apellidos: Isabela Alejandra
+    est_cedula: 1718720335
+    est_fecha_nacimiento: '2000-06-30'
+    est_email_estudiante: galiamandrade@yahoo.com
+    est_house: Fitchburg
+    est_nombre_representante: Galia Andrade
+    est_telf_repr_casa: 2385173
+    est_telf_repr_trabajo: 2385901
+    est_telf_repr_celular: '094292648'
+    est_email_representante: galiamandrade@yahoo.com
+    est_login_representante: itorres
+    est_pass_representante: 1718720335
+    sf_guard_user_id: 132
+    gra: emdiGrado_11
+  emdiEstudiante_133:
+    est_nombres: Vasconez Rojas
+    est_apellidos: Maria Gabriela
+    est_cedula: 1750352286
+    est_fecha_nacimiento: '2000-05-30'
+    est_email_estudiante: 
+    est_house: Aberdeen
+    est_nombre_representante: Eliana Rojas
+    est_telf_repr_casa: 2345009
+    est_telf_repr_trabajo: 3976000
+    est_telf_repr_celular: '098224151'
+    est_email_representante: 
+    est_login_representante: mvasconez
+    est_pass_representante: 1750352286
+    sf_guard_user_id: 133
+    gra: emdiGrado_11
+  emdiEstudiante_134:
+    est_nombres: Brahm Carrera
+    est_apellidos: Julieta
+    est_cedula: 1717666562
+    est_fecha_nacimiento: '1999-03-02'
+    est_email_estudiante: 
+    est_house: Aberdeen
+    est_nombre_representante: Veronica Carrera
+    est_telf_repr_casa: 
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '099801915'
+    est_email_representante: 
+    est_login_representante: jbrahm
+    est_pass_representante: 1717666562
+    sf_guard_user_id: 134
+    gra: emdiGrado_12
+  emdiEstudiante_135:
+    est_nombres: Espinoza Donoso
+    est_apellidos: Andrea Elizabeth
+    est_cedula: 603842089
+    est_fecha_nacimiento: '1999-05-04'
+    est_email_estudiante: freddyespinoza63@yahoo.com
+    est_house: Aberdeen
+    est_nombre_representante: Ramiro Espinoza
+    est_telf_repr_casa: 2331818
+    est_telf_repr_trabajo: 2976600
+    est_telf_repr_celular: '099805006'
+    est_email_representante: freddyespinoza63@yahoo.com
+    est_login_representante: aespinoza
+    est_pass_representante: 5555555551
+    sf_guard_user_id: 135
+    gra: emdiGrado_12
+  emdiEstudiante_136:
+    est_nombres: Hidalgo Jaramillo
+    est_apellidos: Nicole Carolina
+    est_cedula: 1721856019
+    est_fecha_nacimiento: '1999-11-08'
+    est_email_estudiante: 
+    est_house: Aberdeen
+    est_nombre_representante: Isabel Hidalgo
+    est_telf_repr_casa: 2850243
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '098100122'
+    est_email_representante: 
+    est_login_representante: nhidalgo
+    est_pass_representante: 1721856019
+    sf_guard_user_id: 136
+    gra: emdiGrado_12
+  emdiEstudiante_137:
+    est_nombres: Jarrin Arroyo
+    est_apellidos: David Alberto
+    est_cedula: 1718191917
+    est_fecha_nacimiento: '1999-10-25'
+    est_email_estudiante: ferarroyo73@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Ma. Fernanda Arroyo
+    est_telf_repr_casa: 2877544
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '097837339'
+    est_email_representante: ferarroyo73@hotmail.com
+    est_login_representante: djarrin
+    est_pass_representante: 1718191917
+    sf_guard_user_id: 137
+    gra: emdiGrado_12
+  emdiEstudiante_138:
+    est_nombres: Navarrete Batallas
+    est_apellidos: Francisco Jose
+    est_cedula: 1727421107
+    est_fecha_nacimiento: '1999-11-19'
+    est_email_estudiante: puntoferretero-ec@yahoo.com
+    est_house: Aberdeen
+    est_nombre_representante: Sonia Batallas
+    est_telf_repr_casa: 2331607
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '096571469'
+    est_email_representante: puntoferretero-ec@yahoo.com
+    est_login_representante: fnavarrete
+    est_pass_representante: 1727421107
+    sf_guard_user_id: 138
+    gra: emdiGrado_12
+  emdiEstudiante_139:
+    est_nombres: Rodriguez Rubio
+    est_apellidos: Luana
+    est_cedula: 2927756
+    est_fecha_nacimiento: '1999-09-28'
+    est_email_estudiante: sylvia1rubio@gmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Sylvia Rubio
+    est_telf_repr_casa: 2871758
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '093999160'
+    est_email_representante: sylvia1rubio@gmail.com
+    est_login_representante: lrodriguez
+    est_pass_representante: 5555555552
+    sf_guard_user_id: 139
+    gra: emdiGrado_12
+  emdiEstudiante_140:
+    est_nombres: Sanchez Narvaez 
+    est_apellidos: Valery Nikole
+    est_cedula: 1723522023
+    est_fecha_nacimiento: '1999-10-23'
+    est_email_estudiante: fasan1969@gmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Fabian Sanchez
+    est_telf_repr_casa: 2869837
+    est_telf_repr_trabajo: 2813214
+    est_telf_repr_celular: '095889014'
+    est_email_representante: fasan1969@gmail.com
+    est_login_representante: vsanchez
+    est_pass_representante: 1723522023
+    sf_guard_user_id: 140
+    gra: emdiGrado_12
+  emdiEstudiante_141:
+    est_nombres: Vallejo Flores
+    est_apellidos: Daniel Alejandro
+    est_cedula: 1724374432
+    est_fecha_nacimiento: '2000-10-02'
+    est_email_estudiante: sflores@meecuador.com
+    est_house: Broomfleet
+    est_nombre_representante: Silvia Flores
+    est_telf_repr_casa: 3283317
+    est_telf_repr_trabajo: 2443240
+    est_telf_repr_celular: '099736349'
+    est_email_representante: sflores@meecuador.com
+    est_login_representante: dvallejo
+    est_pass_representante: 1724374432
+    sf_guard_user_id: 141
+    gra: emdiGrado_12
+  emdiEstudiante_142:
+    est_nombres: Yanez Abad
+    est_apellidos: Andres Alejandro
+    est_cedula: 1722415922
+    est_fecha_nacimiento: '1999-10-21'
+    est_email_estudiante: paulina.abad@gmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Paulina Abad
+    est_telf_repr_casa: 2869135
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '099623361'
+    est_email_representante: paulina.abad@gmail.com
+    est_login_representante: ayanez
+    est_pass_representante: 1722415922
+    sf_guard_user_id: 142
+    gra: emdiGrado_12
+  emdiEstudiante_143:
+    est_nombres: Arias Sandoval
+    est_apellidos: Jorge Luis
+    est_cedula: 1708726557
+    est_fecha_nacimiento: '1998-12-21'
+    est_email_estudiante: lupita.de.arias@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Guadalupe Sandoval
+    est_telf_repr_casa: 2850510
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '097854268'
+    est_email_representante: lupita.de.arias@hotmail.com
+    est_login_representante: jarias
+    est_pass_representante: 1708726557
+    sf_guard_user_id: 143
+    gra: emdiGrado_13
+  emdiEstudiante_144:
+    est_nombres: Boschetti Calderon
+    est_apellidos: Franco Antonio
+    est_cedula: 1717969735
+    est_fecha_nacimiento: '1997-06-13'
+    est_email_estudiante: lourdesboschetti@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Lourdes Calderon
+    est_telf_repr_casa: 2867230
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '095988726'
+    est_email_representante: lourdesboschetti@hotmail.com
+    est_login_representante: faboschetti
+    est_pass_representante: 1717969735
+    sf_guard_user_id: 144
+    gra: emdiGrado_13
+  emdiEstudiante_145:
+    est_nombres: Ordoñez Sandoval
+    est_apellidos: Pablo David
+    est_cedula: 1719257519
+    est_fecha_nacimiento: '1997-10-14'
+    est_email_estudiante: mariamaria04@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Maria Fernanda Sandoval
+    est_telf_repr_casa: 2862403
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '087314357'
+    est_email_representante: mariamaria04@hotmail.com
+    est_login_representante: pordonez
+    est_pass_representante: 1719257519
+    sf_guard_user_id: 145
+    gra: emdiGrado_13
+  emdiEstudiante_146:
+    est_nombres: Martinez Salazar 
+    est_apellidos: Samanta Maite
+    est_cedula: 1722072392
+    est_fecha_nacimiento: '1998-11-24'
+    est_email_estudiante: martizasm@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Martiza Salazar
+    est_telf_repr_casa: 2866852
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '098120927'
+    est_email_representante: martizasm@hotmail.com
+    est_login_representante: smartinez
+    est_pass_representante: 1722072392
+    sf_guard_user_id: 146
+    gra: emdiGrado_13
+  emdiEstudiante_147:
+    est_nombres: Romero Rosenberg
+    est_apellidos: Valentina
+    est_cedula: 1722665294
+    est_fecha_nacimiento: '1998-02-26'
+    est_email_estudiante: jcra3963@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Juan Carlos Romero
+    est_telf_repr_casa: 2338596
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '084871772'
+    est_email_representante: jcra3963@hotmail.com
+    est_login_representante: vromero
+    est_pass_representante: 1722665294
+    sf_guard_user_id: 147
+    gra: emdiGrado_13
+  emdiEstudiante_148:
+    est_nombres: Ron Zubia
+    est_apellidos: Camila Nicole
+    est_cedula: 1719183673
+    est_fecha_nacimiento: '1998-03-24'
+    est_email_estudiante: fabricioronp@yahoo.es
+    est_house: Broomfleet
+    est_nombre_representante: Veronica Zubia
+    est_telf_repr_casa: 2345833
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '096688333'
+    est_email_representante: fabricioronp@yahoo.es
+    est_login_representante: cron
+    est_pass_representante: 1719183673
+    sf_guard_user_id: 148
+    gra: emdiGrado_13
+  emdiEstudiante_149:
+    est_nombres: Toaza Garcia
+    est_apellidos: Diego Alejandro
+    est_cedula: 1723261507
+    est_fecha_nacimiento: '1998-10-12'
+    est_email_estudiante: washotm@merchantbansa.com
+    est_house: Broomfleet
+    est_nombre_representante: Washington Toaza
+    est_telf_repr_casa: 2344179
+    est_telf_repr_trabajo: 2553992
+    est_telf_repr_celular: '095623243'
+    est_email_representante: washotm@merchantbansa.com
+    est_login_representante: atoaza
+    est_pass_representante: 1723261507
+    sf_guard_user_id: 149
+    gra: emdiGrado_13
+  emdiEstudiante_150:
+    est_nombres: Valdivieso Rueda
+    est_apellidos: Maria Paula
+    est_cedula: 1717826448
+    est_fecha_nacimiento: '1998-11-06'
+    est_email_estudiante: pvaldiviesol@gmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Pablo Valdivieso
+    est_telf_repr_casa: 
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '099727879'
+    est_email_representante: pvaldiviesol@gmail.com
+    est_login_representante: mvaldivieso
+    est_pass_representante: 1717826448
+    sf_guard_user_id: 150
+    gra: emdiGrado_13
+  emdiEstudiante_151:
+    est_nombres: Vera Espinosa
+    est_apellidos: Andrea
+    est_cedula: 1717468571
+    est_fecha_nacimiento: '1998-12-09'
+    est_email_estudiante: averap@andinanet.net
+    est_house: Fitchburg
+    est_nombre_representante: Andres Vera
+    est_telf_repr_casa: 2860989
+    est_telf_repr_trabajo: 2234419
+    est_telf_repr_celular: '099901358'
+    est_email_representante: averap@andinanet.net
+    est_login_representante: avera
+    est_pass_representante: 1717468571
+    sf_guard_user_id: 151
+    gra: emdiGrado_13
+  emdiEstudiante_152:
+    est_nombres: Diaz Pozo 
+    est_apellidos: Joselyn Dayanara
+    est_cedula: 1721732491
+    est_fecha_nacimiento: '1997-03-21'
+    est_email_estudiante: edwindiazasesor@hotmail.com
+    est_house: 
+    est_nombre_representante: Edwin Diaz
+    est_telf_repr_casa: 2860220
+    est_telf_repr_trabajo: 2868224
+    est_telf_repr_celular: '099858434'
+    est_email_representante: edwindiazasesor@hotmail.com
+    est_login_representante: jdiaz
+    est_pass_representante: 1721732491
+    sf_guard_user_id: 152
+    gra: emdiGrado_14
+  emdiEstudiante_153:
+    est_nombres: Guerra Baquero
+    est_apellidos: David Fernando
+    est_cedula: 1717491318
+    est_fecha_nacimiento: '1997-05-07'
+    est_email_estudiante: ferguepal@yahoo.com
+    est_house: Aberdeen
+    est_nombre_representante: Fernando Guerra
+    est_telf_repr_casa: 3810492
+    est_telf_repr_trabajo: 2231675
+    est_telf_repr_celular: '099044669'
+    est_email_representante: ferguepal@yahoo.com
+    est_login_representante: dguerra
+    est_pass_representante: 1717491318
+    sf_guard_user_id: 153
+    gra: emdiGrado_14
+  emdiEstudiante_154:
+    est_nombres: Jarrin Arroyo
+    est_apellidos: Maria Victoria
+    est_cedula: 1718191909
+    est_fecha_nacimiento: '1997-07-12'
+    est_email_estudiante: ferarroyo73@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Ma. Fernanda Arroyo
+    est_telf_repr_casa: 2877544
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '097837339'
+    est_email_representante: ferarroyo73@hotmail.com
+    est_login_representante: mjarrin
+    est_pass_representante: 1718191909
+    sf_guard_user_id: 154
+    gra: emdiGrado_14
+  emdiEstudiante_155:
+    est_nombres: Ochoa Arellano
+    est_apellidos: Axl Danny
+    est_cedula: 1723813646
+    est_fecha_nacimiento: '1997-08-03'
+    est_email_estudiante: evelynare@yahoo.com
+    est_house: Fitchburg
+    est_nombre_representante: Evelyn Arellano
+    est_telf_repr_casa: 2337644
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '098226164'
+    est_email_representante: evelynare@yahoo.com
+    est_login_representante: aochoa
+    est_pass_representante: 1723813646
+    sf_guard_user_id: 155
+    gra: emdiGrado_14
+  emdiEstudiante_156:
+    est_nombres: Rueda Carrera
+    est_apellidos: Rafaela
+    est_cedula: 1718640749
+    est_fecha_nacimiento: '1997-12-04'
+    est_email_estudiante: eruedster@gmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Mariana Carrea
+    est_telf_repr_casa: 2865616
+    est_telf_repr_trabajo: 2868902
+    est_telf_repr_celular: '095979683'
+    est_email_representante: eruedster@gmail.com
+    est_login_representante: rrueda
+    est_pass_representante: 1718640749
+    sf_guard_user_id: 156
+    gra: emdiGrado_14
+  emdiEstudiante_157:
+    est_nombres: Teran Maldonado
+    est_apellidos: Pablo David
+    est_cedula: 1726047515
+    est_fecha_nacimiento: '1997-11-21'
+    est_email_estudiante: 
+    est_house: Broomfleet
+    est_nombre_representante: Pablo Teran
+    est_telf_repr_casa: 2850385
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '087101161'
+    est_email_representante: 
+    est_login_representante: pteran
+    est_pass_representante: 1726047515
+    sf_guard_user_id: 157
+    gra: emdiGrado_14
+  emdiEstudiante_158:
+    est_nombres: Albuja Yepez
+    est_apellidos: Daniel Alejandro
+    est_cedula: 1723956304
+    est_fecha_nacimiento: '1996-01-16'
+    est_email_estudiante: myepez@usfq.edu.ec
+    est_house: Aberdeen
+    est_nombre_representante: Martha Yepez
+    est_telf_repr_casa: 2347679
+    est_telf_repr_trabajo: 2971700
+    est_telf_repr_celular: '087503305'
+    est_email_representante: myepez@usfq.edu.ec
+    est_login_representante: dalbuja
+    est_pass_representante: 1723956304
+    sf_guard_user_id: 158
+    gra: emdiGrado_15
+  emdiEstudiante_159:
+    est_nombres: Azuero Arias
+    est_apellidos: Eliseo Stalin
+    est_cedula: 2100196753
+    est_fecha_nacimiento: '1996-04-03'
+    est_email_estudiante: celedea@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Nelly Arias
+    est_telf_repr_casa: 2870920
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '094742727'
+    est_email_representante: celedea@hotmail.com
+    est_login_representante: sazuero
+    est_pass_representante: 2100196753
+    sf_guard_user_id: 159
+    gra: emdiGrado_15
+  emdiEstudiante_160:
+    est_nombres: Boschetti Bergmann
+    est_apellidos: Pier Alberto
+    est_cedula: 1716496375
+    est_fecha_nacimiento: '1996-06-09'
+    est_email_estudiante: elcloset34@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Loraine Bergmann
+    est_telf_repr_casa: 2862787
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '084782902'
+    est_email_representante: elcloset34@hotmail.com
+    est_login_representante: pboschetti
+    est_pass_representante: 1716496375
+    sf_guard_user_id: 160
+    gra: emdiGrado_15
+  emdiEstudiante_161:
+    est_nombres: Boschetti Calderon
+    est_apellidos: Renato
+    est_cedula: 1718090093
+    est_fecha_nacimiento: '1996-02-14'
+    est_email_estudiante: lourdesboschetti@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Lourdes Calderon
+    est_telf_repr_casa: 2867230
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '095988126'
+    est_email_representante: lourdesboschetti@hotmail.com
+    est_login_representante: rboschetti
+    est_pass_representante: 1718090093
+    sf_guard_user_id: 161
+    gra: emdiGrado_15
+  emdiEstudiante_162:
+    est_nombres: Chalen Cuesta
+    est_apellidos: Alejandra Gabriela
+    est_cedula: 1720679701
+    est_fecha_nacimiento: '1996-06-11'
+    est_email_estudiante: nathycuesta@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Nathaly Cuesta
+    est_telf_repr_casa: 2346556
+    est_telf_repr_trabajo: 2555733
+    est_telf_repr_celular: '087228434'
+    est_email_representante: nathycuesta@hotmail.com
+    est_login_representante: gchalen
+    est_pass_representante: 1720679701
+    sf_guard_user_id: 162
+    gra: emdiGrado_15
+  emdiEstudiante_163:
+    est_nombres: Cisneros Garces
+    est_apellidos: Luis Alfredo
+    est_cedula: 1716135502
+    est_fecha_nacimiento: '1996-02-05'
+    est_email_estudiante: agarces@desarrollosocial.gob.ec
+    est_house: Broomfleet
+    est_nombre_representante: Anita Garces
+    est_telf_repr_casa: 2866347
+    est_telf_repr_trabajo: 3995605
+    est_telf_repr_celular: '096025483'
+    est_email_representante: agarces@desarrollosocial.gob.ec
+    est_login_representante: lcisneros
+    est_pass_representante: 1716135502
+    sf_guard_user_id: 163
+    gra: emdiGrado_15
+  emdiEstudiante_164:
+    est_nombres: Delugo Davila 
+    est_apellidos: Eliana
+    est_cedula: 1718301953
+    est_fecha_nacimiento: '1996-01-29'
+    est_email_estudiante: vdavila@despegar.com
+    est_house: Aberdeen
+    est_nombre_representante: Valeria Davila
+    est_telf_repr_casa: 2346868
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '094729658'
+    est_email_representante: vdavila@despegar.com
+    est_login_representante: edelugo
+    est_pass_representante: 1718301953
+    sf_guard_user_id: 164
+    gra: emdiGrado_15
+  emdiEstudiante_165:
+    est_nombres: Figueroa Dominguez
+    est_apellidos: Andrea Karina
+    est_cedula: 1719466821
+    est_fecha_nacimiento: '1996-05-31'
+    est_email_estudiante: karinadominguezf@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Karina Dominguez
+    est_telf_repr_casa: 2337774
+    est_telf_repr_trabajo: 2335878
+    est_telf_repr_celular: '087080583'
+    est_email_representante: karinadominguezf@hotmail.com
+    est_login_representante: afigueroa
+    est_pass_representante: 1719466821
+    sf_guard_user_id: 165
+    gra: emdiGrado_15
+  emdiEstudiante_166:
+    est_nombres: Flores Cevallos
+    est_apellidos: Anabel Cristina
+    est_cedula: 1716169246
+    est_fecha_nacimiento: '1996-06-02'
+    est_email_estudiante: magui4garlatour@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Magdalena Flores
+    est_telf_repr_casa: 6010649
+    est_telf_repr_trabajo: 2501454
+    est_telf_repr_celular: '095614287'
+    est_email_representante: magui4garlatour@hotmail.com
+    est_login_representante: aflores
+    est_pass_representante: 1716169246
+    sf_guard_user_id: 166
+    gra: emdiGrado_15
+  emdiEstudiante_167:
+    est_nombres: Flores Recalde 
+    est_apellidos: Maria Jose
+    est_cedula: 1718026980
+    est_fecha_nacimiento: '1996-07-21'
+    est_email_estudiante: recaldecarmen@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Carmen Borja
+    est_telf_repr_casa: 2572521
+    est_telf_repr_trabajo: 4000200
+    est_telf_repr_celular: '092669392'
+    est_email_representante: recaldecarmen@hotmail.com
+    est_login_representante: mflores
+    est_pass_representante: 1718026980
+    sf_guard_user_id: 167
+    gra: emdiGrado_15
+  emdiEstudiante_168:
+    est_nombres: Loza Cisneros
+    est_apellidos: Guillermo Sebastian
+    est_cedula: 1726605718
+    est_fecha_nacimiento: '1996-01-04'
+    est_email_estudiante: marysolecisneros@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Soledad Cisneros
+    est_telf_repr_casa: 2866615
+    est_telf_repr_trabajo: 2868902
+    est_telf_repr_celular: '087298346'
+    est_email_representante: marysolecisneros@hotmail.com
+    est_login_representante: sloza
+    est_pass_representante: 1726605718
+    sf_guard_user_id: 168
+    gra: emdiGrado_15
+  emdiEstudiante_169:
+    est_nombres: Velasco del Hierro
+    est_apellidos: Ana Maria
+    est_cedula: 1720726361
+    est_fecha_nacimiento: '1996-02-14'
+    est_email_estudiante: jvelasco@puce.edu.ec
+    est_house: Fitchburg
+    est_nombre_representante: Maria Elena del Hierro
+    est_telf_repr_casa: 2864697
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '097102992'
+    est_email_representante: jvelasco@puce.edu.ec
+    est_login_representante: avelasco
+    est_pass_representante: 1720726361
+    sf_guard_user_id: 169
+    gra: emdiGrado_15
+  emdiEstudiante_170:
+    est_nombres: Meneses Segura
+    est_apellidos: Vanessa Lizeth
+    est_cedula: 1719131359
+    est_fecha_nacimiento: '1995-06-05'
+    est_email_estudiante: lorenasegura21@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Lorena Segura
+    est_telf_repr_casa: 2608878
+    est_telf_repr_trabajo: 2788652
+    est_telf_repr_celular: '084999845'
+    est_email_representante: lorenasegura21@hotmail.com
+    est_login_representante: vmeneses
+    est_pass_representante: 1719131359
+    sf_guard_user_id: 170
+    gra: emdiGrado_16
+  emdiEstudiante_171:
+    est_nombres: Ordoñez Sandoval
+    est_apellidos: Isabella Maria
+    est_cedula: 1714820972
+    est_fecha_nacimiento: '1997-05-30'
+    est_email_estudiante: mariamaria04@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Maria Fernanda Sandoval
+    est_telf_repr_casa: 2862403
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '087314357'
+    est_email_representante: mariamaria04@hotmail.com
+    est_login_representante: iordonez
+    est_pass_representante: 1714820972
+    sf_guard_user_id: 171
+    gra: emdiGrado_16
+  emdiEstudiante_172:
+    est_nombres: Palomeque Fontana
+    est_apellidos: Gabriela
+    est_cedula: 1717822371
+    est_fecha_nacimiento: '1995-09-10'
+    est_email_estudiante: ana_lucia_fontana@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Ana Lucia Fontana
+    est_telf_repr_casa: 2338273
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '098960528'
+    est_email_representante: ana_lucia_fontana@hotmail.com
+    est_login_representante: gpalomeque
+    est_pass_representante: 1717822371
+    sf_guard_user_id: 172
+    gra: emdiGrado_16
+  emdiEstudiante_173:
+    est_nombres: Vera Espinosa
+    est_apellidos: Juan Esteban
+    est_cedula: 1715069751
+    est_fecha_nacimiento: '1995-07-26'
+    est_email_estudiante: averap@andinanet.net
+    est_house: Fitchburg
+    est_nombre_representante: Andres Vera
+    est_telf_repr_casa: 2860989
+    est_telf_repr_trabajo: 2234419
+    est_telf_repr_celular: '099901358'
+    est_email_representante: averap@andinanet.net
+    est_login_representante: jvera
+    est_pass_representante: 1715069751
+    sf_guard_user_id: 173
+    gra: emdiGrado_16
+  emdiEstudiante_174:
+    est_nombres: Campaña Monge
+    est_apellidos: Noelia Romina 
+    est_cedula: 1750349076
+    est_fecha_nacimiento: '2009-11-05'
+    est_email_estudiante: pmonge.er@cargoadvance.com
+    est_house: Broomfleet
+    est_nombre_representante: Paulina Monge
+    est_telf_repr_casa: 2867584
+    est_telf_repr_trabajo: 3230100
+    est_telf_repr_celular: '084589103'
+    est_email_representante: pmonge.er@cargoadvance.com
+    est_login_representante: rcamapana
+    est_pass_representante: 1750349076
+    sf_guard_user_id: 174
+    gra: emdiGrado_17
+  emdiEstudiante_175:
+    est_nombres: Espinosa Fernandez
+    est_apellidos: Fiorella
+    est_cedula: 
+    est_fecha_nacimiento: '2009-10-24'
+    est_email_estudiante: chik_fresita69@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Gabriela Fernández
+    est_telf_repr_casa: 3226495
+    est_telf_repr_trabajo: 92064526
+    est_telf_repr_celular: '087051374'
+    est_email_representante: chik_fresita69@hotmail.com
+    est_login_representante: fespinosa
+    est_pass_representante: 1111111101
+    sf_guard_user_id: 175
+    gra: emdiGrado_17
+  emdiEstudiante_176:
+    est_nombres: López Suasnavas
+    est_apellidos: Carlos Andre 
+    est_cedula: 1750076208
+    est_fecha_nacimiento: '2010-04-26'
+    est_email_estudiante: soniadrdelopez@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Sonia Suasnavas
+    est_telf_repr_casa: 2835438
+    est_telf_repr_trabajo: 84627936
+    est_telf_repr_celular: '092762185'
+    est_email_representante: soniadrdelopez@hotmail.com
+    est_login_representante: clopez
+    est_pass_representante: 1750076208
+    sf_guard_user_id: 176
+    gra: emdiGrado_17
+  emdiEstudiante_177:
+    est_nombres: Paredes Larrea
+    est_apellidos: Joaquín
+    est_cedula: 1727662593
+    est_fecha_nacimiento: '2010-05-28'
+    est_email_estudiante: alexandra-larrea@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Alexandra Larrea
+    est_telf_repr_casa: 2860142
+    est_telf_repr_trabajo: 81228143
+    est_telf_repr_celular: '098309128'
+    est_email_representante: alexandra-larrea@hotmail.com
+    est_login_representante: jparedes
+    est_pass_representante: 1727662593
+    sf_guard_user_id: 177
+    gra: emdiGrado_17
+  emdiEstudiante_178:
+    est_nombres: Pastor Gonzalez
+    est_apellidos: Matheo Joaquín 
+    est_cedula: 1750673897
+    est_fecha_nacimiento: '2009-10-13'
+    est_email_estudiante: silvana.gonzalez@etra.com.ec
+    est_house: Aberdeen
+    est_nombre_representante: Silvana González
+    est_telf_repr_casa: 2865741
+    est_telf_repr_trabajo: 2563151
+    est_telf_repr_celular: '099558388'
+    est_email_representante: silvana.gonzalez@etra.com.ec
+    est_login_representante: mpastor
+    est_pass_representante: 1750673897
+    sf_guard_user_id: 178
+    gra: emdiGrado_17
+  emdiEstudiante_179:
+    est_nombres: Segovia Ortiz
+    est_apellidos: Sandy Camila
+    est_cedula: 1727572941
+    est_fecha_nacimiento: '2010-03-11'
+    est_email_estudiante: sandycamila210@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Sandra Ortíz
+    est_telf_repr_casa: 2070095
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '087063377'
+    est_email_representante: sandycamila210@hotmail.com
+    est_login_representante: csegovia
+    est_pass_representante: 1727572941
+    sf_guard_user_id: 179
+    gra: emdiGrado_17
+  emdiEstudiante_180:
+    est_nombres: Moreno Merino
+    est_apellidos: Tomás Alejandro
+    est_cedula: 1750333658
+    est_fecha_nacimiento: '2010-02-27'
+    est_email_estudiante: g-merino1@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Gabriela Merino
+    est_telf_repr_casa: 2058224
+    est_telf_repr_trabajo: 2788652
+    est_telf_repr_celular: '095072693'
+    est_email_representante: g-merino1@hotmail.com
+    est_login_representante: tmoreno
+    est_pass_representante: 1750333658
+    sf_guard_user_id: 180
+    gra: emdiGrado_17
+  emdiEstudiante_181:
+    est_nombres: Vallejo Laguna
+    est_apellidos: Alegria
+    est_cedula: 1727426841
+    est_fecha_nacimiento: '2009-09-14'
+    est_email_estudiante: 
+    est_house: 
+    est_nombre_representante: Doris Laguna
+    est_telf_repr_casa: 2081328
+    est_telf_repr_trabajo: 2227700
+    est_telf_repr_celular: '098945261'
+    est_email_representante: 
+    est_login_representante: avallejo
+    est_pass_representante: 1727426841
+    sf_guard_user_id: 181
+    gra: emdiGrado_17
+  emdiEstudiante_182:
+    est_nombres: Baca Dalgo
+    est_apellidos: Andre Valentino
+    est_cedula: 1727428409
+    est_fecha_nacimiento: '2009-01-20'
+    est_email_estudiante: cdsempertegui@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Laura Dalgo
+    est_telf_repr_casa: 2600301
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '089705553'
+    est_email_representante: cdsempertegui@hotmail.com
+    est_login_representante: abaca
+    est_pass_representante: 1727428409
+    sf_guard_user_id: 182
+    gra: emdiGrado_18
+  emdiEstudiante_183:
+    est_nombres: Dueñas Abad
+    est_apellidos: Agustín
+    est_cedula: 
+    est_fecha_nacimiento: '2008-12-29'
+    est_email_estudiante: aduenas@pika.com.ec
+    est_house: Fitchburg
+    est_nombre_representante: Priscila Abad
+    est_telf_repr_casa: 2346396
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '084698263'
+    est_email_representante: aduenas@pika.com.ec
+    est_login_representante: aduenas
+    est_pass_representante: 1111111103
+    sf_guard_user_id: 183
+    gra: emdiGrado_18
+  emdiEstudiante_184:
+    est_nombres: Herrera Ramirez
+    est_apellidos: Paulette del Cisne
+    est_cedula: 
+    est_fecha_nacimiento: '2009-02-28'
+    est_email_estudiante: finanzaslatin_24@hotmail.com
+    est_house: 
+    est_nombre_representante: Mercedes Ramírez
+    est_telf_repr_casa: 2633763
+    est_telf_repr_trabajo: 2432651
+    est_telf_repr_celular: '088355049'
+    est_email_representante: finanzaslatin_24@hotmail.com
+    est_login_representante: pherrera
+    est_pass_representante: 1111111104
+    sf_guard_user_id: 184
+    gra: emdiGrado_18
+  emdiEstudiante_185:
+    est_nombres: Maldonado Loaiza
+    est_apellidos: Emilio Joaquin
+    est_cedula: 
+    est_fecha_nacimiento: '2009-07-16'
+    est_email_estudiante: vanessa@hipnospa.com
+    est_house: 
+    est_nombre_representante: Vanessa Loaiza
+    est_telf_repr_casa: 2850096
+    est_telf_repr_trabajo: 2242642
+    est_telf_repr_celular: 
+    est_email_representante: vanessa@hipnospa.com
+    est_login_representante: jmaldonado
+    est_pass_representante: 1111111105
+    sf_guard_user_id: 185
+    gra: emdiGrado_18
+  emdiEstudiante_186:
+    est_nombres: Nuñez Padilla
+    est_apellidos:  Hugo Naum
+    est_cedula: 1726981325
+    est_fecha_nacimiento: '2009-05-06'
+    est_email_estudiante: padillaindira@yahoo.com
+    est_house: Fitchburg
+    est_nombre_representante: Indira Padilla
+    est_telf_repr_casa: 2863224
+    est_telf_repr_trabajo: 2951384
+    est_telf_repr_celular: '084055477'
+    est_email_representante: padillaindira@yahoo.com
+    est_login_representante: hnunez
+    est_pass_representante: 1726981325
+    sf_guard_user_id: 186
+    gra: emdiGrado_18
+  emdiEstudiante_187:
+    est_nombres: Peñaherrera Mayorga
+    est_apellidos: Juan Rafael
+    est_cedula: 
+    est_fecha_nacimiento: '2009-06-15'
+    est_email_estudiante: viselmayorga@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Visel Mayorga
+    est_telf_repr_casa: 3831450
+    est_telf_repr_trabajo: 3988152
+    est_telf_repr_celular: '098537683'
+    est_email_representante: viselmayorga@hotmail.com
+    est_login_representante: jpenaherrera
+    est_pass_representante: 1111111107
+    sf_guard_user_id: 187
+    gra: emdiGrado_18
+  emdiEstudiante_188:
+    est_nombres: Sisa Carillo 
+    est_apellidos: Isabella Sofía
+    est_cedula: 1750363341
+    est_fecha_nacimiento: '2009-01-13'
+    est_email_estudiante: julycarrillo@yahoo.es
+    est_house: Broomfleet
+    est_nombre_representante: Julieta Carrillo
+    est_telf_repr_casa: 2078153
+    est_telf_repr_trabajo: 2545070
+    est_telf_repr_celular: '091412979'
+    est_email_representante: julycarrillo@yahoo.es
+    est_login_representante: isisa
+    est_pass_representante: 1750363341
+    sf_guard_user_id: 188
+    gra: emdiGrado_18
+  emdiEstudiante_189:
+    est_nombres: Soria Rivadeneira
+    est_apellidos: María Victoria
+    est_cedula: 1727420992
+    est_fecha_nacimiento: '2009-01-03'
+    est_email_estudiante: mache29@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Marcela Rivadeneira
+    est_telf_repr_casa: 2868391
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '087989680'
+    est_email_representante: mache29@hotmail.com
+    est_login_representante: msoria
+    est_pass_representante: 1727420992
+    sf_guard_user_id: 189
+    gra: emdiGrado_18
+  emdiEstudiante_190:
+    est_nombres: Tito Gordón
+    est_apellidos: Nathan Tiago 
+    est_cedula: 1726963935
+    est_fecha_nacimiento: '2009-05-04'
+    est_email_estudiante: damega2000@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Daysi Gordón
+    est_telf_repr_casa: 2924383
+    est_telf_repr_trabajo: 2907582
+    est_telf_repr_celular: '099808139'
+    est_email_representante: damega2000@hotmail.com
+    est_login_representante: ntito
+    est_pass_representante: 1726963935
+    sf_guard_user_id: 190
+    gra: emdiGrado_18
+  emdiEstudiante_191:
+    est_nombres: Toledo Grandes
+    est_apellidos: Zoe Camile
+    est_cedula: 
+    est_fecha_nacimiento: '2009-08-10'
+    est_email_estudiante: dvanyly@gmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Elisa Grandes
+    est_telf_repr_casa: 2865903
+    est_telf_repr_trabajo: 2339844
+    est_telf_repr_celular: '093332378'
+    est_email_representante: dvanyly@gmail.com
+    est_login_representante: ztoledo
+    est_pass_representante: 1111111108
+    sf_guard_user_id: 191
+    gra: emdiGrado_18
+  emdiEstudiante_192:
+    est_nombres: Torres Enriquez
+    est_apellidos: Francisca Valentina
+    est_cedula: 
+    est_fecha_nacimiento: '2009-09-23'
+    est_email_estudiante: w_h_a@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Wilma Enriquez
+    est_telf_repr_casa: 2864375
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '098355148'
+    est_email_representante: w_h_a@hotmail.com
+    est_login_representante: ftorres
+    est_pass_representante: 1111111109
+    sf_guard_user_id: 192
+    gra: emdiGrado_18
+  emdiEstudiante_193:
+    est_nombres: Vergara Freire
+    est_apellidos: Jorge Ignacio
+    est_cedula: 1750798629
+    est_fecha_nacimiento: '2009-05-05'
+    est_email_estudiante: 
+    est_house: 
+    est_nombre_representante: Ma. Graciela Freire
+    est_telf_repr_casa: 6009211
+    est_telf_repr_trabajo: 2470542
+    est_telf_repr_celular: '096003833'
+    est_email_representante: 
+    est_login_representante: jvergara
+    est_pass_representante: 1750798629
+    sf_guard_user_id: 193
+    gra: emdiGrado_18
+  emdiEstudiante_194:
+    est_nombres: Molina Gonzalez
+    est_apellidos: Rafael
+    est_cedula: 
+    est_fecha_nacimiento: '2009-09-04'
+    est_email_estudiante: gabygonzalez_83@hotmail.com
+    est_house: 
+    est_nombre_representante: Ma. Gabriela González
+    est_telf_repr_casa: 2343785
+    est_telf_repr_trabajo: 2983600
+    est_telf_repr_celular: '092794633'
+    est_email_representante: gabygonzalez_83@hotmail.com
+    est_login_representante: rmolina
+    est_pass_representante: 1111111010
+    sf_guard_user_id: 194
+    gra: emdiGrado_18
+  emdiEstudiante_195:
+    est_nombres: Ospina Díaz
+    est_apellidos: Luciana
+    est_cedula: 
+    est_fecha_nacimiento: '2009-10-12'
+    est_email_estudiante: 
+    est_house: Fitchburg
+    est_nombre_representante: 
+    est_telf_repr_casa: 
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: 
+    est_email_representante: 
+    est_login_representante: lospina
+    est_pass_representante: 2222222201
+    sf_guard_user_id: 195
+    gra: emdiGrado_18
+  emdiEstudiante_196:
+    est_nombres: Arichavala Perez
+    est_apellidos: Daniela Valentina 
+    est_cedula: 1726914623
+    est_fecha_nacimiento: '2008-07-10'
+    est_email_estudiante: meganper@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Ma. Angélica Pérez
+    est_telf_repr_casa: 2953811
+    est_telf_repr_trabajo: 2956203
+    est_telf_repr_celular: '090616988'
+    est_email_representante: meganper@hotmail.com
+    est_login_representante: darichavala
+    est_pass_representante: 1726914623
+    sf_guard_user_id: 196
+    gra: emdiGrado_19
+  emdiEstudiante_197:
+    est_nombres: Erazo Miño
+    est_apellidos: Erika Raquel
+    est_cedula: 
+    est_fecha_nacimiento: '2008-07-23'
+    est_email_estudiante: valeriaminop@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Valeria Miño
+    est_telf_repr_casa: '092835098'
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '084038083'
+    est_email_representante: valeriaminop@hotmail.com
+    est_login_representante: eerazo
+    est_pass_representante: 2222222202
+    sf_guard_user_id: 197
+    gra: emdiGrado_19
+  emdiEstudiante_198:
+    est_nombres: Estevez Rosero
+    est_apellidos: Mateo
+    est_cedula: 1727292680
+    est_fecha_nacimiento: '2008-04-22'
+    est_email_estudiante: mcrosero@ilalo.com.ec
+    est_house: Broomfleet
+    est_nombre_representante: Ma. Cristina Rosero
+    est_telf_repr_casa: 2386128
+    est_telf_repr_trabajo: 2331535
+    est_telf_repr_celular: '093262697'
+    est_email_representante: mcrosero@ilalo.com.ec
+    est_login_representante: mestevez
+    est_pass_representante: 1727292680
+    sf_guard_user_id: 198
+    gra: emdiGrado_19
+  emdiEstudiante_199:
+    est_nombres: Guamán Canchig
+    est_apellidos: Thomas Ignacio
+    est_cedula: 
+    est_fecha_nacimiento: '2008-08-16'
+    est_email_estudiante: gloryc0777_1@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Gloria Canchig
+    est_telf_repr_casa: 2344489
+    est_telf_repr_trabajo: 2073669
+    est_telf_repr_celular: '083516908'
+    est_email_representante: gloryc0777_1@hotmail.com
+    est_login_representante: tguaman
+    est_pass_representante: 2222222203
+    sf_guard_user_id: 199
+    gra: emdiGrado_19
+  emdiEstudiante_200:
+    est_nombres: Leguisamo Checa
+    est_apellidos: Sebastián
+    est_cedula: 
+    est_fecha_nacimiento: '2008-07-09'
+    est_email_estudiante: kcheca@emdischool.edu.ec
+    est_house: Broomfleet
+    est_nombre_representante: Karla Checa
+    est_telf_repr_casa: 
+    est_telf_repr_trabajo: 2868902
+    est_telf_repr_celular: '086135109'
+    est_email_representante: kcheca@emdischool.edu.ec
+    est_login_representante: sleguisamo
+    est_pass_representante: 2222222204
+    sf_guard_user_id: 200
+    gra: emdiGrado_19
+  emdiEstudiante_201:
+    est_nombres: León Chavez
+    est_apellidos: José María
+    est_cedula: 
+    est_fecha_nacimiento: '2008-03-21'
+    est_email_estudiante: crischavezc@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Ma. Cristina Chaves
+    est_telf_repr_casa: 2867150
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '091880566'
+    est_email_representante: crischavezc@hotmail.com
+    est_login_representante: jleon
+    est_pass_representante: 2222222205
+    sf_guard_user_id: 201
+    gra: emdiGrado_19
+  emdiEstudiante_202:
+    est_nombres: Martinez Recalde
+    est_apellidos: Pool Ignacio 
+    est_cedula: 1725672834
+    est_fecha_nacimiento: '2008-10-03'
+    est_email_estudiante: pilarrecalde@yahoo.com
+    est_house: Broomfleet
+    est_nombre_representante: Ma. Del Pilar Recalde
+    est_telf_repr_casa: 2344088
+    est_telf_repr_trabajo: 3819913
+    est_telf_repr_celular: '099999347'
+    est_email_representante: pilarrecalde@yahoo.com
+    est_login_representante: pimartinez
+    est_pass_representante: 1725672834
+    sf_guard_user_id: 202
+    gra: emdiGrado_19
+  emdiEstudiante_203:
+    est_nombres: Ordoñez Villalobos
+    est_apellidos: Juan Camilo
+    est_cedula: 
+    est_fecha_nacimiento: '2008-08-04'
+    est_email_estudiante: pamvillalobos@yahoo.com
+    est_house: Fitchburg
+    est_nombre_representante: Pamela Villalobos
+    est_telf_repr_casa: 2330130
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '098961256'
+    est_email_representante: pamvillalobos@yahoo.com
+    est_login_representante: jordonez
+    est_pass_representante: 2222222206
+    sf_guard_user_id: 203
+    gra: emdiGrado_19
+  emdiEstudiante_204:
+    est_nombres: Salgado Changoluisa
+    est_apellidos: María Paz
+    est_cedula: 1726563263
+    est_fecha_nacimiento: '2008-07-11'
+    est_email_estudiante: lilithchangoluisa@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Lilith Changoluisa
+    est_telf_repr_casa: 3111784
+    est_telf_repr_trabajo: 2868902
+    est_telf_repr_celular: '096019621'
+    est_email_representante: lilithchangoluisa@hotmail.com
+    est_login_representante: mpsalgado
+    est_pass_representante: 1726563263
+    sf_guard_user_id: 204
+    gra: emdiGrado_19
+  emdiEstudiante_205:
+    est_nombres: Sepúlveda Vernaza
+    est_apellidos: Ariana 
+    est_cedula: 1725795759
+    est_fecha_nacimiento: '2008-05-18'
+    est_email_estudiante: servicioalcliente@izquierdo-sepulveda.com.ec
+    est_house: Aberdeen
+    est_nombre_representante: María Inés Vernaza
+    est_telf_repr_casa: 2862114
+    est_telf_repr_trabajo: 2550615
+    est_telf_repr_celular: '099963340'
+    est_email_representante: servicioalcliente@izquierdo-sepulveda.com.ec
+    est_login_representante: asepulveda
+    est_pass_representante: 1725795759
+    sf_guard_user_id: 205
+    gra: emdiGrado_19
+  emdiEstudiante_206:
+    est_nombres: Travez Aparicio
+    est_apellidos: Andrea Isabella
+    est_cedula: 
+    est_fecha_nacimiento: '2008-04-30'
+    est_email_estudiante: y.aparicio@grupounifer.ec
+    est_house: Fitchburg
+    est_nombre_representante: Yuly Aparicio
+    est_telf_repr_casa: 2074673
+    est_telf_repr_trabajo: 3076082
+    est_telf_repr_celular: '089257306'
+    est_email_representante: y.aparicio@grupounifer.ec
+    est_login_representante: itravez
+    est_pass_representante: 2222222207
+    sf_guard_user_id: 206
+    gra: emdiGrado_19
+  emdiEstudiante_207:
+    est_nombres: Velastegui Carrera
+    est_apellidos: Lia Antonella
+    est_cedula: 1750584417
+    est_fecha_nacimiento: '2009-06-06'
+    est_email_estudiante: digna_carrera17@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Digna Carrera
+    est_telf_repr_casa: 2865148
+    est_telf_repr_trabajo: 2866678
+    est_telf_repr_celular: '097815064'
+    est_email_representante: digna_carrera17@hotmail.com
+    est_login_representante: lvelastegui
+    est_pass_representante: 1750584417
+    sf_guard_user_id: 207
+    gra: emdiGrado_19
+  emdiEstudiante_208:
+    est_nombres: Ospina Díaz
+    est_apellidos: Jerónimo
+    est_cedula: 
+    est_fecha_nacimiento: '2008-06-05'
+    est_email_estudiante: 
+    est_house: Aberdeen
+    est_nombre_representante: 
+    est_telf_repr_casa: 
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: 
+    est_email_representante: 
+    est_login_representante: jospina
+    est_pass_representante: 2222222208
+    sf_guard_user_id: 208
+    gra: emdiGrado_19
+  emdiEstudiante_209:
+    est_nombres: España Tello
+    est_apellidos: Danny Andrés 
+    est_cedula: 1750733170
+    est_fecha_nacimiento: '2008-11-18'
+    est_email_estudiante: jhoana@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Johanna Tello
+    est_telf_repr_casa: 2099010
+    est_telf_repr_trabajo: 2868006
+    est_telf_repr_celular: '084489526'
+    est_email_representante: jhoana@hotmail.com
+    est_login_representante: despana
+    est_pass_representante: 1750733170
+    sf_guard_user_id: 209
+    gra: emdiGrado_20
+  emdiEstudiante_210:
+    est_nombres: Flores Santillan
+    est_apellidos: José Vicente
+    est_cedula: 
+    est_fecha_nacimiento: '2008-09-02'
+    est_email_estudiante: silvisanlucas@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Silvana Santillan
+    est_telf_repr_casa: 2867650
+    est_telf_repr_trabajo: 6005721
+    est_telf_repr_celular: '097694226'
+    est_email_representante: silvisanlucas@hotmail.com
+    est_login_representante: jflores
+    est_pass_representante: 2222222209
+    sf_guard_user_id: 210
+    gra: emdiGrado_20
+  emdiEstudiante_211:
+    est_nombres: Guerra Mejía
+    est_apellidos: Juan Sebastían
+    est_cedula: 1727486399
+    est_fecha_nacimiento: '2008-12-26'
+    est_email_estudiante: cristina.mejia@eys.com.ec
+    est_house: Fitchburg
+    est_nombre_representante: Cristina Mejía
+    est_telf_repr_casa: 6010761
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '081803006'
+    est_email_representante: cristina.mejia@eys.com.ec
+    est_login_representante: jguerra
+    est_pass_representante: 1727486399
+    sf_guard_user_id: 211
+    gra: emdiGrado_20
+  emdiEstudiante_212:
+    est_nombres: Larrea Flores
+    est_apellidos: Emilia
+    est_cedula: 1727290080
+    est_fecha_nacimiento: '2008-12-04'
+    est_email_estudiante: cucolila@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Ma. Patricia Flores
+    est_telf_repr_casa: 2866503
+    est_telf_repr_trabajo: 2522481
+    est_telf_repr_celular: '099235456'
+    est_email_representante: cucolila@hotmail.com
+    est_login_representante: elarrea
+    est_pass_representante: 1727290080
+    sf_guard_user_id: 212
+    gra: emdiGrado_20
+  emdiEstudiante_213:
+    est_nombres: Monge Ramos
+    est_apellidos: Doménica Isabella
+    est_cedula: 1726025644
+    est_fecha_nacimiento: '2008-10-23'
+    est_email_estudiante: vanessa.ramos@genelekta.com
+    est_house: Broomfleet
+    est_nombre_representante: Vanessa Ramos
+    est_telf_repr_casa: 2330958
+    est_telf_repr_trabajo: 2501202
+    est_telf_repr_celular: '092752173'
+    est_email_representante: vanessa.ramos@genelekta.com
+    est_login_representante: dmonge
+    est_pass_representante: 1726025644
+    sf_guard_user_id: 213
+    gra: emdiGrado_20
+  emdiEstudiante_214:
+    est_nombres: Moscoso Morales
+    est_apellidos: José Martín
+    est_cedula: 1726410523
+    est_fecha_nacimiento: '2008-06-07'
+    est_email_estudiante: ga-soul@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Susana Morales
+    est_telf_repr_casa: 3831237
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '092776997'
+    est_email_representante: ga-soul@hotmail.com
+    est_login_representante: jmoscoso
+    est_pass_representante: 1726410523
+    sf_guard_user_id: 214
+    gra: emdiGrado_20
+  emdiEstudiante_215:
+    est_nombres: Naranjo Madrid
+    est_apellidos: Gabriel Alejandro
+    est_cedula: 1750352948
+    est_fecha_nacimiento: '2008-05-08'
+    est_email_estudiante: yan2085@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Yalila Madrid
+    est_telf_repr_casa: 2900959
+    est_telf_repr_trabajo: 2900889
+    est_telf_repr_celular: '095400029'
+    est_email_representante: yan2085@hotmail.com
+    est_login_representante: gnaranjo
+    est_pass_representante: 1750352948
+    sf_guard_user_id: 215
+    gra: emdiGrado_20
+  emdiEstudiante_216:
+    est_nombres: Parreño Andrade
+    est_apellidos: Martín Andrés
+    est_cedula: 1750835488
+    est_fecha_nacimiento: '2008-07-31'
+    est_email_estudiante: diana_vaa2@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Diana Andrade
+    est_telf_repr_casa: 2867268
+    est_telf_repr_trabajo: 2580519
+    est_telf_repr_celular: '092592937'
+    est_email_representante: diana_vaa2@hotmail.com
+    est_login_representante: mparreno
+    est_pass_representante: 1750835488
+    sf_guard_user_id: 216
+    gra: emdiGrado_20
+  emdiEstudiante_217:
+    est_nombres: Rocha Veloz
+    est_apellidos: Denisse Amelia
+    est_cedula: 1726182924
+    est_fecha_nacimiento: '2008-10-13'
+    est_email_estudiante: 
+    est_house: Fitchburg
+    est_nombre_representante: Rocío Veloz
+    est_telf_repr_casa: 2333757
+    est_telf_repr_trabajo: 2333757
+    est_telf_repr_celular: '080340927'
+    est_email_representante: 
+    est_login_representante: drocha
+    est_pass_representante: 1726182924
+    sf_guard_user_id: 217
+    gra: emdiGrado_20
+  emdiEstudiante_218:
+    est_nombres: Vinueza Vizcaino
+    est_apellidos: Ignacio
+    est_cedula: 
+    est_fecha_nacimiento: '2009-01-09'
+    est_email_estudiante: 
+    est_house: Broomfleet
+    est_nombre_representante: Ma. Verónica Vizcaino
+    est_telf_repr_casa: 6037211
+    est_telf_repr_trabajo: 2232340
+    est_telf_repr_celular: '081333886'
+    est_email_representante: 
+    est_login_representante: ivinueza
+    est_pass_representante: 2222222010
+    sf_guard_user_id: 218
+    gra: emdiGrado_20
+  emdiEstudiante_219:
+    est_nombres: Aizaga Silva 
+    est_apellidos: Martina Rafaela
+    est_cedula: 1750371575
+    est_fecha_nacimiento: '2008-01-15'
+    est_email_estudiante: 
+    est_house: Broomfleet
+    est_nombre_representante: Elena Silva
+    est_telf_repr_casa: 3816393
+    est_telf_repr_trabajo: 2224672
+    est_telf_repr_celular: '094550909'
+    est_email_representante: 
+    est_login_representante: maizaga
+    est_pass_representante: 1750371575
+    sf_guard_user_id: 219
+    gra: emdiGrado_21
+  emdiEstudiante_220:
+    est_nombres: Carrera Nuñez 
+    est_apellidos: Julián
+    est_cedula: 
+    est_fecha_nacimiento: '2008-01-29'
+    est_email_estudiante: proyectos@ccelrecreo.com
+    est_house: Fitchburg
+    est_nombre_representante: Isabel Nùñez
+    est_telf_repr_casa: 2863649
+    est_telf_repr_trabajo: 2666500
+    est_telf_repr_celular: '092716799'
+    est_email_representante: proyectos@ccelrecreo.com
+    est_login_representante: jcarrera
+    est_pass_representante: 3333333301
+    sf_guard_user_id: 220
+    gra: emdiGrado_21
+  emdiEstudiante_221:
+    est_nombres: Figueroa Cabrera 
+    est_apellidos: Isabella
+    est_cedula: 
+    est_fecha_nacimiento: '2008-03-26'
+    est_email_estudiante: 
+    est_house: Fitchburg
+    est_nombre_representante: Maria Isabel Cabrera
+    est_telf_repr_casa: 2877085
+    est_telf_repr_trabajo: 3238122
+    est_telf_repr_celular: '099846379'
+    est_email_representante: 
+    est_login_representante: ifigueroa
+    est_pass_representante: 3333333302
+    sf_guard_user_id: 221
+    gra: emdiGrado_21
+  emdiEstudiante_222:
+    est_nombres: Guerra Valencia
+    est_apellidos: Josè Estefano Alejandro
+    est_cedula: 1727509042
+    est_fecha_nacimiento: '2008-03-08'
+    est_email_estudiante: wladyguerra@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Liliana Valencia
+    est_telf_repr_casa: 2389083
+    est_telf_repr_trabajo: 2591429
+    est_telf_repr_celular: '083506738'
+    est_email_representante: wladyguerra@hotmail.com
+    est_login_representante: jeguerra
+    est_pass_representante: 1727509042
+    sf_guard_user_id: 222
+    gra: emdiGrado_21
+  emdiEstudiante_223:
+    est_nombres: Guerrón Peñaherrera
+    est_apellidos: Douglas Steve
+    est_cedula: 1726941626
+    est_fecha_nacimiento: '2008-09-02'
+    est_email_estudiante: 
+    est_house: Broomfleet
+    est_nombre_representante: Alejandra Peñaherrera 
+    est_telf_repr_casa: 2865459
+    est_telf_repr_trabajo: 2509190 ext58202
+    est_telf_repr_celular: '098776152'
+    est_email_representante: 
+    est_login_representante: dguerron
+    est_pass_representante: 1726941626
+    sf_guard_user_id: 223
+    gra: emdiGrado_21
+  emdiEstudiante_224:
+    est_nombres: Manzano Ushiña
+    est_apellidos: Vicente Muriel
+    est_cedula: 1727554139
+    est_fecha_nacimiento: '2007-10-24'
+    est_email_estudiante: 
+    est_house: Aberdeen
+    est_nombre_representante: Saskia Ushiña
+    est_telf_repr_casa: 2602386
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '092715602'
+    est_email_representante: 
+    est_login_representante: vmanzano
+    est_pass_representante: 1727554139
+    sf_guard_user_id: 224
+    gra: emdiGrado_21
+  emdiEstudiante_225:
+    est_nombres: Nuñez Herrera 
+    est_apellidos: Doménica Sarahi
+    est_cedula: 1726917667
+    est_fecha_nacimiento: '2008-02-14'
+    est_email_estudiante: silvyherrera@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Silvia Herrera
+    est_telf_repr_casa: 2346529
+    est_telf_repr_trabajo: 2980980
+    est_telf_repr_celular: '099045371'
+    est_email_representante: silvyherrera@hotmail.com
+    est_login_representante: dnunez
+    est_pass_representante: 1726917667
+    sf_guard_user_id: 225
+    gra: emdiGrado_21
+  emdiEstudiante_226:
+    est_nombres: Ortiz Moya 
+    est_apellidos: Angie Cristina
+    est_cedula: 
+    est_fecha_nacimiento: '2008-08-07'
+    est_email_estudiante: 
+    est_house: Fitchburg
+    est_nombre_representante: Tania Moya
+    est_telf_repr_casa: 2689117
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '092946185'
+    est_email_representante: 
+    est_login_representante: cortiz
+    est_pass_representante: 3333333303
+    sf_guard_user_id: 226
+    gra: emdiGrado_21
+  emdiEstudiante_227:
+    est_nombres: Rodriguez García
+    est_apellidos: Franssesca Alejandra
+    est_cedula: 1727424028
+    est_fecha_nacimiento: '2007-11-08'
+    est_email_estudiante: jf_2111@hotmail.es
+    est_house: Aberdeen
+    est_nombre_representante: Hohanna García
+    est_telf_repr_casa: 3808364
+    est_telf_repr_trabajo: 2862144
+    est_telf_repr_celular: '092507520'
+    est_email_representante: jf_2111@hotmail.es
+    est_login_representante: frodriguez
+    est_pass_representante: 1727424028
+    sf_guard_user_id: 227
+    gra: emdiGrado_21
+  emdiEstudiante_228:
+    est_nombres: Sempertegui Arboleda
+    est_apellidos: Mikaela Valentina
+    est_cedula: 
+    est_fecha_nacimiento: '2007-11-23'
+    est_email_estudiante: autosaaf@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Jeovana Arboleda
+    est_telf_repr_casa: 2860447
+    est_telf_repr_trabajo: 2866575
+    est_telf_repr_celular: '099246204'
+    est_email_representante: autosaaf@hotmail.com
+    est_login_representante: msempertegui
+    est_pass_representante: 3333333304
+    sf_guard_user_id: 228
+    gra: emdiGrado_21
+  emdiEstudiante_229:
+    est_nombres: Vallejo Laguna
+    est_apellidos:  Maria Paz
+    est_cedula: 1727426833
+    est_fecha_nacimiento: '2008-03-24'
+    est_email_estudiante: 
+    est_house: Broomfleet
+    est_nombre_representante: Doris Laguna
+    est_telf_repr_casa: 2081328
+    est_telf_repr_trabajo: 2227700 ext. 3016
+    est_telf_repr_celular: '098945261'
+    est_email_representante: 
+    est_login_representante: mvallejo
+    est_pass_representante: 1727426833
+    sf_guard_user_id: 229
+    gra: emdiGrado_21
+  emdiEstudiante_230:
+    est_nombres: Andrade Romero
+    est_apellidos: Isabella
+    est_cedula: 1727299925
+    est_fecha_nacimiento: '2007-02-12'
+    est_email_estudiante: isaromero_2000@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Isabel Romero
+    est_telf_repr_casa: 2870589
+    est_telf_repr_trabajo: 2338596
+    est_telf_repr_celular: '093198629'
+    est_email_representante: isaromero_2000@hotmail.com
+    est_login_representante: iandrade
+    est_pass_representante: 1727299925
+    sf_guard_user_id: 230
+    gra: emdiGrado_22
+  emdiEstudiante_231:
+    est_nombres: Bravo Contreras
+    est_apellidos: Jorge Andrés
+    est_cedula: 
+    est_fecha_nacimiento: '2007-01-22'
+    est_email_estudiante: aunatalia@yahoo.com
+    est_house: Fitchburg
+    est_nombre_representante: Natalia Contreras
+    est_telf_repr_casa: 2090148
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '099550253'
+    est_email_representante: aunatalia@yahoo.com
+    est_login_representante: jbravo
+    est_pass_representante: 3333333305
+    sf_guard_user_id: 231
+    gra: emdiGrado_22
+  emdiEstudiante_232:
+    est_nombres: Azzolini Correa
+    est_apellidos: Matias David
+    est_cedula: 1724916828
+    est_fecha_nacimiento: '2007-11-20'
+    est_email_estudiante: analuciacorrea@msn.com
+    est_house: Fitchburg
+    est_nombre_representante: Ana Lucia Correa
+    est_telf_repr_casa: 2074785
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '091715131'
+    est_email_representante: analuciacorrea@msn.com
+    est_login_representante: dazzolini
+    est_pass_representante: 1724916828
+    sf_guard_user_id: 232
+    gra: emdiGrado_22
+  emdiEstudiante_233:
+    est_nombres: Erazo Yachimba
+    est_apellidos: Denisse Nicole
+    est_cedula: 1750261636
+    est_fecha_nacimiento: '2007-03-20'
+    est_email_estudiante: avad.asociados@gmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Verónica Yachimba
+    est_telf_repr_casa: 2864904
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '082866025'
+    est_email_representante: avad.asociados@gmail.com
+    est_login_representante: derazo
+    est_pass_representante: 1750261636
+    sf_guard_user_id: 233
+    gra: emdiGrado_22
+  emdiEstudiante_234:
+    est_nombres: Gomez Guijarro
+    est_apellidos: Pablo Josue
+    est_cedula: 1725083644
+    est_fecha_nacimiento: '2007-04-27'
+    est_email_estudiante: pguijarro@casabaca.com
+    est_house: Aberdeen
+    est_nombre_representante: Hilda Guijarro
+    est_telf_repr_casa: 2861213
+    est_telf_repr_trabajo: 2223871
+    est_telf_repr_celular: '084583895'
+    est_email_representante: pguijarro@casabaca.com
+    est_login_representante: pgomez
+    est_pass_representante: 1725083644
+    sf_guard_user_id: 234
+    gra: emdiGrado_22
+  emdiEstudiante_235:
+    est_nombres: Jara García
+    est_apellidos: Luis Antonio
+    est_cedula: 
+    est_fecha_nacimiento: '2007-08-14'
+    est_email_estudiante: paola.garcia@dhl.com
+    est_house: Broomfleet
+    est_nombre_representante: Paola Garcia
+    est_telf_repr_casa: 2071035
+    est_telf_repr_trabajo: 2985971
+    est_telf_repr_celular: '098593684'
+    est_email_representante: paola.garcia@dhl.com
+    est_login_representante: ljara
+    est_pass_representante: 3333333306
+    sf_guard_user_id: 235
+    gra: emdiGrado_22
+  emdiEstudiante_236:
+    est_nombres: De Miguel Vizcaíno
+    est_apellidos: Julían
+    est_cedula: 
+    est_fecha_nacimiento: '2007-07-27'
+    est_email_estudiante: 
+    est_house: Broomfleet
+    est_nombre_representante: Karina Vizcaino
+    est_telf_repr_casa: 2863503
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '097004101'
+    est_email_representante: 
+    est_login_representante: jdemiguel
+    est_pass_representante: 3333333307
+    sf_guard_user_id: 236
+    gra: emdiGrado_22
+  emdiEstudiante_237:
+    est_nombres: Proaño Silva
+    est_apellidos: Santiago Alexander
+    est_cedula: 
+    est_fecha_nacimiento: '2007-10-05'
+    est_email_estudiante: rrhh@rectivalle.com
+    est_house: Aberdeen
+    est_nombre_representante: Teresa Silva
+    est_telf_repr_casa: 2339451
+    est_telf_repr_trabajo: 2331180
+    est_telf_repr_celular: '099663129'
+    est_email_representante: rrhh@rectivalle.com
+    est_login_representante: sproano
+    est_pass_representante: 3333333308
+    sf_guard_user_id: 237
+    gra: emdiGrado_22
+  emdiEstudiante_238:
+    est_nombres: Tapia Medina
+    est_apellidos: Diana Camila
+    est_cedula: 
+    est_fecha_nacimiento: '2007-05-18'
+    est_email_estudiante: 
+    est_house: Broomfleet
+    est_nombre_representante: Margarita Medina
+    est_telf_repr_casa: 2346168
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '092813681'
+    est_email_representante: 
+    est_login_representante: dtapia
+    est_pass_representante: 3333333309
+    sf_guard_user_id: 238
+    gra: emdiGrado_22
+  emdiEstudiante_239:
+    est_nombres: Toledo Grandes
+    est_apellidos: Zamanta Anelis
+    est_cedula: 
+    est_fecha_nacimiento: '2007-09-05'
+    est_email_estudiante: dvanyly@gmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Elisa Grandes
+    est_telf_repr_casa: 2865903
+    est_telf_repr_trabajo: 2339844
+    est_telf_repr_celular: '093332378'
+    est_email_representante: dvanyly@gmail.com
+    est_login_representante: zatoledo
+    est_pass_representante: 3333333010
+    sf_guard_user_id: 239
+    gra: emdiGrado_22
+  emdiEstudiante_240:
+    est_nombres: Calero Cevallos
+    est_apellidos: Alejandra Valentina
+    est_cedula: 1724912306
+    est_fecha_nacimiento: '2007-08-16'
+    est_email_estudiante: majhadice@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Jhadira Cevallos
+    est_telf_repr_casa: 2335148
+    est_telf_repr_trabajo: 2081508
+    est_telf_repr_celular: '087591919'
+    est_email_representante: majhadice@hotmail.com
+    est_login_representante: acalero
+    est_pass_representante: 1724912306
+    sf_guard_user_id: 240
+    gra: emdiGrado_22
+  emdiEstudiante_241:
+    est_nombres: Dominguez Nuñez
+    est_apellidos: Steve Alejandro
+    est_cedula: 
+    est_fecha_nacimiento: '2007-09-17'
+    est_email_estudiante: lorenanunezv@hotmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Lorena Nuñez
+    est_telf_repr_casa: 2616709
+    est_telf_repr_trabajo: 2281506
+    est_telf_repr_celular: '084566838'
+    est_email_representante: lorenanunezv@hotmail.com
+    est_login_representante: sdominguez
+    est_pass_representante: 4444444401
+    sf_guard_user_id: 241
+    gra: emdiGrado_22
+  emdiEstudiante_242:
+    est_nombres: Albuja García
+    est_apellidos: Carlos Javier
+    est_cedula: 173737083
+    est_fecha_nacimiento: '2007-05-31'
+    est_email_estudiante: lourdes.garcia@petrobell.com.ec
+    est_house: Aberdeen
+    est_nombre_representante: Maria De Lourdes Garcia
+    est_telf_repr_casa: 2340284
+    est_telf_repr_trabajo: 3964600
+    est_telf_repr_celular: '095040452'
+    est_email_representante: lourdes.garcia@petrobell.com.ec
+    est_login_representante: cjalbuja
+    est_pass_representante: 5555555550
+    sf_guard_user_id: 242
+    gra: emdiGrado_23
+  emdiEstudiante_243:
+    est_nombres: Ashford Figueroa
+    est_apellidos: Cristopher Alejandro 
+    est_cedula: 1726075755
+    est_fecha_nacimiento: '2007-03-20'
+    est_email_estudiante: kev@kevinasford.wamadoo.co.uk
+    est_house: Fitchburg
+    est_nombre_representante: Monica Figueroa
+    est_telf_repr_casa: 2346604
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '087444282'
+    est_email_representante: kev@kevinasford.wamadoo.co.uk
+    est_login_representante: cashford
+    est_pass_representante: 1726075755
+    sf_guard_user_id: 243
+    gra: emdiGrado_23
+  emdiEstudiante_244:
+    est_nombres: Azanza Campos
+    est_apellidos: Clara Maitreya 
+    est_cedula: 
+    est_fecha_nacimiento: '2007-08-31'
+    est_email_estudiante: lagunahei@yahoo.com
+    est_house: Aberdeen
+    est_nombre_representante: Lena Campos
+    est_telf_repr_casa: 2340801
+    est_telf_repr_trabajo: 2868902
+    est_telf_repr_celular: 
+    est_email_representante: lagunahei@yahoo.com
+    est_login_representante: cazanza
+    est_pass_representante: 4444444403
+    sf_guard_user_id: 244
+    gra: emdiGrado_23
+  emdiEstudiante_245:
+    est_nombres: Diaz Espinosa
+    est_apellidos: Paulette Antonella
+    est_cedula: 
+    est_fecha_nacimiento: '2007-08-31'
+    est_email_estudiante: majoespinosar@gmail.com
+    est_house: Fitchburg
+    est_nombre_representante: Maria Jose Espinosa 
+    est_telf_repr_casa: 2330784
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '084605145'
+    est_email_representante: majoespinosar@gmail.com
+    est_login_representante: pdiaz
+    est_pass_representante: 4444444404
+    sf_guard_user_id: 245
+    gra: emdiGrado_23
+  emdiEstudiante_246:
+    est_nombres: Dominguez Enderica
+    est_apellidos: Franco Daniele 
+    est_cedula: 
+    est_fecha_nacimiento: '2007-04-02'
+    est_email_estudiante: luisteve50@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Estefany Endérica
+    est_telf_repr_casa: 2862097
+    est_telf_repr_trabajo: 2666225
+    est_telf_repr_celular: '087080584'
+    est_email_representante: luisteve50@hotmail.com
+    est_login_representante: fdominguez
+    est_pass_representante: 4444444405
+    sf_guard_user_id: 246
+    gra: emdiGrado_23
+  emdiEstudiante_247:
+    est_nombres: Freire Vallejo
+    est_apellidos: Julián Andrés
+    est_cedula: 1750468397
+    est_fecha_nacimiento: '2007-05-22'
+    est_email_estudiante: 
+    est_house: Aberdeen
+    est_nombre_representante: Silvanna Vallejo
+    est_telf_repr_casa: 
+    est_telf_repr_trabajo: 3331773
+    est_telf_repr_celular: '084491714'
+    est_email_representante: 
+    est_login_representante: jfreire
+    est_pass_representante: 1750468397
+    sf_guard_user_id: 247
+    gra: emdiGrado_23
+  emdiEstudiante_248:
+    est_nombres: Larrea Flores
+    est_apellidos: Nicolás
+    est_cedula: 1727290098
+    est_fecha_nacimiento: '2007-06-24'
+    est_email_estudiante: cucolila@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Ma. Patricia Flores
+    est_telf_repr_casa: 2866503
+    est_telf_repr_trabajo: 2522481
+    est_telf_repr_celular: '099235456'
+    est_email_representante: cucolila@hotmail.com
+    est_login_representante: nlarrea
+    est_pass_representante: 1727290098
+    sf_guard_user_id: 248
+    gra: emdiGrado_23
+  emdiEstudiante_249:
+    est_nombres: Martinez Espinosa
+    est_apellidos: Juan Diego
+    est_cedula: 
+    est_fecha_nacimiento: '2007-10-26'
+    est_email_estudiante: gilfortoul4@hotmail.com
+    est_house: Broomfleet
+    est_nombre_representante: Martha Espinosa
+    est_telf_repr_casa: 2867213
+    est_telf_repr_trabajo: 2090176
+    est_telf_repr_celular: '085865949'
+    est_email_representante: gilfortoul4@hotmail.com
+    est_login_representante: jmartinez
+    est_pass_representante: 4444444406
+    sf_guard_user_id: 249
+    gra: emdiGrado_23
+  emdiEstudiante_250:
+    est_nombres: Proaño Silva
+    est_apellidos: Alexa Isabella 
+    est_cedula: 
+    est_fecha_nacimiento: '2007-10-05'
+    est_email_estudiante: rrhh@rectivalle.com
+    est_house: Aberdeen
+    est_nombre_representante: Teresa Silva
+    est_telf_repr_casa: 2339451
+    est_telf_repr_trabajo: 2331180
+    est_telf_repr_celular: '099663129'
+    est_email_representante: rrhh@rectivalle.com
+    est_login_representante: aproano
+    est_pass_representante: 4444444407
+    sf_guard_user_id: 250
+    gra: emdiGrado_23
+  emdiEstudiante_251:
+    est_nombres: Sanchez Miño
+    est_apellidos: Juan Carlos
+    est_cedula: 1726277583
+    est_fecha_nacimiento: '2007-06-14'
+    est_email_estudiante: indiranereida@hotmail.com
+    est_house: Aberdeen
+    est_nombre_representante: Indira Miño
+    est_telf_repr_casa: '042648061'
+    est_telf_repr_trabajo: '042648061'
+    est_telf_repr_celular: '084814993'
+    est_email_representante: indiranereida@hotmail.com
+    est_login_representante: casanchez
+    est_pass_representante: 1726277583
+    sf_guard_user_id: 251
+    gra: emdiGrado_23
+  emdiEstudiante_252:
+    est_nombres: Solano Dalgo
+    est_apellidos: Valentina
+    est_cedula: 1727480715
+    est_fecha_nacimiento: '2007-05-30'
+    est_email_estudiante: carolinadalgo@yahoo.com
+    est_house: Aberdeen
+    est_nombre_representante: Carolina Dalgo
+    est_telf_repr_casa: 6037738
+    est_telf_repr_trabajo: 
+    est_telf_repr_celular: '099558979'
+    est_email_representante: carolinadalgo@yahoo.com
+    est_login_representante: vsolano
+    est_pass_representante: 1727480715
+    sf_guard_user_id: 252
+    gra: emdiGrado_23

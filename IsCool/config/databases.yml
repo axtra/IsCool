@@ -1,0 +1,7 @@
+all:
+  doctrine:
+    class: sfDoctrineDatabase
+    param:
+      dsn: 'mysql:host=internal-db.s31258.gridserver.com;dbname=db31258_emdi2013'
+      username: db31258_emdi2013
+      password: hugo1712
