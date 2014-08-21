@@ -1,0 +1,1 @@
+<?php echo link_to('Asignar', 'asignarmaterias/new?id='.$Grado->getPrimaryKey() ) ?>

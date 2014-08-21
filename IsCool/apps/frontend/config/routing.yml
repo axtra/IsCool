@@ -1,0 +1,120 @@
+emdi_administracion:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                emdiAdministracion
+    module:               admindatos
+    prefix_path:          /admindatos
+    column:               adm_id
+    with_wildcard_routes: true
+
+sf_guard_user:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                sfGuardUser
+    module:               adminusuarios
+    prefix_path:          /adminusuarios
+    column:               id
+    with_wildcard_routes: true
+
+emdi_materia_x_grado_asignarmaterias:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                emdiMateriaXGrado
+    module:               asignarmaterias
+    prefix_path:          /asignarmaterias
+    column:               mxg_id
+    with_wildcard_routes: true
+
+emdi_materia_x_grado:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                emdiMateriaXGrado
+    module:               asignarmaterias222222
+    prefix_path:          /asignarmaterias222222
+    column:               mxg_id
+    with_wildcard_routes: true
+
+emdi_profesor:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                emdiProfesor
+    module:               adminprofesores
+    prefix_path:          /adminprofesores
+    column:               pro_id
+    with_wildcard_routes: true
+
+emdi_materia:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                emdiMateria
+    module:               adminmaterias
+    prefix_path:          /adminmaterias
+    column:               mat_id
+    with_wildcard_routes: true
+
+emdi_estudiante:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                emdiEstudiante
+    module:               adminestudiantes
+    prefix_path:          /adminestudiantes
+    column:               est_id
+    with_wildcard_routes: true
+
+emdi_grado:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                emdiGrado
+    module:               admingrados
+    prefix_path:          /admingrados
+    column:               gra_id
+    with_wildcard_routes: true
+
+# You can find more information about this file on the symfony website:
+# http://www.symfony-project.org/reference/1_4/en/10-Routing
+
+# default rules
+homepage:
+  url:   /
+  param: { module: inicio, action: index }
+#homepage:
+#  url:   /
+#  param: { module: job, action: index }
+
+# generic rules
+# please, remove them by adding more specific rules
+default_index:
+  url:   /:module
+  param: { action: index }
+
+default:
+  url:   /:module/:action/*
+
+# Rutas para sfGuard
+sf_guard_signin:
+  url:   /login
+  param: { module: sfGuardAuth, action: signin }
+ 
+sf_guard_signout:
+  url:   /logout
+  param: { module: sfGuardAuth, action: signout }
+ 
+sf_guard_password:
+  url:   /pedir_password
+  param: { module: sfGuardAuth, action: password }
+ 
+loggeado:
+  url:   /portal
+  param: { module: portal, action: index }
+  
+  
+  
+# *********************************************
+# Reglas para JQuery desde Admin Generator
+mostrar_materia_por_grado:
+  url:    asignarmaterias/mostrar
+  param:  { module: asignarmaterias, action: mostrar }
+  
+borrar_materia_por_grado:
+  url:    asignarmaterias/borrar
+  param:  { module: asignarmaterias, action: borrar }

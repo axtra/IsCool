@@ -1,0 +1,35 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           emdiMateria
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             true
+    singular:              ~
+    plural:                ~
+    route_prefix:          emdi_materia
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+
+    config:
+      actions:
+        _new:  { label: Ingresar Nuevo Materia}
+      fields:
+        mat_id: {label: "ID"}
+        mat_nombre: {label: "Nombre"}
+
+      list:
+        title:    Administración de Materias
+        batch_actions: {}
+        max_per_page:   20
+        actions:
+          _new:  { label: Ingresar Nuevo Materia}
+
+      form: ~
+      edit:
+        title:    Editando Materia %%mat_nombre%%
+      new:
+        title:    Ingresando nuevo Materia
+      filter:
+        class: false

@@ -1,0 +1,44 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           emdiGrado
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             true
+    singular:              Grado
+    plural:                Grados
+    route_prefix:          emdi_grado
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _new:  { label: Ingresar Nuevo Grado}
+      fields:
+        gra_id: {label: "ID"}
+        gra_nombre: {label: "Nombre"}
+        gra_nombre_corto: {label: "Abrev."}
+        pro_id: {label: "Tutor"}
+        nombres_apellidos: {label: "Tutor"}
+        asignar_materias: {label: "Materias"}
+
+      list:
+        title:    Administración de Grados
+        display:
+          - gra_id
+          - gra_nombre
+          - gra_nombre_corto
+          - _nombres_apellidos
+          - _asignar_materias
+        batch_actions: {}
+        max_per_page:   16
+        actions:
+          _new:  { label: Ingresar Nuevo Grado}
+
+      form: ~
+      edit:
+        title:    Editando Grado %%gra_nombre%%
+      new:
+        title:    Ingresando nuevo Grado
+      filter:
+        class: false

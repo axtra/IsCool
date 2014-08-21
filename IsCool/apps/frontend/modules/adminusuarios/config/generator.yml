@@ -1,0 +1,55 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           sfGuardUser
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             true
+    singular:              ~
+    plural:                ~
+    route_prefix:          sf_guard_user
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+
+    config:
+      actions:
+        _new:  { label: Ingresar Nuevo Usuario}
+      fields:
+        first_name: {label: "Nombres"}
+        last_name: {label: "Apellidos"}
+        email_address: {label: "Email"}
+        username: {label: "Login"}
+        password: {label: "Password"}
+        is_active: {label: "Activo"}
+        nombres_apellidos: {label: "Nombres"}
+
+      list:
+        title:    Administración de Usuario
+        display:
+          - _nombres_apellidos
+          - email_address
+          - username
+          - is_active
+
+        batch_actions: {}
+        max_per_page:   20
+        actions:
+          _new:  { label: Ingresar Nuevo Usuario}
+
+      form: ~
+      edit:
+        title:    Editando Usuario %%username%%
+      new:
+        title:    Ingresando nuevo Usuario
+        display:
+          - first_name
+          - last_name
+          - username
+          - password
+          - email_address
+          - is_active
+      filter:
+        class: true
+        display: [first_name, last_name, username, is_active]
+        

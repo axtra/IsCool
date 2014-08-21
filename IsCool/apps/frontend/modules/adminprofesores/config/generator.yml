@@ -1,0 +1,49 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           emdiProfesor
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             true
+    singular:              ~
+    plural:                ~
+    route_prefix:          emdi_profesor
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _new:  { label: Ingresar Nuevo Profesor}
+      fields:
+        pro_nombres: {label: "Nombres"}
+        pro_apellidos: {label: "Apellidos"}
+        pro_cedula: {label: "Cédula"}
+        pro_email: {label: "Email"}
+        pro_telf_casa: {label: "Casa"}
+        pro_telf_celular: {label: "Celular"}
+        pro_fecha_nacimiento: {label: "Fecha Nacimiento"}
+        pro_house: {label: "House"}
+        nombres_apellidos: {label: "Nombres"}
+        sf_guard_user_id: {label: "Usuario"}
+
+      list:
+        title:    Administración de Profesores
+        display:
+          - _nombres_apellidos
+          - pro_email
+          - pro_telf_casa
+          - pro_telf_celular
+          - pro_house
+
+        batch_actions: {}
+        max_per_page:   20
+        actions:
+          _new:  { label: Ingresar Nuevo Profesor}
+
+      form: ~
+      edit:
+        title:    Editando Profesor - %%pro_nombres%% %%pro_apellidos%%
+      new:
+        title:    Ingresando nuevo Profesor
+      filter:
+        class: false

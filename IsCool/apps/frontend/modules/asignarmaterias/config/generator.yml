@@ -1,0 +1,27 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           emdiMateriaXGrado
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             false
+    singular:              ~
+    plural:                ~
+    route_prefix:          emdi_materia_x_grado_asignarmaterias
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions: ~
+      list:    ~
+      form: ~
+      fields:
+        gra_id: {label: "Grado"}
+        mat_id: {label: "Materia"}
+        pro_id: {label: "Profesor", help: "Profesor que dicta la materia"}
+      edit:
+        title:    Editando Grado %%gra_nombre%%
+      new:
+        title:    Asignando materias al Grado %%gra_id%%
+      filter:
+        class: false

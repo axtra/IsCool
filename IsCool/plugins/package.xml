@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" packagerversion="1.6.2" version="2.0" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>sfCommandLinePlugin</name>
+ <channel>pear.symfony-project.com</channel>
+ <summary>Centralized batch runner for Symfony</summary>
+ <description>The sfCommandLine provide a centralized way to launch batch script and passing them complex arguments.It also allow to change the SP_APP, SP_ENVIRONMENT and SP_DEBUG directly from command line.</description>
+ <lead>
+  <name>Romain Cambien</name>
+  <user>romain</user>
+  <email>romain@cambien.net</email>
+  <active>yes</active>
+ </lead>
+ <date>2007-11-30</date>
+ <time>18:13:41</time>
+ <version>
+  <release>0.1.2</release>
+  <api>0.1.2</api>
+ </version>
+ <stability>
+  <release>beta</release>
+  <api>beta</api>
+ </stability>
+ <license uri="http://www.symfony-project.com/license">MIT license</license>
+ <notes>-</notes>
+ <contents>
+  <dir name="/">
+   <file md5sum="e5ce4954db66ba2858a4e9dee3ba75a2" name="data/tasks/sfCommandLineTask.php" role="data"/>
+   <file md5sum="798901d056f3eb9dac952e09cec18d06" name="README" role="data"/>
+   <file md5sum="f8f064191ae90258ba4b3005852a2bbd" name="LICENSE" role="data"/>
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.1</min>
+   </pearinstaller>
+   
+  </required>
+ </dependencies>
+ <phprelease/>
+ <changelog>
+  <release>
+   <version>
+    <release>0.1.0</release>
+    <api>0.1.0</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2007-11-23</date>
+   <license>MIT license</license>
+   <notes>romain: plug-in added to symfony</notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1.1</release>
+    <api>0.1.1</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2007-11-26</date>
+   <license>MIT license</license>
+   <notes>romain: BugFix : missing SF_ROOT_DIR constant</notes>
+  </release>
+  <release>
+   <version>
+    <release>0.1.2</release>
+    <api>0.1.2</api>
+   </version>
+   <stability>
+    <release>beta</release>
+    <api>beta</api>
+   </stability>
+   <date>2007-11-30</date>
+   <license>MIT license</license>
+   <notes>romain: BackPort change by kupokomapa
+romain: Feature : Allow to run module / action from command line
+romain: Add some Comments</notes>
+  </release>
+ </changelog>
+</package>
