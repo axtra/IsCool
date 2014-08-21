@@ -1,0 +1,82 @@
+@charset "utf-8";
+.valores {
+	font-family: Calibri;
+	font-size: 11px;
+}
+.Titulo {
+	font-family: "Eras Medium ITC";
+	font-weight: bold;
+	color: #3F0000;
+}
+.comida {
+	font-family: "Eras Medium ITC";
+	font-weight: bold;
+	font-size: 14px;
+}
+.nutricion1 {
+	font-family: Candara;
+	font-weight: bold;
+	font-size: 16px;
+	color: #3F0000;
+}
+.nutricion2 {
+	font-family: Candara;
+	font-weight: bold;
+	font-size: 14px;
+}
+.nutricion3 {
+	font-family: Candara;
+	font-weight: bold;
+	color: #003;
+	font-size: 14px;
+	border: 1px solid #000;
+}
+.valores2 {
+	font-family: Calibri;
+	font-size: 11px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: none;
+	border-left-style: solid;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+	border-top-style: none;
+	border-bottom-style: none;
+}
+.valores3 {
+	font-family: Calibri;
+	font-size: 11px;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: none;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+.fin {
+	font-family: Calibri;
+	font-size: 10px;
+	color: #E3E3E3;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #000;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}

@@ -1,0 +1,36 @@
+.errores_box{
+    text-align: left;
+/*    background: #F9ECEC;*/
+    background: transparent url(/images/error_bg.jpg) 0 0 no-repeat;
+/*    border: 1px solid #300;*/
+    margin: 20px;
+    padding: 10px 5px 0 150px;
+    font: 12px Verdana,Arial,Helvetica,sans-serif;
+    width: 400px;
+    min-height: 141px;
+    color:#333;
+}
+
+.error_list li{
+    color:#bbb;
+    padding:5px 0;
+}
+
+.error_list li span{
+    color:#222;
+}
+
+.error_label{
+    list-style: none;
+}
+.error_list{
+    list-style: disc;
+    margin: 0 0 10px 5px;
+}
+
+.errores_title{
+   text-align: left;
+   list-style: none;
+   margin-bottom: 15px;
+   font: bold 17px "Trebuchet MS", Verdana, Arial;
+}

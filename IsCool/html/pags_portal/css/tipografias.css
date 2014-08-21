@@ -1,0 +1,153 @@
+@charset "utf-8";
+
+/* Tipo de letra de Inicio */
+.eras1 {
+	font-family: "Eras Medium ITC";
+	font-size: 14px;
+	color: #333;
+	text-align: justify;
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+
+/* Titulos de noticias del calendario */
+}.noti1 {
+	font-family: "Eras Medium ITC";
+	font-size: 13px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	color: #212121;
+	letter-spacing: normal;
+	word-spacing: normal;
+	
+/* Titulos de noticias principales */
+}
+.titulos1 {
+	font-family: "Eras Medium ITC";
+
+/* Texto de las noticias */
+}
+.noticias2 {
+	font-family: "Eras Medium ITC";
+
+/* Titulo de publicaciones anteriores */
+}
+.public1 {
+	font-size: 12px;
+	font-family: "Eras Medium ITC";
+	font-weight: bold;
+	font-style: normal;
+	line-height: normal;
+	font-variant: normal;
+	color: #661A00;
+	letter-spacing: normal;
+	text-align: left;
+	word-spacing: normal;
+
+/* Titulo del area (IDIOMAS) */
+}
+.public2 {
+	font-size: 11px;
+	font-family: "Eras Medium ITC";
+	font-style: normal;
+	line-height: normal;
+	font-weight: bold;
+	color: #B22C00;
+	letter-spacing: normal;
+	text-align: left;
+	word-spacing: normal;
+	white-space: normal;
+
+/* Texto de la fecha */
+}
+.public3 {
+	font-size: 12px;
+	font-family: "Eras Medium ITC";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #545454;
+	letter-spacing: normal;
+	word-spacing: normal;
+	white-space: normal;
+}
+.videos {
+	color: #930;
+	font-size: 13px;
+}
+.mision {
+	font-family: "Eras Medium ITC";
+	font-size: 14px;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #006EB7;
+}
+.comunicados1 {
+	text-align: right;
+	font-family: "Eras Medium ITC";
+	font-size: 13px;
+	color: #333;
+	font-weight: bold;
+}
+.comunicados2 {
+	font-family: "Eras Medium ITC";
+	font-size: 14px;
+	color: #333;
+	text-align: justify;
+}
+.comunicados3 {
+	font-family: "Eras Medium ITC";
+	text-align: left;
+	font-weight: bold;
+	font-size: 13px;
+	color: #000;
+}
+.materias td {
+	text-align: center;
+}
+.disciplina {
+	font-family: Candara;
+	font-size: 13px;
+	font-weight: bold;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+.nuemeros2 {
+	font-family: Calibri;
+	text-align: center;
+	font-size: 13px;
+	font-weight: bold;
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: none;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #000;
+	border-right-color: #000;
+	border-bottom-color: #000;
+	border-left-color: #000;
+}
+.info {
+	font-size: 13px;
+	font-family: "Eras Medium ITC";
+	font-style: normal;
+	font-weight: normal;
+	color: #000;
+	text-align: justify;
+}
