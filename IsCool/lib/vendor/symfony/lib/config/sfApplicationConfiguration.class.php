@@ -149,10 +149,10 @@ abstract class sfApplicationConfiguration extends ProjectConfiguration
     // initialize plugin configuration objects
     $this->initializePlugins();
 
-    // compress output
-    if (!self::$coreLoaded)
+      // compress output
+    if (!self::$coreLoaded && sfConfig::get('sf_compressed'))
     {
-      ob_start(sfConfig::get('sf_compressed') ? 'ob_gzhandler' : '');
+      ob_start('ob_gzhandler');
     }
 
     self::$coreLoaded = true;
