@@ -448,4 +448,159 @@ END;';
      *                                        'time_limit' => array()
      *                                    ),
      *                                    'change' => array(
- 
+     *                                        'name' => array(
+     *                                            'length' => '20',
+     *                                            'definition' => array(
+     *                                                'type' => 'text',
+     *                                                'length' => 20,
+     *                                            ),
+     *                                        )
+     *                                    ),
+     *                                    'rename' => array(
+     *                                        'sex' => array(
+     *                                            'name' => 'gender',
+     *                                            'definition' => array(
+     *                                                'type' => 'text',
+     *                                                'length' => 1,
+     *                                                'default' => 'M',
+     *                                            ),
+     *                                        )
+     *                                    )
+     *                                )
+     *
+     * @param boolean $check     indicates whether the function should just check if the DBMS driver
+     *                             can perform the requested table alterations if the value is true or
+     *                             actually perform them otherwise.
+     * @return void
+     */
+    public function alterTable($name, array $changes, $check = false)
+    {
+
+        foreach ($changes as $changeName => $change) {
+            switch ($changeName) {
+                case 'add':
+                case 'remove':
+                case 'change':
+                case 'name':
+                case 'rename':
+                    break;
+                default:
+                    throw new Doctrine_Export_Exception('change type "' . $changeName . '" not yet supported');
+            }
+        }
+
+        if ($check) {
+            return false;
+        }
+
+        $name = $this->conn->quoteIdentifier($name, true);
+
+        if ( ! empty($changes['add']) && is_array($changes['add'])) {
+            $fields = array();
+            foreach ($changes['add'] as $fieldName => $field) {
+                $fields[] = $this->getDeclaration($fieldName, $field); 
+            }
+            $result = $this->conn->exec('ALTER TABLE ' . $name . ' ADD (' . implode(', ', $fields) . ')');
+        }
+
+        if ( ! empty($changes['change']) && is_array($changes['change'])) {
+            $fields = array();
+            foreach ($changes['change'] as $fieldName => $field) {
+                $fields[] = $fieldName. ' ' . $this->getDeclaration('', $field['definition']);
+            }
+            $result = $this->conn->exec('ALTER TABLE ' . $name . ' MODIFY (' . implode(', ', $fields) . ')');
+        }
+
+        if ( ! empty($changes['rename']) && is_array($changes['rename'])) {
+            foreach ($changes['rename'] as $fieldName => $field) {
+                $query = 'ALTER TABLE ' . $name . ' RENAME COLUMN ' . $this->conn->quoteIdentifier($fieldName, true)
+                       . ' TO ' . $this->conn->quoteIdentifier($field['name']);
+
+                $result = $this->conn->exec($query);
+            }
+        }
+
+        if ( ! empty($changes['remove']) && is_array($changes['remove'])) {
+            $fields = array();
+            foreach ($changes['remove'] as $fieldName => $field) {
+                $fields[] = $this->conn->quoteIdentifier($fieldName, true);
+            }
+            $result = $this->conn->exec('ALTER TABLE ' . $name . ' DROP COLUMN ' . implode(', ', $fields));
+        }
+
+        if ( ! empty($changes['name'])) {
+            $changeName = $this->conn->quoteIdentifier($changes['name'], true);
+            $result = $this->conn->exec('ALTER TABLE ' . $name . ' RENAME TO ' . $changeName);
+        }
+    }
+
+    /**
+     * create sequence
+     *
+     * @param string $seqName name of the sequence to be created
+     * @param string $start start value of the sequence; default is 1
+     * @param array     $options  An associative array of table options:
+     *                          array(
+     *                              'comment' => 'Foo',
+     *                              'charset' => 'utf8',
+     *                              'collate' => 'utf8_unicode_ci',
+     *                          );
+     * @return string
+     */
+    public function createSequenceSql($seqName, $start = 1, array $options = array())
+    {
+        $sequenceName = $this->conn->quoteIdentifier($this->conn->formatter->getSequenceName($seqName), true);
+        $query  = 'CREATE SEQUENCE ' . $sequenceName . ' START WITH ' . $start . ' INCREMENT BY 1 NOCACHE';
+        $query .= ($start < 1 ? ' MINVALUE ' . $start : '');
+        return $query;
+    }
+
+    /**
+     * drop existing sequence
+     *
+     * @param object $this->conn database object that is extended by this class
+     * @param string $seqName name of the sequence to be dropped
+     * @return string
+     */
+    public function dropSequenceSql($seqName)
+    {
+        $sequenceName = $this->conn->quoteIdentifier($this->conn->formatter->getSequenceName($seqName), true);
+        return 'DROP SEQUENCE ' . $sequenceName;
+    }
+
+    /**
+     * return Oracle's SQL code portion needed to set an index
+     * declaration to be unsed in statements like CREATE TABLE.
+     * 
+     * @param string $name      name of the index
+     * @param array $definition index definition
+     * @return string           Oracle's SQL code portion needed to set an index  
+     */    
+    public function getIndexDeclaration($name, array $definition)
+    {
+        $name = $this->conn->quoteIdentifier($name);
+        $type = '';
+        
+        if ( isset($definition['type']))
+        {
+            if (strtolower($definition['type']) == 'unique') {
+                $type = strtoupper($definition['type']);
+            } else {
+                throw new Doctrine_Export_Exception(
+                    'Unknown type '.$definition['type'] .' for index '.$name
+                );
+            }
+        } else {
+            // only unique indexes should be defined in create table statement
+            return null;
+        }
+        
+        if ( !isset($definition['fields']) || !is_array($definition['fields'])) {
+            throw new Doctrine_Export_Exception('No columns given for index '.$name);
+        }
+        
+        $query = 'CONSTRAINT '.$name.' '.$type.' ('.$this->getIndexFieldDeclarationList($definition['fields']).')';
+        
+        return $query;
+    }
+}

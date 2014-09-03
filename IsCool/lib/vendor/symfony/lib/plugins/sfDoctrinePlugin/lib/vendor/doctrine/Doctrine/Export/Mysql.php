@@ -355,4 +355,465 @@ class Doctrine_Export_Mysql extends Doctrine_Export
      *                                        )
      *                                    ),
      *                                    'remove' => array(
-     *                                        'fil
+     *                                        'file_limit' => array(),
+     *                                        'time_limit' => array()
+     *                                    ),
+     *                                    'change' => array(
+     *                                        'name' => array(
+     *                                            'length' => '20',
+     *                                            'definition' => array(
+     *                                                'type' => 'text',
+     *                                                'length' => 20,
+     *                                            ),
+     *                                        )
+     *                                    ),
+     *                                    'rename' => array(
+     *                                        'sex' => array(
+     *                                            'name' => 'gender',
+     *                                            'definition' => array(
+     *                                                'type' => 'text',
+     *                                                'length' => 1,
+     *                                                'default' => 'M',
+     *                                            ),
+     *                                        )
+     *                                    )
+     *                                )
+     *
+     * @param boolean $check     indicates whether the function should just check if the DBMS driver
+     *                           can perform the requested table alterations if the value is true or
+     *                           actually perform them otherwise.
+     * @return boolean
+     */
+    public function alterTableSql($name, array $changes, $check = false)
+    {
+        if ( ! $name) {
+            throw new Doctrine_Export_Exception('no valid table name specified');
+        }
+        foreach ($changes as $changeName => $change) {
+            switch ($changeName) {
+                case 'add':
+                case 'remove':
+                case 'change':
+                case 'rename':
+                case 'name':
+                    break;
+                default:
+                    throw new Doctrine_Export_Exception('change type "' . $changeName . '" not yet supported');
+            }
+        }
+
+        if ($check) {
+            return true;
+        }
+
+        $query = '';
+        if ( ! empty($changes['name'])) {
+            $change_name = $this->conn->quoteIdentifier($changes['name']);
+            $query .= 'RENAME TO ' . $change_name;
+        }
+
+        if ( ! empty($changes['add']) && is_array($changes['add'])) {
+            foreach ($changes['add'] as $fieldName => $field) {
+                if ($query) {
+                    $query.= ', ';
+                }
+                $query.= 'ADD ' . $this->getDeclaration($fieldName, $field);
+            }
+        }
+
+        if ( ! empty($changes['remove']) && is_array($changes['remove'])) {
+            foreach ($changes['remove'] as $fieldName => $field) {
+                if ($query) {
+                    $query .= ', ';
+                }
+                $fieldName = $this->conn->quoteIdentifier($fieldName);
+                $query .= 'DROP ' . $fieldName;
+            }
+        }
+
+        $rename = array();
+        if ( ! empty($changes['rename']) && is_array($changes['rename'])) {
+            foreach ($changes['rename'] as $fieldName => $field) {
+                $rename[$field['name']] = $fieldName;
+            }
+        }
+
+        if ( ! empty($changes['change']) && is_array($changes['change'])) {
+            foreach ($changes['change'] as $fieldName => $field) {
+                if ($query) {
+                    $query.= ', ';
+                }
+                if (isset($rename[$fieldName])) {
+                    $oldFieldName = $rename[$fieldName];
+                    unset($rename[$fieldName]);
+                } else {
+                    $oldFieldName = $fieldName;
+                }
+                $oldFieldName = $this->conn->quoteIdentifier($oldFieldName, true);
+                $query .= 'CHANGE ' . $oldFieldName . ' ' 
+                        . $this->getDeclaration($fieldName, $field['definition']);
+            }
+        }
+
+        if ( ! empty($rename) && is_array($rename)) {
+            foreach ($rename as $renameName => $renamedField) {
+                if ($query) {
+                    $query.= ', ';
+                }
+                $field = $changes['rename'][$renamedField];
+                $renamedField = $this->conn->quoteIdentifier($renamedField, true);
+                $query .= 'CHANGE ' . $renamedField . ' '
+                        . $this->getDeclaration($field['name'], $field['definition']);
+            }
+        }
+
+        if ( ! $query) {
+            return false;
+        }
+
+        $name = $this->conn->quoteIdentifier($name, true);
+        
+        return 'ALTER TABLE ' . $name . ' ' . $query;
+    }
+
+    /**
+     * create sequence
+     *
+     * @param string    $sequenceName name of the sequence to be created
+     * @param string    $start        start value of the sequence; default is 1
+     * @param array     $options  An associative array of table options:
+     *                          array(
+     *                              'comment' => 'Foo',
+     *                              'charset' => 'utf8',
+     *                              'collate' => 'utf8_unicode_ci',
+     *                              'type'    => 'innodb',
+     *                          );
+     * @return boolean
+     */
+    public function createSequence($sequenceName, $start = 1, array $options = array())
+    {
+        $sequenceName   = $this->conn->quoteIdentifier($sequenceName, true);
+        $seqcolName     = $this->conn->quoteIdentifier($this->conn->getAttribute(Doctrine_Core::ATTR_SEQCOL_NAME), true);
+
+        $optionsStrings = array();
+
+        if (isset($options['comment']) && ! empty($options['comment'])) {
+            $optionsStrings['comment'] = 'COMMENT = ' . $this->conn->quote($options['comment'], 'string');
+        }
+
+        if (isset($options['charset']) && ! empty($options['charset'])) {
+            $optionsStrings['charset'] = 'DEFAULT CHARACTER SET ' . $options['charset'];
+
+            if (isset($options['collate'])) {
+                $optionsStrings['charset'] .= ' COLLATE ' . $options['collate'];
+            }
+        }
+
+        $type = false;
+
+        if (isset($options['type'])) {
+            $type = $options['type'];
+        } else {
+            $type = $this->conn->getAttribute(Doctrine_Core::ATTR_DEFAULT_TABLE_TYPE);
+        }
+        if ($type) {
+            $optionsStrings[] = 'ENGINE = ' . $type;
+        }
+
+
+        try {
+            $query  = 'CREATE TABLE ' . $sequenceName
+                    . ' (' . $seqcolName . ' BIGINT NOT NULL AUTO_INCREMENT, PRIMARY KEY ('
+                    . $seqcolName . ')) ' . implode($optionsStrings, ' ');
+
+            $res    = $this->conn->exec($query);
+        } catch(Doctrine_Connection_Exception $e) {
+            throw new Doctrine_Export_Exception('could not create sequence table');
+        }
+
+        if ($start == 1 && $res == 1)
+            return true;
+
+        $query  = 'INSERT INTO ' . $sequenceName
+                . ' (' . $seqcolName . ') VALUES (' . ($start - 1) . ')';
+
+        $res    = $this->conn->exec($query);
+
+        if ($res == 1)
+            return true;
+
+        // Handle error
+        try {
+            $result = $this->conn->exec('DROP TABLE ' . $sequenceName);
+        } catch(Doctrine_Connection_Exception $e) {
+            throw new Doctrine_Export_Exception('could not drop inconsistent sequence table');
+        }
+
+
+    }
+
+    /**
+     * Get the stucture of a field into an array
+     *
+     * @author Leoncx
+     * @param string    $table         name of the table on which the index is to be created
+     * @param string    $name          name of the index to be created
+     * @param array     $definition    associative array that defines properties of the index to be created.
+     *                                 Currently, only one property named FIELDS is supported. This property
+     *                                 is also an associative with the names of the index fields as array
+     *                                 indexes. Each entry of this array is set to another type of associative
+     *                                 array that specifies properties of the index that are specific to
+     *                                 each field.
+     *
+     *                                 Currently, only the sorting property is supported. It should be used
+     *                                 to define the sorting direction of the index. It may be set to either
+     *                                 ascending or descending.
+     *
+     *                                 Not all DBMS support index sorting direction configuration. The DBMS
+     *                                 drivers of those that do not support it ignore this property. Use the
+     *                                 function supports() to determine whether the DBMS driver can manage indexes.
+     *
+     *                                 Example
+     *                                    array(
+     *                                        'fields' => array(
+     *                                            'user_name' => array(
+     *                                                'sorting' => 'ASC'
+     *                                                'length' => 10
+     *                                            ),
+     *                                            'last_login' => array()
+     *                                        )
+     *                                    )
+     * @throws PDOException
+     * @return void
+     */
+    public function createIndexSql($table, $name, array $definition)
+    {
+        $table  = $table;
+        $table  = $this->conn->quoteIdentifier($table, true);
+
+        $name   = $this->conn->formatter->getIndexName($name);
+        $name   = $this->conn->quoteIdentifier($name);
+        $type   = '';
+        if (isset($definition['type'])) {
+            switch (strtolower($definition['type'])) {
+                case 'fulltext':
+                case 'unique':
+                    $type = strtoupper($definition['type']) . ' ';
+                break;
+                default:
+                    throw new Doctrine_Export_Exception(
+                        'Unknown type ' . $definition['type'] . ' for index ' . $name . ' in table ' . $table
+                    );
+            }
+        }
+        $query  = 'CREATE ' . $type . 'INDEX ' . $name . ' ON ' . $table;
+        $query .= ' (' . $this->getIndexFieldDeclarationList($definition['fields']) . ')';
+
+        return $query;
+    }
+
+    /** 
+     * getDefaultDeclaration
+     * Obtain DBMS specific SQL code portion needed to set a default value
+     * declaration to be used in statements like CREATE TABLE.
+     *
+     * @param array $field      field definition array
+     * @return string           DBMS specific SQL code portion needed to set a default value
+     */
+    public function getDefaultFieldDeclaration($field)
+    {
+        $default = '';
+        if (isset($field['default']) && ( ! isset($field['length']) || $field['length'] <= 255)) {
+            if ($field['default'] === '') {
+                $field['default'] = empty($field['notnull'])
+                    ? null : $this->valid_default_values[$field['type']];
+
+                if ($field['default'] === ''
+                    && ($this->conn->getAttribute(Doctrine_Core::ATTR_PORTABILITY) & Doctrine_Core::PORTABILITY_EMPTY_TO_NULL)
+                ) {
+                    $field['default'] = ' ';
+                }
+            }
+    
+            // Proposed patch:
+            if ($field['type'] == 'enum' && $this->conn->getAttribute(Doctrine_Core::ATTR_USE_NATIVE_ENUM)) {
+                $fieldType = 'varchar';
+            } else {
+                $fieldType = $field['type'];
+            }
+            
+            $default = ' DEFAULT ' . (is_null($field['default'])
+                ? 'NULL' 
+                : $this->conn->quote($field['default'], $fieldType));
+            //$default = ' DEFAULT ' . $this->conn->quote($field['default'], $field['type']);
+        }
+        
+        return $default;
+    }
+
+    /**
+     * Obtain DBMS specific SQL code portion needed to set an index 
+     * declaration to be used in statements like CREATE TABLE.
+     *
+     * @param string $charset       name of the index
+     * @param array $definition     index definition
+     * @return string  DBMS specific SQL code portion needed to set an index
+     */
+    public function getIndexDeclaration($name, array $definition)
+    {
+        $name   = $this->conn->formatter->getIndexName($name);
+        $type   = '';
+        if (isset($definition['type'])) {
+            switch (strtolower($definition['type'])) {
+                case 'fulltext':
+                case 'unique':
+                    $type = strtoupper($definition['type']) . ' ';
+                break;
+                default:
+                    throw new Doctrine_Export_Exception(
+                        'Unknown type ' . $definition['type'] . ' for index ' . $name
+                    );
+            }
+        }
+        
+        if ( ! isset($definition['fields'])) {
+            throw new Doctrine_Export_Exception('No columns given for index ' . $name);
+        }
+        if ( ! is_array($definition['fields'])) {
+            $definition['fields'] = array($definition['fields']);
+        }
+
+        $query = $type . 'INDEX ' . $this->conn->quoteIdentifier($name);
+
+        $query .= ' (' . $this->getIndexFieldDeclarationList($definition['fields']) . ')';
+        
+        return $query;
+    }
+
+    /**
+     * getIndexFieldDeclarationList
+     * Obtain DBMS specific SQL code portion needed to set an index
+     * declaration to be used in statements like CREATE TABLE.
+     *
+     * @return string
+     */
+    public function getIndexFieldDeclarationList(array $fields)
+    {
+        $declFields = array();
+
+        foreach ($fields as $fieldName => $field) {
+            $fieldString = $this->conn->quoteIdentifier($fieldName);
+
+            if (is_array($field)) {
+                if (isset($field['length'])) {
+                    $fieldString .= '(' . $field['length'] . ')';
+                }
+
+                if (isset($field['sorting'])) {
+                    $sort = strtoupper($field['sorting']);
+                    switch ($sort) {
+                        case 'ASC':
+                        case 'DESC':
+                            $fieldString .= ' ' . $sort;
+                            break;
+                        default:
+                            throw new Doctrine_Export_Exception('Unknown index sorting option given.');
+                    }
+                }
+            } else {
+                $fieldString = $this->conn->quoteIdentifier($field);
+            }
+            $declFields[] = $fieldString;
+        }
+        return implode(', ', $declFields);
+    }
+
+    /**
+     * Returns a character set declaration.
+     *
+     * @param string $charset A character set
+     *
+     * @return string A character set declaration
+     */
+    public function getCharsetFieldDeclaration($charset)
+    {
+        return $this->conn->dataDict->getCharsetFieldDeclaration($charset);
+    }
+
+    /**
+     * Returns a collation declaration.
+     *
+     * @param string $collation A collation
+     *
+     * @return string A collation declaration
+     */
+    public function getCollationFieldDeclaration($collation)
+    {
+        return $this->conn->dataDict->getCollationFieldDeclaration($collation);
+    }
+
+    /**
+     * getAdvancedForeignKeyOptions
+     * Return the FOREIGN KEY query section dealing with non-standard options
+     * as MATCH, INITIALLY DEFERRED, ON UPDATE, ...
+     *
+     * @param array $definition
+     * @return string
+     */
+    public function getAdvancedForeignKeyOptions(array $definition)
+    {
+        $query = '';
+        if ( ! empty($definition['match'])) {
+            $query .= ' MATCH ' . $definition['match'];
+        }
+        if ( ! empty($definition['onUpdate'])) {
+            $query .= ' ON UPDATE ' . $this->getForeignKeyReferentialAction($definition['onUpdate']);
+        }
+        if ( ! empty($definition['onDelete'])) {
+            $query .= ' ON DELETE ' . $this->getForeignKeyReferentialAction($definition['onDelete']);
+        }
+        return $query;
+    }
+
+    /**
+     * drop existing index
+     *
+     * @param string    $table          name of table that should be used in method
+     * @param string    $name           name of the index to be dropped
+     * @return void
+     */
+    public function dropIndexSql($table, $name)
+    {
+        $table  = $this->conn->quoteIdentifier($table, true);
+        $name   = $this->conn->quoteIdentifier($this->conn->formatter->getIndexName($name), true);
+        return 'DROP INDEX ' . $name . ' ON ' . $table;
+    }
+
+    /**
+     * dropTable
+     *
+     * @param string    $table          name of table that should be dropped from the database
+     * @throws PDOException
+     * @return void
+     */
+    public function dropTableSql($table)
+    {
+        $table  = $this->conn->quoteIdentifier($table, true);
+        return 'DROP TABLE ' . $table;
+    }
+
+    /**
+     * drop existing foreign key
+     *
+     * @param string    $table        name of table that should be used in method
+     * @param string    $name         name of the foreign key to be dropped
+     * @return void
+     */
+    public function dropForeignKey($table, $name)
+    {
+        $table = $this->conn->quoteIdentifier($table);
+        $name  = $this->conn->quoteIdentifier($this->conn->formatter->getForeignKeyName($name));
+
+        return $this->conn->exec('ALTER TABLE ' . $table . ' DROP FOREIGN KEY ' . $name);
+    }
+}

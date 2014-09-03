@@ -246,3 +246,148 @@ class Doctrine_Export_Pgsql extends Doctrine_Export
      *                                    ),
      *                                    'change' => array(
      *                                        'name' => array(
+     *                                            'length' => '20',
+     *                                            'definition' => array(
+     *                                                'type' => 'text',
+     *                                                'length' => 20,
+     *                                            ),
+     *                                        )
+     *                                    ),
+     *                                    'rename' => array(
+     *                                        'sex' => array(
+     *                                            'name' => 'gender',
+     *                                            'definition' => array(
+     *                                                'type' => 'text',
+     *                                                'length' => 1,
+     *                                                'default' => 'M',
+     *                                            ),
+     *                                        )
+     *                                    )
+     *                                )
+     *
+     * @param boolean $check     indicates whether the function should just check if the DBMS driver
+     *                             can perform the requested table alterations if the value is true or
+     *                             actually perform them otherwise.
+     * @throws Doctrine_Connection_Exception
+     * @return boolean
+     */
+    public function alterTable($name, array $changes, $check = false)
+    {
+        $sql = $this->alterTableSql($name, $changes, $check);
+        foreach ($sql as $query) {
+            $this->conn->exec($query);
+        }
+        return true;    
+    }
+
+    /**
+     * return RDBMS specific create sequence statement
+     *
+     * @throws Doctrine_Connection_Exception     if something fails at database level
+     * @param string    $seqName        name of the sequence to be created
+     * @param string    $start          start value of the sequence; default is 1
+     * @param array     $options  An associative array of table options:
+     *                          array(
+     *                              'comment' => 'Foo',
+     *                              'charset' => 'utf8',
+     *                              'collate' => 'utf8_unicode_ci',
+     *                          );
+     * @return string
+     */
+    public function createSequenceSql($sequenceName, $start = 1, array $options = array())
+    {
+        $sequenceName = $this->conn->quoteIdentifier($this->conn->formatter->getSequenceName($sequenceName), true);
+        return 'CREATE SEQUENCE ' . $sequenceName . ' INCREMENT 1' .
+                    ($start < 1 ? ' MINVALUE ' . $start : '') . ' START ' . $start;
+    }
+
+    /**
+     * drop existing sequence
+     *
+     * @param string $sequenceName name of the sequence to be dropped
+     */
+    public function dropSequenceSql($sequenceName)
+    {
+        $sequenceName = $this->conn->quoteIdentifier($this->conn->formatter->getSequenceName($sequenceName), true);
+        return 'DROP SEQUENCE ' . $sequenceName;
+    }
+
+    /**
+     * Creates a table.
+     *
+     * @param unknown_type $name
+     * @param array $fields
+     * @param array $options
+     * @return unknown
+     */
+    public function createTableSql($name, array $fields, array $options = array())
+    {
+        if ( ! $name) {
+            throw new Doctrine_Export_Exception('no valid table name specified');
+        }
+        
+        if (empty($fields)) {
+            throw new Doctrine_Export_Exception('no fields specified for table ' . $name);
+        }
+
+        $queryFields = $this->getFieldDeclarationList($fields);
+
+
+        if (isset($options['primary']) && ! empty($options['primary'])) {
+            $keyColumns = array_values($options['primary']);
+            $keyColumns = array_map(array($this->conn, 'quoteIdentifier'), $keyColumns);
+            $queryFields .= ', PRIMARY KEY(' . implode(', ', $keyColumns) . ')';
+        }
+
+        $query = 'CREATE TABLE ' . $this->conn->quoteIdentifier($name, true) . ' (' . $queryFields;
+
+        if ($check = $this->getCheckDeclaration($fields)) {
+            $query .= ', ' . $check;
+        }
+
+        if (isset($options['checks']) && $check = $this->getCheckDeclaration($options['checks'])) {
+            $query .= ', ' . $check;
+        }
+
+        $query .= ')';
+
+        $sql[] = $query;
+
+        if (isset($options['indexes']) && ! empty($options['indexes'])) {
+            foreach($options['indexes'] as $index => $definition) {
+                $sql[] = $this->createIndexSql($name, $index, $definition);
+            }
+        }
+        
+        if (isset($options['foreignKeys'])) {
+
+            foreach ((array) $options['foreignKeys'] as $k => $definition) {
+                if (is_array($definition)) {
+                    $sql[] = $this->createForeignKeySql($name, $definition);
+                }
+            }
+        }
+        if (isset($options['sequenceName'])) {
+            $sql[] = $this->createSequenceSql($options['sequenceName']);
+        }
+        return $sql;
+    }
+
+     /**
+     * Get the stucture of a field into an array.
+     * 
+     * @param string    $table         name of the table on which the index is to be created
+     * @param string    $name          name of the index to be created
+     * @param array     $definition    associative array that defines properties of the index to be created.
+     * @see Doctrine_Export::createIndex()
+     * @return string
+     */
+    public function createIndexSql($table, $name, array $definition)
+    {
+		$query = parent::createIndexSql($table, $name, $definition);
+		if (isset($definition['where'])) {
+			return $query . ' WHERE ' . $definition['where'];
+		}
+        return $query;
+    }
+}
