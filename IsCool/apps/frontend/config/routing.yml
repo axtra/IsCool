@@ -69,6 +69,15 @@ emdi_grado:
     prefix_path:          /admingrados
     column:               gra_id
     with_wildcard_routes: true
+    
+emdi_tarea:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                emdiTarea
+    module:               tareas
+    prefix_path:          /tareas
+    column:               tar_id
+    with_wildcard_routes: true
 
 # You can find more information about this file on the symfony website:
 # http://www.symfony-project.org/reference/1_4/en/10-Routing
@@ -118,3 +127,4 @@ mostrar_materia_por_grado:
 borrar_materia_por_grado:
   url:    asignarmaterias/borrar
   param:  { module: asignarmaterias, action: borrar }
+
