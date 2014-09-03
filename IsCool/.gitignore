@@ -1,0 +1,34 @@
+/.buildpath
+/.project
+/cache/
+/cgi-bin/
+/php5.ini
+/log/
+/404.shtml
+/composer.phar
+/php.ini
+/.htaccess
+/symfony.bat
+WS_FTP.LOG
+
+# -- Sistemas Operativos ------------------------------
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.*
+!.gitignore
+!.htaccess
+*~
+
+# Mac OS X
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.Spotlight-V100
+.Trashes
