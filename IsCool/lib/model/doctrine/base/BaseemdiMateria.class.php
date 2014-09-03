@@ -42,8 +42,8 @@ abstract class BaseemdiMateria extends sfDoctrineRecord
              'length' => 60,
              ));
 
-        $this->option('charset', 'utf8');
         $this->option('collate', 'utf8_spanish_ci');
+        $this->option('charset', 'utf8');
         $this->option('type', 'InnoDB');
     }
 

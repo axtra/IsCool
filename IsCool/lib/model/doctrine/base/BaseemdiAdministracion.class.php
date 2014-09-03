@@ -100,8 +100,8 @@ abstract class BaseemdiAdministracion extends sfDoctrineRecord
              'type' => 'boolean',
              ));
 
-        $this->option('charset', 'utf8');
         $this->option('collate', 'utf8_spanish_ci');
+        $this->option('charset', 'utf8');
         $this->option('type', 'InnoDB');
     }
 

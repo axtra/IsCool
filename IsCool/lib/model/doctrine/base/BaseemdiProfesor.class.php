@@ -20,6 +20,7 @@
  * @property sfGuardUser $sfGuardUser
  * @property Doctrine_Collection $emdi_gradoes
  * @property Doctrine_Collection $emdi_materia_x_gradoes
+ * @property Doctrine_Collection $emdi_com_individuals
  * 
  * @method integer             getProId()                  Returns the current record's "pro_id" value
  * @method string              getProNombres()             Returns the current record's "pro_nombres" value
@@ -36,6 +37,7 @@
  * @method sfGuardUser         getSfGuardUser()            Returns the current record's "sfGuardUser" value
  * @method Doctrine_Collection getEmdiGradoes()            Returns the current record's "emdi_gradoes" collection
  * @method Doctrine_Collection getEmdiMateriaXGradoes()    Returns the current record's "emdi_materia_x_gradoes" collection
+ * @method Doctrine_Collection getEmdiComIndividuals()     Returns the current record's "emdi_com_individuals" collection
  * @method emdiProfesor        setProId()                  Sets the current record's "pro_id" value
  * @method emdiProfesor        setProNombres()             Sets the current record's "pro_nombres" value
  * @method emdiProfesor        setProApellidos()           Sets the current record's "pro_apellidos" value
@@ -51,6 +53,7 @@
  * @method emdiProfesor        setSfGuardUser()            Sets the current record's "sfGuardUser" value
  * @method emdiProfesor        setEmdiGradoes()            Sets the current record's "emdi_gradoes" collection
  * @method emdiProfesor        setEmdiMateriaXGradoes()    Sets the current record's "emdi_materia_x_gradoes" collection
+ * @method emdiProfesor        setEmdiComIndividuals()     Sets the current record's "emdi_com_individuals" collection
  * 
  * @package    emdi
  * @subpackage model
@@ -116,8 +119,15 @@ abstract class BaseemdiProfesor extends sfDoctrineRecord
              'length' => 8,
              ));
 
-        $this->option('charset', 'utf8');
+
+        $this->index('fk_emdi_profesor_sf_guard_user1', array(
+             'fields' => 
+             array(
+              0 => 'sf_guard_user_id',
+             ),
+             ));
         $this->option('collate', 'utf8_spanish_ci');
+        $this->option('charset', 'utf8');
         $this->option('type', 'InnoDB');
     }
 
@@ -133,6 +143,10 @@ abstract class BaseemdiProfesor extends sfDoctrineRecord
              'foreign' => 'pro_id'));
 
         $this->hasMany('emdiMateriaXGrado as emdi_materia_x_gradoes', array(
+             'local' => 'pro_id',
+             'foreign' => 'pro_id'));
+
+        $this->hasMany('emdiComIndividual as emdi_com_individuals', array(
              'local' => 'pro_id',
              'foreign' => 'pro_id'));
     }

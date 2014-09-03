@@ -53,11 +53,11 @@ abstract class BaseemdiNota extends sfDoctrineRecord
              'notnull' => true,
              'length' => 4,
              ));
-        $this->hasColumn('not_nota', 'decimal', 1, array(
+        $this->hasColumn('not_nota', 'decimal', 3, array(
              'type' => 'decimal',
              'scale' => 1,
              'notnull' => true,
-             'length' => 1,
+             'length' => 3,
              ));
         $this->hasColumn('mat_id', 'integer', 4, array(
              'type' => 'integer',
@@ -75,8 +75,22 @@ abstract class BaseemdiNota extends sfDoctrineRecord
              'length' => 4,
              ));
 
-        $this->option('charset', 'utf8');
+
+        $this->index('fk_emdi_notas_emdi_materia1', array(
+             'fields' => 
+             array(
+              0 => 'mat_id',
+              1 => 'pro_id',
+             ),
+             ));
+        $this->index('fk_emdi_notas_emdi_estudiante1', array(
+             'fields' => 
+             array(
+              0 => 'est_id',
+             ),
+             ));
         $this->option('collate', 'utf8_spanish_ci');
+        $this->option('charset', 'utf8');
         $this->option('type', 'InnoDB');
     }
 

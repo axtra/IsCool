@@ -45,7 +45,7 @@ abstract class BasesfGuardPermission extends sfDoctrineRecord
              'length' => 1000,
              ));
 
-        $this->option('collation', 'utf8_spanish_ci');
+        $this->option('collate', 'utf8_spanish_ci');
         $this->option('charset', 'utf8');
         $this->option('type', 'InnoDB');
     }

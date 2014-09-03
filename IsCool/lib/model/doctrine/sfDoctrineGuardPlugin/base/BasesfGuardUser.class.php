@@ -124,7 +124,7 @@ abstract class BasesfGuardUser extends sfDoctrineRecord
               0 => 'is_active',
              ),
              ));
-        $this->option('collation', 'utf8_spanish_ci');
+        $this->option('collate', 'utf8_spanish_ci');
         $this->option('charset', 'utf8');
         $this->option('type', 'InnoDB');
     }

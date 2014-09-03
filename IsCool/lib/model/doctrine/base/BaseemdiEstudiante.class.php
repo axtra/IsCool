@@ -24,6 +24,7 @@
  * @property emdiGrado $gra
  * @property sfGuardUser $sfGuardUser
  * @property Doctrine_Collection $emdi_notas
+ * @property Doctrine_Collection $emdi_com_individuals
  * 
  * @method integer             getEstId()                    Returns the current record's "est_id" value
  * @method string              getEstNombres()               Returns the current record's "est_nombres" value
@@ -44,6 +45,7 @@
  * @method emdiGrado           getGra()                      Returns the current record's "gra" value
  * @method sfGuardUser         getSfGuardUser()              Returns the current record's "sfGuardUser" value
  * @method Doctrine_Collection getEmdiNotas()                Returns the current record's "emdi_notas" collection
+ * @method Doctrine_Collection getEmdiComIndividuals()       Returns the current record's "emdi_com_individuals" collection
  * @method emdiEstudiante      setEstId()                    Sets the current record's "est_id" value
  * @method emdiEstudiante      setEstNombres()               Sets the current record's "est_nombres" value
  * @method emdiEstudiante      setEstApellidos()             Sets the current record's "est_apellidos" value
@@ -63,6 +65,7 @@
  * @method emdiEstudiante      setGra()                      Sets the current record's "gra" value
  * @method emdiEstudiante      setSfGuardUser()              Sets the current record's "sfGuardUser" value
  * @method emdiEstudiante      setEmdiNotas()                Sets the current record's "emdi_notas" collection
+ * @method emdiEstudiante      setEmdiComIndividuals()       Sets the current record's "emdi_com_individuals" collection
  * 
  * @package    emdi
  * @subpackage model
@@ -144,8 +147,21 @@ abstract class BaseemdiEstudiante extends sfDoctrineRecord
              'length' => 8,
              ));
 
-        $this->option('charset', 'utf8');
+
+        $this->index('fk_emdi_estudiante_emdi_grado1', array(
+             'fields' => 
+             array(
+              0 => 'gra_id',
+             ),
+             ));
+        $this->index('fk_emdi_estudiante_sf_guard_user1', array(
+             'fields' => 
+             array(
+              0 => 'sf_guard_user_id',
+             ),
+             ));
         $this->option('collate', 'utf8_spanish_ci');
+        $this->option('charset', 'utf8');
         $this->option('type', 'InnoDB');
     }
 
@@ -161,6 +177,10 @@ abstract class BaseemdiEstudiante extends sfDoctrineRecord
              'foreign' => 'id'));
 
         $this->hasMany('emdiNota as emdi_notas', array(
+             'local' => 'est_id',
+             'foreign' => 'est_id'));
+
+        $this->hasMany('emdiComIndividual as emdi_com_individuals', array(
              'local' => 'est_id',
              'foreign' => 'est_id'));
 

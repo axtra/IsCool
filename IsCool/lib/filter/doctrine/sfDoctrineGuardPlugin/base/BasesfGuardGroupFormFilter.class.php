@@ -83,9 +83,9 @@ abstract class BasesfGuardGroupFormFilter extends BaseFormFilterDoctrine
   public function getFields()
   {
     return array(
+      'id'               => 'Number',
       'name'             => 'Text',
       'description'      => 'Text',
-      'id'               => 'Number',
       'created_at'       => 'Date',
       'updated_at'       => 'Date',
       'users_list'       => 'ManyKey',

@@ -12,21 +12,24 @@
  * @property emdiGrado $gra
  * @property emdiMateria $mat
  * @property emdiProfesor $pro
+ * @property Doctrine_Collection $emdi_tareas
  * 
- * @method integer           getMxgId()  Returns the current record's "mxg_id" value
- * @method integer           getGraId()  Returns the current record's "gra_id" value
- * @method integer           getMatId()  Returns the current record's "mat_id" value
- * @method integer           getProId()  Returns the current record's "pro_id" value
- * @method emdiGrado         getGra()    Returns the current record's "gra" value
- * @method emdiMateria       getMat()    Returns the current record's "mat" value
- * @method emdiProfesor      getPro()    Returns the current record's "pro" value
- * @method emdiMateriaXGrado setMxgId()  Sets the current record's "mxg_id" value
- * @method emdiMateriaXGrado setGraId()  Sets the current record's "gra_id" value
- * @method emdiMateriaXGrado setMatId()  Sets the current record's "mat_id" value
- * @method emdiMateriaXGrado setProId()  Sets the current record's "pro_id" value
- * @method emdiMateriaXGrado setGra()    Sets the current record's "gra" value
- * @method emdiMateriaXGrado setMat()    Sets the current record's "mat" value
- * @method emdiMateriaXGrado setPro()    Sets the current record's "pro" value
+ * @method integer             getMxgId()       Returns the current record's "mxg_id" value
+ * @method integer             getGraId()       Returns the current record's "gra_id" value
+ * @method integer             getMatId()       Returns the current record's "mat_id" value
+ * @method integer             getProId()       Returns the current record's "pro_id" value
+ * @method emdiGrado           getGra()         Returns the current record's "gra" value
+ * @method emdiMateria         getMat()         Returns the current record's "mat" value
+ * @method emdiProfesor        getPro()         Returns the current record's "pro" value
+ * @method Doctrine_Collection getEmdiTareas()  Returns the current record's "emdi_tareas" collection
+ * @method emdiMateriaXGrado   setMxgId()       Sets the current record's "mxg_id" value
+ * @method emdiMateriaXGrado   setGraId()       Sets the current record's "gra_id" value
+ * @method emdiMateriaXGrado   setMatId()       Sets the current record's "mat_id" value
+ * @method emdiMateriaXGrado   setProId()       Sets the current record's "pro_id" value
+ * @method emdiMateriaXGrado   setGra()         Sets the current record's "gra" value
+ * @method emdiMateriaXGrado   setMat()         Sets the current record's "mat" value
+ * @method emdiMateriaXGrado   setPro()         Sets the current record's "pro" value
+ * @method emdiMateriaXGrado   setEmdiTareas()  Sets the current record's "emdi_tareas" collection
  * 
  * @package    emdi
  * @subpackage model
@@ -60,8 +63,27 @@ abstract class BaseemdiMateriaXGrado extends sfDoctrineRecord
              'length' => 4,
              ));
 
-        $this->option('charset', 'utf8');
+
+        $this->index('fk_emdi_materia_x_grado_emdi_grado1', array(
+             'fields' => 
+             array(
+              0 => 'gra_id',
+             ),
+             ));
+        $this->index('fk_emdi_materia_x_grado_emdi_materia1', array(
+             'fields' => 
+             array(
+              0 => 'mat_id',
+             ),
+             ));
+        $this->index('fk_emdi_materia_x_grado_emdi_profesor1', array(
+             'fields' => 
+             array(
+              0 => 'pro_id',
+             ),
+             ));
         $this->option('collate', 'utf8_spanish_ci');
+        $this->option('charset', 'utf8');
         $this->option('type', 'InnoDB');
     }
 
@@ -79,5 +101,9 @@ abstract class BaseemdiMateriaXGrado extends sfDoctrineRecord
         $this->hasOne('emdiProfesor as pro', array(
              'local' => 'pro_id',
              'foreign' => 'pro_id'));
+
+        $this->hasMany('emdiTarea as emdi_tareas', array(
+             'local' => 'mxg_id',
+             'foreign' => 'mxg_id'));
     }
 }

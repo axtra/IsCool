@@ -12,6 +12,7 @@
  * @property emdiProfesor $pro
  * @property Doctrine_Collection $emdi_estudiantes
  * @property Doctrine_Collection $emdi_materia_x_gradoes
+ * @property Doctrine_Collection $emdi_com_generals
  * 
  * @method integer             getGraId()                  Returns the current record's "gra_id" value
  * @method string              getGraNombre()              Returns the current record's "gra_nombre" value
@@ -20,6 +21,7 @@
  * @method emdiProfesor        getPro()                    Returns the current record's "pro" value
  * @method Doctrine_Collection getEmdiEstudiantes()        Returns the current record's "emdi_estudiantes" collection
  * @method Doctrine_Collection getEmdiMateriaXGradoes()    Returns the current record's "emdi_materia_x_gradoes" collection
+ * @method Doctrine_Collection getEmdiComGenerals()        Returns the current record's "emdi_com_generals" collection
  * @method emdiGrado           setGraId()                  Sets the current record's "gra_id" value
  * @method emdiGrado           setGraNombre()              Sets the current record's "gra_nombre" value
  * @method emdiGrado           setGraNombreCorto()         Sets the current record's "gra_nombre_corto" value
@@ -27,6 +29,7 @@
  * @method emdiGrado           setPro()                    Sets the current record's "pro" value
  * @method emdiGrado           setEmdiEstudiantes()        Sets the current record's "emdi_estudiantes" collection
  * @method emdiGrado           setEmdiMateriaXGradoes()    Sets the current record's "emdi_materia_x_gradoes" collection
+ * @method emdiGrado           setEmdiComGenerals()        Sets the current record's "emdi_com_generals" collection
  * 
  * @package    emdi
  * @subpackage model
@@ -60,8 +63,15 @@ abstract class BaseemdiGrado extends sfDoctrineRecord
              'length' => 4,
              ));
 
-        $this->option('charset', 'utf8');
+
+        $this->index('fk_emdi_grado_emdi_profesor1', array(
+             'fields' => 
+             array(
+              0 => 'pro_id',
+             ),
+             ));
         $this->option('collate', 'utf8_spanish_ci');
+        $this->option('charset', 'utf8');
         $this->option('type', 'InnoDB');
     }
 
@@ -77,6 +87,10 @@ abstract class BaseemdiGrado extends sfDoctrineRecord
              'foreign' => 'gra_id'));
 
         $this->hasMany('emdiMateriaXGrado as emdi_materia_x_gradoes', array(
+             'local' => 'gra_id',
+             'foreign' => 'gra_id'));
+
+        $this->hasMany('emdiComGeneral as emdi_com_generals', array(
              'local' => 'gra_id',
              'foreign' => 'gra_id'));
     }

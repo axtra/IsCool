@@ -14,17 +14,12 @@ abstract class BaseemdiEstudianteForm extends BaseFormDoctrine
 {
   public function setup()
   {
-  	
-  	$years = range(1990, 2020);
-  	
     $this->setWidgets(array(
       'est_id'                   => new sfWidgetFormInputHidden(),
       'est_nombres'              => new sfWidgetFormInputText(),
       'est_apellidos'            => new sfWidgetFormInputText(),
       'est_cedula'               => new sfWidgetFormInputText(),
-      'est_fecha_nacimiento'     => new sfWidgetFormDate(
-									  array('years' => array_combine($years, $years))
-    								),
+      'est_fecha_nacimiento'     => new sfWidgetFormDate(),
       'est_email_estudiante'     => new sfWidgetFormInputText(),
       'est_house'                => new sfWidgetFormInputText(),
       'est_nombre_representante' => new sfWidgetFormInputText(),

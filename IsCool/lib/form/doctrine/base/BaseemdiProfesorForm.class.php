@@ -14,9 +14,6 @@ abstract class BaseemdiProfesorForm extends BaseFormDoctrine
 {
   public function setup()
   {
-  	
-  	$years = range(1950, 2000);
-  	 
     $this->setWidgets(array(
       'pro_id'               => new sfWidgetFormInputHidden(),
       'pro_nombres'          => new sfWidgetFormInputText(),
@@ -27,9 +24,7 @@ abstract class BaseemdiProfesorForm extends BaseFormDoctrine
       'pro_telf_celular'     => new sfWidgetFormInputText(),
       'pro_login'            => new sfWidgetFormInputText(),
       'pro_pass'             => new sfWidgetFormInputText(),
-      'pro_fecha_nacimiento' => new sfWidgetFormDate(
-									  array('years' => array_combine($years, $years))
-    							),
+      'pro_fecha_nacimiento' => new sfWidgetFormDate(),
       'pro_house'            => new sfWidgetFormInputText(),
       'sf_guard_user_id'     => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('sfGuardUser'), 'add_empty' => true)),
     ));

@@ -7,7 +7,6 @@
  * 
  * @property string $name
  * @property string $description
- * @property integer $id
  * @property Doctrine_Collection $Users
  * @property Doctrine_Collection $Permissions
  * @property Doctrine_Collection $sfGuardGroupPermission
@@ -15,14 +14,12 @@
  * 
  * @method string              getName()                   Returns the current record's "name" value
  * @method string              getDescription()            Returns the current record's "description" value
- * @method integer             getId()                     Returns the current record's "id" value
  * @method Doctrine_Collection getUsers()                  Returns the current record's "Users" collection
  * @method Doctrine_Collection getPermissions()            Returns the current record's "Permissions" collection
  * @method Doctrine_Collection getSfGuardGroupPermission() Returns the current record's "sfGuardGroupPermission" collection
  * @method Doctrine_Collection getSfGuardUserGroup()       Returns the current record's "sfGuardUserGroup" collection
  * @method sfGuardGroup        setName()                   Sets the current record's "name" value
  * @method sfGuardGroup        setDescription()            Sets the current record's "description" value
- * @method sfGuardGroup        setId()                     Sets the current record's "id" value
  * @method sfGuardGroup        setUsers()                  Sets the current record's "Users" collection
  * @method sfGuardGroup        setPermissions()            Sets the current record's "Permissions" collection
  * @method sfGuardGroup        setSfGuardGroupPermission() Sets the current record's "sfGuardGroupPermission" collection
@@ -47,14 +44,8 @@ abstract class BasesfGuardGroup extends sfDoctrineRecord
              'type' => 'string',
              'length' => 1000,
              ));
-        $this->hasColumn('id', 'integer', 8, array(
-             'type' => 'integer',
-             'primary' => true,
-             'autoincrement' => true,
-             'length' => 8,
-             ));
 
-        $this->option('collation', 'utf8_spanish_ci');
+        $this->option('collate', 'utf8_spanish_ci');
         $this->option('charset', 'utf8');
         $this->option('type', 'InnoDB');
     }
