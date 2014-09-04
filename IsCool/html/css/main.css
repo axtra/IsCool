@@ -34,3 +34,13 @@
    margin-bottom: 15px;
    font: bold 17px "Trebuchet MS", Verdana, Arial;
 }
+
+ul#admin_list {
+	line-height: 25px;
+	font: 15px/30px "Verdana";
+}
+
+ul#admin_list li {
+	list-style: square;
+	list-style-image: url(/images/teaminfo_icon.png);
+}

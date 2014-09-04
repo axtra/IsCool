@@ -10,7 +10,7 @@
     
     <div id="sf_admin_content" style="text-align:left;">
         
-        <ul>
+        <ul id="admin_list">
             <?php foreach ($materias as $materia): ?>
                 <li>
                     <a href="<?php echo url_for('adminTareas/ingresarTarea?mxg='.$materia->getMxgId() )  ?>">
