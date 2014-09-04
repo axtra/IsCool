@@ -35,12 +35,11 @@
    font: bold 17px "Trebuchet MS", Verdana, Arial;
 }
 
-ul#admin_list {
-	line-height: 25px;
-	font: 15px/30px "Verdana";
+#sf_admin_content ul {
+	font: 15px/30px "Verdana", Arial;
 }
 
-ul#admin_list li {
+#sf_admin_content ul li {
 	list-style: square;
 	list-style-image: url(/images/teaminfo_icon.png);
 }

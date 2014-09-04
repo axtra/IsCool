@@ -174,6 +174,8 @@ class ingresonotasActions extends sfActions
                     ->where('a.gra_id = ?', $gra_id)
                     ->orderby('a.est_apellidos ASC')
                     ->execute();
+        
+        $this->grado = Doctrine::getTable('emdiGrado')->findOneBy('gra_id', $gra_id);
 
 		$this->setTemplate('grado');
     }

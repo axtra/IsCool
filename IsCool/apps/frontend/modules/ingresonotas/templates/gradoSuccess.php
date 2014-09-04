@@ -1,13 +1,11 @@
 <link rel="stylesheet" type="text/css" media="screen" href="/sfDoctrinePlugin/css/global.css" />
 <link rel="stylesheet" type="text/css" media="screen" href="/sfDoctrinePlugin/css/default.css" />
 
+<div style="text-align: left;padding: 15px;">
 
-
-
-
-<div id="sf_admin_container">
-
-
+  <h2><?php echo $grado->getGraNombre(); ?></h2>
+  
+  <div id="sf_admin_container">
     <div id="sf_admin_content" style="text-align:left;">
         
         <ul>
@@ -21,6 +19,5 @@
         </ul>
         
     </div>
-    
-    
+  </div>
 </div>
