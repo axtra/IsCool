@@ -3,8 +3,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>EMDI School</title>
 <link href="/pags_portal/css/tipografias.css" rel="stylesheet" type="text/css" />
-<style type="text/css">
 
+   <?php include_javascripts() ?>
+   <?php include_stylesheets() ?>
+   
+<style type="text/css">
 
 @import url("../../menu/menu.css");
 
@@ -52,7 +55,7 @@ function MM_displayStatusMsg(msgStr) { //v1.0
 
 
 
-<body onLoad="MM_preloadImages('/pags_portal/opciones/opciones_r1_c1_s2.jpg','/pags_portal/opciones/opciones_r2_c1_s2.jpg','/pags_portal/opciones/opciones_r3_c1_s2.jpg','/pags_portal/opciones/opciones_r4_c1_s2.jpg','/pags_portal/opciones/opciones_r5_c1_s2.jpg','/pags_portal/opciones/opciones_r6_c1_s2.jpg','/pags_portal/opciones/opciones_r7_c1_s2.jpg','/pags_portal/opciones/opciones_r8_c1_s2.jpg','../../baner/salir_2.jpg','../../baner/baner_r4_c4_s2.jpg','../../baner/baner_r4_c6_s2.jpg','../../baner/baner_r4_c8_s2.jpg','../../baner/baner_r4_c10_s2.jpg','../../menu/menu_r1_c1_s2.jpg','../../menu/menu_r1_c2_s2.jpg','../../menu/menu_r1_c3_s2.jpg','../../menu/menu_r1_c4_s2.jpg','../../menu/menu_r1_c5_s2.jpg','/pags_portal/opciones/opciones_9_2.jpg','/pags_portal/opciones/opciones_s2.jpg')">
+<body onLoad="MM_preloadImages('/pags_portal/opciones/opciones_r1_c1_s2.jpg','/pags_portal/opciones/opciones_r2_c1_s2.jpg','/pags_portal/opciones/opciones_r3_c1_s2.jpg','/pags_portal/opciones/opciones_r4_c1_s2.jpg','/pags_portal/opciones/opciones_r5_c1_s2.jpg','/pags_portal/opciones/opciones_r6_c1_s2.jpg','/pags_portal/opciones/opciones_r7_c1_s2.jpg','/pags_portal/opciones/opciones_r8_c1_s2.jpg','../../baner/salir_2.jpg','../../baner/baner_r4_c4_s2.jpg','../../baner/baner_r4_c6_s2.jpg','../../baner/baner_r4_c8_s2.jpg','../../baner/baner_r4_c10_s2.jpg','../../menu/menu_r1_c1_s2.jpg','../../menu/menu_r1_c2_s2.jpg','../../menu/menu_r1_c3_s2.jpg','../../menu/menu_r1_c4_s2.jpg','../../menu/menu_r1_c5_s2.jpg','/pags_portal/opciones/opciones_9_2.jpg','/pags_portal/opciones/opciones_s2.jpg','/pags_portal/opciones/opciones_tareas_s2.jpg')">
 <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td><table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="1000">
@@ -169,16 +172,34 @@ function MM_displayStatusMsg(msgStr) { //v1.0
         <td colspan="3"><a href="/menumes" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image55','','/pags_portal/opciones/opciones_r3_c1_s2.jpg',1)"><img src="/pags_portal/opciones/opciones_r3_c1.jpg" name="Image55" width="300" height="39" border="0"></a></td>
       </tr>
       <tr>
-        <td colspan="3"><a href="/cronograma" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image56','','/pags_portal/opciones/opciones_r4_c1_s2.jpg',1)"><img src="/pags_portal/opciones/opciones_r4_c1.jpg" name="Image56" width="300" height="38" border="0"></a></td>
+        <td colspan="3"><a href="/cronograma" 
+            onMouseOut="MM_swapImgRestore()" 
+            onMouseOver="MM_swapImage('Image56','','/pags_portal/opciones/opciones_r4_c1_s2.jpg',1)">
+            <img src="/pags_portal/opciones/opciones_r4_c1.jpg" name="Image56" width="300" height="38" border="0">
+            </a></td>
       </tr>
 
 <?php if(!$sf_user->hasCredential('admin') && $sf_user->hasCredential('profesor') && $sf_user->getAttribute('grado_tutoreado') != false) : ?>        
       <tr><td colspan="3">
-        	<a href="<?php echo url_for('tutoria/index?gra='.$sf_user->getAttribute('grado_tutoreado') )  ?>" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image65','','/pags_portal/opciones/opciones_s2.jpg',1)">
-        		<img src="/pags_portal/opciones/opciones.jpg" name="Image65" width="300" height="38" border="0">
+        	<a href="<?php echo url_for('tutoria/index?gra='.$sf_user->getAttribute('grado_tutoreado') )  ?>" 
+        	   onMouseOut="MM_swapImgRestore()" 
+        	   onMouseOver="MM_swapImage('Image65','','/pags_portal/opciones/opciones_s2.jpg',1)">
+        	   <img src="/pags_portal/opciones/opciones.jpg" name="Image65" width="300" height="38" border="0">
         	</a>
       </td></tr>
 <?php endif; ?>
+
+
+<?php if ($sf_user->hasCredential('profesor')) : ?>        
+      <tr><td colspan="3">
+        	<a href="<?php echo url_for('adminTareas/index?pro='.$sf_user->getAttribute('id_profesor') )  ?>" 
+        	   onMouseOut="MM_swapImgRestore()" 
+        	   onMouseOver="MM_swapImage('Image95','','/pags_portal/opciones/opciones_tareas_s2.jpg',1)">
+        		<img src="/pags_portal/opciones/opciones_tareas.jpg" name="Image95" width="300" height="38" border="0">
+        	</a>
+      </td></tr>
+<?php endif; ?>
+
 
 <?php 
     if($sf_user->hasCredential('estudiante')){
