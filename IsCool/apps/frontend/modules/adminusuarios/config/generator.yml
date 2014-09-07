@@ -49,6 +49,8 @@ generator:
           - password
           - email_address
           - is_active
+          - groups_list
+          - permissions_list
       filter:
         class: true
         display: [first_name, last_name, username, is_active]

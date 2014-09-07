@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" media="screen" href="/sfDoctrinePlugin/css/global.css" />
 <link rel="stylesheet" type="text/css" media="screen" href="/sfDoctrinePlugin/css/default.css" />
 
-<div style="text-align: left;padding: 15px;">
+<div id="main_container">
 
   <h2><?php echo $grado->getGraNombre(); ?></h2>
   

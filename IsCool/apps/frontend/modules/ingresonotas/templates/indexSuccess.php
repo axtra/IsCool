@@ -4,7 +4,7 @@
 
 <br />
 
-<div style="text-align: left;padding: 15px;">
+<div id="main_container">
 <div id="sf_admin_container">
     <h1>Ingreso de Notas:</h1>
 

@@ -6,7 +6,7 @@
 
 <br />
 
-<div style="text-align: left;padding: 15px;">
+<div id="main_container">
 <div id="sf_admin_container">
     <h1>Generaci&oacute;n de Libretas: </h1>
 
