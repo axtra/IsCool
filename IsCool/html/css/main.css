@@ -35,6 +35,11 @@
    font: bold 17px "Trebuchet MS", Verdana, Arial;
 }
 
+#main_container{
+	text-align: left;
+	padding: 15px;
+}
+
 #sf_admin_content ul {
 	font: 15px/30px "Verdana", Arial;
 }
