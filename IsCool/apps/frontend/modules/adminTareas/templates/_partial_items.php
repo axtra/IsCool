@@ -6,11 +6,20 @@
     ?>
   </div>
 <?php endif; ?>
+
+<?php if ($sf_user->hasFlash('error')): ?>
+  <div class="error">
+    <?php 
+      echo $sf_user->getFlash('error') 
+    ?>
+  </div>
+<?php endif; ?>
         
 <table>
       <thead class="detalle-table-header">
         <tr>
-          <th class="ui-th-column">Fecha de Entrega</th>
+          <th class="ui-th-column">Envío</th>
+          <th class="ui-th-column">Entrega</th>
           <th class="ui-th-column">Tarea</th>
           <th class="ui-th-column">Acciones</th>
         </tr>
@@ -26,14 +35,17 @@
 //                 $nombre_materia = Doctrine::getTable('emdiMateria')->find($materia['mat_id']);
           ?>
                 <tr class="sf_admin_row ui-widget-content">
+                    <td class="sf_admin_text"><?php echo $tarea['tar_fecha_envio']; ?></td>
                     <td class="sf_admin_text"><?php echo $tarea['tar_fecha_entrega']; ?></td>
-                    <td class="sf_admin_text"><?php echo $tarea['tar_contenido']; ?></td>
+                    <td class="sf_admin_text tarea-contenido"><?php echo $tarea['tar_contenido']; ?></td>
                     <td class="sf_admin_text">
                     <?php
                         //echo link_to(image_tag('/sf/sf_admin/images/edit.png', array('title'=>"Modificar", 'alt'=>"Modificar")),'unaruta', array('onclick' => "'facturas_edit_link('this.href + '?fac_id=".$detalle->getFacId()."'), 'facturas_edit');"));
                     ?>
 
-
+                        <a style="border:0;" title="Eliminar Item" href="#" onclick="borrar_item('<?php echo $tarea['tar_id'] ?>','<?php echo $tarea['mxg_id'] ?>'); return false;">
+                            <?php echo image_tag('delete.png', array('title'=>"Eliminar Tarea", "border" => 0))  ?>
+                        </a>
                     </td>
                 </tr>
 	<?php endforeach; //Final tarea ?>

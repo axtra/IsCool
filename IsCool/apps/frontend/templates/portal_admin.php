@@ -215,6 +215,17 @@ function MM_displayStatusMsg(msgStr) { //v1.0
         <td colspan="3"><a href="/cronograma" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image56','','/pags_portal/opciones/opciones_r4_c1_s2.jpg',1)"><img src="/pags_portal/opciones/opciones_r4_c1.jpg" name="Image56" width="300" height="38" border="0"></a></td>
       </tr>
       
+<?php if ($sf_user->hasCredential('profesor')) : ?>        
+      <tr><td colspan="3">
+        	<a href="<?php echo url_for('adminTareas/index?pro='.$sf_user->getAttribute('id_profesor') )  ?>" 
+        	   onMouseOut="MM_swapImgRestore()" 
+        	   onMouseOver="MM_swapImage('Image95','','/pags_portal/opciones/opciones_tareas_s2.jpg',1)">
+        		<img src="/pags_portal/opciones/opciones_tareas.jpg" name="Image95" width="300" height="38" border="0">
+        	</a>
+      </td></tr>
+<?php endif; ?>
+      
+      
 <?php if($sf_user->hasCredential('profesor') || $sf_user->hasCredential('admin')) : ?>
       <tr>
         <td colspan="3"><a href="/ingresonotas" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image58','','/pags_portal/opciones/opciones_r6_c1_s2.jpg',1)"><img src="/pags_portal/opciones/opciones_r6_c1.jpg" name="Image58" width="300" height="38" border="0"></a></td>

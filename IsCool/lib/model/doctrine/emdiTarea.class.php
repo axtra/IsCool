@@ -13,4 +13,63 @@
 class emdiTarea extends BaseemdiTarea
 {
 
+  public function __toString()
+  {
+    return substr($this->getTarContenido(), 0, 15);
+  }
+  
+  /**
+   * Ingresa una tarea dados los principales datos revisar con el proceso del modulo BORRAME
+   * @param unknown $entrada
+   * @return string
+   */
+  public static function ingresarTarea($entrada) {
+    
+    if(isset ($entrada['tar_fecha_envio'])) {
+      $tar_fecha_envio = $entrada['tar_fecha_envio'];
+    } else {
+      $error = "No se ha definido una fecha de envío";
+      return array('tipo' => 'error', 'mensaje' => $error);
+    }
+     
+    if(isset ($entrada['tar_fecha_entrega'])) {
+      $tar_fecha_entrega = $entrada['tar_fecha_entrega'];
+    } else {
+      $error = "No se ha definido una fecha de entrega";
+      return array('tipo' => 'error', 'mensaje' => $error);
+    }
+    
+    
+    if(isset ($entrada['tar_contenido'])) {
+      $tar_contenido = $entrada['tar_contenido'];
+    } else {
+      $error =  "Ingrese la tarea";
+      return array('tipo' => 'error', 'mensaje' => $error);
+    }
+    
+    if(isset ($entrada['mxg_id'])) {
+      $mxg_id = $entrada['mxg_id'];
+    } else {
+      $error = "Error interno: El codigo de materia no ha sido asignado";
+      return array('tipo' => 'error', 'mensaje' => $error);
+    }
+     
+    
+    if (strtotime($entrada["tar_fecha_envio"]) > strtotime($entrada["tar_fecha_entrega"]))
+    {
+      $error = "La fecha de envío es mayor a la fecha de entrega";
+      return array('tipo' => 'error', 'mensaje' => $error);
+      
+    } else {
+      $tarea = new emdiTarea();
+      $tarea->setTarFechaEnvio($tar_fecha_envio);
+      $tarea->setTarFechaEntrega($tar_fecha_entrega);
+      $tarea->setTarContenido($tar_contenido);
+      $tarea->setMxgId($mxg_id);
+      
+      $tarea->save();
+      return array('tipo' => 'notice', 'mensaje' => 'La tarea fue enviada exitosamente.');
+    }
+  }
+  
 }

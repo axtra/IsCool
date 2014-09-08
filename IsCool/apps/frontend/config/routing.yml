@@ -128,3 +128,11 @@ borrar_materia_por_grado:
   url:    asignarmaterias/borrar
   param:  { module: asignarmaterias, action: borrar }
 
+# jquery para Tareas
+mostrar_tareas_por_grado:
+  url:    adminTareas/mostrar
+  param:  { module: adminTareas, action: mostrar }
+  
+borrar_tarea:
+  url:    adminTareas/borrar
+  param:  { module: adminTareas, action: borrar }

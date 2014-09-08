@@ -13,7 +13,7 @@ abstract class BaseemdiTareaFormFilter extends BaseFormFilterDoctrine
   public function setup()
   {
     $this->setWidgets(array(
-      'tar_fecha_ingreso' => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
+      'tar_fecha_envio'   => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
       'tar_fecha_entrega' => new sfWidgetFormFilterDate(array('from_date' => new sfWidgetFormDate(), 'to_date' => new sfWidgetFormDate(), 'with_empty' => false)),
       'tar_contenido'     => new sfWidgetFormFilterInput(array('with_empty' => false)),
       'mxg_id'            => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('mxg'), 'add_empty' => true)),
@@ -22,7 +22,7 @@ abstract class BaseemdiTareaFormFilter extends BaseFormFilterDoctrine
     ));
 
     $this->setValidators(array(
-      'tar_fecha_ingreso' => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDateTime(array('required' => false)))),
+      'tar_fecha_envio'   => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDateTime(array('required' => false)))),
       'tar_fecha_entrega' => new sfValidatorDateRange(array('required' => false, 'from_date' => new sfValidatorDate(array('required' => false)), 'to_date' => new sfValidatorDateTime(array('required' => false)))),
       'tar_contenido'     => new sfValidatorPass(array('required' => false)),
       'mxg_id'            => new sfValidatorDoctrineChoice(array('required' => false, 'model' => $this->getRelatedModelName('mxg'), 'column' => 'mxg_id')),
@@ -48,7 +48,7 @@ abstract class BaseemdiTareaFormFilter extends BaseFormFilterDoctrine
   {
     return array(
       'tar_id'            => 'Number',
-      'tar_fecha_ingreso' => 'Date',
+      'tar_fecha_envio'   => 'Date',
       'tar_fecha_entrega' => 'Date',
       'tar_contenido'     => 'Text',
       'mxg_id'            => 'ForeignKey',

@@ -17,9 +17,9 @@ class sfGuardUserForm extends PluginsfGuardUserForm
           $this['salt'],
           $this['last_login'],
           $this['created_at'],
-          $this['updated_at'],
-          $this['groups_list'],
-          $this['permissions_list']
+          $this['updated_at']
+          //$this['groups_list'],
+          //$this['permissions_list']
         );
         
         $this->widgetSchema['password'] = new sfWidgetFormInputPassword();
@@ -27,6 +27,5 @@ class sfGuardUserForm extends PluginsfGuardUserForm
         $this->widgetSchema->setLabels(array(
             'password' => false,
         ));
-
   }
 }

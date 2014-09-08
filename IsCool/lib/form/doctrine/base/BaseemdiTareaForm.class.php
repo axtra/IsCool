@@ -16,7 +16,7 @@ abstract class BaseemdiTareaForm extends BaseFormDoctrine
   {
     $this->setWidgets(array(
       'tar_id'            => new sfWidgetFormInputHidden(),
-      'tar_fecha_ingreso' => new sfWidgetFormDate(),
+      'tar_fecha_envio'   => new sfWidgetFormDate(),
       'tar_fecha_entrega' => new sfWidgetFormDate(),
       'tar_contenido'     => new sfWidgetFormTextarea(),
       'mxg_id'            => new sfWidgetFormDoctrineChoice(array('model' => $this->getRelatedModelName('mxg'), 'add_empty' => false)),
@@ -26,7 +26,7 @@ abstract class BaseemdiTareaForm extends BaseFormDoctrine
 
     $this->setValidators(array(
       'tar_id'            => new sfValidatorChoice(array('choices' => array($this->getObject()->get('tar_id')), 'empty_value' => $this->getObject()->get('tar_id'), 'required' => false)),
-      'tar_fecha_ingreso' => new sfValidatorDate(),
+      'tar_fecha_envio'   => new sfValidatorDate(),
       'tar_fecha_entrega' => new sfValidatorDate(),
       'tar_contenido'     => new sfValidatorString(array('max_length' => 300)),
       'mxg_id'            => new sfValidatorDoctrineChoice(array('model' => $this->getRelatedModelName('mxg'))),

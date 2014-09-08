@@ -12,6 +12,10 @@
  */
 class emdiMateriaXGrado extends BaseemdiMateriaXGrado
 {
+    public function __toString(){
+      return $this->getGra()->getGraNombre()." / ".$this->getMat()->getMatNombre();
+    }
+    
     public static function ingresarMateria($entrada) {
         
          if(isset ($entrada['gra_id'])) {

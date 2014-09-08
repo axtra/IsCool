@@ -48,3 +48,9 @@
 	list-style: square;
 	list-style-image: url(/images/teaminfo_icon.png);
 }
+
+
+.tarea-contenido{
+	word-wrap: break-word;
+	max-width: 350px;
+}
