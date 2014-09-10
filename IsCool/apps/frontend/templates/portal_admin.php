@@ -96,7 +96,7 @@ function MM_displayStatusMsg(msgStr) { //v1.0
 
 
 
-<body onLoad="MM_preloadImages('/pags_portal/opciones/opciones_r1_c1_s2.jpg','/pags_portal/opciones/opciones_r2_c1_s2.jpg','/pags_portal/opciones/opciones_r3_c1_s2.jpg','/pags_portal/opciones/opciones_r4_c1_s2.jpg','/pags_portal/opciones/opciones_r5_c1_s2.jpg','/pags_portal/opciones/opciones_r6_c1_s2.jpg','/pags_portal/opciones/opciones_r7_c1_s2.jpg','/pags_portal/opciones/opciones_r8_c1_s2.jpg','/baner/salir_2.jpg','/baner/baner_r4_c4_s2.jpg','/baner/baner_r4_c6_s2.jpg','/baner/baner_r4_c8_s2.jpg','/baner/baner_r4_c10_s2.jpg','/menu/menu_r1_c1_s2.jpg','/menu/menu_r1_c2_s2.jpg','/menu/menu_r1_c3_s2.jpg','/menu/menu_r1_c4_s2.jpg','/menu/menu_r1_c5_s2.jpg','/pags_portal/opciones/opciones_9_2.jpg','/pags_portal/opciones/opciones_s2.jpg')">
+<body onLoad="MM_preloadImages('/pags_portal/opciones/opciones_r1_c1_s2.jpg','/pags_portal/opciones/opciones_r2_c1_s2.jpg','/pags_portal/opciones/opciones_r3_c1_s2.jpg','/pags_portal/opciones/opciones_r4_c1_s2.jpg','/pags_portal/opciones/opciones_r5_c1_s2.jpg','/pags_portal/opciones/opciones_r6_c1_s2.jpg','/pags_portal/opciones/opciones_r7_c1_s2.jpg','/pags_portal/opciones/opciones_r8_c1_s2.jpg','/baner/salir_2.jpg','/baner/baner_r4_c4_s2.jpg','/baner/baner_r4_c6_s2.jpg','/baner/baner_r4_c8_s2.jpg','/baner/baner_r4_c10_s2.jpg','/menu/menu_r1_c1_s2.jpg','/menu/menu_r1_c2_s2.jpg','/menu/menu_r1_c3_s2.jpg','/menu/menu_r1_c4_s2.jpg','/menu/menu_r1_c5_s2.jpg','/pags_portal/opciones/opciones_9_2.jpg','/pags_portal/opciones/opciones_s2.jpg','/pags_portal/opciones/opciones_com_s2.jpg')">
 <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td><table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="1000">
@@ -221,6 +221,14 @@ function MM_displayStatusMsg(msgStr) { //v1.0
         	   onMouseOut="MM_swapImgRestore()" 
         	   onMouseOver="MM_swapImage('Image95','','/pags_portal/opciones/opciones_tareas_s2.jpg',1)">
         		<img src="/pags_portal/opciones/opciones_tareas.jpg" name="Image95" width="300" height="38" border="0">
+        	</a>
+      </td></tr>
+
+      <tr><td colspan="3">
+        	<a href="<?php echo url_for('adminComunicados/index?pro='.$sf_user->getAttribute('id_profesor') )  ?>" 
+        	   onMouseOut="MM_swapImgRestore()" 
+        	   onMouseOver="MM_swapImage('Image96','','/pags_portal/opciones/opciones_com_s2.jpg',1)">
+        		<img src="/pags_portal/opciones/opciones_com.jpg" name="Image96" width="300" height="38" border="0">
         	</a>
       </td></tr>
 <?php endif; ?>

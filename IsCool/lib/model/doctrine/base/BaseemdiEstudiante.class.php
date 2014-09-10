@@ -24,7 +24,9 @@
  * @property emdiGrado $gra
  * @property sfGuardUser $sfGuardUser
  * @property Doctrine_Collection $emdi_notas
- * @property Doctrine_Collection $emdi_com_individuals
+ * @property Doctrine_Collection $emdi_com_profesors
+ * @property Doctrine_Collection $emdi_com_representantes
+ * @property Doctrine_Collection $emdi_agendas
  * 
  * @method integer             getEstId()                    Returns the current record's "est_id" value
  * @method string              getEstNombres()               Returns the current record's "est_nombres" value
@@ -45,7 +47,9 @@
  * @method emdiGrado           getGra()                      Returns the current record's "gra" value
  * @method sfGuardUser         getSfGuardUser()              Returns the current record's "sfGuardUser" value
  * @method Doctrine_Collection getEmdiNotas()                Returns the current record's "emdi_notas" collection
- * @method Doctrine_Collection getEmdiComIndividuals()       Returns the current record's "emdi_com_individuals" collection
+ * @method Doctrine_Collection getEmdiComProfesors()         Returns the current record's "emdi_com_profesors" collection
+ * @method Doctrine_Collection getEmdiComRepresentantes()    Returns the current record's "emdi_com_representantes" collection
+ * @method Doctrine_Collection getEmdiAgendas()              Returns the current record's "emdi_agendas" collection
  * @method emdiEstudiante      setEstId()                    Sets the current record's "est_id" value
  * @method emdiEstudiante      setEstNombres()               Sets the current record's "est_nombres" value
  * @method emdiEstudiante      setEstApellidos()             Sets the current record's "est_apellidos" value
@@ -65,7 +69,9 @@
  * @method emdiEstudiante      setGra()                      Sets the current record's "gra" value
  * @method emdiEstudiante      setSfGuardUser()              Sets the current record's "sfGuardUser" value
  * @method emdiEstudiante      setEmdiNotas()                Sets the current record's "emdi_notas" collection
- * @method emdiEstudiante      setEmdiComIndividuals()       Sets the current record's "emdi_com_individuals" collection
+ * @method emdiEstudiante      setEmdiComProfesors()         Sets the current record's "emdi_com_profesors" collection
+ * @method emdiEstudiante      setEmdiComRepresentantes()    Sets the current record's "emdi_com_representantes" collection
+ * @method emdiEstudiante      setEmdiAgendas()              Sets the current record's "emdi_agendas" collection
  * 
  * @package    emdi
  * @subpackage model
@@ -180,7 +186,15 @@ abstract class BaseemdiEstudiante extends sfDoctrineRecord
              'local' => 'est_id',
              'foreign' => 'est_id'));
 
-        $this->hasMany('emdiComIndividual as emdi_com_individuals', array(
+        $this->hasMany('emdiComProfesor as emdi_com_profesors', array(
+             'local' => 'est_id',
+             'foreign' => 'est_id'));
+
+        $this->hasMany('emdiComRepresentante as emdi_com_representantes', array(
+             'local' => 'est_id',
+             'foreign' => 'est_id'));
+
+        $this->hasMany('emdiAgenda as emdi_agendas', array(
              'local' => 'est_id',
              'foreign' => 'est_id'));
 

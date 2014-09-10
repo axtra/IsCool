@@ -1,3 +1,12 @@
+emdi_plantilla:
+  class: sfDoctrineRouteCollection
+  options:
+    model:                emdiPlantilla
+    module:               adminPlantillas
+    prefix_path:          /adminPlantillas
+    column:               pla_id
+    with_wildcard_routes: true
+
 emdi_administracion:
   class: sfDoctrineRouteCollection
   options:
@@ -136,3 +145,20 @@ mostrar_tareas_por_grado:
 borrar_tarea:
   url:    adminTareas/borrar
   param:  { module: adminTareas, action: borrar }
+
+# jquery para Comunicados
+mostrar_alumnos_por_grado:
+  url:    adminComunicados/mostrarEstudiantes
+  param:  { module: adminComunicados, action: mostrarEstudiantes }
+
+mostrar_plantillas:
+  url:    adminComunicados/mostrarPlantillas
+  param:  { module: adminComunicados, action: mostrarPlantillas }
+    
+enviar_comunicado_profesor:
+  url:    adminComunicados/enviarComunicado
+  param:  { module: adminComunicados, action: enviarComunicado }
+
+render_flashes:
+  url:    adminComunicados/renderFlashes
+  param:  { module: adminComunicados, action: renderFlashes }

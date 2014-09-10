@@ -1,41 +1,42 @@
-.errores_box{
-    text-align: left;
-/*    background: #F9ECEC;*/
-    background: transparent url(/images/error_bg.jpg) 0 0 no-repeat;
-/*    border: 1px solid #300;*/
-    margin: 20px;
-    padding: 10px 5px 0 150px;
-    font: 12px Verdana,Arial,Helvetica,sans-serif;
-    width: 400px;
-    min-height: 141px;
-    color:#333;
+.errores_box {
+	text-align: left;
+	/*    background: #F9ECEC;*/
+	background: transparent url(/images/error_bg.jpg) 0 0 no-repeat;
+	/*    border: 1px solid #300;*/
+	margin: 20px;
+	padding: 10px 5px 0 150px;
+	font: 12px Verdana, Arial, Helvetica, sans-serif;
+	width: 400px;
+	min-height: 141px;
+	color: #333;
 }
 
-.error_list li{
-    color:#bbb;
-    padding:5px 0;
+.error_list li {
+	color: #bbb;
+	padding: 5px 0;
 }
 
-.error_list li span{
-    color:#222;
+.error_list li span {
+	color: #222;
 }
 
-.error_label{
-    list-style: none;
-}
-.error_list{
-    list-style: disc;
-    margin: 0 0 10px 5px;
+.error_label {
+	list-style: none;
 }
 
-.errores_title{
-   text-align: left;
-   list-style: none;
-   margin-bottom: 15px;
-   font: bold 17px "Trebuchet MS", Verdana, Arial;
+.error_list {
+	list-style: disc;
+	margin: 0 0 10px 5px;
 }
 
-#main_container{
+.errores_title {
+	text-align: left;
+	list-style: none;
+	margin-bottom: 15px;
+	font: bold 17px "Trebuchet MS", Verdana, Arial;
+}
+
+#main_container {
 	text-align: left;
 	padding: 15px;
 }
@@ -49,8 +50,50 @@
 	list-style-image: url(/images/teaminfo_icon.png);
 }
 
-
-.tarea-contenido{
+.tarea-contenido {
 	word-wrap: break-word;
 	max-width: 350px;
+}
+
+/* Clases para formularios */
+.sf_forms select {
+	height: 35px;
+	font: 14px/25px Verdana, Arial, Courier;
+	margin: 5px 0;
+}
+
+.sf_forms button {
+	height: 35px;
+	font: 14px Verdana, Arial, Courier;
+	margin: 5px 0;
+	padding: 0 10px;
+}
+
+.plantilla-select {
+	width: 600px;
+	display: inline-block;
+	margin: 0;
+	cursor: pointer;
+}
+
+#loading-div {
+	width: 300px;
+	height: 200px;
+	background-color: #0c0b0b;
+	text-align: center;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -100px;
+}
+
+#loading-div-background {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: black;
+	width: 100%;
+	height: 100%;
 }

@@ -12,7 +12,7 @@
  * @property emdiProfesor $pro
  * @property Doctrine_Collection $emdi_estudiantes
  * @property Doctrine_Collection $emdi_materia_x_gradoes
- * @property Doctrine_Collection $emdi_com_generals
+ * @property Doctrine_Collection $emdi_com_x_gradoes
  * 
  * @method integer             getGraId()                  Returns the current record's "gra_id" value
  * @method string              getGraNombre()              Returns the current record's "gra_nombre" value
@@ -21,7 +21,7 @@
  * @method emdiProfesor        getPro()                    Returns the current record's "pro" value
  * @method Doctrine_Collection getEmdiEstudiantes()        Returns the current record's "emdi_estudiantes" collection
  * @method Doctrine_Collection getEmdiMateriaXGradoes()    Returns the current record's "emdi_materia_x_gradoes" collection
- * @method Doctrine_Collection getEmdiComGenerals()        Returns the current record's "emdi_com_generals" collection
+ * @method Doctrine_Collection getEmdiComXGradoes()        Returns the current record's "emdi_com_x_gradoes" collection
  * @method emdiGrado           setGraId()                  Sets the current record's "gra_id" value
  * @method emdiGrado           setGraNombre()              Sets the current record's "gra_nombre" value
  * @method emdiGrado           setGraNombreCorto()         Sets the current record's "gra_nombre_corto" value
@@ -29,7 +29,7 @@
  * @method emdiGrado           setPro()                    Sets the current record's "pro" value
  * @method emdiGrado           setEmdiEstudiantes()        Sets the current record's "emdi_estudiantes" collection
  * @method emdiGrado           setEmdiMateriaXGradoes()    Sets the current record's "emdi_materia_x_gradoes" collection
- * @method emdiGrado           setEmdiComGenerals()        Sets the current record's "emdi_com_generals" collection
+ * @method emdiGrado           setEmdiComXGradoes()        Sets the current record's "emdi_com_x_gradoes" collection
  * 
  * @package    emdi
  * @subpackage model
@@ -90,7 +90,7 @@ abstract class BaseemdiGrado extends sfDoctrineRecord
              'local' => 'gra_id',
              'foreign' => 'gra_id'));
 
-        $this->hasMany('emdiComGeneral as emdi_com_generals', array(
+        $this->hasMany('emdiComXGrado as emdi_com_x_gradoes', array(
              'local' => 'gra_id',
              'foreign' => 'gra_id'));
     }

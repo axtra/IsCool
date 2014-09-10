@@ -1,0 +1,47 @@
+generator:
+  class: sfDoctrineGenerator
+  param:
+    model_class:           emdiPlantilla
+    theme:                 admin
+    non_verbose_templates: true
+    with_show:             true
+    singular:              ~
+    plural:                ~
+    route_prefix:          emdi_plantilla
+    with_doctrine_route:   true
+    actions_base_class:    sfActions
+
+    config:
+      actions:
+        _new:  { label: Ingresar Nueva Plantilla}
+      fields:
+        pla_contenido: {label: "Plantilla", help: "Ingrese el contenido del comunicado"}
+        
+      list:
+        title:    Administración de Plantillas
+        display:
+          - pla_contenido
+          
+        batch_actions: {}
+        max_per_page:   15
+        actions:
+          _new:  { label: Ingresar Nueva Plantilla}
+          
+      form:    ~
+      edit:
+        title:    Editando Plantilla
+        display:
+          - pla_contenido
+          
+      new:
+        title:    Ingresando nueva Plantilla
+        display:
+          - pla_contenido
+        actions:
+          _save_and_add: ~
+          _list: ~
+          
+      show:    ~
+          
+      filter:
+        class: false

@@ -20,40 +20,43 @@
  * @property sfGuardUser $sfGuardUser
  * @property Doctrine_Collection $emdi_gradoes
  * @property Doctrine_Collection $emdi_materia_x_gradoes
- * @property Doctrine_Collection $emdi_com_individuals
+ * @property Doctrine_Collection $emdi_com_profesors
+ * @property Doctrine_Collection $emdi_com_representantes
  * 
- * @method integer             getProId()                  Returns the current record's "pro_id" value
- * @method string              getProNombres()             Returns the current record's "pro_nombres" value
- * @method string              getProApellidos()           Returns the current record's "pro_apellidos" value
- * @method string              getProCedula()              Returns the current record's "pro_cedula" value
- * @method string              getProEmail()               Returns the current record's "pro_email" value
- * @method string              getProTelfCasa()            Returns the current record's "pro_telf_casa" value
- * @method string              getProTelfCelular()         Returns the current record's "pro_telf_celular" value
- * @method string              getProLogin()               Returns the current record's "pro_login" value
- * @method string              getProPass()                Returns the current record's "pro_pass" value
- * @method date                getProFechaNacimiento()     Returns the current record's "pro_fecha_nacimiento" value
- * @method string              getProHouse()               Returns the current record's "pro_house" value
- * @method integer             getSfGuardUserId()          Returns the current record's "sf_guard_user_id" value
- * @method sfGuardUser         getSfGuardUser()            Returns the current record's "sfGuardUser" value
- * @method Doctrine_Collection getEmdiGradoes()            Returns the current record's "emdi_gradoes" collection
- * @method Doctrine_Collection getEmdiMateriaXGradoes()    Returns the current record's "emdi_materia_x_gradoes" collection
- * @method Doctrine_Collection getEmdiComIndividuals()     Returns the current record's "emdi_com_individuals" collection
- * @method emdiProfesor        setProId()                  Sets the current record's "pro_id" value
- * @method emdiProfesor        setProNombres()             Sets the current record's "pro_nombres" value
- * @method emdiProfesor        setProApellidos()           Sets the current record's "pro_apellidos" value
- * @method emdiProfesor        setProCedula()              Sets the current record's "pro_cedula" value
- * @method emdiProfesor        setProEmail()               Sets the current record's "pro_email" value
- * @method emdiProfesor        setProTelfCasa()            Sets the current record's "pro_telf_casa" value
- * @method emdiProfesor        setProTelfCelular()         Sets the current record's "pro_telf_celular" value
- * @method emdiProfesor        setProLogin()               Sets the current record's "pro_login" value
- * @method emdiProfesor        setProPass()                Sets the current record's "pro_pass" value
- * @method emdiProfesor        setProFechaNacimiento()     Sets the current record's "pro_fecha_nacimiento" value
- * @method emdiProfesor        setProHouse()               Sets the current record's "pro_house" value
- * @method emdiProfesor        setSfGuardUserId()          Sets the current record's "sf_guard_user_id" value
- * @method emdiProfesor        setSfGuardUser()            Sets the current record's "sfGuardUser" value
- * @method emdiProfesor        setEmdiGradoes()            Sets the current record's "emdi_gradoes" collection
- * @method emdiProfesor        setEmdiMateriaXGradoes()    Sets the current record's "emdi_materia_x_gradoes" collection
- * @method emdiProfesor        setEmdiComIndividuals()     Sets the current record's "emdi_com_individuals" collection
+ * @method integer             getProId()                   Returns the current record's "pro_id" value
+ * @method string              getProNombres()              Returns the current record's "pro_nombres" value
+ * @method string              getProApellidos()            Returns the current record's "pro_apellidos" value
+ * @method string              getProCedula()               Returns the current record's "pro_cedula" value
+ * @method string              getProEmail()                Returns the current record's "pro_email" value
+ * @method string              getProTelfCasa()             Returns the current record's "pro_telf_casa" value
+ * @method string              getProTelfCelular()          Returns the current record's "pro_telf_celular" value
+ * @method string              getProLogin()                Returns the current record's "pro_login" value
+ * @method string              getProPass()                 Returns the current record's "pro_pass" value
+ * @method date                getProFechaNacimiento()      Returns the current record's "pro_fecha_nacimiento" value
+ * @method string              getProHouse()                Returns the current record's "pro_house" value
+ * @method integer             getSfGuardUserId()           Returns the current record's "sf_guard_user_id" value
+ * @method sfGuardUser         getSfGuardUser()             Returns the current record's "sfGuardUser" value
+ * @method Doctrine_Collection getEmdiGradoes()             Returns the current record's "emdi_gradoes" collection
+ * @method Doctrine_Collection getEmdiMateriaXGradoes()     Returns the current record's "emdi_materia_x_gradoes" collection
+ * @method Doctrine_Collection getEmdiComProfesors()        Returns the current record's "emdi_com_profesors" collection
+ * @method Doctrine_Collection getEmdiComRepresentantes()   Returns the current record's "emdi_com_representantes" collection
+ * @method emdiProfesor        setProId()                   Sets the current record's "pro_id" value
+ * @method emdiProfesor        setProNombres()              Sets the current record's "pro_nombres" value
+ * @method emdiProfesor        setProApellidos()            Sets the current record's "pro_apellidos" value
+ * @method emdiProfesor        setProCedula()               Sets the current record's "pro_cedula" value
+ * @method emdiProfesor        setProEmail()                Sets the current record's "pro_email" value
+ * @method emdiProfesor        setProTelfCasa()             Sets the current record's "pro_telf_casa" value
+ * @method emdiProfesor        setProTelfCelular()          Sets the current record's "pro_telf_celular" value
+ * @method emdiProfesor        setProLogin()                Sets the current record's "pro_login" value
+ * @method emdiProfesor        setProPass()                 Sets the current record's "pro_pass" value
+ * @method emdiProfesor        setProFechaNacimiento()      Sets the current record's "pro_fecha_nacimiento" value
+ * @method emdiProfesor        setProHouse()                Sets the current record's "pro_house" value
+ * @method emdiProfesor        setSfGuardUserId()           Sets the current record's "sf_guard_user_id" value
+ * @method emdiProfesor        setSfGuardUser()             Sets the current record's "sfGuardUser" value
+ * @method emdiProfesor        setEmdiGradoes()             Sets the current record's "emdi_gradoes" collection
+ * @method emdiProfesor        setEmdiMateriaXGradoes()     Sets the current record's "emdi_materia_x_gradoes" collection
+ * @method emdiProfesor        setEmdiComProfesors()        Sets the current record's "emdi_com_profesors" collection
+ * @method emdiProfesor        setEmdiComRepresentantes()   Sets the current record's "emdi_com_representantes" collection
  * 
  * @package    emdi
  * @subpackage model
@@ -146,7 +149,11 @@ abstract class BaseemdiProfesor extends sfDoctrineRecord
              'local' => 'pro_id',
              'foreign' => 'pro_id'));
 
-        $this->hasMany('emdiComIndividual as emdi_com_individuals', array(
+        $this->hasMany('emdiComProfesor as emdi_com_profesors', array(
+             'local' => 'pro_id',
+             'foreign' => 'pro_id'));
+
+        $this->hasMany('emdiComRepresentante as emdi_com_representantes', array(
              'local' => 'pro_id',
              'foreign' => 'pro_id'));
     }
