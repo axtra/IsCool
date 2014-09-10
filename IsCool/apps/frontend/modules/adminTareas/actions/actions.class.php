@@ -42,7 +42,7 @@ class adminTareasActions extends sfActions
     $this->tareas = Doctrine::getTable('emdiTarea')
                     ->createQuery('u')
                     ->where('u.mxg_id = ?', $this->mxg_id)
-                    ->orderBy('u.tar_fecha_entrega DESC')
+                    ->orderBy('u.tar_fecha_envio DESC')
                     ->fetchArray();
    
     if($request->isMethod('POST')){
@@ -74,7 +74,7 @@ class adminTareasActions extends sfActions
     $tareas = Doctrine::getTable('emdiTarea')
     ->createQuery('u')
     ->where('u.mxg_id = ?', $mxg_id)
-    ->orderBy('u.tar_fecha_entrega DESC')
+    ->orderBy('u.tar_fecha_envio DESC')
     ->fetchArray();
   
     return $this->renderPartial('partial_items', array('tareas' => $tareas, 'mxg_id' => $mxg_id));
@@ -94,7 +94,7 @@ class adminTareasActions extends sfActions
     $tareas = Doctrine::getTable('emdiTarea')
     ->createQuery('u')
     ->where('u.mxg_id = ?', $mxg_id)
-    ->orderBy('u.tar_fecha_entrega DESC')
+    ->orderBy('u.tar_fecha_envio DESC')
     ->fetchArray();
   
     return $this->renderPartial('partial_items', array('tareas' => $tareas, 'mxg_id' => $mxg_id));

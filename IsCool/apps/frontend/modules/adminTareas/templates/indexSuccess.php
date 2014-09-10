@@ -6,6 +6,15 @@
 <div id="main_container">
 	<div id="sf_admin_container">
 
+<?php if (sizeof($materias) == 0 ): ?>
+		<div id="sf_admin_header">
+			<h1>Administración de Tareas</h1>
+			
+			
+			<p>Su perfil no tiene cátedras asociadas:</p>
+		</div>
+
+<?php else: ?>
 		<div id="sf_admin_header">
 			<h1>Administración de Tareas</h1>
 			
@@ -26,6 +35,7 @@
 		</div>
 		<div id="sf_admin_footer"></div>
 
-	</div>
+<?php endif; ?>
 
+	</div>
 </div>
