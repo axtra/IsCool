@@ -70,6 +70,7 @@ class adminComunicadosActions extends sfActions
   public function executeEnviarComunicado(sfWebRequest $request){
     
     $id_profesor = $request->getParameter('pro');
+
         
     if($request->isMethod('POST')){
       
@@ -98,7 +99,8 @@ class adminComunicadosActions extends sfActions
   
   public function executeRenderFlashes(sfWebRequest $request){
     
-    return $this->renderPartial('partial_flashes');
+    
+    return $this->renderPartial('partial_flashes', array('sf_user' => $this->sf_user));
   }
   
 }

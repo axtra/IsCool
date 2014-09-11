@@ -6,6 +6,91 @@
   <script src="http://code.jquery.com/ui/1.8.24/jquery-ui.js"></script>
 
 
+<?php 
+use_helper('jQuery'); 
+echo jq_javascript_tag("
+
+    mostrar_items = function(gra)
+    {
+        ".
+        jq_remote_function(array(
+                 'url'      => '@mostrar_alumnos_por_grado',
+                 'with'     => "'gra=' + gra.value",
+                 'loading'  => "$('#estudiantes-list').hide();$('#loader-est').show();$('#opener').hide();$('#mensajes-list').hide();",
+                 'complete' => "$('#loader-est').hide();$('#estudiantes-list').show();",
+                 'script'   => 'true',
+                 'update'   => 'estudiantes-list'))
+        ."
+    }
+    
+    mostrar_mensajes = function()
+    {
+        ".
+        jq_remote_function(array(
+                 'url'      => '@mostrar_plantillas',
+                 'loading'  => "$('#mensajes-list').hide();$('#loader-msg').show();$('#opener').hide();$('#mensajes-list').hide();",
+                 'complete' => "$('#loader-msg').hide();$('#mensajes-list').show();$('#opener').show();",
+                 'script'   => 'true',
+                 'update'   => 'mensajes-list'))
+        ."
+    }
+
+
+    enviar_comunicado = function()
+    {      
+        ".
+        jq_remote_function(array(
+                 'url'      => '@enviar_comunicado_profesor',
+                 'with'     => "'ref=' + $( '#grado-materia-list option:selected' ).text() + '&est_id=' + $( '#estudiantes-select' ).val() + '&msg=' + $( '#plantilla-select' ).val() + '&pro=' + $( '#profesor-id' ).val()",
+                 'loading'  => "$('#opener').hide();$('#mensajes-list').hide();procesando();",
+                 'complete' => "listo();",
+                 'script'   => 'true',
+                 'update'   => 'com-enviados-table'))
+        ."
+    }
+
+    render_flashes = function()
+    {
+        ".
+        jq_remote_function(array(
+                 'url'      => '@render_flashes',
+                 'loading'  => "listo();$('#flashes-div').hide();",
+                 'complete' => "listo();$('#flashes-div').show();",
+                 'script'   => 'true',
+                 'update'   => 'flashes-div'))
+        ."
+    }
+
+
+/*
+    borrar_item = function(tar_id, mxg_id)
+    {
+        if(confirm('¿Está seguro que desea borrar esta tarea?'))
+        {".
+         jq_remote_function(array(
+                        'url'      => '@borrar_tarea',
+                        'with'     => "'tar_id=' + tar_id + '&mxg_id=' + mxg_id",
+                        'script'   => 'true',
+                        'update'   => 'items_div'))
+       ."}
+    }
+
+    disable_form = function()
+    {
+        $('#proyecto :input').attr('disabled', true);
+    }
+
+    enable_form = function()
+    {
+        $('#proyecto :input').removeAttr('disabled');
+    }
+*/
+    
+    
+");
+
+?>
+
   
   
 <script>
@@ -58,91 +143,6 @@ function listo() {
   
 
 
-<?php 
-use_helper('jQuery'); 
-echo jq_javascript_tag("
-
-    mostrar_items = function(gra)
-    {
-        ".
-        jq_remote_function(array(
-                 'url'      => '@mostrar_alumnos_por_grado',
-                 'with'     => "'gra=' + gra.value",
-                 'loading'  => "$('#estudiantes-list').hide();$('#loader-est').show();$('#opener').hide();$('#mensajes-list').hide();",
-                 'complete' => "$('#loader-est').hide();$('#estudiantes-list').show();",
-                 'script'   => 'true',
-                 'update'   => 'estudiantes-list'))
-        ."
-    }
-    
-    mostrar_mensajes = function()
-    {
-        ".
-        jq_remote_function(array(
-                 'url'      => '@mostrar_plantillas',
-                 'loading'  => "$('#mensajes-list').hide();$('#loader-msg').show();$('#opener').hide();$('#mensajes-list').hide();",
-                 'complete' => "$('#loader-msg').hide();$('#mensajes-list').show();$('#opener').show();",
-                 'script'   => 'true',
-                 'update'   => 'mensajes-list'))
-        ."
-    }
-
-
-    enviar_comunicado = function()
-    {      
-        ".
-        jq_remote_function(array(
-                 'url'      => '@enviar_comunicado_profesor',
-                 'with'     => "'ref=' + $( '#grado-materia-list option:selected' ).text() + '&est_id=' + $( '#estudiantes-select' ).val() + '&msg=' + $( '#plantilla-select' ).val() + '&pro=' + $( '#profesor-id' ).val()",
-                 'loading'  => "$('#opener').hide();$('#mensajes-list').hide();procesando();",
-                 'complete' => "listo();",
-                 'script'   => 'true',
-                 'update'   => 'com-enviados-table'))
-        ."
-    }
-
-    render_flashes = function()
-    {
-        ".
-        jq_remote_function(array(
-                 'url'      => '@render_flashes',
-                 'loading'  => "$('#flashes-div').hide();",
-                 'complete' => "$('#flashes-div').show();",
-                 'script'   => 'true',
-                 'update'   => 'flashes-div'))
-        ."
-    }
-
-
-/*
-    borrar_item = function(tar_id, mxg_id)
-    {
-        if(confirm('¿Está seguro que desea borrar esta tarea?'))
-        {".
-         jq_remote_function(array(
-                        'url'      => '@borrar_tarea',
-                        'with'     => "'tar_id=' + tar_id + '&mxg_id=' + mxg_id",
-                        'script'   => 'true',
-                        'update'   => 'items_div'))
-       ."}
-    }
-
-    disable_form = function()
-    {
-        $('#proyecto :input').attr('disabled', true);
-    }
-
-    enable_form = function()
-    {
-        $('#proyecto :input').removeAttr('disabled');
-    }
-*/
-    
-    
-");
-
-?>
-
 <!--  Alertas Boxes -->
 <div id="dialog" title="Confirmación de envío">
     <p style="text-align: left;">
@@ -167,8 +167,8 @@ echo jq_javascript_tag("
 			<h1>Administración de Comunicados</h1>
 			
              <div id="flashes-div">
-                <?php include_partial('partial_flashes'); ?>
-             </div>
+                <?php include_partial('adminComunicados/partial_flashes'); ?>
+             </div>   
              
 			<p>Su perfil no tiene cátedras asociadas:</p>
 		</div>
@@ -181,7 +181,7 @@ echo jq_javascript_tag("
 		<div id="sf_admin_content" class="sf_forms" style="text-align: left;">
             
              <div id="flashes-div">
-                <?php include_partial('partial_flashes'); ?>
+                <?php include_partial('adminComunicados/partial_flashes'); ?>
              </div>   
          
             <form>
@@ -249,7 +249,7 @@ echo jq_javascript_tag("
             
             <!-- ********************** -->
             <!-- Tabla de Comunicados enviados -->
-    		<h2>Comunicados Enviados</h2>
+    		<h2>Comunicados Enviados </h2>
                 <div class="clear"></div>
                 <div class="form-horiz">
                     <div id="loader-tabla" style="display: none;">

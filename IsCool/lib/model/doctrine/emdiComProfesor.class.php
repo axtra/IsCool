@@ -56,6 +56,7 @@ class emdiComProfesor extends BaseemdiComProfesor
     $comunicado->setProId($pro_id);
 
     $comunicado->save();
+    
     return array('tipo' => 'notice', 'mensaje' => 'El comunicado fue enviado exitosamente.');
   }
 
