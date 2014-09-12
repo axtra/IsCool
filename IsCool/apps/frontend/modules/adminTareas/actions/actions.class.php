@@ -17,12 +17,24 @@ class adminTareasActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
-    $id_profesor = $request->getParameter('pro');
+
+    // Conseguir listado de materias por profesor
+	if($this->getUser()->hasCredential('profesor')) {
+	  
+        $id_profesor = $request->getParameter('pro');
+    	
+    	$this->materias = Doctrine::getTable('emdiMateriaXGrado')
+                        	->createQuery('g')
+                        	->where('g.pro_id = ?', $id_profesor)
+                        	->execute();    
+	}
 	
-	$this->materias = Doctrine::getTable('emdiMateriaXGrado')
-                    	->createQuery('g')
-                    	->where('g.pro_id = ?', $id_profesor)
-                    	->execute();    
+	// Conseguir listado de todas las materias
+	if($this->getUser()->hasCredential('admin')) {
+	  $this->materias = Doctrine::getTable('emdiMateriaXGrado')
+	  ->createQuery('g')
+	  ->execute();
+	}
   }
   
   public function executeIngresarTarea(sfWebRequest $request){
