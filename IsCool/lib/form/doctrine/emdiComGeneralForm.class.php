@@ -12,5 +12,21 @@ class emdiComGeneralForm extends BaseemdiComGeneralForm
 {
   public function configure()
   {
+    // lib/form/doctrine/ProductForm.class.php
+//       $subForm = new sfForm();
+
+//         $productPhoto = new emdiComXGrado();
+//         $productPhoto->cge = $this->getObject();
+    
+//         $form = new emdiComXGradoForm($productPhoto);
+    
+
+//       $this->embedForm('cge', $form); 
+      
+
+        unset(
+          $this['created_at'],
+          $this['updated_at']
+        );
   }
 }

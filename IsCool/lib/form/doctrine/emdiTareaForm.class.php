@@ -45,22 +45,6 @@ class emdiTareaForm extends BaseemdiTareaForm
     
     $this->widgetSchema['mxg_id'] = new sfWidgetFormInputHidden();
     
-/*
- * TODO:
- * ***************************
- *  EMBEDEED FORM CHECK!
-      $subForm = new sfForm();
-      for ($i = 0; $i < 2; $i++)
-      {
-      $productPhoto = new ProductPhoto();
-      $productPhoto->Product = $this->getObject();
-      
-      $form = new ProductPhotoForm($productPhoto);
-      
-      $subForm->embedForm($i, $form);
-      }
-      $this->embedForm('newPhotos', $subForm);
-*/
   }
   
 

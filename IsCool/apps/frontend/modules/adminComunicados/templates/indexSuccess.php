@@ -60,32 +60,6 @@ echo jq_javascript_tag("
                  'update'   => 'flashes-div'))
         ."
     }
-
-
-/*
-    borrar_item = function(tar_id, mxg_id)
-    {
-        if(confirm('¿Está seguro que desea borrar esta tarea?'))
-        {".
-         jq_remote_function(array(
-                        'url'      => '@borrar_tarea',
-                        'with'     => "'tar_id=' + tar_id + '&mxg_id=' + mxg_id",
-                        'script'   => 'true',
-                        'update'   => 'items_div'))
-       ."}
-    }
-
-    disable_form = function()
-    {
-        $('#proyecto :input').attr('disabled', true);
-    }
-
-    enable_form = function()
-    {
-        $('#proyecto :input').removeAttr('disabled');
-    }
-*/
-    
     
 ");
 

@@ -162,3 +162,7 @@ enviar_comunicado_profesor:
 render_flashes:
   url:    adminComunicados/renderFlashes
   param:  { module: adminComunicados, action: renderFlashes }
+
+enviar_comunicado_general:
+  url:    adminComunicados/enviarComunicadoGeneral
+  param:  { module: adminComunicados, action: enviarComunicadoGeneral }

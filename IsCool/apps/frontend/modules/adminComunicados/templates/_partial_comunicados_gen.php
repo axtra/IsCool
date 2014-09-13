@@ -1,6 +1,6 @@
 <script>
 $(function() {
-    $( ".collapse-comunicados" )
+    $( ".collapse-comunicados-gen" )
       .button({
 	      icons: {
   	        primary: "ui-icon-circle-triangle-n"
@@ -9,8 +9,8 @@ $(function() {
       .click(function( event ) {
         event.preventDefault();
         $(this).data('state', ($(this).data('state') == 'disarm') ? 'arm' : 'disarm');
-        $( '#body-comunicados' ).toggle("slow");
-    	$( '.collapse-comunicados' ).button({
+        $( '#body-comunicados-gen' ).toggle("slow");
+    	$( '.collapse-comunicados-gen' ).button({
             icons: {
                 primary: ($(this).data('state') == "disarm") ? "ui-icon-circle-triangle-s" : "ui-icon-circle-triangle-n"
             },
@@ -21,30 +21,22 @@ $(function() {
 });
 </script>
 
-<button class="collapse-comunicados collapse-button">Contraer listado</button>
+<button class="collapse-comunicados-gen collapse-button">Contraer listado</button>
 <table>
       <thead class="detalle-table-header">
         <tr>
-          <th class="ui-th-column">Estudiante</th>
           <th class="ui-th-column">Referencia</th>
           <th class="ui-th-column">Mensaje</th>
           <th class="ui-th-column">Fecha</th>
         </tr>
       </thead>
-      <tbody id="body-comunicados">
-<?php if( sizeof($comunicados) > 0 ): ?>
+      <tbody id="body-comunicados-gen">
+<?php if( sizeof($comunicados_gen) > 0 ): ?>
 
-	<?php foreach ($comunicados as $comunicado): ?>
-          
-          <?php
-                // Sacar los detalles asociados con la materia
-//                 $profesor = Doctrine::getTable('emdiProfesor')->find($materia['pro_id']);
-//                 $nombre_materia = Doctrine::getTable('emdiMateria')->find($materia['mat_id']);
-          ?>
+	<?php foreach ($comunicados_gen as $comunicado): ?>
                 <tr>
-                    <td class="sf_admin_text"><?php echo $comunicado->getEst(); ?></td>
-                    <td class="sf_admin_text"><?php echo $comunicado['cpr_referencia']; ?></td>
-                    <td class="sf_admin_text tarea-contenido"><?php echo $comunicado['cpr_contenido']; ?></td>
+                    <td class="sf_admin_text"><?php echo $comunicado['cge_referencia']; ?></td>
+                    <td class="sf_admin_text tarea-contenido"><?php echo $comunicado['cge_contenido']; ?></td>
                     <td class="sf_admin_text"><?php echo $comunicado['created_at']; ?></td>
                 </tr>
 	<?php endforeach; ?>

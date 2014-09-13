@@ -12,5 +12,22 @@ class emdiComXGradoForm extends BaseemdiComXGradoForm
 {
   public function configure()
   {
+    
+    parent::configure();
+    
+    
+    $this->widgetSchema['gra_id']->setOption('renderer_class', 'sfWidgetFormSelectDoubleList');
+    
+
+//     $this->embedRelation('cge');
+    unset(
+        $this['cge_id']
+    );
+    
+    
+    $comunicado_object = $this->getObject()->getCge();
+    $this->embedForm('foto_form', new emdiComGeneralForm($comunicado_object));
+        
+
   }
 }

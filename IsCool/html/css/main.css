@@ -108,3 +108,18 @@ button.collapse-button {
   line-height: 8px;
   height: 25px;
 }
+
+#ref{
+	padding: 6px 0;
+	margin: 10px 0;
+}
+
+.double_list_select-selected {
+	width: 12em !important;
+	height: 18em !important;
+}
+
+.double_list_select {
+	width: 12em !important;
+	height: 18em !important;
+}
