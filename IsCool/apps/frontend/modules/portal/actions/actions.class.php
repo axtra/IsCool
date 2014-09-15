@@ -18,53 +18,53 @@ class portalActions extends sfActions
   */
   public function executeIndex(sfWebRequest $request)
   {
-        // Administrador o Administrativo
+        // Administrador
         if ($this->getUser()->hasCredential('admin')) {
 
+          
+        } else {
 
-        } 
-        
-        // Profesores
-        if ($this->getUser()->hasCredential('profesor')) {
-            $datos_usuario = Doctrine::getTable('emdiProfesor')
-                    ->createQuery('u')
-                    ->where('u.sf_guard_user_id = ?', $this->getUser()->getGuardUser()->getId())
-                    ->fetchOne();
+            // Profesores
+            if ($this->getUser()->hasCredential('profesor')) {
+              $datos_usuario = Doctrine::getTable('emdiProfesor')
+              ->createQuery('u')
+              ->where('u.sf_guard_user_id = ?', $this->getUser()->getGuardUser()->getId())
+              ->fetchOne();
             
-            $grado_tutoreado = Doctrine::getTable('emdiGrado')
-		            ->createQuery('g')
-		            ->where('g.pro_id = ?', $datos_usuario->getProId())
-		            ->fetchOne();
-            
-
-            $this->getUser()->setAttribute('id_profesor', $datos_usuario->getProId());
+              $grado_tutoreado = Doctrine::getTable('emdiGrado')
+              ->createQuery('g')
+              ->where('g.pro_id = ?', $datos_usuario->getProId())
+              ->fetchOne();
             
             
-            // Saca el Id del Grado solo si el profesor es tutor
-            if($grado_tutoreado) {
-            	$grado_tutoreado = $grado_tutoreado->getGraId(); 
+              $this->getUser()->setAttribute('id_profesor', $datos_usuario->getProId());
+            
+            
+              // Saca el Id del Grado solo si el profesor es tutor
+              if($grado_tutoreado) {
+                $grado_tutoreado = $grado_tutoreado->getGraId();
+              }
+            
+              $this->getUser()->setAttribute('grado_tutoreado', $grado_tutoreado);
             }
             
-            $this->getUser()->setAttribute('grado_tutoreado', $grado_tutoreado);
-
-
-        
-        } 
-        
-        // Estudiantes
-        if  ($this->getUser()->hasCredential('estudiante')) {
-
-          $datos_usuario = Doctrine::getTable('emdiEstudiante')
-          ->createQuery('u')
-          ->where('u.sf_guard_user_id = ?', $this->getUser()->getGuardUser()->getId())
-          ->fetchOne();
-          
-          $this->getUser()->setAttribute('id_estudiante', $datos_usuario->getEstId());
-        }
-        
-        // Administrativo
-        if  ($this->getUser()->hasCredential('administrativo')) {
-        
+            
+            
+            //         // Estudiantes
+            if  ($this->getUser()->hasCredential('estudiante')) {
+            
+                $datos_usuario = Doctrine::getTable('emdiEstudiante')
+                              ->createQuery('u')
+                              ->where('u.sf_guard_user_id = ?', $this->getUser()->getGuardUser()->getId())
+                              ->fetchOne();
+    
+                $this->getUser()->setAttribute('id_estudiante', $datos_usuario->getEstId());
+            }
+            
+            // Administrativo
+            if  ($this->getUser()->hasCredential('administrativo')) {
+            
+            }
         }
 
   }

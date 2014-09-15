@@ -55,7 +55,9 @@ function MM_displayStatusMsg(msgStr) { //v1.0
 
 
 
-<body onLoad="MM_preloadImages('/pags_portal/opciones/opciones_r1_c1_s2.jpg','/pags_portal/opciones/opciones_r2_c1_s2.jpg','/pags_portal/opciones/opciones_r3_c1_s2.jpg','/pags_portal/opciones/opciones_r4_c1_s2.jpg','/pags_portal/opciones/opciones_r5_c1_s2.jpg','/pags_portal/opciones/opciones_r6_c1_s2.jpg','/pags_portal/opciones/opciones_r7_c1_s2.jpg','/pags_portal/opciones/opciones_r8_c1_s2.jpg','/baner/salir_2.jpg','/baner/baner_r4_c4_s2.jpg','/baner/baner_r4_c6_s2.jpg','/baner/baner_r4_c8_s2.jpg','/baner/baner_r4_c10_s2.jpg','/menu/menu_r1_c1_s2.jpg','/menu/menu_r1_c2_s2.jpg','/menu/menu_r1_c3_s2.jpg','/menu/menu_r1_c4_s2.jpg','/menu/menu_r1_c5_s2.jpg','/pags_portal/opciones/opciones_9_2.jpg','/pags_portal/opciones/opciones_s2.jpg','/pags_portal/opciones/opciones_tareas_s2.jpg','/pags_portal/opciones/opciones_com_s2.jpg')">
+<body onLoad="MM_preloadImages('/baner/salir_2.jpg','/baner/baner_r4_c4_s2.jpg','/baner/baner_r4_c6_s2.jpg','/baner/baner_r4_c8_s2.jpg','/baner/baner_r4_c10_s2.jpg','/menu/menu_r1_c1_s2.jpg','/menu/menu_r1_c2_s2.jpg','/menu/menu_r1_c3_s2.jpg','/menu/menu_r1_c4_s2.jpg','/menu/menu_r1_c5_s2.jpg','/pags_portal/botones/agenda_2.jpg','/pags_portal/botones/alimentacion_2.jpg','/pags_portal/botones/calificaciones_2.jpg','/pags_portal/botones/comunicado_2.jpg','/pags_portal/botones/config_2.jpg','/pags_portal/botones/cronograma_2.jpg','/pags_portal/botones/generales_2.jpg','/pags_portal/botones/inform_2.jpg','/pags_portal/botones/inicio_2.jpg','/pags_portal/botones/libretas_2.jpg','/pags_portal/botones/moderador_2.jpg','/pags_portal/botones/notas_2.jpg','/pags_portal/botones/salir_2.jpg','/pags_portal/botones/tareas_2.jpg','/pags_portal/botones/tutor_2.jpg','/pags_portal/botones/usuario_2.jpg')">
+
+
 <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td><table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="1000">
@@ -160,22 +162,20 @@ function MM_displayStatusMsg(msgStr) { //v1.0
         </span></td>
       </tr>
       <tr>
-        <td colspan="3"><a href="/portal" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image66','','/pags_portal/opciones/opciones_9_2.jpg',1)"><img src="/pags_portal/opciones/opciones_9.jpg" name="Image66" width="300" height="38" border="0"></a></td>
+        <td colspan="3"><a href="/portal" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image66','','/pags_portal/botones/inicio_2.jpg',1)"><img src="/pags_portal/botones/inicio_1.jpg" name="Image66" width="300" height="38" border="0"></a></td>
       </tr>      
       <tr>
-        <td colspan="3"><a href="/usuario" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image53','','/pags_portal/opciones/opciones_r1_c1_s2.jpg',1)"><img src="/pags_portal/opciones/opciones_r1_c1.jpg" name="Image53" width="300" height="38" border="0"></a></td>
+        <td colspan="3"><a href="/usuario" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image53','','/pags_portal/botones/usuario_2.jpg',1)"><img src="/pags_portal/botones/usuario_1.jpg" name="Image53" width="300" height="38" border="0"></a></td>
       </tr>
       <tr>
-        <td colspan="3"><a href="/informativos" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image54','','/pags_portal/opciones/opciones_r2_c1_s2.jpg',1)"><img src="/pags_portal/opciones/opciones_r2_c1.jpg" name="Image54" width="300" height="38" border="0"></a></td>
+        <td colspan="3"><a href="/informativos" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image54','','/pags_portal/botones/inform_2.jpg',1)"><img src="/pags_portal/botones/inform_1.jpg" name="Image54" width="300" height="38" border="0"></a></td>
       </tr>
       <tr>
-        <td colspan="3"><a href="/menumes" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image55','','/pags_portal/opciones/opciones_r3_c1_s2.jpg',1)"><img src="/pags_portal/opciones/opciones_r3_c1.jpg" name="Image55" width="300" height="39" border="0"></a></td>
+        <td colspan="3"><a href="/menumes" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image55','','/pags_portal/botones/alimentacion_2.jpg',1)"><img src="/pags_portal/botones/alimentacion_1.jpg" name="Image55" width="300" height="38" border="0"></a></td>
       </tr>
       <tr>
-        <td colspan="3"><a href="/cronograma" 
-            onMouseOut="MM_swapImgRestore()" 
-            onMouseOver="MM_swapImage('Image56','','/pags_portal/opciones/opciones_r4_c1_s2.jpg',1)">
-            <img src="/pags_portal/opciones/opciones_r4_c1.jpg" name="Image56" width="300" height="38" border="0">
+        <td colspan="3"><a href="/cronograma" onMouseOut="MM_swapImgRestore()"             onMouseOver="MM_swapImage('Image56','','/pags_portal/botones/cronograma_2.jpg',1)">
+            <img src="/pags_portal/botones/cronograma_1.jpg" name="Image56" width="300" height="38" border="0">
             </a></td>
       </tr>
 
@@ -183,8 +183,8 @@ function MM_displayStatusMsg(msgStr) { //v1.0
       <tr><td colspan="3">
         	<a href="<?php echo url_for('tutoria/index?gra='.$sf_user->getAttribute('grado_tutoreado') )  ?>" 
         	   onMouseOut="MM_swapImgRestore()" 
-        	   onMouseOver="MM_swapImage('Image65','','/pags_portal/opciones/opciones_s2.jpg',1)">
-        	   <img src="/pags_portal/opciones/opciones.jpg" name="Image65" width="300" height="38" border="0">
+        	   onMouseOver="MM_swapImage('Image65','','/pags_portal/botones/tutor_2.jpg',1)">
+        	   <img src="/pags_portal/botones/tutor_1.jpg" name="Image65" width="300" height="38" border="0">
         	</a>
       </td></tr>
 <?php endif; ?>
@@ -194,16 +194,16 @@ function MM_displayStatusMsg(msgStr) { //v1.0
       <tr><td colspan="3">
         	<a href="<?php echo url_for('adminTareas/index?pro='.$sf_user->getAttribute('id_profesor') )  ?>" 
         	   onMouseOut="MM_swapImgRestore()" 
-        	   onMouseOver="MM_swapImage('Image95','','/pags_portal/opciones/opciones_tareas_s2.jpg',1)">
-        		<img src="/pags_portal/opciones/opciones_tareas.jpg" name="Image95" width="300" height="38" border="0">
+        	   onMouseOver="MM_swapImage('Image95','','/pags_portal/botones/tareas_2.jpg',1)">
+        		<img src="/pags_portal/botones/tareas_1.jpg" name="Image95" width="300" height="38" border="0">
         	</a>
       </td></tr>
       
       <tr><td colspan="3">
         	<a href="<?php echo url_for('adminComunicados/index?pro='.$sf_user->getAttribute('id_profesor') )  ?>" 
         	   onMouseOut="MM_swapImgRestore()" 
-        	   onMouseOver="MM_swapImage('Image96','','/pags_portal/opciones/opciones_com_s2.jpg',1)">
-        		<img src="/pags_portal/opciones/opciones_com.jpg" name="Image96" width="300" height="38" border="0">
+        	   onMouseOver="MM_swapImage('Image96','','/pags_portal/botones/comunicado_2.jpg',1)">
+        		<img src="/pags_portal/botones/comunicado_1.jpg" name="Image96" width="300" height="38" border="0">
         	</a>
       </td></tr>      
 <?php endif; ?>
@@ -212,8 +212,8 @@ function MM_displayStatusMsg(msgStr) { //v1.0
       <tr><td colspan="3">
       	<a href="/agenda" 
       	   onMouseOut="MM_swapImgRestore()" 
-      	   onMouseOver="MM_swapImage('Image95','','/pags_portal/opciones/opciones_tareas_s2.jpg',1)">
-      		<img src="/pags_portal/opciones/opciones_tareas.jpg" name="Image95" width="300" height="38" border="0">
+      	   onMouseOver="MM_swapImage('Image95','','/pags_portal/botones/agenda_2.jpg',1)">
+      		<img src="/pags_portal/botones/agenda_1.jpg" name="Image95" width="300" height="38" border="0">
       	</a>
       </td></tr>
 <?php endif; ?>
@@ -231,13 +231,13 @@ function MM_displayStatusMsg(msgStr) { //v1.0
                                                      
 ?> 
       <tr>
-        <td colspan="3"><a href="/calificaciones" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image57','','/pags_portal/opciones/opciones_r5_c1_s2.jpg',1)"><img src="/pags_portal/opciones/opciones_r5_c1.jpg" name="Image57" width="300" height="38" border="0"></a></td>
+        <td colspan="3"><a href="/calificaciones" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image57','','/pags_portal/botones/calificaciones_2.jpg',1)"><img src="/pags_portal/botones/calificaciones_1.jpg" name="Image57" width="300" height="38" border="0"></a></td>
       </tr>
 <?php 	  
 		elseif(!$sf_user->hasCredential('admin') && $sf_user->hasCredential('estudiante') && $grado_estudiante < 8):
 ?>
       <tr>
-        <td colspan="3"><a href="/calificaciones_cdi" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image57','','/pags_portal/opciones/opciones_r5_c1_s2.jpg',1)"><img src="/pags_portal/opciones/opciones_r5_c1.jpg" name="Image57" width="300" height="38" border="0"></a></td>
+        <td colspan="3"><a href="/calificaciones_cdi" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image57','','/pags_portal/botones/calificaciones_2.jpg',1)"><img src="/pags_portal/botones/calificaciones_1.jpg" name="Image57" width="300" height="38" border="0"></a></td>
       </tr>
 
 
@@ -248,18 +248,18 @@ function MM_displayStatusMsg(msgStr) { //v1.0
 
 <?php if($sf_user->hasCredential('profesor') || $sf_user->hasCredential('admin')) : ?>
       <tr>
-        <td colspan="3"><a href="/ingresonotas" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image58','','/pags_portal/opciones/opciones_r6_c1_s2.jpg',1)"><img src="/pags_portal/opciones/opciones_r6_c1.jpg" name="Image58" width="300" height="38" border="0"></a></td>
+        <td colspan="3"><a href="/ingresonotas" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image58','','/pags_portal/botones/notas_2.jpg',1)"><img src="/pags_portal/botones/notas_1.jpg" name="Image58" width="300" height="38" border="0"></a></td>
       </tr>
 <?php endif; ?>
 
 <?php if($sf_user->hasCredential('admin')) : ?>
       <tr>
-        <td colspan="3"><a href="/configuracion" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image59','','/pags_portal/opciones/opciones_r7_c1_s2.jpg',1)"><img src="/pags_portal/opciones/opciones_r7_c1.jpg" name="Image59" width="300" height="39" border="0"></a></td>
+        <td colspan="3"><a href="/configuracion" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image59','','/pags_portal/botones/config_2.jpg',1)"><img src="/pags_portal/botones/config_1.jpg" name="Image59" width="300" height="38" border="0"></a></td>
       </tr>
       
       <tr>
-        <td colspan="3"><a href="/libretas" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image200','','/pags_portal/opciones/opciones_s1_s1.jpg',1)">
-        <img src="/pags_portal/opciones/opciones_s1_s2.jpg" name="Image200" width="300" height="39" border="0"></a></td>
+        <td colspan="3"><a href="/libretas" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image200','','/pags_portal/botones/libretas_2.jpg',1)">
+        <img src="/pags_portal/botones/libretas_1.jpg" name="Image200" width="300" height="38" border="0"></a></td>
       </tr>
 <?php endif; ?>
 
@@ -269,8 +269,8 @@ function MM_displayStatusMsg(msgStr) { //v1.0
       <tr><td colspan="3">
         	<a href="<?php echo url_for('moderador/index' )  ?>" 
         	   onMouseOut="MM_swapImgRestore()" 
-        	   onMouseOver="MM_swapImage('Image96','','/pags_portal/opciones/opciones_com_s2.jpg',1)">
-        		<img src="/pags_portal/opciones/opciones_com.jpg" name="Image96" width="300" height="38" border="0">
+        	   onMouseOver="MM_swapImage('Image96','','/pags_portal/botones/moderador_2.jpg',1)">
+        		<img src="/pags_portal/botones/moderador_1.jpg" name="Image96" width="300" height="38" border="0">
         	</a>
       </td></tr>
 <?php endif; ?>
@@ -278,7 +278,7 @@ function MM_displayStatusMsg(msgStr) { //v1.0
 
 
       <tr>
-        <td colspan="3"><a href="/logout" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image61','','/pags_portal/opciones/opciones_r8_c1_s2.jpg',1)"><img src="/pags_portal/opciones/opciones_r8_c1.jpg" name="Image61" width="300" height="35" border="0"></a></td>
+        <td colspan="3"><a href="/logout" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image61','','/pags_portal/botones/salir_2.jpg',1)"><img src="/pags_portal/botones/salir_1.jpg" name="Image61" width="300" height="38" border="0"></a></td>
       </tr>
       <tr>
         <td colspan="3"><img src="/titulos/copa.png" width="300" height="46"></td>
@@ -300,7 +300,7 @@ function MM_displayStatusMsg(msgStr) { //v1.0
       <td height="10" colspan="3" align="center" valign="top"></td>
       </tr>
       <tr>
-        <td colspan="3" align="center" valign="top"><span class="public2" style="text-align: center; font-weight: normal; font-size: 12px;">Actualizaci&oacute;n: 02 / Sep / 2013</span></td>
+        <td colspan="3" align="center" valign="top"><span class="public2" style="text-align: center; font-weight: normal; font-size: 12px;">Actualizaci&oacute;n: 02 / Sep / 2014</span></td>
       </tr>
       <tr>
       <td height="10" colspan="3" align="center" valign="top"></td>
