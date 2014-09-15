@@ -13,4 +13,35 @@
 class emdiComRepresentante extends BaseemdiComRepresentante
 {
 
+  /**
+   * Funcion para ingresar un comunicado via AJAX
+   * @param unknown $entrada
+   * @return multitype:string
+   */
+  public static function ingresarComunicado($entrada){
+
+    if(isset ($entrada['est_id'])) {
+      $est_id = $entrada['est_id'];
+    } else {
+      $error = "No se ha definido un estudiante";
+      return array('tipo' => 'error', 'mensaje' => $error);
+    }
+  
+  
+    if(isset ($entrada['mre_contenido'])) {
+      $mre_contenido = $entrada['mre_contenido'];
+    } else {
+      $error =  "No se ha definido un contenido";
+      return array('tipo' => 'error', 'mensaje' => $error);
+    }
+  
+    $comunicado = new emdiComRepresentante();
+    $comunicado->setMreContenido($mre_contenido);
+    $comunicado->setEstId($est_id);
+    //$comunicado->setMreEstado();
+
+    $comunicado->save();
+  
+    return array('tipo' => 'notice', 'mensaje' => 'Su nota fue enviada exitosamente.');
+  }
 }

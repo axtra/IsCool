@@ -166,3 +166,11 @@ render_flashes:
 enviar_comunicado_general:
   url:    adminComunicados/enviarComunicadoGeneral
   param:  { module: adminComunicados, action: enviarComunicadoGeneral }
+
+enviar_nota:
+  url:    agenda/enviarComunicado
+  param:  { module: agenda, action: enviarComunicado }
+
+cambiar_fecha:
+  url:    agenda/cambiarFecha
+  param:  { module: agenda, action: cambiarFecha }

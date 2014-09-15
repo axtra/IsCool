@@ -123,3 +123,33 @@ button.collapse-button {
 	width: 12em !important;
 	height: 18em !important;
 }
+
+.1-button-column{
+	width: 40px;
+}
+
+#agenda-header{
+	display: block;
+	clear: both;
+	height: 200px;
+}
+
+#agenda-header h1{
+  float:left;
+  font: 39px Verdana, "Trebuchet MS";
+  margin:10px 0 !important;
+  width:400px;
+}
+
+#cabecera-fecha{
+  float:left;
+  display: block;
+  clear:left;
+  font: 19px "Trebuchet MS";
+  color:#666666;
+  width: 400px;
+}
+
+.calendario-box{
+	float: right;
+}
