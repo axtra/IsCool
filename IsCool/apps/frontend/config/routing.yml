@@ -174,3 +174,12 @@ enviar_nota:
 cambiar_fecha:
   url:    agenda/cambiarFecha
   param:  { module: agenda, action: cambiarFecha }
+
+cambiar_fecha_moderador:
+  url:    moderador/cambiarFecha
+  param:  { module: moderador, action: cambiarFecha }
+  
+enviar_moderacion:
+  url:    moderador/enviarModeracion
+  param:  { module: moderador, action: enviarModeracion }
+  

@@ -44,4 +44,34 @@ class emdiComRepresentante extends BaseemdiComRepresentante
   
     return array('tipo' => 'notice', 'mensaje' => 'Su nota fue enviada exitosamente.');
   }
+  
+  public static function moderarComunicado($entrada){
+    
+    $estado = 1;
+    
+    if(isset ($entrada['mre_id'])) {
+      $mre_id = $entrada['mre_id'];
+    } else {
+      $error = "No se ha definido un mensaje";
+      return array('tipo' => 'error', 'mensaje' => $error);
+    }
+  
+    if(isset ($entrada['pro_id'])) {
+      $pro_id = $entrada['pro_id'];
+    } else {
+      $error =  "No se ha definido un profesor";
+      return array('tipo' => 'error', 'mensaje' => $error);
+    }
+    
+    // Actualizar data
+    $table = Doctrine::getTable('emdiComRepresentante');
+    $table->createQuery('t')
+          ->update()
+          ->set('t.pro_id', $pro_id)
+          ->set('t.mre_estado', $estado)
+          ->where('t.mre_id = ?', $mre_id)
+          ->execute();
+  
+    return array('tipo' => 'notice', 'mensaje' => 'El mensaje fue asignado exitosamente.');
+  }
 }
