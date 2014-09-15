@@ -253,7 +253,15 @@ function MM_displayStatusMsg(msgStr) { //v1.0
 <?php endif; ?>
 
 
-
+<?php if ($sf_user->hasCredential('administrativo')) : ?>        
+      <tr><td colspan="3">
+        	<a href="<?php echo url_for('moderador/index' )  ?>" 
+        	   onMouseOut="MM_swapImgRestore()" 
+        	   onMouseOver="MM_swapImage('Image96','','/pags_portal/opciones/opciones_com_s2.jpg',1)">
+        		<img src="/pags_portal/opciones/opciones_com.jpg" name="Image96" width="300" height="38" border="0">
+        	</a>
+      </td></tr>
+<?php endif; ?>
 
 
       <tr>

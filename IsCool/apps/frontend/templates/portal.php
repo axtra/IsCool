@@ -208,6 +208,15 @@ function MM_displayStatusMsg(msgStr) { //v1.0
       </td></tr>      
 <?php endif; ?>
 
+<?php if ($sf_user->hasCredential('estudiante')) : ?>        
+      <tr><td colspan="3">
+      	<a href="/agenda" 
+      	   onMouseOut="MM_swapImgRestore()" 
+      	   onMouseOver="MM_swapImage('Image95','','/pags_portal/opciones/opciones_tareas_s2.jpg',1)">
+      		<img src="/pags_portal/opciones/opciones_tareas.jpg" name="Image95" width="300" height="38" border="0">
+      	</a>
+      </td></tr>
+<?php endif; ?>
 
 <?php 
     if($sf_user->hasCredential('estudiante')){
@@ -253,6 +262,19 @@ function MM_displayStatusMsg(msgStr) { //v1.0
         <img src="/pags_portal/opciones/opciones_s1_s2.jpg" name="Image200" width="300" height="39" border="0"></a></td>
       </tr>
 <?php endif; ?>
+
+
+
+<?php if ($sf_user->hasCredential('administrativo')) : ?>        
+      <tr><td colspan="3">
+        	<a href="<?php echo url_for('moderador/index' )  ?>" 
+        	   onMouseOut="MM_swapImgRestore()" 
+        	   onMouseOver="MM_swapImage('Image96','','/pags_portal/opciones/opciones_com_s2.jpg',1)">
+        		<img src="/pags_portal/opciones/opciones_com.jpg" name="Image96" width="300" height="38" border="0">
+        	</a>
+      </td></tr>
+<?php endif; ?>
+
 
 
       <tr>
