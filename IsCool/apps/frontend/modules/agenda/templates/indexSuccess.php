@@ -6,35 +6,19 @@
   <script src="http://code.jquery.com/ui/1.8.24/jquery-ui.js"></script>
   <script src="/js/regional.es.js"></script>
 
-<div id="loading-div-background">
+<div id="loading-div-background" style="z-index: 10000">
     <div id="loading-div" class="ui-corner-all" >
       <img style="height:70px;margin:10px;" src="/images/loader_barra.gif" alt="Enviando comunicado..."/>
-      <h2 style="color:gray;font-weight:normal;">Enviando comunicado....</h2>
+      <h2 style="color:gray;font-weight:normal;">Cargando...</h2>
      </div>
 </div>
 
 
 <script>
 $(function() {
-    $( ".collapse-comunicados" )
-      .button({
-	      icons: {
-  	        primary: "ui-icon-circle-triangle-n"
-  	      },
-      })
-      .click(function( event ) {
-        event.preventDefault();
-        $(this).data('state', ($(this).data('state') == 'disarm') ? 'arm' : 'disarm');
-        $( '#body-comunicados' ).toggle("slow");
-    	$( '.collapse-comunicados' ).button({
-            icons: {
-                primary: ($(this).data('state') == "disarm") ? "ui-icon-circle-triangle-s" : "ui-icon-circle-triangle-n"
-            },
-            label: ($(this).data('state') == "disarm") ? "Expandir listado" : "Contraer listado"
-        });
-
-      });
-
+    var fecha = new Date('<?php echo $fecha; ?>');
+    fecha.setDate(fecha.getDate()+1);
+    $( '#cabecera-fecha' ).html($.datepicker.formatDate("d 'de' MM 'del' yy", fecha));
     
     $("#loading-div-background").css({ opacity: 0.8 });
 
@@ -44,13 +28,17 @@ $(function() {
         // The format you want
         altFormat: "yy-mm-dd",
         // The format the user actually sees
-        dateFormat: "dd/mm/yy",
+        dateFormat: "yy-mm-dd",
+        minDate: new Date(2014, 8, 1),
+        maxDate: new Date(2015, 8, 1),
         onSelect: function (date) {
             // Your CSS changes, just in case you still need them
-            $('a.ui-state-default').removeClass('ui-state-highlight');
-            $(this).addClass('ui-state-highlight');
+            //$('a.ui-state-default').removeClass('ui-state-highlight');
+            //$(this).addClass('ui-state-highlight');
             cambiar_fecha(date);
-            $( '#cabecera-fecha' ).html(date);
+            var fecha = new Date(date);
+            fecha.setDate(fecha.getDate()+1);
+            $( '#cabecera-fecha' ).html($.datepicker.formatDate("d 'de' MM 'del' yy", fecha));
         }
     });
 
@@ -88,23 +76,10 @@ echo jq_javascript_tag("
 ");
 ?>
 
-
-<div id="loading-div-background">
-    <div id="loading-div" class="ui-corner-all" >
-      <img style="height:70px;margin:10px;" src="/images/loader_barra.gif" alt="Enviando..."/>
-      <h2 style="color:gray;font-weight:normal;">Enviando....</h2>
-     </div>
-</div>
-
 <div id="agenda-header">
 	<h1 id="h1-agenda">Agenda Virtual</h1>
     <div id="datepicker" class="calendario-box"></div>
-    <div id="cabecera-fecha">
-      <?php
-        $test = new DateTime($fecha);
-        echo date_format($test, 'l'); 
-      ?>
-    </div>
+    <div id="cabecera-fecha"></div>
 </div>
 
 <form>
@@ -132,7 +107,8 @@ echo jq_javascript_tag("
                     array(
                       'tareas' => $tareas,
                       'comunicados' => $comunicados, // consolidar generales y profesor
-                      'enviados' => $enviados
+                      'enviados' => $enviados,
+                      'comunicados_gen' => $comunicados_gen
                     )
                 ); 
                 ?>

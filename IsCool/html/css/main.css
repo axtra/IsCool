@@ -45,7 +45,7 @@
 	font: 15px/30px "Verdana", Arial;
 }
 
-#sf_admin_content ul li {
+div.con-iconos ul li {
 	list-style: square;
 	list-style-image: url(/images/teaminfo_icon.png);
 }
