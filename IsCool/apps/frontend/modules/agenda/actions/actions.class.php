@@ -44,6 +44,37 @@ class agendaActions extends sfActions
                         ->where('c.est_id = ?', $est_id)
                         ->andWhere('date(c.created_at) = ?', $this->fecha)
                         ->execute();
+    
+    $this->comunicados_gen = Doctrine::getTable('emdiComXGrado')
+                        ->createQuery('t')
+                        ->leftJoin('t.cge c')
+                        ->where('t.gra_id = ?', $gra_id)
+                        ->andWhere('date(c.created_at) = ?', $this->fecha)
+                        ->execute();
+    
+//     $this->comunicados_gen = Doctrine::getTable('emdiComGeneral')
+//     ->createQuery('c')
+//     ->where('date(c.created_at) = ?', $this->fecha)
+//     ->execute();
+    
+    
+    
+// Consulta para unir los dos resultados 
+//     $sql = '(SELECT b.cpr_id as id, b.cpr_contenido as contenido, b.cpr_referencia as referencia, ';
+//     $sql .= 'b.est_id as est, b.pro_id as pro, b.created_at ';
+//     $sql .= 'FROM emdiComProfesor b )';
+// //     $sql .= 'WHERE b.est_id = '.$est_id;
+// //     $sql .= ' AND date(b.created_at) = "'.$this->fecha.'" ';
+//     $sql .= ' UNION ';
+//     $sql .= '(SELECT a.cge_id as id, a.cge_contenido as contenido, a.cge_referencia as referencia, ';
+//     $sql .= '0 as est, 0 as pro, a.created_at ';
+//     $sql .= 'FROM emdiComGeneral a ';
+// //     $sql .= 'WHERE date(a.created_at) = "'.$this->fecha.'" ';
+//     $sql .= ') ORDER BY created_at';
+ 
+    
+//     $this->comunicados = Doctrine_Query::create()->query($sql);
+    
      
     $this->enviados = Doctrine::getTable('emdiComRepresentante')
                         ->createQuery('e')
@@ -114,6 +145,13 @@ class agendaActions extends sfActions
                         ->where('c.est_id = ?', $est_id)
                         ->andWhere('date(c.created_at) = ?', $this->fecha)
                         ->execute();
+    
+    $this->comunicados_gen = Doctrine::getTable('emdiComXGrado')
+    ->createQuery('t')
+    ->leftJoin('t.cge c')
+    ->where('t.gra_id = ?', $gra_id)
+    ->andWhere('date(c.created_at) = ?', $this->fecha)
+    ->execute();
      
     $this->enviados = Doctrine::getTable('emdiComRepresentante')
                         ->createQuery('e')
@@ -125,6 +163,7 @@ class agendaActions extends sfActions
                             array(
                                 'tareas' => $this->tareas,
                                 'comunicados' => $this->comunicados, // consolidar generales y profesor
+                                'comunicados_gen' => $this->comunicados_gen,
                                 'enviados' => $this->enviados
                             ));
   }

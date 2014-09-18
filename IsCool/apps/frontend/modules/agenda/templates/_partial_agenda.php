@@ -45,11 +45,11 @@ $(function() {
       
       <div class="clear"></div>
       
-      <h2>Comunicados</h2>
+      
       <div id="comunicados-container">
       <?php 
           include_partial('partial_comunicados', 
-              array('comunicados' => $comunicados)
+              array('comunicados' => $comunicados, 'comunicados_gen' => $comunicados_gen)
           ); 
       ?>
       </div>
