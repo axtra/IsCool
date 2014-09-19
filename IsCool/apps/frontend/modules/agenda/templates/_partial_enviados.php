@@ -27,7 +27,7 @@ $(function() {
 	      },
     })
     .click(function( event ) {
-      event.preventDefault();
+      //event.preventDefault();
       enviar_nota();
     });
 });
@@ -68,7 +68,7 @@ $("#flashes-div").show().delay(3000).fadeOut();
 <?php endif; ?>
 </div>
 
-<form>
+
     <table>
       <tbody>
         <tr>
@@ -86,7 +86,7 @@ $("#flashes-div").show().delay(3000).fadeOut();
         </td></tr>
       </tfoot>
     </table>
-</form>
+
 
 
 <table>

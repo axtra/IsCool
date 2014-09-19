@@ -36,7 +36,10 @@ $(function() {
 	<?php foreach ($comunicados_gen as $comunicado): ?>
                 <tr>
                     <td class="sf_admin_text"><?php echo $comunicado['cge_referencia']; ?></td>
-                    <td class="sf_admin_text tarea-contenido"><?php echo $comunicado['cge_contenido']; ?></td>
+                    <td class="sf_admin_text tarea-contenido">
+                    <?php 
+                      echo sfOutputEscaper::unescape($comunicado['cge_contenido']);
+                      ?></td>
                     <td class="sf_admin_text"><?php echo $comunicado['created_at']; ?></td>
                 </tr>
 	<?php endforeach; ?>

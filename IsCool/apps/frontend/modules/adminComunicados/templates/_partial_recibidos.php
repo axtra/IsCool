@@ -41,7 +41,11 @@ $(function() {
 //                 $nombre_materia = Doctrine::getTable('emdiMateria')->find($materia['mat_id']);
           ?>
                 <tr>
-                    <td class="sf_admin_text"><?php echo $comunicado_rep['est_id']; ?></td>
+                    <td class="sf_admin_text">
+                      <?php
+                        echo $comunicado_rep->getEst().'<br /><strong>'.$comunicado_rep->getEst()->getGra().'</strong>'; 
+                      ?>
+                    </td>
                     <td class="sf_admin_text tarea-contenido"><?php echo $comunicado_rep['mre_contenido']; ?></td>
                     <td class="sf_admin_text"><?php echo $comunicado_rep['created_at']; ?></td>
                 </tr>

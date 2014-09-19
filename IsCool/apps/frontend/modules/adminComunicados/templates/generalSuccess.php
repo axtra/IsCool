@@ -4,7 +4,8 @@
   <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.24/themes/base/jquery-ui.css">
   <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
   <script src="http://code.jquery.com/ui/1.8.24/jquery-ui.js"></script>
-
+  <script src="http://tinymce.cachefly.net/4.1/tinymce.min.js"></script>
+  
 <?php use_javascript('/sfFormExtraPlugin/js/double_list.js') ?>
 
 <script>
@@ -19,7 +20,7 @@ $(document).ready(function() {
           buttons: {
             'Enviar Comunicado': function() {
               
-              if ($( "#plantilla-select" ).val()) {
+              if (tinymce.get('plantilla-select').getContent()) {
             	  // Enviar comunicado
                   enviar_comunicado();
                   render_flashes();
@@ -42,6 +43,22 @@ $(document).ready(function() {
       });
       
       $("#loading-div-background").css({ opacity: 0.8 });
+
+
+});
+
+tinymce.init({
+	 selector:'#com-gen',
+	 entity_encoding : 'raw',
+	 height : 400,
+	 menubar: false
+});
+
+tinymce.init({
+	selector:'#plantilla-select',
+	entity_encoding : 'raw',
+	height : 400,
+	menubar: false
 });
 
 $(function() {
@@ -110,10 +127,12 @@ echo jq_javascript_tag("
 
     enviar_comunicado = function()
     {      
+        var msgcuerpo = tinymce.get('plantilla-select').getContent();
+        //msgcuerpo = msgcuerpo.replace(/&nbsp;/ig, ' ');
         ".
         jq_remote_function(array(
                  'url'      => '@enviar_comunicado_profesor',
-                 'with'     => "'ref=' + $( '#ref' ).val() + '&est_id=' + $( '#estudiantes-select' ).val() + '&msg=' + $( '#plantilla-select' ).val() + '&pro=' + $( '#profesor-id' ).val()",
+                 'with'     => "'ref=' + $( '#ref' ).val() + '&est_id=' + $( '#estudiantes-select' ).val() + '&msg=' + msgcuerpo + '&pro=' + $( '#profesor-id' ).val()",
                  'loading'  => "$('#opener').hide();$('#mensajes-list').hide();procesando();",
                  'complete' => "listo();",
                  'script'   => 'true',
@@ -147,19 +166,29 @@ echo jq_javascript_tag("
 
     enviar_comunicado_general = function()
     {
+        // Recopilar los grados y guardarlos en un array
         var selectedValues = []; 
         $('#cg_gra_id option').each(function(i, selected){ 
           selectedValues[i] = $(selected).val(); 
         });
+    
+        // Arreglar los espacios que se colocan en TinyMCE
+        var cuerpo = tinymce.get('com-gen').getContent();
+        //cuerpo = cuerpo.replace(/&nbsp;/ig, ' ');
+    
+        if (selectedValues.length == 0) {
+            alert('Debe seleccionar uno o mas grados.');
+        } else {
         ".
         jq_remote_function(array(
                  'url'      => '@enviar_comunicado_general',
-                 'with'     => "'ref_gen=' + $( '#ref-gen' ).val() + '&com_gen=' + $( '#com-gen' ).val() + '&grados=' + selectedValues",
+                 'with'     => "'ref_gen=' + $( '#ref-gen' ).val() + '&com_gen=' + cuerpo + '&grados=' + selectedValues",
                  'loading'  => "procesando();",
                  'complete' => "listo();",
                  'script'   => 'true',
                  'update'   => 'com-gen-enviados-table'))
         ."
+        }
     }
     
 ");
@@ -339,10 +368,10 @@ echo jq_javascript_tag("
                     
                     <div id="mensajes-list" style="display: none;">
                         
-                      <label for="ref">Referencia:</label><input type="text" id="ref" width="40" maxlength="100" />
+                      <label for="ref">Referencia:</label>
+                      <input type="text" id="ref" width="40" maxlength="100" />
                       
-                      <textarea id="plantilla-select" onkeyup="countChar(this)" cols="60" rows="20"></textarea>
-                      <div id="charNum"></div>
+                      <textarea id="plantilla-select" cols="30" rows="100"></textarea>
 
                     </div>
                     

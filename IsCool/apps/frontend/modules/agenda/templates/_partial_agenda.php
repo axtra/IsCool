@@ -3,7 +3,7 @@ $(function() {
     $( "#tabs" ).tabs();
 
     abrir_dialogo = function(dialogo, titulo){
-        event.preventDefault();
+        //event.preventDefault();
         $( dialogo ).dialog("open");
         $( dialogo ).dialog( "option", "title", titulo );
 

@@ -44,7 +44,7 @@ $(function() {
                 <tr>
                     <td class="sf_admin_text"><?php echo $comunicado->getEst(); ?></td>
                     <td class="sf_admin_text"><?php echo $comunicado['cpr_referencia']; ?></td>
-                    <td class="sf_admin_text tarea-contenido"><?php echo $comunicado['cpr_contenido']; ?></td>
+                    <td class="sf_admin_text tarea-contenido"><?php echo sfOutputEscaper::unescape($comunicado['cpr_contenido']); ?></td>
                     <td class="sf_admin_text"><?php echo $comunicado['created_at']; ?></td>
                 </tr>
 	<?php endforeach; ?>

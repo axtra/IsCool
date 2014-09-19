@@ -18,7 +18,7 @@ class adminComunicadosActions extends sfActions
   public function executeIndex(sfWebRequest $request)
   {
     // Comunicados Indivuales - Template index 
-    if($this->getUser()->hasCredential('profesor')) {
+    if($this->getUser()->hasCredential('profesor') && !$this->getUser()->hasCredential('admin')) {
         $id_profesor = $request->getParameter('pro');
     	
     	$this->materias = Doctrine::getTable('emdiMateriaXGrado')
@@ -45,11 +45,12 @@ class adminComunicadosActions extends sfActions
     // Comunicados Generales - Template index
     if($this->getUser()->hasCredential('admin')) {
       
+        // :(
         // Buscar mas adelante que este codigo de profesor no este quemado
         // Se utiliza pro_id = 1 de la tabla emdi_profesor para identificar
         // cuando un comunicado proviene de la parte administrativa.
         $id_profesor = 1;
-    
+        
     	$this->materias = Doctrine::getTable('emdiGrado')
                         	->createQuery('g')
                         	->execute();
@@ -65,7 +66,15 @@ class adminComunicadosActions extends sfActions
                         	->orderBy('u.created_at DESC')
                         	->execute();
     	
-
+    	$this->comunicados_rep = Doctrine::getTable('emdiComRepresentante')
+                        	->createQuery('u')
+                        	->where('u.pro_id = ?', $id_profesor)
+                        	->orderBy('u.created_at DESC')
+                        	->execute();
+    	
+    	$this->estudiantes = array();
+    	$this->pro = $id_profesor;
+        
         $this->setTemplate('general');
     }
  

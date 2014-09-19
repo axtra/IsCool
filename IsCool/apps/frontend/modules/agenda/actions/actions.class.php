@@ -85,6 +85,8 @@ class agendaActions extends sfActions
   
   public function executeEnviarComunicado(sfWebRequest $request)
   {
+    
+    $fecha = date('Y-m-d', time());
    
     if($request->isMethod('POST')){
 

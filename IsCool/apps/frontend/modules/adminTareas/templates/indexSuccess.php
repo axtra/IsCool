@@ -21,7 +21,7 @@
 			<p>Elija una de las cátedras dictadas:</p>
 		</div>
 
-		<div id="sf_admin_content" style="text-align: left;">
+		<div id="sf_admin_content" class="con-iconos" style="text-align: left;">
 
 			<ul id="admin_list">
             <?php foreach ($materias as $materia): ?>
