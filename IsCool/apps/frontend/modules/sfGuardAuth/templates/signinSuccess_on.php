@@ -88,7 +88,7 @@
 
                   <?php echo $form['remember']->render() ?>
 
-                  <?php echo $form['_csrf_token'] ?>
+                  <input type="hidden" name="signin[_csrf_token]" id="signin__csrf_token" value="<?php echo $form->getCSRFToken(); ?>" />
 
               </td>
 
