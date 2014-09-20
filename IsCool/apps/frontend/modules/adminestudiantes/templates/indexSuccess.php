@@ -16,6 +16,11 @@
     <?php include_partial('adminestudiantes/list_header', array('pager' => $pager)) ?>
   </div>
 
+  
+  <div id="sf_admin_bar">
+    <?php include_partial('adminestudiantes/filters', array('form' => $filters, 'configuration' => $configuration)) ?>
+  </div>
+  
 
   <div id="sf_admin_content">
     <?php include_partial('adminestudiantes/list', array('pager' => $pager, 'sort' => $sort, 'helper' => $helper)) ?>

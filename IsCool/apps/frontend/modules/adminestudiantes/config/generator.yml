@@ -15,8 +15,8 @@ generator:
       actions:
         _new:  { label: Ingresar Nuevo Estudiante}
       fields:
-        est_nombres: {label: "Apellidos"}
-        est_apellidos: {label: "Nombres"}
+        est_nombres: {label: "Nombres"}
+        est_apellidos: {label: "Apellidos"}
         est_cedula: {label: "Cédula"}
         est_fecha_nacimiento: {label: "Fecha Nacimiento"}
         est_house: {label: "House"}
@@ -75,6 +75,6 @@ generator:
           - est_telf_repr_celular
           - gra_id
           - sf_guard_user_id
-          
       filter:
-        class: false
+        class: true
+        display: [est_nombres, est_apellidos, est_nombre_representante, est_house]

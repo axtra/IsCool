@@ -46,4 +46,5 @@ generator:
       new:
         title:    Ingresando nuevo Profesor
       filter:
-        class: false
+        class: true
+        display: [pro_nombres, pro_apellidos, pro_cedula, pro_house]
