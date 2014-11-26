@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.24/themes/base/jquery-ui.css">
 <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
 <script src="http://code.jquery.com/ui/1.8.24/jquery-ui.js"></script>
-<script src="/js/regional.es.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/i18n/jquery-ui-i18n.min.js"></script>
 
 <div id="loading-div-background">
     <div id="loading-div" class="ui-corner-all" >
@@ -20,6 +20,7 @@ $(function() {
     $("#loading-div-background").css({ opacity: 0.8 });
     var fecha = new Date('<?php echo $fecha; ?>');
     fecha.setDate(fecha.getDate()+1);
+    $.datepicker.setDefaults($.datepicker.regional['es']);
     $( '#cabecera-fecha' ).html($.datepicker.formatDate("d 'de' MM 'del' yy", fecha));
     
     $("#datepicker").datepicker({

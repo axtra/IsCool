@@ -183,3 +183,27 @@ enviar_moderacion:
   url:    moderador/enviarModeracion
   param:  { module: moderador, action: enviarModeracion }
   
+administrativo_alumnos_por_grado:
+  url:    administrativoComunicados/mostrarEstudiantes
+  param:  { module: administrativoComunicados, action: mostrarEstudiantes }
+    
+administrativo_comunicado_profesor:
+  url:    administrativoComunicados/enviarComunicado
+  param:  { module: administrativoComunicados, action: enviarComunicado }
+
+administrativo_render_flashes:
+  url:    administrativoComunicados/renderFlashes
+  param:  { module: administrativoComunicados, action: renderFlashes }
+
+moderador_alumnos_por_grado:
+  url:    moderarTareas/mostrarEstudiantes
+  param:  { module: moderarTareas, action: mostrarEstudiantes }
+  
+moderador_agendas:
+  url:    moderarTareas/mostrarAgenda
+  param:  { module: moderarTareas, action: mostrarAgenda }
+  
+moderador_cambiar_fecha:
+  url:    moderarTareas/cambiarFecha
+  param:  { module: moderarTareas, action: cambiarFecha }
+  

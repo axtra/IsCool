@@ -22,14 +22,7 @@ $(function() {
 </script>
 
 <button class="collapse-recibidos collapse-button">Contraer listado</button>
-<table>
-      <thead class="detalle-table-header">
-        <tr>
-          <th class="ui-th-column">Estudiante</th>
-          <th class="ui-th-column">Mensaje</th>
-          <th class="ui-th-column">Fecha</th>
-        </tr>
-      </thead>
+<table class="mensajes-table">
       <tbody id="body-recibidos">
 <?php if( sizeof($comunicados_rep) > 0 ): ?>
 
@@ -41,19 +34,22 @@ $(function() {
 //                 $nombre_materia = Doctrine::getTable('emdiMateria')->find($materia['mat_id']);
           ?>
                 <tr>
+                    <th class="sf_admin_text">
+                    <?php echo $comunicado_rep->getEst(); ?>
+                    - <?php echo $comunicado_rep->getEst()->getGra(); ?>
+                    (<?php echo $comunicado_rep['created_at']; ?>)
+                    </th>
+                </tr>
+                <tr>
                     <td class="sf_admin_text">
-                      <?php
-                        echo $comunicado_rep->getEst().'<br /><strong>'.$comunicado_rep->getEst()->getGra().'</strong>'; 
-                      ?>
+                    <?php echo sfOutputEscaper::unescape($comunicado_rep['mre_contenido']); ?>
                     </td>
-                    <td class="sf_admin_text tarea-contenido"><?php echo $comunicado_rep['mre_contenido']; ?></td>
-                    <td class="sf_admin_text"><?php echo $comunicado_rep['created_at']; ?></td>
                 </tr>
 	<?php endforeach; ?>
 
 <?php else: ?>
           <tr>
-              <td colspan="3">No tiene comunicados recibidos.</td>
+              <td>No tiene comunicados recibidos.</td>
           </tr>
 <?php endif; ?>
 

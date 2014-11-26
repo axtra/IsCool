@@ -27,8 +27,12 @@ $(function() {
 	      },
     })
     .click(function( event ) {
-      //event.preventDefault();
-      enviar_nota();
+      if ($( '#com-rep' ).val() == '') {
+          alert('Debe ingresar una nota.');
+      } else {
+    	  enviar_nota();
+      }
+      
     });
 });
 

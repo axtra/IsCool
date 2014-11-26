@@ -52,7 +52,7 @@
 
 <?php else: ?>
           <tr>
-              <td colspan="3">No hay Tareas asignadas aún.</td>
+              <td colspan="4">No hay Tareas asignadas aún.</td>
           </tr>
 <?php endif; ?>
 

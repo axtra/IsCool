@@ -166,9 +166,7 @@ function listo() {
             <select id="grado-materia-list" onchange="mostrar_items(this); return false;">
                 <option value="" selected="selected">Elija un Grado / Materia...</option>
             <?php foreach ($materias as $materia): ?>
-                <option value="<?php echo $materia->getGraId() ?>">
-                  <?php echo $materia->getGra()." / ". $materia->getMat(); ?>
-                </option>
+                <option value="<?php echo $materia->getGraId() ?>"><?php echo $materia->getGra()." / ". $materia->getMat(); ?></option>
             <?php endforeach; ?> 
             </select>
             

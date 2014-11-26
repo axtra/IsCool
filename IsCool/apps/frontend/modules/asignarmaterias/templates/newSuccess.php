@@ -1,6 +1,10 @@
 <?php use_helper('I18N', 'Date') ?>
 <?php include_partial('asignarmaterias/assets') ?>
 
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/i18n/jquery-ui-i18n.min.js"></script>
+
 
 <div id="sf_admin_container">
   <h1><?php echo __('Asignando materias al Grado', array(), 'messages') ?></h1>

@@ -62,8 +62,14 @@ class portalActions extends sfActions
             }
             
             // Administrativo
-            if  ($this->getUser()->hasCredential('administrativo')) {
-            
+            if  ($this->getUser()->hasCredential('administrativo') || $this->getUser()->hasCredential('moderador') ) {
+              $datos_usuario = Doctrine::getTable('emdiProfesor')
+                              ->createQuery('u')
+                              ->where('u.sf_guard_user_id = ?', $this->getUser()->getGuardUser()->getId())
+                              ->fetchOne();
+              
+              $this->getUser()->setAttribute('id_profesor', $datos_usuario->getProId());
+              
             }
         }
 

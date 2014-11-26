@@ -86,20 +86,13 @@ class agendaActions extends sfActions
   public function executeEnviarComunicado(sfWebRequest $request)
   {
     
-    $fecha = date('Y-m-d', time());
+    $this->fecha = date('Y-m-d', time());
    
     if($request->isMethod('POST')){
 
       $est_id = $request->getParameter('est');
-      
-      /*
-      $est_id_sesion = $this->getUser()->getAttribute('id_estudiante');
-      
-      if($est_id_sesion != $est_id){
-        ;// enviar email al Willy
-      }
-      */
-      
+      // TODO: Posible control para verificar que id de estudiante
+      // coincide con el recibido. Caso contrario cerrar session.
       $comunicado = $request->getParameter('com_gen');
       
       $peticion['est_id'] = $est_id;
@@ -113,7 +106,7 @@ class agendaActions extends sfActions
     $this->enviados = Doctrine::getTable('emdiComRepresentante')
                         ->createQuery('e')
                         ->where('e.est_id = ?', $est_id)
-                        ->andWhere('date(e.created_at) = ?', $fecha)
+                        ->andWhere('date(e.created_at) = ?', $this->fecha)
                         ->execute();
      
     return $this->renderPartial('partial_enviados', array('enviados' => $this->enviados));

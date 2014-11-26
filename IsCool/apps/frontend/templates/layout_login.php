@@ -3,44 +3,54 @@
 <link rel="shortcut icon" href="http://www.emdischool.edu.ec/emdi.ico" />
 <title>EMDI School</title>
 
-
-
-    <?php include_javascripts() ?>
-    <?php include_stylesheets() ?>
-    
-    
-<!-- tipografias -->
-<link href="/pags/css/tipografias.css" rel="stylesheet" type="text/css" />
-
 <style type="text/css">
-@import url("/menu/menu.css");
-
-
-@import url("/menu/menu.css");
-
-@import url("/menu/menu.css");
-
-@import url("/menu/menu.css");
-
+@import url("/pags/menu/menu.css");
+@import url("/pags/css/estilo_emdi.css");
+@import url("/pags_portal/css/tipografias.css");
 
 body {
+	background-image: url(/pags/fondo.jpg);
 	margin-left: 0px;
 	margin-top: 0px;
-	background-image: url(/fondo.png);
-	background-repeat: repeat;
-	font-family: arial, sans-serif;
-}td img {display: block;}td img {display: block;}
-
-</style>
-<script type="text/javascript">
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+	margin-right: 0px;
+	margin-bottom: 0px;
 }
+</style>
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="/pags/js/emdi-img.js"></script>
+
+<!--  initialize the slideshow when the DOM is ready -->
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.slideshow').cycle({
+		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+	});
+});
+</script>
+
+
+<script language="JavaScript1.2" type="text/javascript" src="/pags/menu/mm_css_menu.js"></script>
+
+<script type="text/javascript">
 function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
+</script>
+
+
+
+
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
 
 function MM_findObj(n, d) { //v4.01
   var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
@@ -54,113 +64,93 @@ function MM_swapImage() { //v3.0
   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
-function MM_displayStatusMsg(msgStr) { //v1.0
-  window.status=msgStr;
-  document.MM_returnValue = true;
-}
 </script>
-<script language="JavaScript1.2" type="text/javascript" src="/menu/mm_css_menu.js"></script>
 </head>
 
 
-
-
-
-
-<body onLoad="MM_preloadImages('/baner/baner_r2_c2_s2.jpg','/baner/baner_r4_c4_s2.jpg','/baner/baner_r4_c6_s2.jpg','/baner/baner_r4_c8_s2.jpg','/baner/baner_r4_c10_s2.jpg','/menu/menu_r1_c1_s2.jpg','/menu/menu_r1_c2_s2.jpg','/menu/menu_r1_c3_s2.jpg','/menu/menu_r1_c4_s2.jpg','/menu/menu_r1_c5_s2.jpg')">
-<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+<body onLoad="MM_preloadImages('/pags/menu/menu_r4_c9_s2.jpg','/pags/menu/menu_r4_c11_s2.jpg','/pags/menu/menu_r6_c7_s2.png','/pags/menu/menu_r8_c2_s2.png','/pags/menu/menu_r8_c3_s2.png','/pags/menu/menu_r8_c4_s2.png','/pags/menu/menu_r8_c5_s2.png','/pags/menu/menu_r8_c6_s2.jpg','/pags/menu/menu_r8_c9_s2.png','/pags/images/red1_b.png','/pags/images/red2_b.png','/pags/images/red3_b.png','/pags/images/red4_b.png')">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="menu" height="151">
   <tr>
-    <td><table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="1000">
-      <!-- fwtable fwsrc="baner botones.png" fwpage="Pagina 1" fwbase="baner.jpg" fwstyle="Dreamweaver" fwdocid = "248830601" fwnested="0" -->
-      <tr>
-        <td><img src="/baner/spacer.gif" alt="" name="undefined_3" width="737" height="1" /></td>
-        <td><img src="/baner/spacer.gif" alt="" name="undefined_3" width="39" height="1" /></td>
-        <td><img src="/baner/spacer.gif" alt="" name="undefined_3" width="12" height="1" /></td>
-        <td><img src="/baner/spacer.gif" alt="" name="undefined_3" width="39" height="1" /></td>
-        <td><img src="/baner/spacer.gif" alt="" name="undefined_3" width="15" height="1" /></td>
-        <td><img src="/baner/spacer.gif" alt="" name="undefined_3" width="38" height="1" /></td>
-        <td><img src="/baner/spacer.gif" alt="" name="undefined_3" width="15" height="1" /></td>
-        <td><img src="/baner/spacer.gif" alt="" name="undefined_3" width="39" height="1" /></td>
-        <td><img src="/baner/spacer.gif" alt="" name="undefined_3" width="13" height="1" /></td>
-        <td><img src="/baner/spacer.gif" alt="" name="undefined_3" width="40" height="1" /></td>
-        <td><img src="/baner/spacer.gif" alt="" name="undefined_3" width="13" height="1" /></td>
-        <td><img src="/baner/spacer.gif" alt="" name="undefined_3" width="1" height="1" /></td>
-      </tr>
-      <tr>
-        <td colspan="11"><img src="/baner/baner_r1_c1.jpg" alt="" name="baner_r1_c1" width="1000" height="12" border="0" id="baner_r1_c1" /></td>
-        <td><img src="/baner/spacer.gif" alt="" name="undefined_3" width="1" height="12" /></td>
-      </tr>
-      <tr>
-        <td rowspan="4"><img name="baner_r2_c1" src="/baner/baner_r2_c1.jpg" width="737" height="104" id="baner_r2_c1" alt="" /></td>
-        <td colspan="9"><a href="/login" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('baner_r2_c2','','/baner/baner_r2_c2_s2.jpg',1)"><img src="/baner/baner_r2_c2.jpg" alt="" name="baner_r2_c2" width="250" height="25" border="0" id="baner_r2_c2" /></a></td>
-        <td rowspan="4"><img src="/baner/baner_r2_c11.jpg" alt="" name="baner_r2_c11" width="13" height="104" border="0" id="baner_r2_c11" /></td>
-        <td><img src="/baner/spacer.gif" alt="" name="undefined_3" width="1" height="25" /></td>
-      </tr>
-      <tr>
-        <td colspan="9"><img src="/baner/baner_r3_c2.jpg" alt="" name="baner_r3_c2" width="250" height="17" border="0" id="baner_r3_c2" /></td>
-        <td><img src="/baner/spacer.gif" alt="" name="undefined_3" width="1" height="17" /></td>
-      </tr>
-      <tr>
-        <td><img src="/baner/baner_r4_c2.jpg" alt="" name="baner_r4_c2" width="39" height="51" border="0" id="baner_r4_c2" /></td>
-        <td rowspan="2"><img src="/baner/baner_r4_c3.jpg" alt="" name="baner_r4_c3" width="12" height="62" border="0" id="baner_r4_c3" /></td>
-        <td><a href="http://emdi2012.blogspot.com/" target="_blank" onMouseOver="MM_swapImage('baner_r4_c4','','/baner/baner_r4_c4_s2.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="/baner/baner_r4_c4.jpg" alt="" name="baner_r4_c4" width="39" height="51" border="0" id="baner_r4_c4" /></a></td>
-        <td rowspan="2"><img src="/baner/baner_r4_c5.jpg" alt="" name="baner_r4_c5" width="15" height="62" border="0" id="baner_r4_c5" /></td>
-        <td><a href="http://www.youtube.com/user/EMDISchool?feature=CAQQwRs=" target="_blank" onMouseOver="MM_swapImage('baner_r4_c6','','/baner/baner_r4_c6_s2.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="/baner/baner_r4_c6.jpg" alt="" name="baner_r4_c6" width="38" height="51" border="0" id="baner_r4_c6" /></a></td>
-        <td rowspan="2"><img src="/baner/baner_r4_c7.jpg" alt="" name="baner_r4_c7" width="15" height="62" border="0" id="baner_r4_c7" /></td>
-        <td><a href="https://twitter.com/EMDISchool" target="_blank" onMouseOver="MM_swapImage('baner_r4_c8','','/baner/baner_r4_c8_s2.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="/baner/baner_r4_c8.jpg" alt="" name="baner_r4_c8" width="39" height="51" border="0" id="baner_r4_c8" /></a></td>
-        <td rowspan="2"><img src="/baner/baner_r4_c9.jpg" alt="" name="baner_r4_c9" width="13" height="62" border="0" id="baner_r4_c9" /></td>
-        <td><a href="https://www.facebook.com/pages/EMDI-School/159588084155587" target="_blank" onMouseOver="MM_swapImage('baner_r4_c10','','/baner/baner_r4_c10_s2.jpg',1)" onMouseOut="MM_swapImgRestore()"><img src="/baner/baner_r4_c10.jpg" alt="" name="baner_r4_c10" width="40" height="51" border="0" id="baner_r4_c10" /></a></td>
-        <td><img src="/baner/spacer.gif" alt="" name="undefined_3" width="1" height="51" /></td>
-      </tr>
-      <tr>
-        <td><img name="baner_r5_c2" src="/baner/baner_r5_c2.jpg" width="39" height="11" id="baner_r5_c2" alt="" /></td>
-        <td><img name="baner_r5_c4" src="/baner/baner_r5_c4.jpg" width="39" height="11" id="baner_r5_c4" alt="" /></td>
-        <td><img name="baner_r5_c6" src="/baner/baner_r5_c6.jpg" width="38" height="11" id="baner_r5_c6" alt="" /></td>
-        <td><img name="baner_r5_c8" src="/baner/baner_r5_c8.jpg" width="39" height="11" id="baner_r5_c8" alt="" /></td>
-        <td><img name="baner_r5_c10" src="/baner/baner_r5_c10.jpg" width="40" height="11" id="baner_r5_c10" alt="" /></td>
-        <td><img src="/baner/spacer.gif" alt="" name="undefined_3" width="1" height="11" /></td>
-      </tr>
-    </table></td>
-  </tr>
-</table>
-<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td><div id="FWTableContainer248830601">
-      <table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="1000">
-        <!-- fwtable fwsrc="menu botones.png" fwpage="Pagina 1" fwbase="menu.jpg" fwstyle="Dreamweaver" fwdocid = "248830601" fwnested="0" -->
+    <td height="151" align="center" valign="top"><div id="FWTableContainer705506437">
+      <table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="1200">
+        <!-- fwtable fwsrc="menu.png" fwpage="Página 1" fwbase="menu.jpg" fwstyle="Dreamweaver" fwdocid = "705506437" fwnested="0" -->
         <tr>
-          <td><img src="/menu/spacer.gif" alt="" name="undefined_2" width="142" height="1" /></td>
-          <td><img src="/menu/spacer.gif" alt="" name="undefined_2" width="186" height="1" /></td>
-          <td><img src="/menu/spacer.gif" alt="" name="undefined_2" width="208" height="1" /></td>
-          <td><img src="/menu/spacer.gif" alt="" name="undefined_2" width="255" height="1" /></td>
-          <td><img src="/menu/spacer.gif" alt="" name="undefined_2" width="209" height="1" /></td>
-          <td><img src="/menu/spacer.gif" alt="" name="undefined_2" width="1" height="1" /></td>
+          <td><img src="/pags/menu/spacer.gif" width="257" height="1" alt="" /></td>
+          <td><img src="/pags/menu/spacer.gif" width="156" height="1" alt="" /></td>
+          <td><img src="/pags/menu/spacer.gif" width="156" height="1" alt="" /></td>
+          <td><img src="/pags/menu/spacer.gif" width="156" height="1" alt="" /></td>
+          <td><img src="/pags/menu/spacer.gif" width="156" height="1" alt="" /></td>
+          <td><img src="/pags/menu/spacer.gif" width="66" height="1" alt="" /></td>
+          <td><img src="/pags/menu/spacer.gif" width="63" height="1" alt="" /></td>
+          <td><img src="/pags/menu/spacer.gif" width="27" height="1" alt="" /></td>
+          <td><img src="/pags/menu/spacer.gif" width="54" height="1" alt="" /></td>
+          <td><img src="/pags/menu/spacer.gif" width="40" height="1" alt="" /></td>
+          <td><img src="/pags/menu/spacer.gif" width="62" height="1" alt="" /></td>
+          <td><img src="/pags/menu/spacer.gif" width="7" height="1" alt="" /></td>
+          <td><img src="/pags/menu/spacer.gif" width="1" height="1" alt="" /></td>
         </tr>
         <tr>
-          <td><a href="/pags/inicio/inicio.html" target="_parent" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_displayStatusMsg('EMDI School');MM_swapImage('menu_r1_c1','','/menu/menu_r1_c1_s2.jpg',1);return document.MM_returnValue"><img src="/menu/menu_r1_c1.jpg" alt="" name="menu_r1_c1" width="142" height="38" border="0" id="menu_r1_c1" /></a></td>
-          <td><a href="/pags/noticias/noticias.html" target="_parent" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_displayStatusMsg('EMDI School');MM_swapImage('menu_r1_c2','','/menu/menu_r1_c2_s2.jpg',1);return document.MM_returnValue"><img src="/menu/menu_r1_c2.jpg" alt="" name="menu_r1_c2" width="186" height="38" border="0" id="menu_r1_c2" /></a></td>
-          <td><a href="javascript:;" onMouseOut="MM_swapImgRestore();MM_menuStartTimeout(500)" onMouseOver="MM_displayStatusMsg('EMDI School');MM_menuShowMenu('MMMenuContainer0903193406_0', 'MMMenu0903193406_0',40,38,'menu_r1_c3');MM_swapImage('menu_r1_c3','','/menu/menu_r1_c3_s2.jpg',1);return document.MM_returnValue"><img src="/menu/menu_r1_c3.jpg" alt="" name="menu_r1_c3" width="208" height="38" border="0" id="menu_r1_c3" /></a></td>
-          <td><a href="/pags/instalaciones/instalaciones.html" target="_parent" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_displayStatusMsg('EMDI School');MM_swapImage('menu_r1_c4','','/menu/menu_r1_c4_s2.jpg',1);return document.MM_returnValue"><img src="/menu/menu_r1_c4.jpg" alt="" name="menu_r1_c4" width="255" height="38" border="0" id="menu_r1_c4" /></a></td>
-          <td><a href="/pags/contactos/contactos.html" target="_parent" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_displayStatusMsg('EMDI School');MM_swapImage('menu_r1_c5','','/menu/menu_r1_c5_s2.jpg',1);return document.MM_returnValue"><img src="/menu/menu_r1_c5.jpg" alt="" name="menu_r1_c5" width="209" height="38" border="0" id="menu_r1_c5" /></a></td>
-          <td><img src="/menu/spacer.gif" alt="" name="undefined_2" width="1" height="38" /></td>
+          <td colspan="12"><img name="menu_r1_c1" src="/pags/menu/menu_r1_c1.jpg" width="1200" height="15" id="menu_r1_c1" alt="" /></td>
+          <td><img src="/pags/menu/spacer.gif" width="1" height="15" alt="" /></td>
+        </tr>
+        <tr>
+          <td rowspan="6" colspan="6"><img name="menu_r2_c1" src="/pags/menu/menu_r2_c1.jpg" width="947" height="95" id="menu_r2_c1" alt="" /></td>
+          <td class="links"><a href="/links/links.html" class="links">Links</a></td>
+          <td rowspan="4"><img name="menu_r2_c8" src="/pags/menu/menu_r2_c8.jpg" width="27" height="48" id="menu_r2_c8" alt="" /></td>
+          <td class="links"><a href="https://twitter.com/EMDISchool" target="_blank" class="links">Twitter</a></td>
+          <td rowspan="4"><img name="menu_r2_c10" src="/pags/menu/menu_r2_c10.jpg" width="40" height="48" id="menu_r2_c10" alt="" /></td>
+          <td colspan="2" class="links"><a href="https://www.facebook.com/pages/EMDI-School/159588084155587" target="_blank" class="links">Facebook</a></td>
+          <td><img src="/pags/menu/spacer.gif" width="1" height="16" alt="" /></td>
+        </tr>
+        <tr>
+          <td><img name="menu_r3_c7" src="/pags/menu/menu_r3_c7.jpg" width="63" height="7" id="menu_r3_c7" alt="" /></td>
+          <td><img name="menu_r3_c9" src="/pags/menu/menu_r3_c9.jpg" width="54" height="7" id="menu_r3_c9" alt="" /></td>
+          <td colspan="2"><img name="menu_r3_c11" src="/pags/menu/menu_r3_c11.jpg" width="69" height="7" id="menu_r3_c11" alt="" /></td>
+          <td><img src="/pags/menu/spacer.gif" width="1" height="7" alt="" /></td>
+        </tr>
+        <tr>
+          <td class="links"><a href="javascript:;" class="links">Instagram</a></td>
+          <td class="links"><a href="http://emdi2012.blogspot.com/" class="links">Blog</a></td>
+          <td colspan="2" class="links"><a href="http://www.youtube.com/user/EMDISchool?feature=CAQQwRs=" class="links">Youtube</a></td>
+          <td><img src="/pags/menu/spacer.gif" width="1" height="16" alt="" /></td>
+        </tr>
+        <tr>
+          <td><img name="menu_r5_c7" src="/pags/menu/menu_r5_c7.jpg" width="63" height="9" id="menu_r5_c7" alt="" /></td>
+          <td><img name="menu_r5_c9" src="/pags/menu/menu_r5_c9.jpg" width="54" height="9" id="menu_r5_c9" alt="" /></td>
+          <td colspan="2"><img name="menu_r5_c11" src="/pags/menu/menu_r5_c11.jpg" width="69" height="9" id="menu_r5_c11" alt="" /></td>
+          <td><img src="/pags/menu/spacer.gif" width="1" height="9" alt="" /></td>
+        </tr>
+        <tr>
+          <td colspan="6"><a href="/login" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('menu_r6_c7','','/pags/menu/menu_r6_c7_s2.png',1);"><img name="menu_r6_c7" src="/pags/menu/menu_r6_c7.png" width="253" height="42" id="menu_r6_c7" alt="" /></a></td>
+          <td><img src="/pags/menu/spacer.gif" width="1" height="42" alt="" /></td>
+        </tr>
+        <tr>
+          <td colspan="6"><img name="menu_r7_c7" src="/pags/menu/menu_r7_c7.jpg" width="253" height="5" id="menu_r7_c7" alt="" /></td>
+          <td><img src="/pags/menu/spacer.gif" width="1" height="5" alt="" /></td>
+        </tr>
+        <tr>
+          <td><img name="menu_r8_c1" src="/pags/menu/menu_r8_c1.jpg" width="257" height="40" id="menu_r8_c1" alt="" /></td>
+          <td><a href="/inicio/inicio.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('menu_r8_c2','','/pags/menu/menu_r8_c2_s2.png',1);"><img name="menu_r8_c2" src="/pags/menu/menu_r8_c2.png" width="156" height="40" id="menu_r8_c2" alt="" /></a></td>
+          <td><a href="/noticias/noticias.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('menu_r8_c3','','/pags/menu/menu_r8_c3_s2.png',1);"><img name="menu_r8_c3" src="/pags/menu/menu_r8_c3.png" width="156" height="40" id="menu_r8_c3" alt="" /></a></td>
+          <td><a href="/programa/programa.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('menu_r8_c4','','/pags/menu/menu_r8_c4_s2.png',1);"><img name="menu_r8_c4" src="/pags/menu/menu_r8_c4.png" width="156" height="40" id="menu_r8_c4" alt="" /></a></td>
+          <td><a href="javascript:;" onMouseOut="MM_swapImgRestore();MM_menuStartTimeout(1000)" onMouseOver="MM_menuShowMenu('MMMenuContainer1001191722_0', 'MMMenu1001191722_0',0,40,'menu_r8_c5');MM_swapImage('menu_r8_c5','','/pags/menu/menu_r8_c5_s2.png',1);"><img name="menu_r8_c5" src="/pags/menu/menu_r8_c5.png" width="156" height="40" id="menu_r8_c5" alt="" /></a></td>
+          <td colspan="3"><a href="javascript:;" onMouseOut="MM_swapImgRestore();MM_menuStartTimeout(1000)" onMouseOver="MM_menuShowMenu('MMMenuContainer1001192457_1', 'MMMenu1001192457_1',0,40,'menu_r8_c6');MM_swapImage('menu_r8_c6','','/pags/menu/menu_r8_c6_s2.jpg',1);"><img name="menu_r8_c6" src="/pags/menu/menu_r8_c6.jpg" width="156" height="40" id="menu_r8_c6" alt="" /></a></td>
+          <td colspan="3"><a href="/contactos/contactos.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('menu_r8_c9','','/pags/menu/menu_r8_c9_s2.png',1);"><img name="menu_r8_c9" src="/pags/menu/menu_r8_c9.png" width="156" height="40" id="menu_r8_c9" alt="" /></a></td>
+          <td><img name="menu_r8_c12" src="/pags/menu/menu_r8_c12.jpg" width="7" height="40" id="menu_r8_c12" alt="" /></td>
+          <td><img src="/pags/menu/spacer.gif" width="1" height="40" alt="" /></td>
         </tr>
       </table>
-      <div id="MMMenuContainer0903193406_0">
-        <div id="MMMenu0903193406_0" onMouseOut="MM_menuStartTimeout(500);" onMouseOver="MM_menuResetTimeout();"> <a href="/pags/secciones/cdi.html" target="_parent" id="MMMenu0903193406_0_Item_0" class="MMMIFVStyleMMMenu0903193406_0" onMouseOver="MM_menuOverMenuItem('MMMenu0903193406_0');"> Educaci&oacute;n&nbsp;Inicial </a> <a href="/pags/secciones/basica.html" target="_parent" id="MMMenu0903193406_0_Item_1" class="MMMIVStyleMMMenu0903193406_0" onMouseOver="MM_menuOverMenuItem('MMMenu0903193406_0');"> Educaci&oacute;n&nbsp;B&aacute;sica </a> <a href="/pags/secciones/bachillerato.html" target="_parent" id="MMMenu0903193406_0_Item_2" class="MMMIVStyleMMMenu0903193406_0" onMouseOver="MM_menuOverMenuItem('MMMenu0903193406_0');"> Bachillerato </a> </div>
+      <div id="MMMenuContainer1001191722_0">
+        <div id="MMMenu1001191722_0" onMouseOut="MM_menuStartTimeout(1000);" onMouseOver="MM_menuResetTimeout();"> <a href="cdi.html" id="MMMenu1001191722_0_Item_0" class="MMMIFVStyleMMMenu1001191722_0" onMouseOver="MM_menuOverMenuItem('MMMenu1001191722_0');"> Educaci&oacute;n&nbsp;Inicial </a> <a href="basica.html" id="MMMenu1001191722_0_Item_1" class="MMMIVStyleMMMenu1001191722_0" onMouseOver="MM_menuOverMenuItem('MMMenu1001191722_0');"> Educaci&oacute;n&nbsp;B&aacute;sica </a> <a href="bachillerato.html" id="MMMenu1001191722_0_Item_2" class="MMMIVStyleMMMenu1001191722_0" onMouseOver="MM_menuOverMenuItem('MMMenu1001191722_0');"> Bachillerato </a></div>
+      </div>
+      <div id="MMMenuContainer1001192457_1">
+        <div id="MMMenu1001192457_1" onMouseOut="MM_menuStartTimeout(1000);" onMouseOver="MM_menuResetTimeout();"> <a href="/instalaciones/cdi.html" id="MMMenu1001192457_1_Item_0" class="MMMIFVStyleMMMenu1001192457_1" onMouseOver="MM_menuOverMenuItem('MMMenu1001192457_1');"> CDI </a> <a href="/instalaciones/emdi.html" id="MMMenu1001192457_1_Item_1" class="MMMIVStyleMMMenu1001192457_1" onMouseOver="MM_menuOverMenuItem('MMMenu1001192457_1');"> EMDI&nbsp;School </a></div>
       </div>
     </div></td>
   </tr>
 </table>
 
 
-
-<table width="900" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td>
-    </td>
-  </tr>
-</table>
-  
   
 
 
@@ -168,26 +158,39 @@ function MM_displayStatusMsg(msgStr) { //v1.0
 
 
     <?php echo $sf_content ?>
-<?php
-
-?>
-
-
-
-
-
-
 
     
+    <br style="line-height: 250px" />
 
-
-
-<br>
-<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+<table width="100%" height="62" border="0" cellpadding="0" cellspacing="0" bgcolor="#003E56">
   <tr>
-    <td><img src="/pie.png" width="1000" height="60"></td>
+    <td align="center"><table width="100" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#003E56">
+      <tr>
+        <td colspan="4">&nbsp;</td>
+        <td width="806">&nbsp;</td>
+        <td width="40">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="110" align="center" valign="middle"><a href="https://www.facebook.com/pages/EMDI-School/159588084155587" target="_blank" onMouseOver="MM_swapImage('facebook','','/pags/images/red1_b.png',1)" onMouseOut="MM_swapImgRestore()"><img src="/pags/images/red1_a.png" alt="facebook" name="facebook" width="34" height="34" id="facebook"></a></td>
+        <td width="110" align="center" valign="middle"><a href="https://twitter.com/EMDISchool" target="_blank" onMouseOver="MM_swapImage('twitter','','/pags/images/red2_b.png',1)" onMouseOut="MM_swapImgRestore()"><img src="/pags/images/red2_a.png" alt="Twitter" width="34" height="34" id="twitter"></a></td>
+        <td width="110" align="center" valign="middle"><a href="http://www.youtube.com/user/EMDISchool?feature=CAQQwRs=" target="_blank" onMouseOver="MM_swapImage('youtube','','/pags/images/red3_b.png',1)" onMouseOut="MM_swapImgRestore()"><img src="/pags/images/red3_a.png" alt="Youtube" width="34" height="34" id="youtube"></a></td>
+        <td width="110" align="center" valign="middle"><a href="http://emdi2012.blogspot.com/" target="_blank" onMouseOver="MM_swapImage('blog','','/pags/images/red4_b.png',1)" onMouseOut="MM_swapImgRestore()"><img src="/pags/images/red4_a.png" alt="Blog" width="34" height="34" id="blog"></a></td>
+        <td class="pie">Telfs: 2788652    /    098855899     /    0921458954<br>
+          Av. Gaspar de Villaroel 141 - Angamarca B<br>
+          QUITO - ECUADOR</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="6"><img src="/pags/images/pie.jpg" width="1200" height="70"></td>
+      </tr>
+      <tr>
+        <td colspan="6">&nbsp;</td>
+      </tr>
+    </table></td>
   </tr>
 </table>
 </body>
 </html>
-    
+
+
+

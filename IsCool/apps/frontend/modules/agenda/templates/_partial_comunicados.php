@@ -48,7 +48,8 @@ $(function() {
 	$limite = 100; // caracteres
     $str_contenido = $comunicado['cpr_contenido'];
     $contenido = (strlen($str_contenido) > $limite) ? substr( $str_contenido, 0, $limite ).'...' : $str_contenido;
-		
+    $contenido = strip_tags(sfOutputEscaper::unescape($contenido));
+    
 	?>
         <tr>
             <td class="sf_admin_text"><?php echo $materia; ?></td>
@@ -84,7 +85,7 @@ $(function() {
                       
                       <tr>
                         <td colspan="2">
-                          <?php echo $comunicado['cpr_contenido']; ?>
+                          <?php echo sfOutputEscaper::unescape($comunicado['cpr_contenido']); ?>
                         </td>
                       </tr>
                       

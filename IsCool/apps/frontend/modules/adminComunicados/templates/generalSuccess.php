@@ -333,7 +333,7 @@ echo jq_javascript_tag("
                 <!-- Listado de Grados -->
                 
                 <select id="grado-materia-list" onchange="mostrar_items(this); return false;">
-                    <option value="" selected="selected">Elija un Grado / Materia...</option>
+                    <option value="" selected="selected">Elija un Grado...</option>
                 <?php foreach ($materias as $materia): ?>
                     <option value="<?php echo $materia->getGraId() ?>">
                       <?php echo $materia ?>
@@ -404,7 +404,7 @@ echo jq_javascript_tag("
                         <?php echo image_tag('/images/loader_barra.gif', array('height'=>"70") ); ?>
                     </div>
                     
-                    <div id="com-enviados-table">
+                    <div id="com-enviados-table"  style="width: 900px;">
                         <?php include_partial('partial_comunicados', array('comunicados' => $comunicados)); ?>
                     </div>
                 </div>
