@@ -19,7 +19,7 @@ class emdiTarea extends BaseemdiTarea
   }
   
   /**
-   * Ingresa una tarea dados los principales datos revisar con el proceso del modulo BORRAME
+   * Ingresa una tarea dados los principales datos
    * @param unknown $entrada
    * @return string
    */
@@ -61,15 +61,112 @@ class emdiTarea extends BaseemdiTarea
       return array('tipo' => 'error', 'mensaje' => $error);
       
     } else {
+      // Ingreso de tarea general
       $tarea = new emdiTarea();
       $tarea->setTarFechaEnvio($tar_fecha_envio);
       $tarea->setTarFechaEntrega($tar_fecha_entrega);
       $tarea->setTarContenido($tar_contenido);
       $tarea->setMxgId($mxg_id);
-      
       $tarea->save();
+      
+      // Ingreso de tarea por cada estudiante
+      $tarea->ingresarTareaAGrado();
+      
+      
       return array('tipo' => 'notice', 'mensaje' => 'La tarea fue enviada exitosamente.');
     }
+  }
+  
+  /**
+   * Ingresa la tarea en estado pendiente a cada estudiante del grado al que fue asignada la tarea
+   */
+  public function ingresarTareaAGrado(){
+    
+    $estudiantes = $this->getMxg()->getGra()->getEmdiEstudiantes();
+    
+    foreach ($estudiantes as $estudiante) {
+       $est_id = $estudiante->getEstId();
+       $tar_id = $this->getTarId();
+       $this->ingresarEstadoTarea($tar_id, $est_id); // Estado no realizada
+    }
+   
+  } 
+  
+  /**
+   * Verifica si el estado de la tarea es realizada o no. Busca si hay un registro en la
+   * tabla emdi_tarea_x_estudiante y si existe busca un el valor booleano del mismo.
+   *  
+   * @param unknown $entrada
+   * @return string
+   */
+  public static function estaRealizada($tar_id, $est_id) {
+
+    $estado = false;
+    
+    $q = Doctrine_Query::create()
+                      ->select('txe.txe_estado')
+                      ->from('emdiTareaXEstudiante txe')
+                      ->where('txe.tar_id = ? AND txe.est_id = ?', array($tar_id, $est_id));
+    $results = $q->fetchOne();
+  
+    if ( empty($results) ){
+      $estado = false;
+    } else {
+      $estado = $results['txe_estado']; // Sea true o false
+    }
+    
+    return $estado;
+  
+  }
+  
+
+  /**
+   * Crea el registro de la tarea en la tabla de tareas por cada estudiante
+   * @param unknown $tar_id Id de la Tarea
+   * @param unknown $est_id Id del Estudiante
+   * @return string
+   */
+  public function ingresarEstadoTarea($tar_id, $est_id){
+    
+    $estadoTarea = new emdiTareaXEstudiante();
+    $estadoTarea->setEstId($est_id);
+    $estadoTarea->setTarId($tar_id);
+    $estadoTarea->setTxeEstado(0);
+    $estadoTarea->save();
+    
+  }
+  
+  
+  /**
+   * Cambia el estado de la tarea segun el valor recibido en la tabla de tareas por cada estudiante
+   * @param unknown $tar_id Id de la Tarea
+   * @param unknown $est_id Id del Estudiante
+   * @return string
+   */
+  public function cambiarEstadoTarea($tar_id, $est_id, $estado){
+    
+    // Busco si acaso ya existe el objeto creado para cambiarle el estado
+    $tareaPendiente = Doctrine_Core::getTable('emdiTareaXEstudiante')
+                          ->createQuery('t')
+                          ->where('t.tar_id = ?', $tar_id)
+                          ->andWhere('t.est_id = ?', $est_id)
+                          ->limit(1)
+                          ->fetchOne();
+    
+    
+    if($tareaPendiente){
+      $tareaPendiente->setTxeEstado($estado);
+      $tareaPendiente->save();
+      
+    } else { // Si no esta creado se crea ese momento
+      $estadoTarea = new emdiTareaXEstudiante();
+      $estadoTarea->setEstId($est_id);
+      $estadoTarea->setTarId($tar_id);
+      $estadoTarea->setTxeEstado($estado);
+      $estadoTarea->save();      
+    }
+
+    return true;
   }
   
 }

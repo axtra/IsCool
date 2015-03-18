@@ -4,3 +4,4 @@
 default:
   has_layout:     true
   layout:         portal
+#  stylesheets: [main.css, bootstrap.min.css, bootstrap-switch.min.css]

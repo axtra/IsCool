@@ -1,4 +1,8 @@
-                
+<script >
+$("#flashes-div").show().delay(3000).fadeOut();
+</script>
+
+<div id="flashes-div" style="display: none;">
 <?php if ($sf_user->hasFlash('notice')): ?>
   <div class="notice">
     <?php 
@@ -14,7 +18,8 @@
     ?>
   </div>
 <?php endif; ?>
-        
+</div>
+
 <table>
       <thead class="detalle-table-header">
         <tr>

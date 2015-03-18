@@ -27,6 +27,7 @@
  * @property Doctrine_Collection $emdi_com_profesors
  * @property Doctrine_Collection $emdi_com_representantes
  * @property Doctrine_Collection $emdi_agendas
+ * @property Doctrine_Collection $emdi_tarea_x_estudiantes
  * 
  * @method integer             getEstId()                    Returns the current record's "est_id" value
  * @method string              getEstNombres()               Returns the current record's "est_nombres" value
@@ -50,6 +51,7 @@
  * @method Doctrine_Collection getEmdiComProfesors()         Returns the current record's "emdi_com_profesors" collection
  * @method Doctrine_Collection getEmdiComRepresentantes()    Returns the current record's "emdi_com_representantes" collection
  * @method Doctrine_Collection getEmdiAgendas()              Returns the current record's "emdi_agendas" collection
+ * @method Doctrine_Collection getEmdiTareaXEstudiantes()    Returns the current record's "emdi_tarea_x_estudiantes" collection
  * @method emdiEstudiante      setEstId()                    Sets the current record's "est_id" value
  * @method emdiEstudiante      setEstNombres()               Sets the current record's "est_nombres" value
  * @method emdiEstudiante      setEstApellidos()             Sets the current record's "est_apellidos" value
@@ -72,6 +74,7 @@
  * @method emdiEstudiante      setEmdiComProfesors()         Sets the current record's "emdi_com_profesors" collection
  * @method emdiEstudiante      setEmdiComRepresentantes()    Sets the current record's "emdi_com_representantes" collection
  * @method emdiEstudiante      setEmdiAgendas()              Sets the current record's "emdi_agendas" collection
+ * @method emdiEstudiante      setEmdiTareaXEstudiantes()    Sets the current record's "emdi_tarea_x_estudiantes" collection
  * 
  * @package    emdi
  * @subpackage model
@@ -195,6 +198,10 @@ abstract class BaseemdiEstudiante extends sfDoctrineRecord
              'foreign' => 'est_id'));
 
         $this->hasMany('emdiAgenda as emdi_agendas', array(
+             'local' => 'est_id',
+             'foreign' => 'est_id'));
+
+        $this->hasMany('emdiTareaXEstudiante as emdi_tarea_x_estudiantes', array(
              'local' => 'est_id',
              'foreign' => 'est_id'));
 

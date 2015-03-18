@@ -11,19 +11,22 @@
  * @property string $tar_contenido
  * @property integer $mxg_id
  * @property emdiMateriaXGrado $mxg
+ * @property Doctrine_Collection $emdi_tarea_x_estudiantes
  * 
- * @method integer           getTarId()             Returns the current record's "tar_id" value
- * @method date              getTarFechaEnvio()     Returns the current record's "tar_fecha_envio" value
- * @method date              getTarFechaEntrega()   Returns the current record's "tar_fecha_entrega" value
- * @method string            getTarContenido()      Returns the current record's "tar_contenido" value
- * @method integer           getMxgId()             Returns the current record's "mxg_id" value
- * @method emdiMateriaXGrado getMxg()               Returns the current record's "mxg" value
- * @method emdiTarea         setTarId()             Sets the current record's "tar_id" value
- * @method emdiTarea         setTarFechaEnvio()     Sets the current record's "tar_fecha_envio" value
- * @method emdiTarea         setTarFechaEntrega()   Sets the current record's "tar_fecha_entrega" value
- * @method emdiTarea         setTarContenido()      Sets the current record's "tar_contenido" value
- * @method emdiTarea         setMxgId()             Sets the current record's "mxg_id" value
- * @method emdiTarea         setMxg()               Sets the current record's "mxg" value
+ * @method integer             getTarId()                    Returns the current record's "tar_id" value
+ * @method date                getTarFechaEnvio()            Returns the current record's "tar_fecha_envio" value
+ * @method date                getTarFechaEntrega()          Returns the current record's "tar_fecha_entrega" value
+ * @method string              getTarContenido()             Returns the current record's "tar_contenido" value
+ * @method integer             getMxgId()                    Returns the current record's "mxg_id" value
+ * @method emdiMateriaXGrado   getMxg()                      Returns the current record's "mxg" value
+ * @method Doctrine_Collection getEmdiTareaXEstudiantes()    Returns the current record's "emdi_tarea_x_estudiantes" collection
+ * @method emdiTarea           setTarId()                    Sets the current record's "tar_id" value
+ * @method emdiTarea           setTarFechaEnvio()            Sets the current record's "tar_fecha_envio" value
+ * @method emdiTarea           setTarFechaEntrega()          Sets the current record's "tar_fecha_entrega" value
+ * @method emdiTarea           setTarContenido()             Sets the current record's "tar_contenido" value
+ * @method emdiTarea           setMxgId()                    Sets the current record's "mxg_id" value
+ * @method emdiTarea           setMxg()                      Sets the current record's "mxg" value
+ * @method emdiTarea           setEmdiTareaXEstudiantes()    Sets the current record's "emdi_tarea_x_estudiantes" collection
  * 
  * @package    emdi
  * @subpackage model
@@ -79,6 +82,10 @@ abstract class BaseemdiTarea extends sfDoctrineRecord
         $this->hasOne('emdiMateriaXGrado as mxg', array(
              'local' => 'mxg_id',
              'foreign' => 'mxg_id'));
+
+        $this->hasMany('emdiTareaXEstudiante as emdi_tarea_x_estudiantes', array(
+             'local' => 'tar_id',
+             'foreign' => 'tar_id'));
 
         $timestampable0 = new Doctrine_Template_Timestampable(array(
              ));

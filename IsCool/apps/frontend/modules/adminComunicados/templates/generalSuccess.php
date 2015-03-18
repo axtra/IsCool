@@ -1,9 +1,6 @@
 <link rel="stylesheet" type="text/css" media="screen"	href="/sfDoctrinePlugin/css/global.css" />
 <link rel="stylesheet" type="text/css" media="screen"	href="/sfDoctrinePlugin/css/default.css" />
 
-  <link rel="stylesheet" href="http://code.jquery.com/ui/1.8.24/themes/base/jquery-ui.css">
-  <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
-  <script src="http://code.jquery.com/ui/1.8.24/jquery-ui.js"></script>
   <script src="http://tinymce.cachefly.net/4.1/tinymce.min.js"></script>
   
 <?php use_javascript('/sfFormExtraPlugin/js/double_list.js') ?>

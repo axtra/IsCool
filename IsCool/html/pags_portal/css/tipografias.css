@@ -2,7 +2,7 @@
 
 /* Tipo de letra de Inicio */
 .eras1 {
-	font-family: "Eras Medium ITC";
+	font-family: "Trebuchet MS", Candara;
 	font-size: 14px;
 	color: #333;
 	text-align: justify;
@@ -13,7 +13,7 @@
 
 /* Titulos de noticias del calendario */
 }.noti1 {
-	font-family: "Eras Medium ITC";
+	font-family: "Trebuchet MS", Candara;
 	font-size: 13px;
 	font-style: normal;
 	line-height: normal;
@@ -25,18 +25,18 @@
 /* Titulos de noticias principales */
 }
 .titulos1 {
-	font-family: "Eras Medium ITC";
+	font-family: "Trebuchet MS", Candara;
 
 /* Texto de las noticias */
 }
 .noticias2 {
-	font-family: "Eras Medium ITC";
+	font-family: "Trebuchet MS", Candara;
 
 /* Titulo de publicaciones anteriores */
 }
 .public1 {
 	font-size: 12px;
-	font-family: "Eras Medium ITC";
+	font-family: "Trebuchet MS", Candara;
 	font-weight: bold;
 	font-style: normal;
 	line-height: normal;
@@ -50,7 +50,7 @@
 }
 .public2 {
 	font-size: 11px;
-	font-family: "Eras Medium ITC";
+	font-family: "Trebuchet MS", Candara;
 	font-style: normal;
 	line-height: normal;
 	font-weight: bold;
@@ -64,7 +64,7 @@
 }
 .public3 {
 	font-size: 12px;
-	font-family: "Eras Medium ITC";
+	font-family: "Trebuchet MS", Candara;
 	font-style: normal;
 	font-weight: normal;
 	font-variant: normal;
@@ -78,7 +78,7 @@
 	font-size: 13px;
 }
 .mision {
-	font-family: "Eras Medium ITC";
+	font-family: "Trebuchet MS", Candara;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: normal;
@@ -87,19 +87,19 @@
 }
 .comunicados1 {
 	text-align: right;
-	font-family: "Eras Medium ITC";
+	font-family: Candara;
 	font-size: 13px;
 	color: #333;
 	font-weight: bold;
 }
 .comunicados2 {
-	font-family: "Eras Medium ITC";
+	font-family: Candara;
 	font-size: 14px;
 	color: #333;
 	text-align: justify;
 }
 .comunicados3 {
-	font-family: "Eras Medium ITC";
+	font-family: Candara;
 	text-align: left;
 	font-weight: bold;
 	font-size: 13px;
@@ -112,42 +112,59 @@
 	font-family: Candara;
 	font-size: 13px;
 	font-weight: bold;
-	border-top-width: 1px;
-	border-right-width: 1px;
-	border-bottom-width: 1px;
-	border-left-width: 1px;
-	border-top-style: solid;
-	border-right-style: none;
-	border-bottom-style: solid;
-	border-left-style: solid;
-	border-top-color: #000;
-	border-right-color: #000;
-	border-bottom-color: #000;
-	border-left-color: #000;
 }
 .nuemeros2 {
 	font-family: Calibri;
 	text-align: center;
 	font-size: 13px;
 	font-weight: bold;
-	border-top-width: 1px;
-	border-right-width: 1px;
-	border-bottom-width: 1px;
-	border-left-width: 1px;
-	border-top-style: solid;
-	border-right-style: none;
-	border-bottom-style: solid;
-	border-left-style: solid;
-	border-top-color: #000;
-	border-right-color: #000;
-	border-bottom-color: #000;
-	border-left-color: #000;
 }
 .info {
 	font-size: 13px;
-	font-family: "Eras Medium ITC";
+	font-family: Candara;
 	font-style: normal;
 	font-weight: normal;
 	color: #000;
 	text-align: justify;
+}
+.texto1 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align: justify;
+}
+.texto2 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align: left;
+	font-size: 14px;
+	font-weight: normal;
+	color: rgb(51,51,51);
+}
+.texto3 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-size: 15px;
+	font-weight: normal;
+	color: rgb(0,51,102);
+}
+.texto4 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align: center;
+	font-size: 14px;
+	font-weight: normal;
+	color: rgb(0,51,102);
+	line-height: 20px;
+}
+.tit1 {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align: left;
+	font-size: 13px;
+	color: rgb(102,0,0);
+	font-weight: bold;
+}
+.users {
+	font-family: Candara;
+	font-size: 15px;
+	font-style: normal;
+	line-height: normal;
+	font-variant: normal;
+	font-weight: bold;
 }

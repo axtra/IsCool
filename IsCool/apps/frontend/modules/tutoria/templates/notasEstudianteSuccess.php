@@ -1,11 +1,5 @@
 <link href="/pags_portal/css/libretas.css" rel="stylesheet" type="text/css" />
 
-
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/jquery-ui.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/i18n/jquery-ui-i18n.min.js"></script>
-
-
 <table width="700" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td width="700" height="40" valign="top"><table width="700" border="0" cellspacing="0" cellpadding="0">

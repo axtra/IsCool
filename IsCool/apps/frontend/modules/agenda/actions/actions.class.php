@@ -10,6 +10,7 @@
  */
 class agendaActions extends sfActions
 {
+  
  /**
   * Executes index action
   *
@@ -18,20 +19,18 @@ class agendaActions extends sfActions
   public function executeIndex(sfWebRequest $request)
   {
 
-    // Fecha de hoy
-    $this->fecha = date('Y-m-d', time());
-    
-    $est_id = $this->getUser()->getAttribute('id_estudiante');
+    // Variables usadas
+    $est_id = $this->getUser()->getAttribute('id_estudiante'); //Estudiante
+    $this->fecha = date('Y-m-d', time()); // Fecha actual
     
     $this->estudiante = Doctrine::getTable('emdiEstudiante')
                         ->createQuery('e')
                         ->where('e.est_id = ?', $est_id)
                         ->fetchOne();
     
-    // Saco grado del estudiante
-    $gra_id = $this->estudiante->getGraId();
+    $gra_id = $this->estudiante->getGraId(); // Grado del estudiante
     
-
+    // Tareas realizadas en la fecha actual
     $this->tareas = Doctrine::getTable('emdiTarea')
                         ->createQuery('t')
                         ->leftJoin('t.mxg c')
@@ -39,48 +38,54 @@ class agendaActions extends sfActions
                         ->andWhere('date(t.tar_fecha_envio) = ?', $this->fecha)
                         ->execute();
     
+    // Comunicados enviados por profesores en la fecha actual
     $this->comunicados = Doctrine::getTable('emdiComProfesor')
                         ->createQuery('c')
                         ->where('c.est_id = ?', $est_id)
                         ->andWhere('date(c.created_at) = ?', $this->fecha)
                         ->execute();
     
+    // Comunicados Generales a la fecha actual
     $this->comunicados_gen = Doctrine::getTable('emdiComXGrado')
                         ->createQuery('t')
                         ->leftJoin('t.cge c')
                         ->where('t.gra_id = ?', $gra_id)
                         ->andWhere('date(c.created_at) = ?', $this->fecha)
                         ->execute();
-    
-//     $this->comunicados_gen = Doctrine::getTable('emdiComGeneral')
-//     ->createQuery('c')
-//     ->where('date(c.created_at) = ?', $this->fecha)
-//     ->execute();
-    
-    
-    
-// Consulta para unir los dos resultados 
-//     $sql = '(SELECT b.cpr_id as id, b.cpr_contenido as contenido, b.cpr_referencia as referencia, ';
-//     $sql .= 'b.est_id as est, b.pro_id as pro, b.created_at ';
-//     $sql .= 'FROM emdiComProfesor b )';
-// //     $sql .= 'WHERE b.est_id = '.$est_id;
-// //     $sql .= ' AND date(b.created_at) = "'.$this->fecha.'" ';
-//     $sql .= ' UNION ';
-//     $sql .= '(SELECT a.cge_id as id, a.cge_contenido as contenido, a.cge_referencia as referencia, ';
-//     $sql .= '0 as est, 0 as pro, a.created_at ';
-//     $sql .= 'FROM emdiComGeneral a ';
-// //     $sql .= 'WHERE date(a.created_at) = "'.$this->fecha.'" ';
-//     $sql .= ') ORDER BY created_at';
- 
-    
-//     $this->comunicados = Doctrine_Query::create()->query($sql);
-    
      
+    // Comunicados Generales a la fecha actual
     $this->enviados = Doctrine::getTable('emdiComRepresentante')
                         ->createQuery('e')
                         ->where('e.est_id = ?', $est_id)
                         ->andWhere('date(e.created_at) = ?', $this->fecha)
                         ->execute();
+    
+    // Sacando estado de tareas realizadas
+    $this->estados_tareas = $this->getEstadosTareas($this->tareas);
+    
+  }
+
+  /**
+   * Devuelve un arreglo asociado de id de tarea (tar_id)
+   * con su estado 'pendiente/realizado', para la 
+   * coleccion pasada. 
+   * 
+   * @param Doctrine_Collection $tareas
+   * @return Array de estados por tarea
+   */
+  private function getEstadosTareas(Doctrine_Collection $tareas) {
+    
+    $est_id = $this->getUser()->getAttribute('id_estudiante');
+    $estados_tareas = array();
+  
+    foreach ($tareas as $tarea) {
+  
+      $tar_id = $tarea->getTarId();
+      $estados_tareas[$tar_id] = emdiTarea::estaRealizada($tar_id, $est_id);
+    }
+  
+    return $estados_tareas;
+  
   }
   
   public function executeEnviarComunicado(sfWebRequest $request)
@@ -115,19 +120,18 @@ class agendaActions extends sfActions
   public function executeCambiarFecha(sfWebRequest $request)
   {
   
-    $this->fecha = $request->getParameter('fecha');
-    
-    $est_id = $this->getUser()->getAttribute('id_estudiante');
+    // Variables usadas
+    $est_id = $this->getUser()->getAttribute('id_estudiante'); //Estudiante
+    $this->fecha = $request->getParameter('fecha'); // Fecha actual
     
     $this->estudiante = Doctrine::getTable('emdiEstudiante')
                         ->createQuery('e')
                         ->where('e.est_id = ?', $est_id)
                         ->fetchOne();
     
-    // Saco grado del estudiante
-    $gra_id = $this->estudiante->getGraId();
+    $gra_id = $this->estudiante->getGraId(); // Grado del estudiante
     
-
+    // Tareas realizadas en la fecha actual 
     $this->tareas = Doctrine::getTable('emdiTarea')
                         ->createQuery('t')
                         ->leftJoin('t.mxg c')
@@ -135,32 +139,74 @@ class agendaActions extends sfActions
                         ->andWhere('date(t.tar_fecha_envio) = ?', $this->fecha)
                         ->execute();
     
+    // Comunicados enviados por profesores en la fecha dada
     $this->comunicados = Doctrine::getTable('emdiComProfesor')
                         ->createQuery('c')
                         ->where('c.est_id = ?', $est_id)
                         ->andWhere('date(c.created_at) = ?', $this->fecha)
                         ->execute();
     
+    // Comunicados Generales a la fecha dada
     $this->comunicados_gen = Doctrine::getTable('emdiComXGrado')
-    ->createQuery('t')
-    ->leftJoin('t.cge c')
-    ->where('t.gra_id = ?', $gra_id)
-    ->andWhere('date(c.created_at) = ?', $this->fecha)
-    ->execute();
-     
+                        ->createQuery('t')
+                        ->leftJoin('t.cge c')
+                        ->where('t.gra_id = ?', $gra_id)
+                        ->andWhere('date(c.created_at) = ?', $this->fecha)
+                        ->execute();
+    
+    // Comunicados Generales a la fecha dada
     $this->enviados = Doctrine::getTable('emdiComRepresentante')
                         ->createQuery('e')
                         ->where('e.est_id = ?', $est_id)
                         ->andWhere('date(e.created_at) = ?', $this->fecha)
                         ->execute();
+    
+    // Sacando estado de tareas realizadas
+    $this->estados_tareas = $this->getEstadosTareas($this->tareas);
      
     return $this->renderPartial('partial_agenda', 
                             array(
                                 'tareas' => $this->tareas,
                                 'comunicados' => $this->comunicados, // consolidar generales y profesor
                                 'comunicados_gen' => $this->comunicados_gen,
-                                'enviados' => $this->enviados
+                                'enviados' => $this->enviados,
+                                'estados_tareas' => $this->estados_tareas
                             ));
   }
+
+  public function executeCambiarEstadoTarea(sfWebRequest $request)
+  {
   
+    $resultado = false;
+     
+    if($request->isMethod('POST')){
+  
+      $est_id = $this->getUser()->getAttribute('id_estudiante');
+      $tar_id = $request->getParameter('tar_id');
+  
+      // Pongo el estado en 1 como realizada.
+      $resultado = emdiTarea::cambiarEstadoTarea($tar_id, $est_id, 1);
+
+    }
+     
+    return $resultado;
+  }
+  
+  public function executeGetTareasPendientes(sfWebRequest $request)
+  {
+    if($request->isMethod('POST')){
+    
+      $est_id = $this->getUser()->getAttribute('id_estudiante');
+
+      $this->tareas_pendientes  = Doctrine::getTable('emdiTareaXEstudiante')
+                        ->createQuery('t')
+                        ->where('t.est_id = ?', $est_id)
+                        ->andWhere('t.txe_estado = ?', 0)
+                        ->execute();
+    
+    }
+    
+    return $this->renderPartial('partial_pendientes', array( 'tareas' => $this->tareas_pendientes)); 
+  }
+
 }

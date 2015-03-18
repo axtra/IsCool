@@ -84,10 +84,10 @@ class adminTareasActions extends sfActions
     $mxg_id = $request->getParameter('mxg_id');
     
     $tareas = Doctrine::getTable('emdiTarea')
-    ->createQuery('u')
-    ->where('u.mxg_id = ?', $mxg_id)
-    ->orderBy('u.tar_fecha_envio DESC')
-    ->fetchArray();
+          ->createQuery('u')
+          ->where('u.mxg_id = ?', $mxg_id)
+          ->orderBy('u.tar_fecha_envio DESC')
+          ->fetchArray();
   
     return $this->renderPartial('partial_items', array('tareas' => $tareas, 'mxg_id' => $mxg_id));
   }
@@ -98,19 +98,20 @@ class adminTareasActions extends sfActions
     $mxg_id = $request->getParameter('mxg_id');
   
     $delete_cabecera = Doctrine_Query::create()
-    ->delete()
-    ->from('emdiTarea u')
-    ->where('u.tar_id= ?', $tar_id)
-    ->execute();
-  
-    $tareas = Doctrine::getTable('emdiTarea')
-    ->createQuery('u')
-    ->where('u.mxg_id = ?', $mxg_id)
-    ->orderBy('u.tar_fecha_envio DESC')
-    ->fetchArray();
+          ->delete()
+          ->from('emdiTarea u')
+          ->where('u.tar_id= ?', $tar_id)
+          ->execute();
+        
+          $tareas = Doctrine::getTable('emdiTarea')
+          ->createQuery('u')
+          ->where('u.mxg_id = ?', $mxg_id)
+          ->orderBy('u.tar_fecha_envio DESC')
+          ->fetchArray();
   
     return $this->renderPartial('partial_items', array('tareas' => $tareas, 'mxg_id' => $mxg_id));
   }
+  
 }
 
 

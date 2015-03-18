@@ -7,8 +7,14 @@
 	line-height: normal;
 	font-variant: normal;
 	text-decoration: underline;
-	
 	}
+.nombres {
+	font-family: Candara;
+	font-size: 15px;
+	font-style: normal;
+	line-height: normal;
+	font-variant: normal;
+}	
 .subtitulos {
 	text-align: center;
 	font-size: 14px;
@@ -29,133 +35,69 @@
 	text-align: center;
 	font-size: 14px;
 	color: #000;
-	border-bottom-width: 1px;
-	border-left-width: 1px;
-	border-bottom-style: solid;
-	border-left-style: solid;
-	border-top-color: #000;
-	border-right-color: #000;
-	border-bottom-color: #000;
-	border-left-color: #000;
-	border-top-width: 1px;
-	border-top-style: solid;
-	}
+}
 .asignaturas {
 	font-family: Candara;
 	font-weight: bold;
 	color: #000;
 	text-align: center;
-	border-top-width: 1px;
-	border-right-width: 1px;
-	border-bottom-width: 1px;
-	border-left-width: 1px;
-	border-top-style: solid;
-	border-right-style: none;
-	border-bottom-style: solid;
-	border-left-style: solid;
-	border-top-color: #000;
-	border-right-color: #000;
-	border-bottom-color: #000;
-	border-left-color: #000;
 }
 .materias {
 	font-family: Candara;
 	font-size: 13px;
-	border-top-width: 1px;
-	border-right-width: 1px;
-	border-bottom-width: 1px;
-	border-left-width: 1px;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: solid;
-	border-left-style: solid;
-	border-top-color: #000;
-	border-right-color: #000;
-	border-bottom-color: #000;
-	border-left-color: #000;
 	font-weight: bold;
-
-	}
+}
 .numeros {
 	font-family: Calibri;
 	font-size: 13px;
 	font-style: normal;
 	text-align: center;
-	;
-	border-top-width: 1px;
-	border-right-width: 1px;
-	border-bottom-width: 1px;
-	border-left-width: 1px;
-	border-top-style: none;
-	border-right-style: none;
-	border-bottom-style: solid;
-	border-left-style: solid;
-	border-top-color: #000;
-	border-right-color: #000;
-	border-bottom-color: #000;
-	border-left-color: #000;
 }
 .porcentaje {
 	color: #000;
-	border-top-width: 1px;
-	border-right-width: 1px;
-	border-bottom-width: 1px;
-	border-left-width: 1px;
-	border-top-style: solid;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: solid;
-	border-top-color: #000;
-	border-right-color: #000;
-	border-bottom-color: #000;
-	border-left-color: #000;
+	font-family: Calibri;
+	font-size: 13px;
+	font-weight: bold;
 }
 .equivalencia {
 	font-family: Candara;
-	border: 1px solid #000;
+	font-size: 14px;
+	font-style: italic;
 }
 .quimestres {
 	font-family: Candara;
-	border-top-width: 1px;
-	border-right-width: 1px;
-	border-bottom-width: 1px;
-	border-left-width: 1px;
-	border-top-style: solid;
-	border-right-style: none;
-	border-bottom-style: none;
-	border-left-style: solid;
-	border-top-color: #000;
-	border-right-color: #000;
-	border-bottom-color: #000;
-	border-left-color: #000;
 }
 .equivalencia2 {
 	font-weight: bold;
 	font-family: Candara;
-	border-top-width: 1px;
-	border-right-width: 1px;
-	border-bottom-width: 1px;
-	border-left-width: 1px;
-	border-right-style: solid;
-	border-bottom-style: solid;
-	border-left-style: solid;
-	border-top-color: #000;
-	border-right-color: #000;
-	border-bottom-color: #000;
-	border-left-color: #000;
-	border-top-style: none;
 	text-align: center;
 	font-size: 16px;
 }
 .letras {
 	font-family: Candara;
-	font-size: 11px;
+	font-size: 12px;
 }
 .promedio1 {
 	font-weight: bold;
 	text-align: center;
 	font-family: Calibri;
 	font-size: 14px;
+}
+.tabla {
+	border-top-width: 1px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: none;
+	border-left-style: none;
+	border-top-color: rgb(0,0,0);
+	border-right-color: rgb(0,0,0);
+	border-bottom-color: rgb(0,0,0);
+	border-left-color: rgb(0,0,0);
+}
+.td {
 	border-top-width: 1px;
 	border-right-width: 1px;
 	border-bottom-width: 1px;
@@ -164,8 +106,8 @@
 	border-right-style: none;
 	border-bottom-style: solid;
 	border-left-style: solid;
-	border-top-color: #000;
-	border-right-color: #000;
-	border-bottom-color: #000;
-	border-left-color: #000;
+	border-top-color: rgb(0,0,0);
+	border-right-color: rgb(0,0,0);
+	border-bottom-color: rgb(0,0,0);
+	border-left-color: rgb(0,0,0);
 }

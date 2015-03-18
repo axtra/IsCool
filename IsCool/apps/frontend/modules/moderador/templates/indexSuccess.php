@@ -1,11 +1,6 @@
 <link rel="stylesheet" type="text/css" media="screen"	href="/sfDoctrinePlugin/css/global.css" />
 <link rel="stylesheet" type="text/css" media="screen"	href="/sfDoctrinePlugin/css/default.css" />
 
-<link rel="stylesheet" href="http://code.jquery.com/ui/1.8.24/themes/base/jquery-ui.css">
-<script src="http://code.jquery.com/jquery-1.8.2.js"></script>
-<script src="http://code.jquery.com/ui/1.8.24/jquery-ui.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.24/i18n/jquery-ui-i18n.min.js"></script>
-
 <div id="loading-div-background">
     <div id="loading-div" class="ui-corner-all" >
       <img style="height:70px;margin:10px;" src="/images/loader_barra.gif" alt="Cargando..."/>

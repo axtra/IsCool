@@ -24,7 +24,10 @@ $(function() {
       <div id="tareas-container">
       <?php 
           include_partial('partial_tareas', 
-              array('tareas' => $tareas)
+              array(
+                'tareas' => $tareas,
+                'estados_tareas' => $estados_tareas
+              )
           ); 
       ?>
       </div>

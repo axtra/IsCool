@@ -50,7 +50,7 @@ class emdiComProfesor extends BaseemdiComProfesor
     }
 
     $comunicado = new emdiComProfesor();
-    $comunicado->setCprReferencia($cpr_referencia);
+    $comunicado->setCprReferencia(utf8_encode($cpr_referencia));
     $comunicado->setCprContenido($cpr_contenido);
     $comunicado->setEstId($est_id);
     $comunicado->setProId($pro_id);

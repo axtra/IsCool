@@ -3,6 +3,34 @@
 <link rel="shortcut icon" href="http://www.emdischool.edu.ec/emdi.ico" />
 <title>EMDI School</title>
 
+
+<!-- include jQuery library -->
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/ui/1.11.3/jquery-ui.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/i18n/jquery-ui-i18n.min.js"></script>
+
+<!-- include Cycle plugin -->
+<script type="text/javascript" src="/pags/js/emdi-img.js"></script>
+
+<!--  initialize the slideshow when the DOM is ready -->
+<script type="text/javascript">
+$(document).ready(function() {
+    
+
+    var interval = setInterval(function(){ 
+    	  if(jQuery(".slideshow").length > 0) {
+    	    clearInterval(interval); 
+    	    jQuery('.slideshow').cycle({
+    			fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
+    		});
+    	  }
+    	}, 1);
+});
+</script>
+
+
+<link rel="stylesheet" type="text/css" media="screen" href="http://code.jquery.com/ui/1.11.3/themes/smoothness/jquery-ui.css" />
+
 <style type="text/css">
 @import url("/pags/menu/menu.css");
 @import url("/pags/css/estilo_emdi.css");
@@ -16,22 +44,6 @@ body {
 	margin-bottom: 0px;
 }
 </style>
-
-<!-- include jQuery library -->
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
-<!-- include Cycle plugin -->
-<script type="text/javascript" src="/pags/js/emdi-img.js"></script>
-
-<!--  initialize the slideshow when the DOM is ready -->
-<script type="text/javascript">
-$(document).ready(function() {
-    $('.slideshow').cycle({
-		fx: 'fade' // choose your transition type, ex: fade, scrollUp, shuffle, etc...
-	});
-});
-</script>
-
 
 <script language="JavaScript1.2" type="text/javascript" src="/pags/menu/mm_css_menu.js"></script>
 
@@ -164,7 +176,7 @@ function MM_swapImage() { //v3.0
 
 <table width="100%" height="62" border="0" cellpadding="0" cellspacing="0" bgcolor="#003E56">
   <tr>
-    <td align="center"><table width="100" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#003E56">
+    <td align="center"><table id="footer-table" width="100%" border="0" align="center" cellpadding="0" cellspacing="0" bgcolor="#003E56">
       <tr>
         <td colspan="4">&nbsp;</td>
         <td width="806">&nbsp;</td>
@@ -189,6 +201,7 @@ function MM_swapImage() { //v3.0
     </table></td>
   </tr>
 </table>
+
 </body>
 </html>
 

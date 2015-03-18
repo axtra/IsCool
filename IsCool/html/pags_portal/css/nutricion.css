@@ -1,17 +1,27 @@
-@charset "utf-8";
+body, html { 
+    overflow-x: hidden; 
+    overflow-y: auto;
+}
 .valores {
-	font-family: Calibri;
+	font-family: Candara;
 	font-size: 11px;
 }
 .Titulo {
-	font-family: "Eras Medium ITC";
+	font-family: Candara;
 	font-weight: bold;
-	color: #3F0000;
+	color: rgb(102,0,0);
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-bottom-color: rgb(51,51,51);
+	border-left-color: rgb(51,51,51);
 }
 .comida {
-	font-family: "Eras Medium ITC";
+	font-family: Candara;
 	font-weight: bold;
 	font-size: 14px;
+	color: #333;
 }
 .nutricion1 {
 	font-family: Candara;
@@ -32,7 +42,7 @@
 	border: 1px solid #000;
 }
 .valores2 {
-	font-family: Calibri;
+	font-family: Candara;
 	font-size: 11px;
 	border-top-width: 1px;
 	border-right-width: 1px;

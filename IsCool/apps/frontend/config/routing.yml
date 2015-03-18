@@ -207,3 +207,9 @@ moderador_cambiar_fecha:
   url:    moderarTareas/cambiarFecha
   param:  { module: moderarTareas, action: cambiarFecha }
   
+cambiar_estado_tarea:
+  url:    agenda/cambiarEstadoTarea
+  param:  { module: agenda, action: cambiarEstadoTarea }
+cargar_tareas_pendientes:
+  url:    agenda/getTareasPendientes
+  param:  { module: agenda, action: getTareasPendientes }

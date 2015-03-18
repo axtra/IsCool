@@ -1,33 +1,167 @@
 <head>
+<link rel="shortcut icon" href="http://www.emdischool.edu.ec/emdi.ico" />
+<link href="../css/estilo_emdi.css" rel="stylesheet" type="text/css">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Pragma" content="no-cache">
+<meta name="cache-control" content="no-cache">
 <title>EMDI School</title>
-<link href="../css/tipografias.css" rel="stylesheet" type="text/css" />
+
 <style type="text/css">
-
-@import url("../../menu/menu.css");
-
-@import url("../../menu/menu.css");
-
+@import url("../menu/menu.css");
 
 body {
+	background-image: url(../fondo.jpg);
 	margin-left: 0px;
 	margin-top: 0px;
-	background-image: url(../../fondo.png);
-	background-repeat: repeat;
-}td img {display: block;}td img {display: block;}
-	
-
-	
-
-</style>
-<script type="text/javascript">
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+	margin-right: 0px;
+	margin-bottom: 0px;
 }
+</style>
+
+
+
+
+    <!-- INICIAN SCRIPTS DEL SLIDER -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <!-- use jssor.slider.mini.js (40KB) or jssor.sliderc.mini.js (32KB, with caption, no slideshow) or jssor.sliders.mini.js (28KB, no caption, no slideshow) instead for release -->
+    <!-- jssor.slider.mini.js = jssor.sliderc.mini.js = jssor.sliders.mini.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="../noticias/js/jssor.js"></script>
+    <script type="text/javascript" src="../noticias/js/jssor.slider.js"></script>
+    <script>
+
+        jQuery(document).ready(function ($) {
+
+            var _SlideshowTransitions = [
+            //Fade in L
+                {$Duration: 1200, x: 0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+            //Fade out R
+                , { $Duration: 1200, x: -0.3, $SlideOut: true, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+            //Fade in R
+                , { $Duration: 1200, x: -0.3, $During: { $Left: [0.3, 0.7] }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+            //Fade out L
+                , { $Duration: 1200, x: 0.3, $SlideOut: true, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+
+            //Fade in T
+                , { $Duration: 1200, y: 0.3, $During: { $Top: [0.3, 0.7] }, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+            //Fade out B
+                , { $Duration: 1200, y: -0.3, $SlideOut: true, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+            //Fade in B
+                , { $Duration: 1200, y: -0.3, $During: { $Top: [0.3, 0.7] }, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+            //Fade out T
+                , { $Duration: 1200, y: 0.3, $SlideOut: true, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+
+            //Fade in LR
+                , { $Duration: 1200, x: 0.3, $Cols: 2, $During: { $Left: [0.3, 0.7] }, $ChessMode: { $Column: 3 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+            //Fade out LR
+                , { $Duration: 1200, x: 0.3, $Cols: 2, $SlideOut: true, $ChessMode: { $Column: 3 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+            //Fade in TB
+                , { $Duration: 1200, y: 0.3, $Rows: 2, $During: { $Top: [0.3, 0.7] }, $ChessMode: { $Row: 12 }, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+            //Fade out TB
+                , { $Duration: 1200, y: 0.3, $Rows: 2, $SlideOut: true, $ChessMode: { $Row: 12 }, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+
+            //Fade in LR Chess
+                , { $Duration: 1200, y: 0.3, $Cols: 2, $During: { $Top: [0.3, 0.7] }, $ChessMode: { $Column: 12 }, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+            //Fade out LR Chess
+                , { $Duration: 1200, y: -0.3, $Cols: 2, $SlideOut: true, $ChessMode: { $Column: 12 }, $Easing: { $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+            //Fade in TB Chess
+                , { $Duration: 1200, x: 0.3, $Rows: 2, $During: { $Left: [0.3, 0.7] }, $ChessMode: { $Row: 3 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+            //Fade out TB Chess
+                , { $Duration: 1200, x: -0.3, $Rows: 2, $SlideOut: true, $ChessMode: { $Row: 3 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+
+            //Fade in Corners
+                , { $Duration: 1200, x: 0.3, y: 0.3, $Cols: 2, $Rows: 2, $During: { $Left: [0.3, 0.7], $Top: [0.3, 0.7] }, $ChessMode: { $Column: 3, $Row: 12 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+            //Fade out Corners
+                , { $Duration: 1200, x: 0.3, y: 0.3, $Cols: 2, $Rows: 2, $During: { $Left: [0.3, 0.7], $Top: [0.3, 0.7] }, $SlideOut: true, $ChessMode: { $Column: 3, $Row: 12 }, $Easing: { $Left: $JssorEasing$.$EaseInCubic, $Top: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2, $Outside: true }
+
+            //Fade Clip in H
+                , { $Duration: 1200, $Delay: 20, $Clip: 3, $Assembly: 260, $Easing: { $Clip: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+            //Fade Clip out H
+                , { $Duration: 1200, $Delay: 20, $Clip: 3, $SlideOut: true, $Assembly: 260, $Easing: { $Clip: $JssorEasing$.$EaseOutCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+            //Fade Clip in V
+                , { $Duration: 1200, $Delay: 20, $Clip: 12, $Assembly: 260, $Easing: { $Clip: $JssorEasing$.$EaseInCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+            //Fade Clip out V
+                , { $Duration: 1200, $Delay: 20, $Clip: 12, $SlideOut: true, $Assembly: 260, $Easing: { $Clip: $JssorEasing$.$EaseOutCubic, $Opacity: $JssorEasing$.$EaseLinear }, $Opacity: 2 }
+                ];
+
+            var options = {
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlayInterval: 1500,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                                //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                $DragOrientation: 3,                                //[Optional] Orientation to drag slide, 0 no drag, 1 horizental, 2 vertical, 3 either, default value is 1 (Note that the $DragOrientation should be the same as $PlayOrientation when $DisplayPieces is greater than 1, or parking position is not 0)
+                $ArrowKeyNavigation: true,   			            //[Optional] Allows keyboard (arrow key) navigation or not, default value is false
+                $SlideDuration: 800,                                //Specifies default duration (swipe) for slide in milliseconds
+
+                $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
+                    $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
+                    $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
+                    $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
+                    $ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
+                },
+
+                $ArrowNavigatorOptions: {                       //[Optional] Options to specify and enable arrow navigator or not
+                    $Class: $JssorArrowNavigator$,              //[Requried] Class to create arrow navigator instance
+                    $ChanceToShow: 1                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+                },
+
+                $ThumbnailNavigatorOptions: {                       //[Optional] Options to specify and enable thumbnail navigator or not
+                    $Class: $JssorThumbnailNavigator$,              //[Required] Class to create thumbnail navigator instance
+                    $ChanceToShow: 2,                               //[Required] 0 Never, 1 Mouse Over, 2 Always
+
+                    $ActionMode: 1,                                 //[Optional] 0 None, 1 act by click, 2 act by mouse hover, 3 both, default value is 1
+                    $SpacingX: 8,                                   //[Optional] Horizontal space between each thumbnail in pixel, default value is 0
+                    $DisplayPieces: 10,                             //[Optional] Number of pieces to display, default value is 1
+                    $ParkingPosition: 360                          //[Optional] The offset position to park thumbnail
+                }
+            };
+
+            var jssor_slider1 = new $JssorSlider$("slider1_container", options);
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth)
+                    jssor_slider1.$ScaleWidth(Math.max(Math.min(parentWidth, 800), 300));
+                else
+                    window.setTimeout(ScaleSlider, 30);
+            }
+
+            ScaleSlider();
+
+            if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+                $(window).bind('resize', ScaleSlider);
+            }
+
+
+            //if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
+            //    $(window).bind("orientationchange", ScaleSlider);
+            //}
+            //responsive code end
+        });
+    </script>
+
+
+<!-- FINALIZA SCRIPTS DEL SLIDER -->
+
+
+
+
+
+
+
+
+
+<script language="JavaScript1.2" type="text/javascript" src="../menu/mm_css_menu.js"></script>
+
+<script type="text/javascript">
 function MM_preloadImages() { //v3.0
   var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
     var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
 }
 
 function MM_findObj(n, d) { //v4.01
@@ -42,98 +176,272 @@ function MM_swapImage() { //v3.0
   var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
    if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
 }
-function MM_displayStatusMsg(msgStr) { //v1.0
-  window.status=msgStr;
-  document.MM_returnValue = true;
-}
 </script>
-<script language="JavaScript1.2" type="text/javascript" src="../../menu/mm_css_menu.js"></script>
 </head>
 
-<body onLoad="MM_preloadImages('../../menu/menu_r1_c1_s2.jpg','../../menu/menu_r1_c2_s2.jpg','../../menu/menu_r1_c3_s2.jpg','../../menu/menu_r1_c5_s2.jpg','../../baner/baner_r2_c2_s2.jpg','../../baner/baner_r4_c4_s2.jpg','../../baner/baner_r4_c6_s2.jpg','../../baner/baner_r4_c8_s2.jpg','../../baner/baner_r4_c10_s2.jpg')">
-<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
+<body onLoad="MM_preloadImages('../menu/menu_r4_c9_s2.jpg','../menu/menu_r4_c11_s2.jpg','../images/red1_b.png','../images/red2_b.png','../images/red3_b.png','../images/red4_b.png','../menu/menu_r6_c7_s2.png','../menu/menu_r8_c2_s2.png','../menu/menu_r8_c3_s2.png','../menu/menu_r8_c4_s2.png','../menu/menu_r8_c5_s2.png','../menu/menu_r8_c6_s2.jpg','../menu/menu_r8_c9_s2.png')">
+<table width="100%" border="0" cellspacing="0" cellpadding="0" class="menu" height="151">
   <tr>
-    <td><table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="1000">
-      <!-- fwtable fwsrc="baner botones.png" fwpage="Página 1" fwbase="baner.jpg" fwstyle="Dreamweaver" fwdocid = "248830601" fwnested="0" -->
-      <tr>
-        <td><img src="../../baner/spacer.gif" alt="" name="undefined_3" width="737" height="1" /></td>
-        <td><img src="../../baner/spacer.gif" alt="" name="undefined_3" width="39" height="1" /></td>
-        <td><img src="../../baner/spacer.gif" alt="" name="undefined_3" width="12" height="1" /></td>
-        <td><img src="../../baner/spacer.gif" alt="" name="undefined_3" width="39" height="1" /></td>
-        <td><img src="../../baner/spacer.gif" alt="" name="undefined_3" width="15" height="1" /></td>
-        <td><img src="../../baner/spacer.gif" alt="" name="undefined_3" width="38" height="1" /></td>
-        <td><img src="../../baner/spacer.gif" alt="" name="undefined_3" width="15" height="1" /></td>
-        <td><img src="../../baner/spacer.gif" alt="" name="undefined_3" width="39" height="1" /></td>
-        <td><img src="../../baner/spacer.gif" alt="" name="undefined_3" width="13" height="1" /></td>
-        <td><img src="../../baner/spacer.gif" alt="" name="undefined_3" width="40" height="1" /></td>
-        <td><img src="../../baner/spacer.gif" alt="" name="undefined_3" width="13" height="1" /></td>
-        <td><img src="../../baner/spacer.gif" alt="" name="undefined_3" width="1" height="1" /></td>
-      </tr>
-      <tr>
-        <td colspan="11"><img name="baner_r1_c1" src="../../baner/baner_r1_c1.jpg" width="1000" height="12" id="baner_r1_c1" alt="" /></td>
-        <td><img src="../../baner/spacer.gif" alt="" name="undefined_3" width="1" height="12" /></td>
-      </tr>
-      <tr>
-        <td rowspan="4"><img name="baner_r2_c1" src="../../baner/baner_r2_c1.jpg" width="737" height="104" id="baner_r2_c1" alt="" /></td>
-        <td colspan="9"><a href="/login" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('baner_r2_c2','','../../baner/baner_r2_c2_s2.jpg',1);"><img src="../../baner/baner_r2_c2.jpg" alt="" name="baner_r2_c2" width="250" height="25" border="0" id="baner_r2_c2" /></a></td>
-        <td rowspan="4"><img name="baner_r2_c11" src="../../baner/baner_r2_c11.jpg" width="13" height="104" id="baner_r2_c11" alt="" /></td>
-        <td><img src="../../baner/spacer.gif" alt="" name="undefined_3" width="1" height="25" /></td>
-      </tr>
-      <tr>
-        <td colspan="9"><img name="baner_r3_c2" src="../../baner/baner_r3_c2.jpg" width="250" height="17" id="baner_r3_c2" alt="" /></td>
-        <td><img src="../../baner/spacer.gif" alt="" name="undefined_3" width="1" height="17" /></td>
-      </tr>
-      <tr>
-        <td><img src="../../baner/baner_r4_c2.jpg" alt="" name="baner_r4_c2" width="39" height="51" border="0" id="baner_r4_c2" /></td>
-        <td rowspan="2"><img name="baner_r4_c3" src="../../baner/baner_r4_c3.jpg" width="12" height="62" id="baner_r4_c3" alt="" /></td>
-        <td><a href="http://emdi2012.blogspot.com/" target="_blank" onMouseOver="MM_swapImage('baner_r4_c4','','../../baner/baner_r4_c4_s2.jpg',1);" onMouseOut="MM_swapImgRestore()"><img src="../../baner/baner_r4_c4.jpg" alt="" name="baner_r4_c4" width="39" height="51" border="0" id="baner_r4_c4" /></a></td>
-        <td rowspan="2"><img name="baner_r4_c5" src="../../baner/baner_r4_c5.jpg" width="15" height="62" id="baner_r4_c5" alt="" /></td>
-        <td><a href="http://www.youtube.com/user/EMDISchool?feature=CAQQwRs=" target="_blank" onMouseOver="MM_swapImage('baner_r4_c6','','../../baner/baner_r4_c6_s2.jpg',1);" onMouseOut="MM_swapImgRestore()"><img src="../../baner/baner_r4_c6.jpg" alt="" name="baner_r4_c6" width="38" height="51" border="0" id="baner_r4_c6" /></a></td>
-        <td rowspan="2"><img name="baner_r4_c7" src="../../baner/baner_r4_c7.jpg" width="15" height="62" id="baner_r4_c7" alt="" /></td>
-        <td><a href="https://twitter.com/EMDISchool" target="_blank" onMouseOver="MM_swapImage('baner_r4_c8','','../../baner/baner_r4_c8_s2.jpg',1);" onMouseOut="MM_swapImgRestore()"><img src="../../baner/baner_r4_c8.jpg" alt="" name="baner_r4_c8" width="39" height="51" border="0" id="baner_r4_c8" /></a></td>
-        <td rowspan="2"><img name="baner_r4_c9" src="../../baner/baner_r4_c9.jpg" width="13" height="62" id="baner_r4_c9" alt="" /></td>
-        <td><a href="https://www.facebook.com/pages/EMDI-School/159588084155587" target="_blank" onMouseOver="MM_swapImage('baner_r4_c10','','../../baner/baner_r4_c10_s2.jpg',1);" onMouseOut="MM_swapImgRestore()"><img src="../../baner/baner_r4_c10.jpg" alt="" name="baner_r4_c10" width="40" height="51" border="0" id="baner_r4_c10" /></a></td>
-        <td><img src="../../baner/spacer.gif" alt="" name="undefined_3" width="1" height="51" /></td>
-      </tr>
-      <tr>
-        <td><img name="baner_r5_c2" src="../../baner/baner_r5_c2.jpg" width="39" height="11" id="baner_r5_c2" alt="" /></td>
-        <td><img name="baner_r5_c4" src="../../baner/baner_r5_c4.jpg" width="39" height="11" id="baner_r5_c4" alt="" /></td>
-        <td><img name="baner_r5_c6" src="../../baner/baner_r5_c6.jpg" width="38" height="11" id="baner_r5_c6" alt="" /></td>
-        <td><img name="baner_r5_c8" src="../../baner/baner_r5_c8.jpg" width="39" height="11" id="baner_r5_c8" alt="" /></td>
-        <td><img name="baner_r5_c10" src="../../baner/baner_r5_c10.jpg" width="40" height="11" id="baner_r5_c10" alt="" /></td>
-        <td><img src="../../baner/spacer.gif" alt="" name="undefined_3" width="1" height="11" /></td>
-      </tr>
-    </table></td>
-  </tr>
-</table>
-<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td><div id="FWTableContainer248830601">
-      <table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="1000">
-        <!-- fwtable fwsrc="menu botones.png" fwpage="Página 1" fwbase="menu.jpg" fwstyle="Dreamweaver" fwdocid = "248830601" fwnested="0" -->
+    <td height="151" align="center" valign="top"><div id="FWTableContainer705506437">
+      <table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="1200">
+        <!-- fwtable fwsrc="menu.png" fwpage="Página 1" fwbase="menu.jpg" fwstyle="Dreamweaver" fwdocid = "705506437" fwnested="0" -->
         <tr>
-          <td><img src="../../menu/spacer.gif" alt="" name="undefined_2" width="142" height="1" /></td>
-          <td><img src="../../menu/spacer.gif" alt="" name="undefined_2" width="186" height="1" /></td>
-          <td><img src="../../menu/spacer.gif" alt="" name="undefined_2" width="208" height="1" /></td>
-          <td><img src="../../menu/spacer.gif" alt="" name="undefined_2" width="255" height="1" /></td>
-          <td><img src="../../menu/spacer.gif" alt="" name="undefined_2" width="209" height="1" /></td>
-          <td><img src="../../menu/spacer.gif" alt="" name="undefined_2" width="1" height="1" /></td>
+          <td><img src="../menu/spacer.gif" width="257" height="1" alt="" /></td>
+          <td><img src="../menu/spacer.gif" width="156" height="1" alt="" /></td>
+          <td><img src="../menu/spacer.gif" width="156" height="1" alt="" /></td>
+          <td><img src="../menu/spacer.gif" width="156" height="1" alt="" /></td>
+          <td><img src="../menu/spacer.gif" width="156" height="1" alt="" /></td>
+          <td><img src="../menu/spacer.gif" width="66" height="1" alt="" /></td>
+          <td><img src="../menu/spacer.gif" width="63" height="1" alt="" /></td>
+          <td><img src="../menu/spacer.gif" width="27" height="1" alt="" /></td>
+          <td><img src="../menu/spacer.gif" width="54" height="1" alt="" /></td>
+          <td><img src="../menu/spacer.gif" width="40" height="1" alt="" /></td>
+          <td><img src="../menu/spacer.gif" width="62" height="1" alt="" /></td>
+          <td><img src="../menu/spacer.gif" width="7" height="1" alt="" /></td>
+          <td><img src="../menu/spacer.gif" width="1" height="1" alt="" /></td>
         </tr>
         <tr>
-          <td><a href="../inicio/inicio.html" target="_parent" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_displayStatusMsg('EMDI School');MM_swapImage('menu_r1_c1','','../../menu/menu_r1_c1_s2.jpg',1);return document.MM_returnValue"><img src="../../menu/menu_r1_c1.jpg" alt="" name="menu_r1_c1" width="142" height="38" border="0" id="menu_r1_c1" /></a></td>
-          <td><a href="../noticias/noticias.html" target="_parent" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_displayStatusMsg('EMDI School');MM_swapImage('menu_r1_c2','','../../menu/menu_r1_c2_s2.jpg',1);return document.MM_returnValue"><img src="../../menu/menu_r1_c2.jpg" alt="" name="menu_r1_c2" width="186" height="38" border="0" id="menu_r1_c2" /></a></td>
-          <td><a href="javascript:;" onMouseOut="MM_swapImgRestore();MM_menuStartTimeout(500)" onMouseOver="MM_displayStatusMsg('EMDI School');MM_menuShowMenu('MMMenuContainer0903193406_0', 'MMMenu0903193406_0',40,38,'menu_r1_c3');MM_swapImage('menu_r1_c3','','../../menu/menu_r1_c3_s2.jpg',1);return document.MM_returnValue"><img src="../../menu/menu_r1_c3.jpg" alt="" name="menu_r1_c3" width="208" height="38" border="0" id="menu_r1_c3" /></a></td>
-          <td><img src="../../menu/menu_r1_c4_s2.jpg" alt="" name="menu_r1_c4" width="255" height="38" border="0" id="menu_r1_c4" /></td>
-          <td><a href="../contactos/contactos.html" target="_parent" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_displayStatusMsg('EMDI School');MM_swapImage('menu_r1_c5','','../../menu/menu_r1_c5_s2.jpg',1);return document.MM_returnValue"><img src="../../menu/menu_r1_c5.jpg" alt="" name="menu_r1_c5" width="209" height="38" border="0" id="menu_r1_c5" /></a></td>
-          <td><img src="../../menu/spacer.gif" alt="" name="undefined_2" width="1" height="38" /></td>
+          <td colspan="12"><img name="menu_r1_c1" src="../menu/menu_r1_c1.jpg" width="1200" height="15" id="menu_r1_c1" alt="" /></td>
+          <td><img src="../menu/spacer.gif" width="1" height="15" alt="" /></td>
+        </tr>
+        <tr>
+          <td rowspan="6" colspan="6"><img name="menu_r2_c1" src="../menu/menu_r2_c1.jpg" width="947" height="95" id="menu_r2_c1" alt="" /></td>
+          <td class="links"><a href="../links/links.html" class="links">Links</a></td>
+          <td rowspan="4"><img name="menu_r2_c8" src="../menu/menu_r2_c8.jpg" width="27" height="48" id="menu_r2_c8" alt="" /></td>
+          <td class="links"><a href="https://twitter.com/EMDISchool" target="_blank" class="links">Twitter</a></td>
+          <td rowspan="4"><img name="menu_r2_c10" src="../menu/menu_r2_c10.jpg" width="40" height="48" id="menu_r2_c10" alt="" /></td>
+          <td colspan="2" class="links"><a href="https://www.facebook.com/pages/EMDI-School/159588084155587" target="_blank" class="links">Facebook</a></td>
+          <td><img src="../menu/spacer.gif" width="1" height="16" alt="" /></td>
+        </tr>
+        <tr>
+          <td><img name="menu_r3_c7" src="../menu/menu_r3_c7.jpg" width="63" height="7" id="menu_r3_c7" alt="" /></td>
+          <td><img name="menu_r3_c9" src="../menu/menu_r3_c9.jpg" width="54" height="7" id="menu_r3_c9" alt="" /></td>
+          <td colspan="2"><img name="menu_r3_c11" src="../menu/menu_r3_c11.jpg" width="69" height="7" id="menu_r3_c11" alt="" /></td>
+          <td><img src="../menu/spacer.gif" width="1" height="7" alt="" /></td>
+        </tr>
+        <tr>
+          <td class="links"><a href="javascript:;" class="links">Instagram</a></td>
+          <td class="links"><a href="http://emdi2012.blogspot.com/" class="links">Blog</a></td>
+          <td colspan="2" class="links"><a href="http://www.youtube.com/user/EMDISchool?feature=CAQQwRs=" class="links">Youtube</a></td>
+          <td><img src="../menu/spacer.gif" width="1" height="16" alt="" /></td>
+        </tr>
+        <tr>
+          <td><img name="menu_r5_c7" src="../menu/menu_r5_c7.jpg" width="63" height="9" id="menu_r5_c7" alt="" /></td>
+          <td><img name="menu_r5_c9" src="../menu/menu_r5_c9.jpg" width="54" height="9" id="menu_r5_c9" alt="" /></td>
+          <td colspan="2"><img name="menu_r5_c11" src="../menu/menu_r5_c11.jpg" width="69" height="9" id="menu_r5_c11" alt="" /></td>
+          <td><img src="../menu/spacer.gif" width="1" height="9" alt="" /></td>
+        </tr>
+        <tr>
+          <td colspan="6"><a href="/login" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('menu_r6_c7','','../menu/menu_r6_c7_s2.png',1)"><img name="menu_r6_c7" src="../menu/menu_r6_c7.png" width="253" height="42" id="menu_r6_c7" alt="" /></a></td>
+          <td><img src="../menu/spacer.gif" width="1" height="42" alt="" /></td>
+        </tr>
+        <tr>
+          <td colspan="6"><img name="menu_r7_c7" src="../menu/menu_r7_c7.jpg" width="253" height="5" id="menu_r7_c7" alt="" /></td>
+          <td><img src="../menu/spacer.gif" width="1" height="5" alt="" /></td>
+        </tr>
+        <tr>
+          <td><img name="menu_r8_c1" src="../menu/menu_r8_c1.jpg" width="257" height="40" id="menu_r8_c1" alt="" /></td>
+          <td><a href="../inicio/inicio.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('menu_r8_c2','','../menu/menu_r8_c2_s2.png',1)"><img name="menu_r8_c2" src="../menu/menu_r8_c2.png" width="156" height="40" id="menu_r8_c2" alt="" /></a></td>
+          <td><a href="../noticias/noticias.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('menu_r8_c3','','../menu/menu_r8_c3_s2.png',1)"><img name="menu_r8_c3" src="../menu/menu_r8_c3.png" width="156" height="40" id="menu_r8_c3" alt="" /></a></td>
+          <td><a href="../programa/programa.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('menu_r8_c4','','../menu/menu_r8_c4_s2.png',1)"><img name="menu_r8_c4" src="../menu/menu_r8_c4.png" width="156" height="40" id="menu_r8_c4" alt="" /></a></td>
+          <td><a href="javascript:;" onMouseOut="MM_swapImgRestore();MM_menuStartTimeout(1000)" onMouseOver="MM_menuShowMenu('MMMenuContainer1001191722_0', 'MMMenu1001191722_0',0,40,'menu_r8_c5');MM_swapImage('menu_r8_c5','','../menu/menu_r8_c5_s2.png',1)"><img name="menu_r8_c5" src="../menu/menu_r8_c5.png" width="156" height="40" id="menu_r8_c5" alt="" /></a></td>
+          <td colspan="3"><a href="javascript:;" onMouseOut="MM_swapImgRestore();MM_menuStartTimeout(1000)" onMouseOver="MM_menuShowMenu('MMMenuContainer1001192457_1', 'MMMenu1001192457_1',0,40,'menu_r8_c6');MM_swapImage('menu_r8_c6','','../menu/menu_r8_c6_s2.jpg',1)"><img name="menu_r8_c6" src="../menu/menu_r8_c6.jpg" width="156" height="40" id="menu_r8_c6" alt="" /></a></td>
+          <td colspan="3"><a href="../contactos/contactos.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('menu_r8_c9','','../menu/menu_r8_c9_s2.png',1)"><img name="menu_r8_c9" src="../menu/menu_r8_c9.png" width="156" height="40" id="menu_r8_c9" alt="" /></a></td>
+          <td><img name="menu_r8_c12" src="../menu/menu_r8_c12.jpg" width="7" height="40" id="menu_r8_c12" alt="" /></td>
+          <td><img src="../menu/spacer.gif" width="1" height="40" alt="" /></td>
         </tr>
       </table>
-      <div id="MMMenuContainer0903193406_0">
-        <div id="MMMenu0903193406_0" onMouseOut="MM_menuStartTimeout(500);" onMouseOver="MM_menuResetTimeout();"> <a href="../secciones/cdi.html" target="_parent" id="MMMenu0903193406_0_Item_0" class="MMMIFVStyleMMMenu0903193406_0" onMouseOver="MM_menuOverMenuItem('MMMenu0903193406_0');"> Educaci&oacute;n&nbsp;Inicial </a> <a href="../secciones/basica.html" target="_parent" id="MMMenu0903193406_0_Item_1" class="MMMIVStyleMMMenu0903193406_0" onMouseOver="MM_menuOverMenuItem('MMMenu0903193406_0');"> Educaci&oacute;n&nbsp;B&aacute;sica </a> <a href="../secciones/bachillerato.html" target="_parent" id="MMMenu0903193406_0_Item_2" class="MMMIVStyleMMMenu0903193406_0" onMouseOver="MM_menuOverMenuItem('MMMenu0903193406_0');"> Bachillerato </a> </div>
+      <div id="MMMenuContainer1001191722_0">
+        <div id="MMMenu1001191722_0" onMouseOut="MM_menuStartTimeout(1000);" onMouseOver="MM_menuResetTimeout();"> <a href="../secciones/cdi.html" id="MMMenu1001191722_0_Item_0" class="MMMIFVStyleMMMenu1001191722_0" onMouseOver="MM_menuOverMenuItem('MMMenu1001191722_0');"> Educaci&oacute;n&nbsp;Inicial </a> <a href="../secciones/basica.html" id="MMMenu1001191722_0_Item_1" class="MMMIVStyleMMMenu1001191722_0" onMouseOver="MM_menuOverMenuItem('MMMenu1001191722_0');"> Educaci&oacute;n&nbsp;B&aacute;sica </a> <a href="../secciones/bachillerato.html" id="MMMenu1001191722_0_Item_2" class="MMMIVStyleMMMenu1001191722_0" onMouseOver="MM_menuOverMenuItem('MMMenu1001191722_0');"> Bachillerato </a></div>
+      </div>
+      <div id="MMMenuContainer1001192457_1">
+        <div id="MMMenu1001192457_1" onMouseOut="MM_menuStartTimeout(1000);" onMouseOver="MM_menuResetTimeout();"> <a href="cdi.html" id="MMMenu1001192457_1_Item_0" class="MMMIFVStyleMMMenu1001192457_1" onMouseOver="MM_menuOverMenuItem('MMMenu1001192457_1');"> CDI </a> <a href="emdi.html" id="MMMenu1001192457_1_Item_1" class="MMMIVStyleMMMenu1001192457_1" onMouseOver="MM_menuOverMenuItem('MMMenu1001192457_1');"> EMDI&nbsp;School </a></div>
       </div>
     </div></td>
   </tr>
 </table>
-<br>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+  <tr>
+    <td align="center" valign="top"><table width="1092" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td colspan="2">&nbsp;</td>
+        <td width="46" rowspan="8" align="center" valign="top"></td>
+        <td width="276" rowspan="8" align="center" valign="top"><!-- CÓDIGO WIDGET DE TWITTER -->
+          <a class="twitter-timeline" href="https://twitter.com/EMDISchool" data-widget-id="520629990279229440">Tweets por @EMDISchool</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></td>
+      </tr>
+      <tr>
+        <td colspan="2"><img src="../images/linea1.jpg" alt="" width="768" height="2"></td>
+      </tr>
+      <tr>
+        <td colspan="2">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="266"><img src="../noticias/images/03.jpg" width="238" height="150"></td>
+        <td width="504" class="textos"> Cada año el Centro de Desarrollo Infantil de EMDI School realiza el programa de inauguración del año lectivo. Todo el entusiasmo de nuestros pequeños estuvo acompañado por nuestro hidalgo visitante "Don Quijote de La Mancha" y su inseparable compalero "Sancho Panza"; quienes junto a "Doña María" hicieron el lanzamiento del proyecto anual. Una nueva aventura por descubrir!</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td class="textos">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="2"><p class="textos">El Proyecto Educativo de este año, gira en torno a España y Ecuador, buscando que nuestros estudiantes puedan conocer de mejor manera los aspectos más relevantes de la cultura Española y compararla con la Ecuatoriana, con su realidad y su entorno.</p>
+          <p class="textos">Otro de los puntos más importantes es sin duda el recibimiento y bienvenida a los estudiantes nuevos a sus respectivas houses... el &quot;Sombrero Seleccionador&quot; y el entusiasmo de las Houses: Aberdeen, Broomfleet y Fitchburg no se hizo esperar. <strong>Bienvenida toda la Familia EMDI a este nuevo año lectivo!</strong></p>
+          <p class="textos">Les invitamos a visitar nuestro Canal de Youtube&nbsp;donde hemos publicado un pequeño resumen de la jornada, que lo disfruten:&nbsp;<span class="leer"><a href="https://www.youtube.com/watch?v=valrn-PWf1E&index=5&list=UUulqFl-rFvMT05raHspsGOg" target="_blank"><span class="leer">ENLACE PARA VER EL VIDEO</span></a></span></p></td>
+      </tr>
+      <tr>
+        <td colspan="2">&nbsp;</td>
+      </tr>
+      <tr>
+        <td height="406" colspan="2"><!-- Jssor Slider Begin -->
+          <!-- You can move inline styles to css file or css block. -->
+          <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 765px; height: 430px; background: #191919; overflow: hidden;">
+            <!-- Loading Screen -->
+            <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+              <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                background-color: #000000; top: 0px; left: 0px;width: 100%;height:100%;"></div>
+              <div style="position: absolute; display: block; background: url(../noticias/img/loading.gif) no-repeat center center;
+                top: 0px; left: 0px;width: 100%;height:100%;"></div>
+            </div>
+            <!-- Slides Container -->
+            <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 765px; height: 330px; overflow: hidden;">
+
+              <div><img u="image" src="../noticias/anteriores/img03/01.jpg" />  <img u="thumb" src="../noticias/anteriores/img03/thumb-01.jpg" /></div>
+              <div><img u="image" src="../noticias/anteriores/img03/02.jpg" />  <img u="thumb" src="../noticias/anteriores/img03/thumb-02.jpg" /></div>
+              <div><img u="image" src="../noticias/anteriores/img03/03.jpg" />  <img u="thumb" src="../noticias/anteriores/img03/thumb-03.jpg" /></div>
+              <div><img u="image" src="../noticias/anteriores/img03/04.jpg" />  <img u="thumb" src="../noticias/anteriores/img03/thumb-04.jpg" /></div>
+              <div><img u="image" src="../noticias/anteriores/img03/05.jpg" />  <img u="thumb" src="../noticias/anteriores/img03/thumb-05.jpg" /></div>
+              <div><img u="image" src="../noticias/anteriores/img03/06.jpg" />  <img u="thumb" src="../noticias/anteriores/img03/thumb-06.jpg" /></div>
+              <div><img u="image" src="../noticias/anteriores/img03/07.jpg" />  <img u="thumb" src="../noticias/anteriores/img03/thumb-07.jpg" /></div>
+              <div><img u="image" src="../noticias/anteriores/img03/08.jpg" />  <img u="thumb" src="../noticias/anteriores/img03/thumb-08.jpg" /></div>
+              <div><img u="image" src="../noticias/anteriores/img03/09.jpg" />  <img u="thumb" src="../noticias/anteriores/img03/thumb-09.jpg" /></div>
+              <div><img u="image" src="../noticias/anteriores/img03/10.jpg" />  <img u="thumb" src="../noticias/anteriores/img03/thumb-10.jpg" /></div>
+              <div><img u="image" src="../noticias/anteriores/img03/11.jpg" />  <img u="thumb" src="../noticias/anteriores/img03/thumb-11.jpg" /></div>
+              <div><img u="image" src="../noticias/anteriores/img03/12.jpg" />  <img u="thumb" src="../noticias/anteriores/img03/thumb-12.jpg" /></div>
+             
+            </div>
+            <!-- Arrow Navigator Skin Begin -->
+            <style>
+            /* jssor slider arrow navigator skin 05 css */
+            /*
+            .jssora05l              (normal)
+            .jssora05r              (normal)
+            .jssora05l:hover        (normal mouseover)
+            .jssora05r:hover        (normal mouseover)
+            .jssora05ldn            (mousedown)
+            .jssora05rdn            (mousedown)
+            */
+            .jssora05l, .jssora05r, .jssora05ldn, .jssora05rdn
+            {
+            	position: absolute;
+            	display: block;
+                background: url(a03.png) no-repeat;
+                overflow:hidden;
+            }
+            .jssora05l { background-position: -10px -40px; }
+            .jssora05r { background-position: -70px -40px; }
+            .jssora05l:hover { background-position: -130px -40px; }
+            .jssora05r:hover { background-position: -190px -40px; }
+            .jssora05ldn { background-position: -250px -40px; }
+            .jssora05rdn { background-position: -310px -40px; }
+            </style>
+            <!-- Arrow Left -->
+            <span u="arrowleft" class="jssora05l" style="width: 40px; height: 40px; top: 158px; left: 8px;"> </span>
+            <!-- Arrow Right -->
+            <span u="arrowright" class="jssora05r" style="width: 40px; height: 40px; top: 158px; right: 8px"> </span>
+            <!-- Arrow Navigator Skin End -->
+            <!-- Thumbnail Navigator Skin Begin -->
+            <div u="thumbnavigator" class="jssort01" style="position: absolute; width: 765px; height: 100px; left:0px; bottom: 0px;">
+              <!-- Thumbnail Item Skin Begin -->
+              <style>
+                /* jssor slider thumbnail navigator skin 01 css */
+                /*
+                .jssort01 .p           (normal)
+                .jssort01 .p:hover     (normal mouseover)
+                .jssort01 .pav           (active)
+                .jssort01 .pav:hover     (active mouseover)
+                .jssort01 .pdn           (mousedown)
+                */
+                .jssort01 .w {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                .jssort01 .c {
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 68px;
+                    height: 68px;
+                    border: #000 2px solid;
+                }
+
+                .jssort01 .p:hover .c, .jssort01 .pav:hover .c, .jssort01 .pav .c {
+                    background: url(../img/t01.png) center center;
+                    border-width: 0px;
+                    top: 2px;
+                    left: 2px;
+                    width: 68px;
+                    height: 68px;
+                }
+
+                .jssort01 .p:hover .c, .jssort01 .pav:hover .c {
+                    top: 0px;
+                    left: 0px;
+                    width: 70px;
+                    height: 70px;
+                    border: #fff 1px solid;
+                }
+              </style>
+              <div u="slides" style="cursor: move;">
+                <div u="prototype" class="p" style="position: absolute; width: 72px; height: 72px; top: 0; left: 0;">
+                  <div class=w>
+                    <thumbnailtemplate style=" width: 100%; height: 100%; border: none;position:absolute; top: 0; left: 0;"></thumbnailtemplate>
+                  </div>
+                  <div class=c></div>
+                </div>
+              </div>
+              <!-- Thumbnail Item Skin End -->
+            </div>
+            <!-- Thumbnail Navigator Skin End -->
+          </div>
+          <!-- Jssor Slider End --></td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td align="center" bgcolor="#003E55"><table width="1243" border="0" cellspacing="0" cellpadding="0" bgcolor="#003E56">
+      <tr>
+        <td colspan="4">&nbsp;</td>
+        <td width="770">&nbsp;</td>
+        <td width="49">&nbsp;</td>
+      </tr>
+      <tr>
+        <td width="106" align="center" valign="middle"><a href="https://www.facebook.com/pages/EMDI-School/159588084155587" target="_blank" onMouseOver="MM_swapImage('facebook','','../images/red1_b.png',1)" onMouseOut="MM_swapImgRestore()"><img src="../images/red1_a.png" alt="facebook" name="facebook" width="34" height="34" id="facebook"></a></td>
+        <td width="106" align="center" valign="middle"><a href="https://twitter.com/EMDISchool" target="_blank" onMouseOver="MM_swapImage('twitter','','../images/red2_b.png',1)" onMouseOut="MM_swapImgRestore()"><img src="../images/red2_a.png" alt="Twitter" width="34" height="34" id="twitter"></a></td>
+        <td width="106" align="center" valign="middle"><a href="http://www.youtube.com/user/EMDISchool?feature=CAQQwRs=" target="_blank" onMouseOver="MM_swapImage('youtube','','../images/red3_b.png',1)" onMouseOut="MM_swapImgRestore()"><img src="../images/red3_a.png" alt="Youtube" width="34" height="34" id="youtube"></a></td>
+        <td width="106" align="center" valign="middle"><a href="http://emdi2012.blogspot.com/" target="_blank" onMouseOver="MM_swapImage('blog','','../images/red4_b.png',1)" onMouseOut="MM_swapImgRestore()"><img src="../images/red4_a.png" alt="Blog" width="34" height="34" id="blog"></a></td>
+        <td class="pie">Telfs: 2788652    /    098855899     /    0921458954<br>
+          Av. Gaspar de Villaroel 141 - Angamarca B<br>
+          QUITO - ECUADOR</td>
+        <td bgcolor="#003E56">&nbsp;</td>
+      </tr>
+      <tr>
+        <td colspan="6"><img src="../images/pie.jpg" width="1200" height="70"></td>
+      </tr>
+      <tr>
+        <td colspan="6">&nbsp;</td>
+      </tr>
+    </table></td>
+  </tr>
+</table>
 </body>
 </html>
