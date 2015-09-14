@@ -1,9 +1,8 @@
 <link rel="stylesheet" type="text/css" media="screen"	href="/sfDoctrinePlugin/css/global.css" />
 <link rel="stylesheet" type="text/css" media="screen"	href="/sfDoctrinePlugin/css/default.css" />
 
-  <script src="http://tinymce.cachefly.net/4.1/tinymce.min.js"></script>
-  
-<?php use_javascript('/sfFormExtraPlugin/js/double_list.js') ?>
+<script src="http://tinymce.cachefly.net/4.1/tinymce.min.js"></script>
+<script src="/sfFormExtraPlugin/js/double_list.js"></script>
 
 <script>
 $(document).ready(function() {
